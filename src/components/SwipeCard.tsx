@@ -1,11 +1,15 @@
 "use client";
 
-import { useRef } from "react";
-import { motion } from "framer-motion";
+import { useRef, useImperativeHandle, forwardRef } from "react";
+import { motion, animate as fmAnimate } from "framer-motion";
 import { useSwipeGesture } from "@/hooks/useSwipeGesture";
 import { ChainsawIcon } from "./ChainsawIcon";
 import { ShieldIcon } from "./ShieldIcon";
 import type { Card, VoteDirection } from "@/types";
+
+export interface SwipeCardHandle {
+  triggerSwipe: (direction: VoteDirection) => void;
+}
 
 interface SwipeCardProps {
   card: Card;
@@ -15,7 +19,8 @@ interface SwipeCardProps {
   onTap?: () => void;
 }
 
-export function SwipeCard({ card, isTop, onSwipe, onTap }: SwipeCardProps) {
+export const SwipeCard = forwardRef<SwipeCardHandle, SwipeCardProps>(
+  function SwipeCard({ card, isTop, onSwipe, onTap }, ref) {
   const didDrag = useRef(false);
 
   const {
@@ -27,6 +32,19 @@ export function SwipeCard({ card, isTop, onSwipe, onTap }: SwipeCardProps) {
     redTint,
     handleDragEnd,
   } = useSwipeGesture({ onSwipe });
+
+  // Expose programmatic swipe trigger for button clicks
+  useImperativeHandle(ref, () => ({
+    triggerSwipe(direction: VoteDirection) {
+      const exitX = direction === "keep" ? -500 : 500;
+      fmAnimate(x, exitX, {
+        type: "spring",
+        stiffness: 300,
+        damping: 30,
+        onComplete: () => onSwipe(direction),
+      });
+    },
+  }), [x, onSwipe]);
 
   // Back card styling
   if (!isTop) {
@@ -102,7 +120,7 @@ export function SwipeCard({ card, isTop, onSwipe, onTap }: SwipeCardProps) {
       <CardContent card={card} onTapDetail={onTap} />
     </motion.div>
   );
-}
+});
 
 /** Inner card content — matches 2-SWIPE.html maquette */
 function CardContent({
@@ -150,7 +168,7 @@ function CardContent({
       </div>
 
       {/* Content area */}
-      <div className="p-4 flex flex-col gap-3 flex-1 rounded-t-[1.5rem] -mt-3 bg-card relative z-20 overflow-y-auto">
+      <div className="p-4 flex flex-col gap-3 flex-1 rounded-t-[1.5rem] -mt-3 bg-card relative z-20 overflow-hidden">
         {/* Amount stats */}
         <div className="grid grid-cols-2 gap-2">
           <div className="bg-background/50 p-2.5 rounded-xl flex flex-col justify-center border border-border">

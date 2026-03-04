@@ -119,6 +119,54 @@
       "icon": "🏢",
       "color": "#0EA5E9",
       "cardCount": 8
+    },
+    {
+      "id": "crise-energie",
+      "name": "Crise énergétique",
+      "description": "Tout ce que la crise 2022-2024 a coûté aux Français",
+      "icon": "⚡",
+      "color": "#F59E0B",
+      "cardCount": 10
+    },
+    {
+      "id": "hopital",
+      "name": "Hôpital",
+      "description": "Zoom sur les 110 Md€ de l'hôpital public",
+      "icon": "🏥",
+      "color": "#EF4444",
+      "cardCount": 10
+    },
+    {
+      "id": "france-europe",
+      "name": "La France dans l'Europe",
+      "description": "Combien coûte l'Europe ? Combien rapporte-t-elle ?",
+      "icon": "🇪🇺",
+      "color": "#3B82F6",
+      "cardCount": 10
+    },
+    {
+      "id": "retraites",
+      "name": "Retraites",
+      "description": "Deep dive sur les 370 Md€ du 1er poste de dépenses françaises",
+      "icon": "👴",
+      "color": "#8B5CF6",
+      "cardCount": 10
+    },
+    {
+      "id": "zombies",
+      "name": "Zombies budgétaires",
+      "description": "Les dépenses qui auraient dû mourir mais qui persistent",
+      "icon": "💀",
+      "color": "#64748B",
+      "cardCount": 10
+    },
+    {
+      "id": "ukraine",
+      "name": "Guerre en Ukraine",
+      "description": "Le coût du conflit pour la France depuis février 2022",
+      "icon": "🇺🇦",
+      "color": "#0EA5E9",
+      "cardCount": 10
     }
   ],
   "cards": [
@@ -135,7 +183,11 @@
       "source": "Vie-publique.fr, LPM 2024-2030, Sénat",
       "sourceUrl": "https://www.vie-publique.fr",
       "level": 1,
-      "tags": ["militaire", "nucléaire", "souveraineté"]
+      "tags": [
+        "militaire",
+        "nucléaire",
+        "souveraineté"
+      ]
     },
     {
       "id": "def-02",
@@ -149,7 +201,11 @@
       "source": "Ministère des Armées PLF 2025, LPM 2024-2030",
       "sourceUrl": "https://www.defense.gouv.fr",
       "level": 1,
-      "tags": ["militaire", "marine", "équipement"]
+      "tags": [
+        "militaire",
+        "marine",
+        "équipement"
+      ]
     },
     {
       "id": "def-03",
@@ -163,7 +219,11 @@
       "source": "Vie-publique.fr, Cour des comptes, FOB",
       "sourceUrl": "https://www.vie-publique.fr",
       "level": 1,
-      "tags": ["militaire", "opérations", "OTAN"]
+      "tags": [
+        "militaire",
+        "opérations",
+        "OTAN"
+      ]
     },
     {
       "id": "def-04",
@@ -178,7 +238,11 @@
       "source": "Ministère des Armées PLF 2025",
       "sourceUrl": "https://www.defense.gouv.fr",
       "level": 1,
-      "tags": ["militaire", "cyber", "technologie"]
+      "tags": [
+        "militaire",
+        "cyber",
+        "technologie"
+      ]
     },
     {
       "id": "def-05",
@@ -193,7 +257,11 @@
       "source": "Ministère des Armées PLF 2025, Sénat",
       "sourceUrl": "https://www.defense.gouv.fr",
       "level": 1,
-      "tags": ["militaire", "renseignement", "souveraineté"]
+      "tags": [
+        "militaire",
+        "renseignement",
+        "souveraineté"
+      ]
     },
     {
       "id": "def-06",
@@ -207,7 +275,11 @@
       "source": "Ministère des Armées PLF 2025",
       "sourceUrl": "https://www.defense.gouv.fr",
       "level": 1,
-      "tags": ["militaire", "santé", "hôpitaux"]
+      "tags": [
+        "militaire",
+        "santé",
+        "hôpitaux"
+      ]
     },
     {
       "id": "def-07",
@@ -222,7 +294,11 @@
       "source": "Ministère des Armées PLF 2025, LPM 2024-2030",
       "sourceUrl": "https://www.defense.gouv.fr",
       "level": 1,
-      "tags": ["militaire", "espace", "technologie"]
+      "tags": [
+        "militaire",
+        "espace",
+        "technologie"
+      ]
     },
     {
       "id": "def-08",
@@ -237,7 +313,11 @@
       "source": "Ministère des Armées PLF 2025",
       "sourceUrl": "https://www.defense.gouv.fr",
       "level": 1,
-      "tags": ["militaire", "infrastructure", "logement"]
+      "tags": [
+        "militaire",
+        "infrastructure",
+        "logement"
+      ]
     },
     {
       "id": "def-09",
@@ -251,7 +331,11 @@
       "source": "Ministère des Armées PLF 2025, LPM 2024-2030",
       "sourceUrl": "https://www.defense.gouv.fr",
       "level": 1,
-      "tags": ["militaire", "innovation", "technologie"]
+      "tags": [
+        "militaire",
+        "innovation",
+        "technologie"
+      ]
     },
     {
       "id": "def-10",
@@ -265,7 +349,11 @@
       "source": "Vie-publique.fr, IFRAP, Sénat",
       "sourceUrl": "https://www.vie-publique.fr",
       "level": 1,
-      "tags": ["militaire", "OTAN", "trajectoire"]
+      "tags": [
+        "militaire",
+        "OTAN",
+        "trajectoire"
+      ]
     },
     {
       "id": "ene-01",
@@ -279,7 +367,11 @@
       "trend": 43,
       "source": "CRE 2025, PIEBÎEM",
       "level": 1,
-      "tags": ["énergie", "renouvelables", "subventions"]
+      "tags": [
+        "énergie",
+        "renouvelables",
+        "subventions"
+      ]
     },
     {
       "id": "ene-02",
@@ -292,7 +384,11 @@
       "icon": "🌊",
       "source": "CRE 2025, PPE3 décret fév. 2026",
       "level": 1,
-      "tags": ["énergie", "éolien", "mer"]
+      "tags": [
+        "énergie",
+        "éolien",
+        "mer"
+      ]
     },
     {
       "id": "ene-03",
@@ -306,7 +402,11 @@
       "trend": 40,
       "source": "PPE3, Vert.eco",
       "level": 1,
-      "tags": ["énergie", "nucléaire", "construction"]
+      "tags": [
+        "énergie",
+        "nucléaire",
+        "construction"
+      ]
     },
     {
       "id": "ene-04",
@@ -320,7 +420,11 @@
       "source": "France Renouvelables, economie.gouv.fr PPE3",
       "sourceUrl": "https://www.economie.gouv.fr",
       "level": 1,
-      "tags": ["énergie", "fossiles", "importation"]
+      "tags": [
+        "énergie",
+        "fossiles",
+        "importation"
+      ]
     },
     {
       "id": "ene-05",
@@ -333,7 +437,11 @@
       "icon": "⚡",
       "source": "RTE, Enedis, PPE3, Public Sénat",
       "level": 1,
-      "tags": ["énergie", "réseau", "infrastructure"]
+      "tags": [
+        "énergie",
+        "réseau",
+        "infrastructure"
+      ]
     },
     {
       "id": "ene-06",
@@ -348,7 +456,11 @@
       "source": "economie.gouv.fr, PPE3",
       "sourceUrl": "https://www.economie.gouv.fr",
       "level": 1,
-      "tags": ["énergie", "mobilité", "électrique"]
+      "tags": [
+        "énergie",
+        "mobilité",
+        "électrique"
+      ]
     },
     {
       "id": "ene-07",
@@ -361,7 +473,11 @@
       "icon": "🏠",
       "source": "PPE3, Vert.eco, ANAH",
       "level": 1,
-      "tags": ["énergie", "rénovation", "logement"]
+      "tags": [
+        "énergie",
+        "rénovation",
+        "logement"
+      ]
     },
     {
       "id": "ene-08",
@@ -374,7 +490,11 @@
       "icon": "🔧",
       "source": "EDF, PPE3, ASN",
       "level": 1,
-      "tags": ["énergie", "nucléaire", "maintenance"]
+      "tags": [
+        "énergie",
+        "nucléaire",
+        "maintenance"
+      ]
     },
     {
       "id": "ene-09",
@@ -388,7 +508,11 @@
       "source": "economie.gouv.fr PPE3, CRE",
       "sourceUrl": "https://www.economie.gouv.fr",
       "level": 1,
-      "tags": ["énergie", "renouvelables", "PPE3"]
+      "tags": [
+        "énergie",
+        "renouvelables",
+        "PPE3"
+      ]
     },
     {
       "id": "ene-10",
@@ -401,7 +525,11 @@
       "icon": "💰",
       "source": "RTE bilan électrique 2023-2024, EDF",
       "level": 1,
-      "tags": ["énergie", "exportation", "recettes"]
+      "tags": [
+        "énergie",
+        "exportation",
+        "recettes"
+      ]
     },
     {
       "id": "san-01",
@@ -416,7 +544,11 @@
       "source": "Vie-publique.fr LFSS 2025, Cour des comptes",
       "sourceUrl": "https://www.vie-publique.fr",
       "level": 1,
-      "tags": ["santé", "ONDAM", "assurance maladie"]
+      "tags": [
+        "santé",
+        "ONDAM",
+        "assurance maladie"
+      ]
     },
     {
       "id": "san-02",
@@ -430,7 +562,11 @@
       "trend": 3.8,
       "source": "Ministère de la Santé, Académie de médecine, Sénat",
       "level": 1,
-      "tags": ["santé", "hôpital", "déficit"]
+      "tags": [
+        "santé",
+        "hôpital",
+        "déficit"
+      ]
     },
     {
       "id": "san-03",
@@ -443,7 +579,11 @@
       "icon": "👨‍⚕️",
       "source": "PLFSS 2025, CNAM, Cour des comptes",
       "level": 1,
-      "tags": ["santé", "médecine", "soins de ville"]
+      "tags": [
+        "santé",
+        "médecine",
+        "soins de ville"
+      ]
     },
     {
       "id": "san-04",
@@ -456,7 +596,11 @@
       "icon": "💊",
       "source": "CNAM, LFSS 2025, IFRAP",
       "level": 1,
-      "tags": ["santé", "médicaments", "pharmacie"]
+      "tags": [
+        "santé",
+        "médicaments",
+        "pharmacie"
+      ]
     },
     {
       "id": "san-05",
@@ -469,7 +613,11 @@
       "icon": "👴",
       "source": "LFSS 2026, DREES, Cour des comptes",
       "level": 1,
-      "tags": ["santé", "dépendance", "personnes âgées"]
+      "tags": [
+        "santé",
+        "dépendance",
+        "personnes âgées"
+      ]
     },
     {
       "id": "san-06",
@@ -482,7 +630,11 @@
       "icon": "🧠",
       "source": "Ministère de la Santé 2025, LFSS 2025, IRDES",
       "level": 1,
-      "tags": ["santé", "psychiatrie", "santé mentale"]
+      "tags": [
+        "santé",
+        "psychiatrie",
+        "santé mentale"
+      ]
     },
     {
       "id": "san-07",
@@ -496,7 +648,11 @@
       "trend": 6.5,
       "source": "CNAM, LFSS 2025, Comité d'alerte ONDAM",
       "level": 1,
-      "tags": ["santé", "arrêts maladie", "indemnités"]
+      "tags": [
+        "santé",
+        "arrêts maladie",
+        "indemnités"
+      ]
     },
     {
       "id": "san-08",
@@ -509,7 +665,11 @@
       "icon": "🔍",
       "source": "Cour des comptes, CNAM rapport fraudes 2024",
       "level": 1,
-      "tags": ["santé", "fraude", "contrôle"]
+      "tags": [
+        "santé",
+        "fraude",
+        "contrôle"
+      ]
     },
     {
       "id": "san-09",
@@ -522,7 +682,11 @@
       "icon": "🗺️",
       "source": "DREES, ARS, LFSS 2025",
       "level": 1,
-      "tags": ["santé", "accès aux soins", "territoires"]
+      "tags": [
+        "santé",
+        "accès aux soins",
+        "territoires"
+      ]
     },
     {
       "id": "san-10",
@@ -537,7 +701,11 @@
       "source": "DREES comptes de la santé 2024, Vie-publique.fr",
       "sourceUrl": "https://www.vie-publique.fr",
       "level": 1,
-      "tags": ["santé", "reste à charge", "mutuelles"]
+      "tags": [
+        "santé",
+        "reste à charge",
+        "mutuelles"
+      ]
     },
     {
       "id": "soc-01",
@@ -551,7 +719,11 @@
       "source": "DREES, LFSS 2026, Vie-publique.fr",
       "sourceUrl": "https://www.vie-publique.fr",
       "level": 1,
-      "tags": ["social", "retraites", "pensions"]
+      "tags": [
+        "social",
+        "retraites",
+        "pensions"
+      ]
     },
     {
       "id": "soc-02",
@@ -565,7 +737,11 @@
       "source": "COR rapport annuel 2024, LFSS 2026, Vie-publique.fr",
       "sourceUrl": "https://www.vie-publique.fr",
       "level": 1,
-      "tags": ["social", "réforme", "retraites"]
+      "tags": [
+        "social",
+        "réforme",
+        "retraites"
+      ]
     },
     {
       "id": "soc-03",
@@ -579,7 +755,11 @@
       "source": "Budget.gouv.fr CAS Pensions 2025, LFSS 2025, Sénat",
       "sourceUrl": "https://www.budget.gouv.fr",
       "level": 1,
-      "tags": ["social", "retraites", "fonctionnaires"]
+      "tags": [
+        "social",
+        "retraites",
+        "fonctionnaires"
+      ]
     },
     {
       "id": "soc-04",
@@ -593,7 +773,11 @@
       "source": "Unédic bilan 2024, France Travail, Vie-publique.fr",
       "sourceUrl": "https://www.vie-publique.fr",
       "level": 1,
-      "tags": ["social", "chômage", "emploi"]
+      "tags": [
+        "social",
+        "chômage",
+        "emploi"
+      ]
     },
     {
       "id": "soc-05",
@@ -607,7 +791,11 @@
       "source": "CNAF, LFSS 2025 et 2026, Vie-publique.fr",
       "sourceUrl": "https://www.vie-publique.fr",
       "level": 1,
-      "tags": ["social", "famille", "natalité"]
+      "tags": [
+        "social",
+        "famille",
+        "natalité"
+      ]
     },
     {
       "id": "soc-06",
@@ -621,7 +809,11 @@
       "source": "DREES, CNAF, Vie-publique.fr",
       "sourceUrl": "https://www.vie-publique.fr",
       "level": 1,
-      "tags": ["social", "solidarité", "minima sociaux"]
+      "tags": [
+        "social",
+        "solidarité",
+        "minima sociaux"
+      ]
     },
     {
       "id": "soc-07",
@@ -636,7 +828,11 @@
       "source": "CNAF, Cour des comptes, budget.gouv.fr",
       "sourceUrl": "https://www.budget.gouv.fr",
       "level": 1,
-      "tags": ["social", "logement", "APL"]
+      "tags": [
+        "social",
+        "logement",
+        "APL"
+      ]
     },
     {
       "id": "soc-08",
@@ -649,7 +845,11 @@
       "icon": "🏭",
       "source": "LFSS 2025, Cour des comptes, OFCE",
       "level": 1,
-      "tags": ["social", "emploi", "cotisations"]
+      "tags": [
+        "social",
+        "emploi",
+        "cotisations"
+      ]
     },
     {
       "id": "soc-09",
@@ -662,7 +862,11 @@
       "icon": "✈️",
       "source": "Cour des comptes, Sénat",
       "level": 1,
-      "tags": ["social", "fraude", "retraites"]
+      "tags": [
+        "social",
+        "fraude",
+        "retraites"
+      ]
     },
     {
       "id": "soc-10",
@@ -676,7 +880,11 @@
       "trend": 44,
       "source": "Cour des comptes, LFSS 2026, HCFP",
       "level": 1,
-      "tags": ["social", "déficit", "sécurité sociale"]
+      "tags": [
+        "social",
+        "déficit",
+        "sécurité sociale"
+      ]
     },
     {
       "id": "soc-11",
@@ -690,7 +898,11 @@
       "trend": 25,
       "source": "France Compétences, Cour des comptes, DARES",
       "level": 1,
-      "tags": ["social", "apprentissage", "formation"]
+      "tags": [
+        "social",
+        "apprentissage",
+        "formation"
+      ]
     },
     {
       "id": "soc-12",
@@ -703,7 +915,11 @@
       "icon": "🛡️",
       "source": "DREES, Eurostat",
       "level": 1,
-      "tags": ["social", "protection sociale", "modèle français"]
+      "tags": [
+        "social",
+        "protection sociale",
+        "modèle français"
+      ]
     },
     {
       "id": "edu-01",
@@ -717,7 +933,11 @@
       "trend": 0.2,
       "source": "Sénat PLF 2025, DEPP 2025",
       "level": 1,
-      "tags": ["éducation", "budget", "enseignement"]
+      "tags": [
+        "éducation",
+        "budget",
+        "enseignement"
+      ]
     },
     {
       "id": "edu-02",
@@ -730,7 +950,11 @@
       "icon": "🎓",
       "source": "PLF 2025, EducPros, Sénat",
       "level": 1,
-      "tags": ["éducation", "supérieur", "universités"]
+      "tags": [
+        "éducation",
+        "supérieur",
+        "universités"
+      ]
     },
     {
       "id": "edu-03",
@@ -743,7 +967,11 @@
       "icon": "👩‍🏫",
       "source": "DEPP 2025, OCDE, Sénat",
       "level": 1,
-      "tags": ["éducation", "salaires", "enseignants"]
+      "tags": [
+        "éducation",
+        "salaires",
+        "enseignants"
+      ]
     },
     {
       "id": "edu-04",
@@ -756,7 +984,11 @@
       "icon": "🏗️",
       "source": "Rapport Demarcq, EduRénov, Oxfam France",
       "level": 1,
-      "tags": ["éducation", "infrastructure", "rénovation"]
+      "tags": [
+        "éducation",
+        "infrastructure",
+        "rénovation"
+      ]
     },
     {
       "id": "edu-05",
@@ -769,7 +1001,11 @@
       "icon": "♿",
       "source": "Sénat PLF 2025, SUD Éducation, DEPP",
       "level": 1,
-      "tags": ["éducation", "handicap", "inclusion"]
+      "tags": [
+        "éducation",
+        "handicap",
+        "inclusion"
+      ]
     },
     {
       "id": "edu-06",
@@ -782,7 +1018,11 @@
       "icon": "🔬",
       "source": "MESRI, HCERES, OCDE",
       "level": 1,
-      "tags": ["éducation", "recherche", "CNRS"]
+      "tags": [
+        "éducation",
+        "recherche",
+        "CNRS"
+      ]
     },
     {
       "id": "edu-07",
@@ -795,7 +1035,11 @@
       "icon": "📝",
       "source": "CNOUS, DGESIP, Observatoire de la vie étudiante",
       "level": 1,
-      "tags": ["éducation", "bourses", "étudiants"]
+      "tags": [
+        "éducation",
+        "bourses",
+        "étudiants"
+      ]
     },
     {
       "id": "edu-08",
@@ -808,7 +1052,11 @@
       "icon": "💡",
       "source": "MESRI, Cour des comptes, France Stratégie",
       "level": 1,
-      "tags": ["éducation", "fiscalité", "R&D"]
+      "tags": [
+        "éducation",
+        "fiscalité",
+        "R&D"
+      ]
     },
     {
       "id": "edu-09",
@@ -821,7 +1069,11 @@
       "icon": "🎖️",
       "source": "Rapport Sénat 2024, INJEP, Ministère des Armées",
       "level": 1,
-      "tags": ["éducation", "citoyenneté", "jeunesse"]
+      "tags": [
+        "éducation",
+        "citoyenneté",
+        "jeunesse"
+      ]
     },
     {
       "id": "edu-10",
@@ -834,7 +1086,11 @@
       "icon": "🏫",
       "source": "PLF 2025, Rapport Vannier-Weissberg 2024",
       "level": 1,
-      "tags": ["éducation", "privé", "mixité sociale"]
+      "tags": [
+        "éducation",
+        "privé",
+        "mixité sociale"
+      ]
     },
     {
       "id": "sec-01",
@@ -848,7 +1104,11 @@
       "trend": 3.4,
       "source": "Sénat PLF 2025, LOPMI, AEF Info",
       "level": 1,
-      "tags": ["sécurité", "police", "LOPMI"]
+      "tags": [
+        "sécurité",
+        "police",
+        "LOPMI"
+      ]
     },
     {
       "id": "sec-02",
@@ -863,7 +1123,11 @@
       "source": "Sénat PLF 2025-2026, LOPMI, budget.gouv.fr",
       "sourceUrl": "https://www.budget.gouv.fr",
       "level": 1,
-      "tags": ["sécurité", "gendarmerie", "territoires"]
+      "tags": [
+        "sécurité",
+        "gendarmerie",
+        "territoires"
+      ]
     },
     {
       "id": "sec-03",
@@ -877,7 +1141,11 @@
       "trend": 8,
       "source": "Ministère de la Justice, Sénat, CEPEJ",
       "level": 1,
-      "tags": ["justice", "magistrats", "budget"]
+      "tags": [
+        "justice",
+        "magistrats",
+        "budget"
+      ]
     },
     {
       "id": "sec-04",
@@ -890,7 +1158,11 @@
       "icon": "🔒",
       "source": "Ministère de la Justice, Contrôleur général des lieux de privation de liberté",
       "level": 1,
-      "tags": ["justice", "prisons", "surpopulation"]
+      "tags": [
+        "justice",
+        "prisons",
+        "surpopulation"
+      ]
     },
     {
       "id": "sec-05",
@@ -903,7 +1175,11 @@
       "icon": "🚒",
       "source": "DGSCGC, SDIS, Sénat",
       "level": 1,
-      "tags": ["sécurité", "pompiers", "crises"]
+      "tags": [
+        "sécurité",
+        "pompiers",
+        "crises"
+      ]
     },
     {
       "id": "sec-06",
@@ -916,7 +1192,11 @@
       "icon": "🕵️",
       "source": "Rapport parlementaire renseignement 2024, DGSI",
       "level": 1,
-      "tags": ["sécurité", "renseignement", "terrorisme"]
+      "tags": [
+        "sécurité",
+        "renseignement",
+        "terrorisme"
+      ]
     },
     {
       "id": "sec-07",
@@ -929,7 +1209,11 @@
       "icon": "📜",
       "source": "Ministère de la Justice, CNB",
       "level": 1,
-      "tags": ["justice", "accès au droit", "avocats"]
+      "tags": [
+        "justice",
+        "accès au droit",
+        "avocats"
+      ]
     },
     {
       "id": "sec-08",
@@ -942,7 +1226,11 @@
       "icon": "💻",
       "source": "ANSSI rapport annuel 2024, LPM 2024-2030, Sénat",
       "level": 1,
-      "tags": ["sécurité", "cybersécurité", "ANSSI"]
+      "tags": [
+        "sécurité",
+        "cybersécurité",
+        "ANSSI"
+      ]
     },
     {
       "id": "eta-01",
@@ -957,7 +1245,11 @@
       "source": "Agence France Trésor, budget.gouv.fr, Cour des comptes",
       "sourceUrl": "https://www.budget.gouv.fr",
       "level": 1,
-      "tags": ["état", "dette", "intérêts"]
+      "tags": [
+        "état",
+        "dette",
+        "intérêts"
+      ]
     },
     {
       "id": "eta-02",
@@ -971,7 +1263,11 @@
       "source": "Budget.gouv.fr, DGAFP",
       "sourceUrl": "https://www.budget.gouv.fr",
       "level": 1,
-      "tags": ["état", "fonctionnaires", "salaires"]
+      "tags": [
+        "état",
+        "fonctionnaires",
+        "salaires"
+      ]
     },
     {
       "id": "eta-03",
@@ -985,7 +1281,11 @@
       "source": "Budget.gouv.fr, AMF, Cour des comptes",
       "sourceUrl": "https://www.budget.gouv.fr",
       "level": 1,
-      "tags": ["état", "collectivités", "décentralisation"]
+      "tags": [
+        "état",
+        "collectivités",
+        "décentralisation"
+      ]
     },
     {
       "id": "eta-04",
@@ -998,7 +1298,11 @@
       "icon": "🕳️",
       "source": "Solidaires Finances Publiques, Sénat, Cour des comptes",
       "level": 1,
-      "tags": ["état", "fraude", "recettes"]
+      "tags": [
+        "état",
+        "fraude",
+        "recettes"
+      ]
     },
     {
       "id": "eta-05",
@@ -1011,7 +1315,11 @@
       "icon": "🏷️",
       "source": "CPO, Cour des comptes, PLF 2025",
       "level": 1,
-      "tags": ["état", "fiscalité", "niches"]
+      "tags": [
+        "état",
+        "fiscalité",
+        "niches"
+      ]
     },
     {
       "id": "eta-06",
@@ -1026,7 +1334,11 @@
       "source": "OCDE DAC, budget.gouv.fr, AFD",
       "sourceUrl": "https://www.budget.gouv.fr",
       "level": 1,
-      "tags": ["état", "international", "aide"]
+      "tags": [
+        "état",
+        "international",
+        "aide"
+      ]
     },
     {
       "id": "eta-07",
@@ -1039,7 +1351,11 @@
       "icon": "🏢",
       "source": "CAE, IPP, France Stratégie",
       "level": 1,
-      "tags": ["état", "entreprises", "subventions"]
+      "tags": [
+        "état",
+        "entreprises",
+        "subventions"
+      ]
     },
     {
       "id": "eta-08",
@@ -1053,7 +1369,11 @@
       "source": "Budget.gouv.fr, IEDOM/IEOM, Cour des comptes",
       "sourceUrl": "https://www.budget.gouv.fr",
       "level": 1,
-      "tags": ["état", "outre-mer", "territoires"]
+      "tags": [
+        "état",
+        "outre-mer",
+        "territoires"
+      ]
     },
     {
       "id": "eta-09",
@@ -1068,7 +1388,11 @@
       "source": "Budget.gouv.fr PLF 2025, MEAE, AEFE",
       "sourceUrl": "https://www.budget.gouv.fr",
       "level": 1,
-      "tags": ["état", "diplomatie", "affaires étrangères"]
+      "tags": [
+        "état",
+        "diplomatie",
+        "affaires étrangères"
+      ]
     },
     {
       "id": "eta-10",
@@ -1082,7 +1406,11 @@
       "trend": 6.1,
       "source": "INSEE, Cour des comptes, Agence France Trésor",
       "level": 1,
-      "tags": ["état", "déficit", "dette"]
+      "tags": [
+        "état",
+        "déficit",
+        "dette"
+      ]
     },
     {
       "id": "cul-01",
@@ -1097,7 +1425,11 @@
       "source": "Budget.gouv.fr, Ministère de la Culture",
       "sourceUrl": "https://www.budget.gouv.fr",
       "level": 1,
-      "tags": ["culture", "patrimoine", "musées"]
+      "tags": [
+        "culture",
+        "patrimoine",
+        "musées"
+      ]
     },
     {
       "id": "cul-02",
@@ -1111,7 +1443,11 @@
       "source": "Budget.gouv.fr, ARCOM, Sénat",
       "sourceUrl": "https://www.budget.gouv.fr",
       "level": 1,
-      "tags": ["culture", "audiovisuel", "médias"]
+      "tags": [
+        "culture",
+        "audiovisuel",
+        "médias"
+      ]
     },
     {
       "id": "cul-03",
@@ -1124,7 +1460,11 @@
       "icon": "🚄",
       "source": "SNCF Réseau, ART, Sénat, Cour des comptes",
       "level": 1,
-      "tags": ["transports", "rail", "SNCF"]
+      "tags": [
+        "transports",
+        "rail",
+        "SNCF"
+      ]
     },
     {
       "id": "cul-04",
@@ -1137,7 +1477,11 @@
       "icon": "🛣️",
       "source": "ART, Cour des comptes, Sénat",
       "level": 1,
-      "tags": ["transports", "routes", "autoroutes"]
+      "tags": [
+        "transports",
+        "routes",
+        "autoroutes"
+      ]
     },
     {
       "id": "cul-05",
@@ -1150,7 +1494,11 @@
       "icon": "🚇",
       "source": "IDFM, Société du Grand Paris, GART",
       "level": 1,
-      "tags": ["transports", "urbain", "Grand Paris"]
+      "tags": [
+        "transports",
+        "urbain",
+        "Grand Paris"
+      ]
     },
     {
       "id": "cul-06",
@@ -1163,7 +1511,11 @@
       "icon": "⚽",
       "source": "Ministère des Sports, ANS, Cour des comptes",
       "level": 1,
-      "tags": ["sport", "JOP", "clubs"]
+      "tags": [
+        "sport",
+        "JOP",
+        "clubs"
+      ]
     },
     {
       "id": "cul-07",
@@ -1176,7 +1528,11 @@
       "icon": "📰",
       "source": "Ministère de la Culture, DGMIC, Sénat",
       "level": 1,
-      "tags": ["culture", "presse", "médias"]
+      "tags": [
+        "culture",
+        "presse",
+        "médias"
+      ]
     },
     {
       "id": "cul-08",
@@ -1189,7 +1545,11 @@
       "icon": "🏰",
       "source": "Ministère de la Culture, Fondation du patrimoine, CMN",
       "level": 1,
-      "tags": ["culture", "patrimoine", "monuments"]
+      "tags": [
+        "culture",
+        "patrimoine",
+        "monuments"
+      ]
     },
     {
       "id": "cul-09",
@@ -1203,7 +1563,11 @@
       "source": "DGAC, budget.gouv.fr, Réseau Action Climat",
       "sourceUrl": "https://www.budget.gouv.fr",
       "level": 1,
-      "tags": ["transports", "aérien", "DGAC"]
+      "tags": [
+        "transports",
+        "aérien",
+        "DGAC"
+      ]
     },
     {
       "id": "cul-10",
@@ -1217,7 +1581,11 @@
       "source": "Budget.gouv.fr, OFB, SGPE",
       "sourceUrl": "https://www.budget.gouv.fr",
       "level": 1,
-      "tags": ["environnement", "biodiversité", "écologie"]
+      "tags": [
+        "environnement",
+        "biodiversité",
+        "écologie"
+      ]
     },
     {
       "id": "agr-01",
@@ -1230,7 +1598,11 @@
       "icon": "🌾",
       "source": "Ministère de l'Agriculture, La France Agricole, Sénat PLF 2026",
       "level": 1,
-      "tags": ["agriculture", "PAC", "Europe"]
+      "tags": [
+        "agriculture",
+        "PAC",
+        "Europe"
+      ]
     },
     {
       "id": "agr-02",
@@ -1244,7 +1616,11 @@
       "trend": -4.5,
       "source": "Sénat PLF 2026, Public Sénat",
       "level": 1,
-      "tags": ["agriculture", "budget", "ministère"]
+      "tags": [
+        "agriculture",
+        "budget",
+        "ministère"
+      ]
     },
     {
       "id": "agr-03",
@@ -1257,7 +1633,11 @@
       "icon": "💧",
       "source": "Sénat, OFB, Agences de l'eau",
       "level": 1,
-      "tags": ["agriculture", "eau", "environnement"]
+      "tags": [
+        "agriculture",
+        "eau",
+        "environnement"
+      ]
     },
     {
       "id": "agr-04",
@@ -1270,7 +1650,11 @@
       "icon": "🌲",
       "source": "PLF 2026, ONF, Cour des comptes",
       "level": 1,
-      "tags": ["agriculture", "forêts", "ONF"]
+      "tags": [
+        "agriculture",
+        "forêts",
+        "ONF"
+      ]
     },
     {
       "id": "agr-05",
@@ -1283,7 +1667,11 @@
       "icon": "🥬",
       "source": "Sénat PLF 2026, Agence Bio, Public Sénat",
       "level": 1,
-      "tags": ["agriculture", "bio", "environnement"]
+      "tags": [
+        "agriculture",
+        "bio",
+        "environnement"
+      ]
     },
     {
       "id": "agr-06",
@@ -1296,7 +1684,11 @@
       "icon": "🔬",
       "source": "ANSES, PLF 2026, DGAL",
       "level": 1,
-      "tags": ["agriculture", "sécurité alimentaire", "contrôle"]
+      "tags": [
+        "agriculture",
+        "sécurité alimentaire",
+        "contrôle"
+      ]
     },
     {
       "id": "agr-07",
@@ -1309,7 +1701,11 @@
       "icon": "🌧️",
       "source": "PLF 2026, FNGRA, Réussir.fr",
       "level": 1,
-      "tags": ["agriculture", "calamités", "assurance"]
+      "tags": [
+        "agriculture",
+        "calamités",
+        "assurance"
+      ]
     },
     {
       "id": "agr-08",
@@ -1322,7 +1718,11 @@
       "icon": "📊",
       "source": "Sénat PLF 2026, Ministère de l'Agriculture",
       "level": 1,
-      "tags": ["agriculture", "total", "vue d'ensemble"]
+      "tags": [
+        "agriculture",
+        "total",
+        "vue d'ensemble"
+      ]
     },
     {
       "id": "log-01",
@@ -1335,7 +1735,11 @@
       "icon": "🏘️",
       "source": "Fondation Abbé Pierre, USH, Cour des comptes, PLF 2026",
       "level": 1,
-      "tags": ["logement", "social", "HLM"]
+      "tags": [
+        "logement",
+        "social",
+        "HLM"
+      ]
     },
     {
       "id": "log-02",
@@ -1348,7 +1752,11 @@
       "icon": "🛏️",
       "source": "PLF 2026 Cohésion des territoires, Cour des comptes, Fondation Abbé Pierre",
       "level": 1,
-      "tags": ["logement", "urgence", "sans-abri"]
+      "tags": [
+        "logement",
+        "urgence",
+        "sans-abri"
+      ]
     },
     {
       "id": "log-03",
@@ -1361,7 +1769,11 @@
       "icon": "🏗️",
       "source": "ANRU, PLF 2026, Cour des comptes",
       "level": 1,
-      "tags": ["logement", "rénovation urbaine", "quartiers"]
+      "tags": [
+        "logement",
+        "rénovation urbaine",
+        "quartiers"
+      ]
     },
     {
       "id": "log-04",
@@ -1375,7 +1787,11 @@
       "source": "SGFGAS, vie-publique.fr, Cour des comptes",
       "sourceUrl": "https://www.vie-publique.fr",
       "level": 1,
-      "tags": ["logement", "PTZ", "accession"]
+      "tags": [
+        "logement",
+        "PTZ",
+        "accession"
+      ]
     },
     {
       "id": "log-05",
@@ -1388,7 +1804,11 @@
       "icon": "🤝",
       "source": "PLF 2026, ANCT, Observatoire national de la politique de la ville",
       "level": 1,
-      "tags": ["logement", "politique de la ville", "QPV"]
+      "tags": [
+        "logement",
+        "politique de la ville",
+        "QPV"
+      ]
     },
     {
       "id": "log-06",
@@ -1401,7 +1821,11 @@
       "icon": "🌐",
       "source": "ARCEP, ANCT, France THD",
       "level": 1,
-      "tags": ["logement", "numérique", "fibre"]
+      "tags": [
+        "logement",
+        "numérique",
+        "fibre"
+      ]
     },
     {
       "id": "log-07",
@@ -1416,7 +1840,11 @@
       "source": "PLF 2026, vie-publique.fr",
       "sourceUrl": "https://www.vie-publique.fr",
       "level": 1,
-      "tags": ["logement", "budget", "cohésion"]
+      "tags": [
+        "logement",
+        "budget",
+        "cohésion"
+      ]
     },
     {
       "id": "log-08",
@@ -1429,7 +1857,11 @@
       "icon": "🏷️",
       "source": "Cour des comptes, PLF 2026",
       "level": 1,
-      "tags": ["logement", "fiscalité", "investissement locatif"]
+      "tags": [
+        "logement",
+        "fiscalité",
+        "investissement locatif"
+      ]
     },
     {
       "id": "imm-01",
@@ -1443,7 +1875,11 @@
       "trend": 3.8,
       "source": "PLF 2026, Sénat, Public Sénat",
       "level": 1,
-      "tags": ["immigration", "asile", "budget"]
+      "tags": [
+        "immigration",
+        "asile",
+        "budget"
+      ]
     },
     {
       "id": "imm-02",
@@ -1457,7 +1893,11 @@
       "source": "PLF 2026, IGAS, vie-publique.fr",
       "sourceUrl": "https://www.vie-publique.fr",
       "level": 1,
-      "tags": ["immigration", "santé", "AME"]
+      "tags": [
+        "immigration",
+        "santé",
+        "AME"
+      ]
     },
     {
       "id": "imm-03",
@@ -1471,7 +1911,11 @@
       "source": "Sénat PLF 2026, vie-publique.fr",
       "sourceUrl": "https://www.vie-publique.fr",
       "level": 1,
-      "tags": ["immigration", "coût global", "budget"]
+      "tags": [
+        "immigration",
+        "coût global",
+        "budget"
+      ]
     },
     {
       "id": "imm-04",
@@ -1485,7 +1929,11 @@
       "trend": 87,
       "source": "Sénat PLF 2026, Contrôleur général des lieux de privation de liberté",
       "level": 1,
-      "tags": ["immigration", "rétention", "OQTF"]
+      "tags": [
+        "immigration",
+        "rétention",
+        "OQTF"
+      ]
     },
     {
       "id": "imm-05",
@@ -1499,7 +1947,11 @@
       "trend": -10,
       "source": "PLF 2026, Forum Réfugiés, OFII",
       "level": 1,
-      "tags": ["immigration", "asile", "allocation"]
+      "tags": [
+        "immigration",
+        "asile",
+        "allocation"
+      ]
     },
     {
       "id": "imm-06",
@@ -1512,7 +1964,11 @@
       "icon": "🏠",
       "source": "PLF 2026, OFII, Forum Réfugiés",
       "level": 1,
-      "tags": ["immigration", "hébergement", "asile"]
+      "tags": [
+        "immigration",
+        "hébergement",
+        "asile"
+      ]
     },
     {
       "id": "imm-07",
@@ -1525,7 +1981,11 @@
       "icon": "📚",
       "source": "PLF 2026, OFII, ASH",
       "level": 1,
-      "tags": ["immigration", "intégration", "français"]
+      "tags": [
+        "immigration",
+        "intégration",
+        "français"
+      ]
     },
     {
       "id": "imm-08",
@@ -1538,7 +1998,11 @@
       "icon": "👦",
       "source": "Départements de France, IGAS, Sénat",
       "level": 1,
-      "tags": ["immigration", "mineurs", "départements"]
+      "tags": [
+        "immigration",
+        "mineurs",
+        "départements"
+      ]
     },
     {
       "id": "num-01",
@@ -1551,7 +2015,11 @@
       "icon": "🚀",
       "source": "SGPI France 2030, PLF 2026, IFRAP",
       "level": 1,
-      "tags": ["numérique", "investissement", "France 2030"]
+      "tags": [
+        "numérique",
+        "investissement",
+        "France 2030"
+      ]
     },
     {
       "id": "num-02",
@@ -1564,7 +2032,11 @@
       "icon": "🛰️",
       "source": "CNES, PLF 2026, ESA",
       "level": 1,
-      "tags": ["numérique", "spatial", "CNES"]
+      "tags": [
+        "numérique",
+        "spatial",
+        "CNES"
+      ]
     },
     {
       "id": "num-03",
@@ -1577,7 +2049,11 @@
       "icon": "🤖",
       "source": "SGPI, France 2030, INRIA",
       "level": 1,
-      "tags": ["numérique", "IA", "recherche"]
+      "tags": [
+        "numérique",
+        "IA",
+        "recherche"
+      ]
     },
     {
       "id": "num-04",
@@ -1590,7 +2066,11 @@
       "icon": "⚛️",
       "source": "SGPI, Plan quantique, CNRS",
       "level": 1,
-      "tags": ["numérique", "quantique", "recherche"]
+      "tags": [
+        "numérique",
+        "quantique",
+        "recherche"
+      ]
     },
     {
       "id": "num-05",
@@ -1603,7 +2083,11 @@
       "icon": "💻",
       "source": "DINUM, PLF 2026, Défenseur des droits",
       "level": 1,
-      "tags": ["numérique", "État", "administration"]
+      "tags": [
+        "numérique",
+        "État",
+        "administration"
+      ]
     },
     {
       "id": "num-06",
@@ -1616,7 +2100,11 @@
       "icon": "🔌",
       "source": "PLF 2026, European Chips Act, France 2030",
       "level": 1,
-      "tags": ["numérique", "semiconducteurs", "industrie"]
+      "tags": [
+        "numérique",
+        "semiconducteurs",
+        "industrie"
+      ]
     },
     {
       "id": "num-07",
@@ -1629,7 +2117,11 @@
       "icon": "🔐",
       "source": "ANSSI, Campus Cyber, France 2030",
       "level": 1,
-      "tags": ["numérique", "cybersécurité", "ANSSI"]
+      "tags": [
+        "numérique",
+        "cybersécurité",
+        "ANSSI"
+      ]
     },
     {
       "id": "num-08",
@@ -1642,7 +2134,11 @@
       "icon": "💼",
       "source": "France Travail, PLF 2026, Cour des comptes",
       "level": 1,
-      "tags": ["numérique", "emploi", "France Travail"]
+      "tags": [
+        "numérique",
+        "emploi",
+        "France Travail"
+      ]
     },
     {
       "id": "rec-01",
@@ -1656,7 +2152,11 @@
       "source": "PLF 2026, Sénat, vie-publique.fr",
       "sourceUrl": "https://www.vie-publique.fr",
       "level": 1,
-      "tags": ["recettes", "TVA", "consommation"]
+      "tags": [
+        "recettes",
+        "TVA",
+        "consommation"
+      ]
     },
     {
       "id": "rec-02",
@@ -1671,7 +2171,11 @@
       "source": "PLF 2026, DGFiP, vie-publique.fr",
       "sourceUrl": "https://www.vie-publique.fr",
       "level": 1,
-      "tags": ["recettes", "IR", "impôt"]
+      "tags": [
+        "recettes",
+        "IR",
+        "impôt"
+      ]
     },
     {
       "id": "rec-03",
@@ -1684,7 +2188,11 @@
       "icon": "🏢",
       "source": "PLF 2026, DGFiP, Parlement",
       "level": 1,
-      "tags": ["recettes", "IS", "entreprises"]
+      "tags": [
+        "recettes",
+        "IS",
+        "entreprises"
+      ]
     },
     {
       "id": "rec-04",
@@ -1698,7 +2206,11 @@
       "source": "LFSS 2026, URSSAF, vie-publique.fr",
       "sourceUrl": "https://www.vie-publique.fr",
       "level": 1,
-      "tags": ["recettes", "CSG", "cotisations"]
+      "tags": [
+        "recettes",
+        "CSG",
+        "cotisations"
+      ]
     },
     {
       "id": "rec-05",
@@ -1711,7 +2223,11 @@
       "icon": "⛽",
       "source": "PLF 2026, Douanes, DGEC",
       "level": 1,
-      "tags": ["recettes", "carburants", "taxe"]
+      "tags": [
+        "recettes",
+        "carburants",
+        "taxe"
+      ]
     },
     {
       "id": "rec-06",
@@ -1724,7 +2240,11 @@
       "icon": "📜",
       "source": "DGFiP, CAE, France Stratégie",
       "level": 1,
-      "tags": ["recettes", "succession", "patrimoine"]
+      "tags": [
+        "recettes",
+        "succession",
+        "patrimoine"
+      ]
     },
     {
       "id": "rec-07",
@@ -1737,7 +2257,11 @@
       "icon": "🏠",
       "source": "DGFiP, DGCL, Observatoire des finances locales",
       "level": 1,
-      "tags": ["recettes", "foncier", "communes"]
+      "tags": [
+        "recettes",
+        "foncier",
+        "communes"
+      ]
     },
     {
       "id": "rec-08",
@@ -1750,7 +2274,11 @@
       "icon": "💎",
       "source": "PLF 2026, DGFiP, France Stratégie, IFRAP",
       "level": 1,
-      "tags": ["recettes", "IFI", "fortune"]
+      "tags": [
+        "recettes",
+        "IFI",
+        "fortune"
+      ]
     },
     {
       "id": "rec-09",
@@ -1764,7 +2292,11 @@
       "source": "PLF 2026, vie-publique.fr, OCDE",
       "sourceUrl": "https://www.vie-publique.fr",
       "level": 1,
-      "tags": ["recettes", "prélèvements", "PIB"]
+      "tags": [
+        "recettes",
+        "prélèvements",
+        "PIB"
+      ]
     },
     {
       "id": "rec-10",
@@ -1777,7 +2309,11 @@
       "icon": "🎰",
       "source": "PLF 2026 Voies et moyens, Sénat",
       "level": 1,
-      "tags": ["recettes", "non fiscal", "dividendes"]
+      "tags": [
+        "recettes",
+        "non fiscal",
+        "dividendes"
+      ]
     },
     {
       "id": "emp-01",
@@ -1790,7 +2326,11 @@
       "icon": "📖",
       "source": "DARES, France Compétences, Cour des comptes",
       "level": 1,
-      "tags": ["emploi", "formation", "CPF"]
+      "tags": [
+        "emploi",
+        "formation",
+        "CPF"
+      ]
     },
     {
       "id": "emp-02",
@@ -1803,7 +2343,11 @@
       "icon": "🏠",
       "source": "PLF 2026, DGFiP, DARES",
       "level": 1,
-      "tags": ["emploi", "fiscalité", "services à la personne"]
+      "tags": [
+        "emploi",
+        "fiscalité",
+        "services à la personne"
+      ]
     },
     {
       "id": "emp-03",
@@ -1816,7 +2360,11 @@
       "icon": "🏝️",
       "source": "PLF 2026, IEDOM, Cour des comptes",
       "level": 1,
-      "tags": ["emploi", "outre-mer", "exonérations"]
+      "tags": [
+        "emploi",
+        "outre-mer",
+        "exonérations"
+      ]
     },
     {
       "id": "emp-04",
@@ -1830,7 +2378,11 @@
       "trend": -25,
       "source": "PLF 2026, DGFiP, CCI France",
       "level": 1,
-      "tags": ["emploi", "compétitivité", "impôt de production"]
+      "tags": [
+        "emploi",
+        "compétitivité",
+        "impôt de production"
+      ]
     },
     {
       "id": "emp-05",
@@ -1843,7 +2395,11 @@
       "icon": "⏱️",
       "source": "DARES, PLF 2026, Unédic",
       "level": 1,
-      "tags": ["emploi", "chômage partiel", "crise"]
+      "tags": [
+        "emploi",
+        "chômage partiel",
+        "crise"
+      ]
     },
     {
       "id": "emp-06",
@@ -1856,7 +2412,11 @@
       "icon": "💶",
       "source": "CNAF, DREES, PLF 2026",
       "level": 1,
-      "tags": ["emploi", "prime d'activité", "travailleurs pauvres"]
+      "tags": [
+        "emploi",
+        "prime d'activité",
+        "travailleurs pauvres"
+      ]
     },
     {
       "id": "emp-07",
@@ -1869,7 +2429,11 @@
       "icon": "🎯",
       "source": "France Travail, DARES, PLF 2026",
       "level": 1,
-      "tags": ["emploi", "jeunes", "insertion"]
+      "tags": [
+        "emploi",
+        "jeunes",
+        "insertion"
+      ]
     },
     {
       "id": "emp-08",
@@ -1882,7 +2446,1174 @@
       "icon": "📉",
       "source": "France Stratégie, Cour des comptes, INSEE",
       "level": 1,
-      "tags": ["emploi", "CICE", "cotisations"]
+      "tags": [
+        "emploi",
+        "CICE",
+        "cotisations"
+      ]
+    },
+    {
+      "id": "cre-01",
+      "title": "Bouclier tarifaire (coût global)",
+      "subtitle": "Entre 1 et 3 ans de budget de la Défense engloutis en 3 ans de crise",
+      "description": "Le coût du bouclier tarifaire varie du simple au triple selon qui calcule : 20,4 Md€ nets selon la CRE, 60 Md€ selon la Banque de France (2,2% du PIB sur 2022-2023), jusqu'à 72 Md€ selon la Cour des comptes en incluant toutes les mesures connexes. L'écart s'explique par l'inclusion ou non des remises carburant, chèques énergie, aides aux entreprises et charges absorbées par EDF. Ce flou comptable est en soi un problème démocratique.",
+      "amountBillions": 26,
+      "costPerCitizen": 382,
+      "deckId": "crise-energie",
+      "icon": "🛡️",
+      "source": "CRE (juil. 2024), Banque de France, Cour des comptes",
+      "sourceUrl": null,
+      "level": 1,
+      "tags": [
+        "énergie",
+        "bouclier tarifaire",
+        "crise"
+      ],
+      "trend": null
+    },
+    {
+      "id": "cre-02",
+      "title": "Bouclier électricité (volet principal)",
+      "subtitle": "19,2 Md€ en 2023 = le budget annuel entier de la Justice x 2",
+      "description": "L'État a plafonné les tarifs réglementés d'électricité : +4% en 2022 (au lieu de +35%), +15% en 2023 (au lieu de +45%). Le pic de dépense a été en 2023 : 19,2 Md€ sur une seule année. L'accise sur l'électricité a été réduite de 32€/MWh à 1€/MWh pendant la crise, avant de revenir à 33,70€/MWh en février 2025. Les ménages n'ont absorbé qu'un tiers de la hausse réelle des prix.",
+      "amountBillions": 21.5,
+      "costPerCitizen": 316,
+      "deckId": "crise-energie",
+      "icon": "💡",
+      "source": "CRE délibération juil. 2024, vie-publique.fr",
+      "sourceUrl": "https://www.vie-publique.fr",
+      "level": 1,
+      "tags": [
+        "énergie",
+        "électricité",
+        "bouclier tarifaire"
+      ],
+      "trend": null
+    },
+    {
+      "id": "cre-03",
+      "title": "Remise sur les carburants",
+      "subtitle": "8,5 Md€ = le double du budget annuel du ministère de la Culture",
+      "description": "En 2022, l'État a financé une remise de 18 centimes/litre (avril-août) puis 30 centimes/litre (sept-oct) sur tous les carburants. Mesure critiquée : elle bénéficiait davantage aux gros rouleurs et SUV qu'aux ménages modestes. Une aide ciblée sur les revenus aurait coûté 3x moins pour le même effet sur les plus fragiles. La remise a été remplacée par une indemnité carburant en 2023 (100€ pour 10M de ménages).",
+      "amountBillions": 8.5,
+      "costPerCitizen": 125,
+      "deckId": "crise-energie",
+      "icon": "⛽",
+      "source": "Cour des comptes, vie-publique.fr, PLF 2023",
+      "sourceUrl": "https://www.vie-publique.fr",
+      "level": 1,
+      "tags": [
+        "énergie",
+        "carburant",
+        "transport"
+      ],
+      "trend": null
+    },
+    {
+      "id": "cre-04",
+      "title": "Nationalisation d'EDF",
+      "subtitle": "Le prix de 8 EPR2 (coût unitaire estimé ~1,2 Md€ hors surcoûts)",
+      "description": "L'État détenait déjà 84% d'EDF. En 2022, il a racheté les 16% restants pour sortir l'entreprise de la Bourse, au prix de 12€/action. La nationalisation visait à donner à l'État les mains libres pour gérer la crise (ARENH, bouclier) et piloter le programme EPR2. EDF portait alors une dette de 65 Md€ et des pertes historiques liées au bouclier. L'action valait 35€ en 2017. Les petits actionnaires ont perdu 2/3 de leur mise.",
+      "amountBillions": 9.7,
+      "costPerCitizen": 143,
+      "deckId": "crise-energie",
+      "icon": "🏭",
+      "source": "Gouvernement, AMF, rapport parlementaire EDF",
+      "sourceUrl": null,
+      "level": 1,
+      "tags": [
+        "énergie",
+        "EDF",
+        "nationalisation"
+      ],
+      "trend": null
+    },
+    {
+      "id": "cre-05",
+      "title": "Relèvement de l'ARENH",
+      "subtitle": "EDF a vendu son électricité 5 à 10x moins cher que le marché, sur ordre de l'État",
+      "description": "En 2022, l'État a relevé le volume d'ARENH (accès régulé au nucléaire) de 100 à 120 TWh, forçant EDF à vendre 20 TWh de plus à prix cassé (42€/MWh) alors que le marché était à 200-400€/MWh. Perte sèche pour EDF, qui s'est retrouvée à subventionner indirectement ses propres concurrents. Le mécanisme ARENH a pris fin au 31 décembre 2025.",
+      "amountBillions": 8,
+      "costPerCitizen": 118,
+      "deckId": "crise-energie",
+      "icon": "⚛️",
+      "source": "CRE, EDF rapport annuel 2022, Cour des comptes",
+      "sourceUrl": null,
+      "level": 1,
+      "tags": [
+        "énergie",
+        "ARENH",
+        "nucléaire",
+        "EDF"
+      ],
+      "trend": null
+    },
+    {
+      "id": "cre-06",
+      "title": "Chèques énergie et aides ciblées",
+      "subtitle": "200€ de chèque énergie = environ 1 mois de chauffage pour un studio",
+      "description": "Les chèques énergie (100-200€) ont été distribués à 12 millions de ménages modestes fin 2022. S'y ajoutent les chèques fioul, bois, et l'aide au chauffage collectif. Mesures jugées plus justes socialement que le bouclier (qui aide tout le monde, riches et pauvres), mais insuffisantes pour les ménages les plus précaires. La précarité énergétique touche 5,2 millions de ménages en France.",
+      "amountBillions": 3,
+      "costPerCitizen": 44,
+      "deckId": "crise-energie",
+      "icon": "🎫",
+      "source": "ADEME, ONPE, vie-publique.fr",
+      "sourceUrl": "https://www.vie-publique.fr",
+      "level": 1,
+      "tags": [
+        "énergie",
+        "aide sociale",
+        "précarité"
+      ],
+      "trend": null
+    },
+    {
+      "id": "cre-07",
+      "title": "Aides aux entreprises énergivores",
+      "subtitle": "La France a dépensé 3x moins que l'Allemagne pour protéger ses entreprises",
+      "description": "Les entreprises grandes consommatrices d'énergie (industrie, boulangeries, serres, piscines publiques) ont bénéficié d'aides de guichet et d'un « amortisseur électricité » sur 50% de leur consommation. Le dispositif a été critiqué pour sa complexité administrative (dossiers indigestes) et sa lenteur de versement. Certaines PME ont fait faillite avant de recevoir l'aide. L'industrie française reste plus exposée que l'allemande (qui a déployé 200 Md€).",
+      "amountBillions": 7,
+      "costPerCitizen": 103,
+      "deckId": "crise-energie",
+      "icon": "🏗️",
+      "source": "Cour des comptes rapport énergie, vie-publique.fr",
+      "sourceUrl": "https://www.vie-publique.fr",
+      "level": 1,
+      "tags": [
+        "énergie",
+        "entreprises",
+        "industrie"
+      ],
+      "trend": null
+    },
+    {
+      "id": "cre-08",
+      "title": "Recettes ENR (l'argent que la crise a rapporté)",
+      "subtitle": "Les éoliennes ont remboursé l'équivalent de 2 ans de chèques énergie",
+      "description": "Paradoxe de la crise : quand les prix du marché dépassent le prix garanti aux opérateurs ENR, ce sont eux qui reversent la différence à l'État. En 2023, l'éolien terrestre a rapporté 3,4 Md€ au budget. Autrement dit, une partie du coût du bouclier a été financée par les énergies renouvelables — un argument rarement mentionné dans le débat public. En 2024-2025, les prix redescendant, les ENR redeviennent un coût net.",
+      "amountBillions": 5.9,
+      "costPerCitizen": 87,
+      "deckId": "crise-energie",
+      "icon": "🌬️",
+      "source": "CRE délibération juil. 2024, RTE",
+      "sourceUrl": null,
+      "level": 1,
+      "tags": [
+        "énergie",
+        "renouvelables",
+        "recettes"
+      ],
+      "trend": null
+    },
+    {
+      "id": "cre-09",
+      "title": "Facture d'importation de gaz et pétrole",
+      "subtitle": "La France envoie chaque année l'équivalent du budget de l'Éducation nationale à l'étranger pour ses hydrocarbures",
+      "description": "La France importe 98% de son pétrole et 100% de son gaz. La flambée des prix en 2022 a doublé la facture énergétique nationale. Chaque hausse de 10$/baril coûte ~5 Md€ à la balance commerciale française. La diversification post-Russie (GNL américain, norvégien, qatari) a réduit la dépendance à Moscou de 17% à <5% des importations de gaz. Le terminal GNL du Havre a été construit en urgence en 6 mois.",
+      "amountBillions": 90,
+      "costPerCitizen": 1324,
+      "deckId": "crise-energie",
+      "icon": "🛢️",
+      "source": "Douanes françaises, DGEC, bilan énergétique 2023",
+      "sourceUrl": null,
+      "level": 1,
+      "tags": [
+        "énergie",
+        "importations",
+        "hydrocarbures"
+      ],
+      "trend": null
+    },
+    {
+      "id": "cre-10",
+      "title": "Coût total de la crise énergétique",
+      "subtitle": "85 Md€ = la moitié de la charge annuelle de la dette publique",
+      "description": "En cumulant bouclier tarifaire, remises carburant, chèques énergie, aides entreprises, surcoûts ARENH absorbés par EDF et mesures connexes, la Cour des comptes estime le coût total des aides à la consommation d'énergie à environ 85 Md€. C'est plus que le plan de relance COVID (100 Md€ mais sur 2 ans et incluant des investissements productifs). La sortie du bouclier en février 2025 ne signifie pas la fin des coûts : la dette générée pèsera pendant des décennies.",
+      "amountBillions": 85,
+      "costPerCitizen": 1250,
+      "deckId": "crise-energie",
+      "icon": "📊",
+      "source": "Cour des comptes (mars 2024), vie-publique.fr, Banque de France",
+      "sourceUrl": "https://www.vie-publique.fr",
+      "level": 1,
+      "tags": [
+        "énergie",
+        "bilan",
+        "crise"
+      ],
+      "trend": null
+    },
+    {
+      "id": "hop-01",
+      "title": "Budget global de l'hôpital public",
+      "subtitle": "Chaque Français dépense 135€/mois pour l'hôpital public, soit un abonnement Netflix x 10",
+      "description": "Le budget cumulé des ~1 300 hôpitaux publics français dépasse 110 Md€. Malgré ce montant considérable, le secteur affiche un déficit structurel de ~3,5 Md€ en 2024. La France dépense autant que l'Allemagne par habitant pour ses hôpitaux, mais avec 30% de lits en moins. Le budget a augmenté de 20% depuis le Ségur de la Santé (2020), sans résoudre les problèmes d'attractivité ni de vétusté.",
+      "amountBillions": 110,
+      "costPerCitizen": 1618,
+      "deckId": "hopital",
+      "icon": "🏥",
+      "source": "DREES, DGOS, Cour des comptes rapport hospitalier",
+      "sourceUrl": null,
+      "level": 1,
+      "tags": [
+        "santé",
+        "hôpital",
+        "budget"
+      ],
+      "trend": null
+    },
+    {
+      "id": "hop-02",
+      "title": "Masse salariale hospitalière",
+      "subtitle": "Un infirmier hospitalier gagne ~2 100€ nets/mois (après Ségur), vs ~2 800€ dans le privé",
+      "description": "L'hôpital emploie ~1,2 million d'agents (dont ~300 000 infirmiers, ~120 000 médecins). Le Ségur de la Santé a revalorisé les salaires de 183€ nets/mois pour les soignants (+9 Md€/an). Malgré cela, 30% des postes infirmiers sont vacants dans certains services. Le turnover s'accélère : les jeunes soignants quittent l'hôpital en moyenne après 5 ans. L'intérim médical, plafonné à 1 390€/jour, reste massif.",
+      "amountBillions": 65,
+      "costPerCitizen": 956,
+      "deckId": "hopital",
+      "icon": "👩‍⚕️",
+      "source": "DGOS, Cour des comptes, FHF",
+      "sourceUrl": null,
+      "level": 1,
+      "tags": [
+        "santé",
+        "hôpital",
+        "salaires"
+      ],
+      "trend": null
+    },
+    {
+      "id": "hop-03",
+      "title": "Tarification à l'activité (T2A)",
+      "subtitle": "Une appendicectomie est remboursée ~2 500€ à l'hôpital, quel que soit le temps réel passé",
+      "description": "La T2A finance l'hôpital « à l'acte » : chaque séjour, consultation ou intervention est rémunérée selon un tarif national. Critiquée pour inciter à la « course à l'acte » au détriment de la qualité, de la prévention et des pathologies chroniques. La réforme en cours vise à introduire 50% de financement « à la qualité et à la pertinence » d'ici 2028. Les urgences, non rentables en T2A, sont les premières victimes du système.",
+      "amountBillions": 60,
+      "costPerCitizen": 882,
+      "deckId": "hopital",
+      "icon": "🏷️",
+      "source": "Sénat, IGAS rapport T2A, FHF",
+      "sourceUrl": null,
+      "level": 1,
+      "tags": [
+        "santé",
+        "hôpital",
+        "T2A",
+        "financement"
+      ],
+      "trend": null
+    },
+    {
+      "id": "hop-04",
+      "title": "Urgences hospitalières",
+      "subtitle": "Un passage aux urgences coûte ~240€ en moyenne, vs ~25€ chez le généraliste",
+      "description": "21 millions de passages aux urgences par an en France (~1 passage pour 3 habitants). 40% des passages sont considérés comme « non pertinents » (relèveraient de la médecine de ville). Le temps d'attente moyen dépasse 4h dans les grands CHU. En été 2023 et 2024, de nombreux services ont fonctionné en mode dégradé (fermetures nocturnes, régulations SAMU). Le service d'accès aux soins (SAS) et les maisons médicales de garde peinent à réduire l'afflux.",
+      "amountBillions": 5,
+      "costPerCitizen": 74,
+      "deckId": "hopital",
+      "icon": "🚑",
+      "source": "DREES, SFMU, Cour des comptes",
+      "sourceUrl": null,
+      "level": 1,
+      "tags": [
+        "santé",
+        "urgences",
+        "hôpital"
+      ],
+      "trend": null
+    },
+    {
+      "id": "hop-05",
+      "title": "Dette hospitalière et investissement",
+      "subtitle": "La dette de l'hôpital = 3x le budget annuel du ministère de la Justice",
+      "description": "La dette des hôpitaux publics dépasse 30 Md€. L'investissement courant (maintenance, équipements) est en retard chronique : 20% des bâtiments hospitaliers ont plus de 50 ans. Le plan « investissement santé » post-COVID a promis 19 Md€ sur 10 ans (dont 9 Md€ d'État), mais les décaissements sont lents. L'hôpital de demain (numérique, ambulatoire, virage domicile) nécessite 10 Md€/an selon la FHF.",
+      "amountBillions": 30,
+      "costPerCitizen": 441,
+      "deckId": "hopital",
+      "icon": "🏗️",
+      "source": "FHF, Cour des comptes, DGOS",
+      "sourceUrl": null,
+      "level": 1,
+      "tags": [
+        "santé",
+        "hôpital",
+        "dette",
+        "investissement"
+      ],
+      "trend": null
+    },
+    {
+      "id": "hop-06",
+      "title": "Psychiatrie et santé mentale",
+      "subtitle": "Un lit de psychiatrie coûte ~350€/jour, mais le manque de suivi ambulatoire génère des hospitalisations évitables",
+      "description": "La psychiatrie hospitalière est le parent pauvre : 60 000 lits (divisé par 2 en 30 ans), 30% de postes de psychiatres vacants à l'hôpital, délai moyen de 6 mois pour un premier RDV en CMP. Les urgences psychiatriques explosent (+25% chez les 15-24 ans depuis le COVID). L'internement sous contrainte concerne ~90 000 personnes/an. La France a 2x moins de psychiatres par habitant que la Suisse ou le Danemark.",
+      "amountBillions": 10,
+      "costPerCitizen": 147,
+      "deckId": "hopital",
+      "icon": "🧠",
+      "source": "DREES, ARS, Cour des comptes rapport psychiatrie",
+      "sourceUrl": null,
+      "level": 1,
+      "tags": [
+        "santé",
+        "psychiatrie",
+        "santé mentale"
+      ],
+      "trend": null
+    },
+    {
+      "id": "hop-07",
+      "title": "Hôpitaux de proximité",
+      "subtitle": "Un hôpital de proximité coûte ~27 M€/an pour desservir ~30 000 habitants",
+      "description": "Les 150 hôpitaux de proximité (ex-hôpitaux locaux) assurent la médecine polyvalente, les soins de suite et la gériatrie dans les zones rurales. Ils n'ont pas de chirurgie ni de maternité. Leur financement a été sécurisé par la loi « Ma santé 2022 ». Débat récurrent : faut-il maintenir des petits hôpitaux peu rentables pour le maillage territorial, ou concentrer les moyens sur les gros centres ? Chaque fermeture crée une tempête politique locale.",
+      "amountBillions": 4,
+      "costPerCitizen": 59,
+      "deckId": "hopital",
+      "icon": "🏘️",
+      "source": "DGOS, FHF, ARS",
+      "sourceUrl": null,
+      "level": 1,
+      "tags": [
+        "santé",
+        "hôpital",
+        "proximité",
+        "rural"
+      ],
+      "trend": null
+    },
+    {
+      "id": "hop-08",
+      "title": "CHU et hôpitaux universitaires",
+      "subtitle": "L'AP-HP = le PIB du Tchad (8 Md€), pour 10 millions de patients/an",
+      "description": "Les 32 CHU/CHR (dont AP-HP Paris, HCL Lyon, AP-HM Marseille) concentrent la recherche, la formation des médecins et les soins les plus complexes (greffes, cancérologie, grands brûlés). L'AP-HP seule pèse 8 Md€/an (plus gros employeur d'Île-de-France, 100 000 agents). Les CHU sont structurellement déficitaires car les tarifs T2A ne couvrent pas les surcoûts de la recherche et de l'enseignement. La réforme des CHU (rapport Claris 2020) est enlisée.",
+      "amountBillions": 45,
+      "costPerCitizen": 662,
+      "deckId": "hopital",
+      "icon": "🎓",
+      "source": "Conférence des DG de CHU, AP-HP, DGOS",
+      "sourceUrl": null,
+      "level": 1,
+      "tags": [
+        "santé",
+        "CHU",
+        "recherche",
+        "formation"
+      ],
+      "trend": null
+    },
+    {
+      "id": "hop-09",
+      "title": "Intérim médical et heures supplémentaires",
+      "subtitle": "1 médecin intérimaire coûte autant que 2-3 médecins titulaires",
+      "description": "Le recours à l'intérim médical explose depuis 2015 : certains hôpitaux dépensent 20% de leur masse salariale en intérimaires. Un médecin intérimaire peut gagner 1 390€/jour (plafond légal, souvent contourné). Les infirmiers intérimaires gagnent 2-3x plus que les titulaires. La loi Rist (2023) plafonne les rémunérations, mais les hôpitaux isolés n'ont pas d'alternative. Le marché de l'intérim médical pèse ~1,5 Md€ pour les seuls médecins.",
+      "amountBillions": 3.5,
+      "costPerCitizen": 51,
+      "deckId": "hopital",
+      "icon": "⏰",
+      "source": "IGAS, Cour des comptes, FHF rapport intérim",
+      "sourceUrl": null,
+      "level": 1,
+      "tags": [
+        "santé",
+        "intérim",
+        "hôpital"
+      ],
+      "trend": null
+    },
+    {
+      "id": "hop-10",
+      "title": "Le virage ambulatoire (économies potentielles)",
+      "subtitle": "Chaque point de chirurgie ambulatoire gagné = ~500 M€ d'économies",
+      "description": "Le virage ambulatoire (chirurgie en journée, hospitalisation à domicile, télémédecine) est la principale piste d'économies. Le taux de chirurgie ambulatoire est passé de 50% à 62% en 10 ans, mais reste inférieur au Danemark (85%). L'hospitalisation à domicile (HAD) coûte 3x moins qu'un lit d'hôpital. Si la France atteignait les standards scandinaves, 5-8 Md€ d'économies annuelles seraient possibles, réinvestissables dans la qualité des soins restants.",
+      "amountBillions": 6.5,
+      "costPerCitizen": 96,
+      "deckId": "hopital",
+      "icon": "🏠",
+      "source": "HAS, ANAP, Cour des comptes rapport ambulatoire",
+      "sourceUrl": null,
+      "level": 1,
+      "tags": [
+        "santé",
+        "ambulatoire",
+        "économies"
+      ],
+      "trend": null
+    },
+    {
+      "id": "fre-01",
+      "title": "Contribution française au budget de l'UE",
+      "subtitle": "Chaque Français paie ~1€/jour pour l'Union européenne",
+      "description": "La France est le 2e contributeur net au budget de l'UE. Sa contribution a augmenté de 50% depuis le Brexit (le Royaume-Uni payait ~10 Md€/an). Le budget annuel de l'UE est de ~170 Md€. La France verse environ 14% du total. La contribution est calculée sur la base du RNB (revenu national brut), un prélèvement TVA et des droits de douane. Le « solde net » (contribution moins retours) est négatif d'environ 8-10 Md€.",
+      "amountBillions": 23.5,
+      "costPerCitizen": 346,
+      "deckId": "france-europe",
+      "icon": "💶",
+      "source": "PLF 2026, prélèvement sur recettes UE, Commission européenne",
+      "sourceUrl": null,
+      "level": 1,
+      "tags": [
+        "Europe",
+        "contribution",
+        "budget UE"
+      ],
+      "trend": null
+    },
+    {
+      "id": "fre-02",
+      "title": "Retours de l'UE vers la France",
+      "subtitle": "La France reçoit 65 centimes pour chaque euro versé à l'UE",
+      "description": "La France reçoit ~9,3 Md€ de la PAC (1er bénéficiaire européen), ~3 Md€ des fonds structurels (FEDER, FSE), ~1 Md€ d'Horizon Europe (recherche) et des montants plus modestes pour Erasmus (~500 M€), LIFE (environnement), etc. Le solde net négatif (~8-10 Md€) est le « prix de l'adhésion ». La France bénéficie aussi d'effets indirects non comptabilisés : accès au marché unique (estimé à 3-5% du PIB), stabilité de l'euro, poids géopolitique.",
+      "amountBillions": 15,
+      "costPerCitizen": 221,
+      "deckId": "france-europe",
+      "icon": "🔄",
+      "source": "Commission européenne, Toute l'Europe, PLF 2026",
+      "sourceUrl": null,
+      "level": 1,
+      "tags": [
+        "Europe",
+        "retours",
+        "PAC",
+        "fonds structurels"
+      ],
+      "trend": null
+    },
+    {
+      "id": "fre-03",
+      "title": "Plan de relance européen (NextGenerationEU)",
+      "subtitle": "La France reçoit plus de NextGenerationEU que ce que coûte son budget Justice en 4 ans",
+      "description": "NextGenerationEU est un emprunt commun inédit de 750 Md€. La France reçoit 40,3 Md€ en subventions (4e bénéficiaire). L'argent finance la rénovation énergétique, le numérique, la santé, les transports. C'est la première dette commune européenne — un tabou brisé par le COVID. Le remboursement (2028-2058) sera assuré par de nouvelles ressources propres de l'UE (taxe carbone aux frontières, taxe GAFAM). Les eurosceptiques y voient un engrenage fédéraliste.",
+      "amountBillions": 40.3,
+      "costPerCitizen": 593,
+      "deckId": "france-europe",
+      "icon": "🚀",
+      "source": "Commission européenne, France Relance, Cour des comptes européenne",
+      "sourceUrl": null,
+      "level": 1,
+      "tags": [
+        "Europe",
+        "relance",
+        "NextGenerationEU"
+      ],
+      "trend": null
+    },
+    {
+      "id": "fre-04",
+      "title": "Facilité européenne pour la paix (FEP)",
+      "subtitle": "La contribution française à la FEP = le budget annuel de l'aide juridictionnelle",
+      "description": "La FEP, créée en 2021, est devenue le principal mécanisme de financement des livraisons d'armes à l'Ukraine par les États membres de l'UE. Hors budget officiel de l'UE (car les traités interdisent les dépenses militaires), elle est financée directement par les capitales. La France est le 2e contributeur. La FEP a été réabondée 5 fois depuis 2022. Son extension au-delà de l'Ukraine fait débat.",
+      "amountBillions": 7.2,
+      "costPerCitizen": 21,
+      "deckId": "france-europe",
+      "icon": "🕊️",
+      "source": "Conseil de l'UE, Ministère des Armées",
+      "sourceUrl": null,
+      "level": 1,
+      "tags": [
+        "Europe",
+        "défense",
+        "Ukraine",
+        "FEP"
+      ],
+      "trend": null
+    },
+    {
+      "id": "fre-05",
+      "title": "Erasmus+",
+      "subtitle": "6€/an par Français pour 600 000 échanges étudiants/an en Europe",
+      "description": "Erasmus+ finance la mobilité de ~600 000 Européens/an (étudiants, apprentis, enseignants). La France est le 1er pays d'envoi et le 2e pays d'accueil. 20% des étudiants Erasmus restent dans le pays d'accueil après leurs études. Le programme a un taux de satisfaction de 98%. Budget doublé pour 2021-2027 (26,2 Md€ sur 7 ans). Critique : Erasmus profite surtout aux classes moyennes-supérieures, malgré les bourses complémentaires pour les étudiants modestes.",
+      "amountBillions": 4.3,
+      "costPerCitizen": 6,
+      "deckId": "france-europe",
+      "icon": "🎓",
+      "source": "Agence Erasmus+ France, Commission européenne",
+      "sourceUrl": null,
+      "level": 1,
+      "tags": [
+        "Europe",
+        "éducation",
+        "Erasmus",
+        "mobilité"
+      ],
+      "trend": null
+    },
+    {
+      "id": "fre-06",
+      "title": "Frontex et contrôle des frontières",
+      "subtitle": "Le budget Frontex = le prix de 2 heures d'opérations militaires françaises par jour",
+      "description": "Frontex est l'agence européenne de garde-frontières. Son budget a été multiplié par 10 en 10 ans. L'objectif : 10 000 agents permanents d'ici 2027. La France déploie environ 150-200 agents Frontex sur les frontières extérieures de l'UE. L'agence a été critiquée pour des refoulements (pushbacks) illégaux en Méditerranée et en mer Égée. Le nouveau Pacte migratoire (2026) renforce son rôle dans la procédure de filtrage aux frontières.",
+      "amountBillions": 0.95,
+      "costPerCitizen": 1,
+      "deckId": "france-europe",
+      "icon": "🛂",
+      "source": "Frontex, Commission européenne, Cour des comptes européenne",
+      "sourceUrl": null,
+      "level": 1,
+      "tags": [
+        "Europe",
+        "frontières",
+        "immigration",
+        "Frontex"
+      ],
+      "trend": null
+    },
+    {
+      "id": "fre-07",
+      "title": "Galileo (GPS européen)",
+      "subtitle": "Galileo est utilisé chaque jour par 3,5 milliards d'appareils dans le monde",
+      "description": "Galileo est le système de navigation par satellite européen, concurrent du GPS américain, du GLONASS russe et du BeiDou chinois. Opérationnel depuis 2016, il offre une précision de 20 cm (vs 3-5 m pour le GPS civil). 3,5 milliards de smartphones utilisent Galileo. L'indépendance de positionnement est un enjeu de souveraineté (le GPS peut être dégradé ou coupé par les États-Unis). Les satellites de 2e génération sont en cours de déploiement.",
+      "amountBillions": 1.6,
+      "costPerCitizen": 5,
+      "deckId": "france-europe",
+      "icon": "🛰️",
+      "source": "CNES, ESA, Commission européenne programme spatial",
+      "sourceUrl": null,
+      "level": 1,
+      "tags": [
+        "Europe",
+        "spatial",
+        "souveraineté",
+        "Galileo"
+      ],
+      "trend": null
+    },
+    {
+      "id": "fre-08",
+      "title": "Politique agricole commune (PAC)",
+      "subtitle": "Sans la PAC, le prix du panier de courses augmenterait de ~5-10%",
+      "description": "La PAC représente ~31% du budget de l'UE (en baisse : c'était 70% en 1980). La France en est le 1er bénéficiaire en volume mais pas par hectare (les aides sont plus élevées en Grèce ou aux Pays-Bas). Débat européen permanent : faut-il continuer à subventionner l'agriculture intensive ou réorienter vers l'agroécologie ? La PAC post-2027 est en négociation, avec une pression forte pour réduire son poids.",
+      "amountBillions": 53,
+      "costPerCitizen": 78,
+      "deckId": "france-europe",
+      "icon": "🌾",
+      "source": "Commission européenne, Sénat, Toute l'Europe",
+      "sourceUrl": null,
+      "level": 1,
+      "tags": [
+        "Europe",
+        "agriculture",
+        "PAC"
+      ],
+      "trend": null
+    },
+    {
+      "id": "fre-09",
+      "title": "Mécanisme d'ajustement carbone aux frontières (MACF)",
+      "subtitle": "Le MACF pourrait devenir la 1re ressource propre de l'UE",
+      "description": "Le MACF (« taxe carbone aux frontières ») entre en phase transitoire en 2026 et pleine application en 2027. Il taxe les importations de produits à forte empreinte carbone (acier, ciment, aluminium, engrais, électricité, hydrogène) provenant de pays sans prix du carbone équivalent. Objectif : empêcher les « fuites de carbone » (délocalisation industrielle vers des pays moins exigeants). Première taxe environnementale mondiale de cette ampleur. Critiqué par la Chine, l'Inde et les pays émergents.",
+      "amountBillions": 11.5,
+      "costPerCitizen": 15,
+      "deckId": "france-europe",
+      "icon": "🌍",
+      "source": "Commission européenne, Conseil de l'UE, Parlement européen",
+      "sourceUrl": null,
+      "level": 1,
+      "tags": [
+        "Europe",
+        "environnement",
+        "carbone",
+        "MACF"
+      ],
+      "trend": null
+    },
+    {
+      "id": "fre-10",
+      "title": "Coût du Brexit pour la France et l'UE",
+      "subtitle": "Le Brexit coûte à chaque Français l'équivalent d'un abonnement de streaming par mois",
+      "description": "Le départ du Royaume-Uni (2020) a privé l'UE de son 2e contributeur net. Les 27 restants ont dû combler le trou : la contribution française a augmenté de ~4-5 Md€/an. Côté britannique, le Brexit a coûté 4% de PIB selon le FMI. Les échanges commerciaux franco-britanniques ont baissé de 15-20% (barrières douanières). La pêche française a perdu 25% de ses quotas dans les eaux britanniques. La City reste dominante en finance, mais Amsterdam et Paris gagnent du terrain.",
+      "amountBillions": 13.5,
+      "costPerCitizen": 35,
+      "deckId": "france-europe",
+      "icon": "🇬🇧",
+      "source": "Commission européenne, FMI, Trésor français",
+      "sourceUrl": null,
+      "level": 1,
+      "tags": [
+        "Europe",
+        "Brexit",
+        "commerce"
+      ],
+      "trend": null
+    },
+    {
+      "id": "ret-01",
+      "title": "Régime général (salariés du privé)",
+      "subtitle": "Pour 1 retraité du privé, 1,7 actif cotise (contre 4 en 1960)",
+      "description": "Le régime général couvre ~18 millions de retraités du privé. La pension moyenne de base CNAV est de ~750€/mois, complétée par l'Agirc-Arrco (~700€/mois en moyenne). Le système est financé par les cotisations (salarié + employeur = ~28% du salaire brut). Avec le baby-boom partant à la retraite, le ratio actifs/retraités passe de 2,1 à 1,7 en 2030.",
+      "amountBillions": 140,
+      "costPerCitizen": 2059,
+      "deckId": "retraites",
+      "icon": "👷",
+      "source": "CNAV, Agirc-Arrco, COR",
+      "sourceUrl": null,
+      "level": 1,
+      "tags": [
+        "retraites",
+        "régime général",
+        "privé"
+      ],
+      "trend": null
+    },
+    {
+      "id": "ret-02",
+      "title": "Agirc-Arrco (complémentaire, excédentaire)",
+      "subtitle": "Les réserves Agirc-Arrco (70 Md€) = le budget du ministère de l'Éducation nationale",
+      "description": "Fait rare dans le paysage des retraites : l'Agirc-Arrco est excédentaire. Ses réserves dépassent 70 Md€. C'est un régime paritaire (géré par les syndicats et le patronat, pas par l'État). L'État a tenté en 2023 de ponctionner les réserves pour financer d'autres régimes, provoquant un bras de fer avec les partenaires sociaux. La sous-indexation des pensions Agirc-Arrco (-0,4 point vs inflation) a été décidée en 2023 pour préserver les réserves.",
+      "amountBillions": 90,
+      "costPerCitizen": 1324,
+      "deckId": "retraites",
+      "icon": "📈",
+      "source": "Agirc-Arrco rapport annuel 2024, COR",
+      "sourceUrl": null,
+      "level": 1,
+      "tags": [
+        "retraites",
+        "Agirc-Arrco",
+        "complémentaire"
+      ],
+      "trend": null
+    },
+    {
+      "id": "ret-03",
+      "title": "Retraites des fonctionnaires d'État",
+      "subtitle": "La pension moyenne d'un fonctionnaire d'État = ~2 200€/mois brut (vs ~1 500€ régime général)",
+      "description": "Les fonctionnaires d'État ont un régime spécifique : pension calculée sur les 6 derniers mois de traitement (vs 25 meilleures années dans le privé). Le taux de cotisation « employeur » de l'État est de ~74% (vs ~17% dans le privé), mais c'est un jeu d'écriture comptable (l'État se paye à lui-même). La réforme des retraites n'a pas unifié les modes de calcul. Les militaires partent en moyenne à 48 ans, les enseignants à 62 ans.",
+      "amountBillions": 57,
+      "costPerCitizen": 838,
+      "deckId": "retraites",
+      "icon": "🏛️",
+      "source": "CAS Pensions, DGAFP, COR",
+      "sourceUrl": null,
+      "level": 1,
+      "tags": [
+        "retraites",
+        "fonctionnaires",
+        "État"
+      ],
+      "trend": null
+    },
+    {
+      "id": "ret-04",
+      "title": "Régimes spéciaux (SNCF, RATP, EDF, Opéra...)",
+      "subtitle": "L'État subventionne ~75% des pensions SNCF/RATP (les cotisants ne financent que 25%)",
+      "description": "Les régimes spéciaux (SNCF, RATP, industries électriques/gazières, Banque de France, Opéra de Paris, Comédie-Française, marins, mineurs...) sont fermés aux nouveaux entrants depuis la réforme 2023, mais les droits acquis perdurent 40+ ans. Le ratio cotisants/retraités est catastrophique dans certains régimes (1 pour 3 aux mines). L'État verse une subvention d'équilibre de ~7 Md€/an. Un retraité de la RATP perçoit en moyenne ~2 800€/mois.",
+      "amountBillions": 9,
+      "costPerCitizen": 132,
+      "deckId": "retraites",
+      "icon": "🚂",
+      "source": "COR, Cour des comptes rapport régimes spéciaux, PLF 2026",
+      "sourceUrl": null,
+      "level": 1,
+      "tags": [
+        "retraites",
+        "régimes spéciaux",
+        "SNCF",
+        "RATP"
+      ],
+      "trend": null
+    },
+    {
+      "id": "ret-05",
+      "title": "Minimum vieillesse (ASPA)",
+      "subtitle": "300 000 retraités éligibles ne demandent pas l'ASPA, par méconnaissance ou peur de la récupération sur succession",
+      "description": "L'Allocation de Solidarité aux Personnes Âgées (ASPA, ex-minimum vieillesse) garantit un revenu minimum de 1 012€/mois pour une personne seule de 65+ ans. Environ 600 000 bénéficiaires. Particularité : l'ASPA est récupérable sur succession (si patrimoine > 100 000€), ce qui dissuade de nombreux ayants droit. Le taux de non-recours est estimé à 50% — la moitié des personnes éligibles ne la demandent pas.",
+      "amountBillions": 4,
+      "costPerCitizen": 59,
+      "deckId": "retraites",
+      "icon": "👴",
+      "source": "DREES, CNAV, Fondation Abbé Pierre",
+      "sourceUrl": null,
+      "level": 1,
+      "tags": [
+        "retraites",
+        "minimum vieillesse",
+        "ASPA",
+        "solidarité"
+      ],
+      "trend": null
+    },
+    {
+      "id": "ret-06",
+      "title": "Réforme des retraites 2023 (report à 64 ans)",
+      "subtitle": "18 Md€ d'économies sur 7 ans = moins d'1 an de charge de la dette",
+      "description": "La réforme reportant l'âge légal de 62 à 64 ans et accélérant l'allongement de la durée de cotisation (43 annuités) a été adoptée au 49.3 en mars 2023. Les économies attendues (18 Md€ sur 2023-2030) sont revues à la baisse par le COR. La réforme a été « suspendue » (gel de l'application de certaines mesures) en 2026-2027 dans le cadre de négociations entre les partenaires sociaux. 67% des Français restent opposés à cette réforme selon les sondages.",
+      "amountBillions": 18,
+      "costPerCitizen": 265,
+      "deckId": "retraites",
+      "icon": "📜",
+      "source": "COR projections 2024, Sénat, DREES",
+      "sourceUrl": null,
+      "level": 1,
+      "tags": [
+        "retraites",
+        "réforme",
+        "âge légal"
+      ],
+      "trend": null
+    },
+    {
+      "id": "ret-07",
+      "title": "Pénibilité et départs anticipés",
+      "subtitle": "Un ouvrier vit en moyenne 6 ans de moins qu'un cadre, mais part seulement 2 ans plus tôt",
+      "description": "25% des départs à la retraite se font de manière anticipée (avant l'âge légal) : carrières longues (début avant 20 ans), pénibilité (C2P, exposition à des facteurs de risque), handicap, inaptitude. Le Compte professionnel de prévention (C2P) a été jugé inefficace : seuls 3 000 salariés/an l'utilisent pour partir plus tôt. Les critères de pénibilité ont été réduits en 2017 (suppression de 4 facteurs sur 10). Les métiers physiques (BTP, aide-soignants) sont les plus pénalisés.",
+      "amountBillions": 3,
+      "costPerCitizen": 44,
+      "deckId": "retraites",
+      "icon": "⛏️",
+      "source": "DREES, CNAV, COR",
+      "sourceUrl": null,
+      "level": 1,
+      "tags": [
+        "retraites",
+        "pénibilité",
+        "carrières longues"
+      ],
+      "trend": null
+    },
+    {
+      "id": "ret-08",
+      "title": "Réversion (pension de survie)",
+      "subtitle": "La réversion moyenne = ~600€/mois, souvent insuffisante pour une veuve âgée",
+      "description": "La pension de réversion (54% de la pension du conjoint décédé dans le régime général, 60% en complémentaire) concerne 4,3 millions de bénéficiaires, à 88% des femmes. Conditions : avoir été marié (pas pacsé), et sous condition de ressources au régime général. Les réversions représentent 10% des dépenses de retraite. Débat : faut-il ouvrir la réversion aux pacsés ? Faut-il l'augmenter (54% est faible vs 70% en Italie) ou la réduire ?",
+      "amountBillions": 37,
+      "costPerCitizen": 544,
+      "deckId": "retraites",
+      "icon": "💍",
+      "source": "DREES, COR, CNAV",
+      "sourceUrl": null,
+      "level": 1,
+      "tags": [
+        "retraites",
+        "réversion",
+        "veuvage"
+      ],
+      "trend": null
+    },
+    {
+      "id": "ret-09",
+      "title": "Retraite des indépendants et agriculteurs",
+      "subtitle": "Un agriculteur retraité gagne moitié moins qu'un fonctionnaire retraité",
+      "description": "Les travailleurs indépendants (artisans, commerçants) et agriculteurs ont les retraites les plus faibles : pension moyenne de ~780€/mois pour les indépendants, ~730€/mois pour les agriculteurs (bien en dessous du seuil de pauvreté). La retraite agricole a été revalorisée à 85% du SMIC en 2021 pour les carrières complètes, mais beaucoup ont des carrières incomplètes. Les cotisations des indépendants sont plus basses (pas de part « employeur »), d'où des pensions plus faibles.",
+      "amountBillions": 18,
+      "costPerCitizen": 265,
+      "deckId": "retraites",
+      "icon": "🌾",
+      "source": "MSA, SSI, DREES, COR",
+      "sourceUrl": null,
+      "level": 1,
+      "tags": [
+        "retraites",
+        "indépendants",
+        "agriculteurs"
+      ],
+      "trend": null
+    },
+    {
+      "id": "ret-10",
+      "title": "Comparaison internationale",
+      "subtitle": "Un Français passe ~42% de sa vie adulte au travail et ~33% à la retraite",
+      "description": "La France consacre 13,1% de son PIB aux retraites, record mondial (Italie : 15,7% mais en baisse, Allemagne : 10,3%, Suède : 7,5%, USA : 6,8%). L'âge effectif moyen de départ est de 62,5 ans (OCDE : 64,3 ans). Les Français passent en moyenne 27 ans à la retraite (espérance de vie à 62 ans) vs 22 ans dans l'OCDE. Le taux de remplacement (pension/salaire) est de ~74% (OCDE : ~58%). Le système français offre les retraites les plus généreuses du monde développé, mais pose un problème de soutenabilité.",
+      "amountBillions": 370,
+      "costPerCitizen": 5441,
+      "deckId": "retraites",
+      "icon": "🌐",
+      "source": "OCDE Pensions at a Glance 2025, COR, Eurostat",
+      "sourceUrl": null,
+      "level": 1,
+      "tags": [
+        "retraites",
+        "comparaison",
+        "OCDE",
+        "international"
+      ],
+      "trend": null
+    },
+    {
+      "id": "zom-01",
+      "title": "France Compétences (le trou noir de la formation)",
+      "subtitle": "Le déficit de France Compétences = 2x le budget du ministère de la Culture",
+      "description": "France Compétences, l'opérateur qui régule la formation professionnelle et l'apprentissage, a accumulé un déficit abyssal : jusqu'à 6 Md€ de trou en une seule année (2022). Cause : le succès incontrôlé du CPF et de l'apprentissage a généré des dépenses bien supérieures aux recettes. L'État a dû reprendre une partie de la dette. Paradoxe : la formation professionnelle est « réformée » tous les 5 ans depuis 1971, et personne ne comprend jamais le système.",
+      "amountBillions": 14,
+      "costPerCitizen": 206,
+      "deckId": "zombies",
+      "icon": "🕳️",
+      "source": "Cour des comptes, France Compétences rapport, PLF 2026",
+      "sourceUrl": null,
+      "level": 1,
+      "tags": [
+        "zombie",
+        "formation",
+        "CPF",
+        "déficit"
+      ],
+      "trend": null
+    },
+    {
+      "id": "zom-02",
+      "title": "Aides COVID encore en remboursement",
+      "subtitle": "Les PGE = un prêt de 200 000€ en moyenne par entreprise, garanti par vous",
+      "description": "Le dispositif de Prêts Garantis par l'État (PGE), lancé en urgence en mars 2020, a distribué 145 Md€ à 700 000 entreprises. La plupart remboursent sur 6 ans (jusqu'en 2026-2027). Le taux de défaut final est estimé à 5-7%, soit ~7-10 Md€ de pertes pour l'État. Certaines entreprises « zombies » n'ont survécu que grâce au PGE et font faillite au moment du remboursement. Le dispositif « sortie de crise » ferme fin 2026.",
+      "amountBillions": 17.5,
+      "costPerCitizen": 40,
+      "deckId": "zombies",
+      "icon": "🧟",
+      "source": "BPI France, Banque de France, Cour des comptes rapport PGE",
+      "sourceUrl": null,
+      "level": 1,
+      "tags": [
+        "zombie",
+        "COVID",
+        "PGE",
+        "dette"
+      ],
+      "trend": null
+    },
+    {
+      "id": "zom-03",
+      "title": "L'ARENH (mort mais ses effets perdurent)",
+      "subtitle": "EDF a vendu son électricité à perte pendant 15 ans sur ordre de l'État",
+      "description": "L'ARENH (Accès Régulé à l'Électricité Nucléaire Historique) obligeait EDF à vendre 25% de sa production nucléaire à 42€/MWh à ses concurrents. Créé en 2010 pour « favoriser la concurrence », il a surtout subventionné les fournisseurs alternatifs et affaibli EDF. En 2022, le prix du marché était 10x supérieur au prix ARENH. Le mécanisme a pris fin le 31/12/2025 mais ses effets (dette EDF, retard d'investissement) se feront sentir 20 ans. Un zombie budgétaire au sens propre.",
+      "amountBillions": 8,
+      "costPerCitizen": 118,
+      "deckId": "zombies",
+      "icon": "⚡",
+      "source": "CRE, Cour des comptes, EDF",
+      "sourceUrl": null,
+      "level": 1,
+      "tags": [
+        "zombie",
+        "ARENH",
+        "énergie",
+        "EDF"
+      ],
+      "trend": null
+    },
+    {
+      "id": "zom-04",
+      "title": "Fonds de garantie des victimes",
+      "subtitle": "20+ fonds d'indemnisation là où 3-4 suffiraient",
+      "description": "Il existe en France plus d'une vingtaine de fonds d'indemnisation spécialisés : FGAO (accidents auto), FGTI (terrorisme), FIVA (amiante), ONIAM (accidents médicaux), fonds nucléaire, fonds mines, etc. Chacun a sa propre gouvernance, son conseil d'administration, ses locaux. La Cour des comptes recommande régulièrement des fusions, mais chaque fonds a ses défenseurs. Certains indemnisent moins de 100 personnes/an avec des frais de gestion de plusieurs millions.",
+      "amountBillions": 0.5,
+      "costPerCitizen": 7,
+      "deckId": "zombies",
+      "icon": "🏦",
+      "source": "Cour des comptes, IGAS, PLF annexe opérateurs",
+      "sourceUrl": null,
+      "level": 1,
+      "tags": [
+        "zombie",
+        "indemnisation",
+        "mille-feuille"
+      ],
+      "trend": null
+    },
+    {
+      "id": "zom-05",
+      "title": "Taxe d'habitation (morte mais pas enterrée)",
+      "subtitle": "La suppression a été compensée à l'euro près — le contribuable paie toujours, mais autrement",
+      "description": "La suppression de la taxe d'habitation (2018-2023, promesse Macron) a coûté 23 Md€/an au budget de l'État, compensés par le transfert de parts de TVA aux communes. Le ménage ne la paye plus directement, mais la paie via d'autres impôts. La taxe foncière, elle, a explosé pour compenser (communes). Résultat net : un simple transfert de charge, pas une vraie baisse d'impôts. Les propriétaires paient plus, les locataires paient moins directement. Les résidences secondaires restent assujetties.",
+      "amountBillions": 23,
+      "costPerCitizen": 338,
+      "deckId": "zombies",
+      "icon": "🏠",
+      "source": "DGCL, DGFiP, Cour des comptes",
+      "sourceUrl": null,
+      "level": 1,
+      "tags": [
+        "zombie",
+        "fiscalité",
+        "taxe d'habitation"
+      ],
+      "trend": null
+    },
+    {
+      "id": "zom-06",
+      "title": "CESE (Conseil économique, social et environnemental)",
+      "subtitle": "45 M€ = le prix de 3 écoles neuves par an",
+      "description": "Le CESE, 3e chambre constitutionnelle, produit des avis consultatifs non contraignants. Ses 175 membres (mandatés par les syndicats, patronat, associations) sont rémunérés ~4 000€/mois. Réformé en 2021 pour intégrer les Conventions citoyennes, il reste largement méconnu du public. Aucun de ses avis n'a jamais été cité dans un débat parlementaire majeur ces dernières années. Coût faible, mais symbole d'une institution dont la valeur ajoutée est discutée.",
+      "amountBillions": 0.045,
+      "costPerCitizen": 1,
+      "deckId": "zombies",
+      "icon": "🏛️",
+      "source": "PLF 2026, CESE rapport d'activité, Cour des comptes",
+      "sourceUrl": null,
+      "level": 1,
+      "tags": [
+        "zombie",
+        "institution",
+        "CESE"
+      ],
+      "trend": null
+    },
+    {
+      "id": "zom-07",
+      "title": "Opérateurs de l'État (le mille-feuille)",
+      "subtitle": "438 opérateurs = plus que le nombre de députés (577) — chacun avec son DG, son CA et ses locaux",
+      "description": "L'État finance 438 « opérateurs » : agences, offices, instituts, autorités, centres. Certains comptent 20 000 agents (Pôle Emploi/France Travail), d'autres moins de 10. La Cour des comptes identifie régulièrement des doublons, chevauchements de missions et frais de structure disproportionnés. Exemples : l'ADEME et l'OFB sur l'environnement, l'ANCT et l'ANRU sur les territoires, le CEREMA et l'IGN sur la géographie. Chaque tentative de fusion échoue face aux résistances corporatistes.",
+      "amountBillions": 80,
+      "costPerCitizen": 1176,
+      "deckId": "zombies",
+      "icon": "🗂️",
+      "source": "PLF 2026 annexe opérateurs, Cour des comptes, Fondation IFRAP",
+      "sourceUrl": null,
+      "level": 1,
+      "tags": [
+        "zombie",
+        "opérateurs",
+        "mille-feuille",
+        "administration"
+      ],
+      "trend": null
+    },
+    {
+      "id": "zom-08",
+      "title": "Conventions de revitalisation",
+      "subtitle": "~50 000€ par emploi « créé », dont une partie enrichit les consultants",
+      "description": "Quand une grande entreprise licencie > 50 salariés dans un bassin d'emploi fragile, elle doit financer une convention de revitalisation (2-4x le SMIC par emploi supprimé). Ces fonds sont censés créer des emplois de substitution. En pratique, les études montrent que les emplois « créés » existaient souvent déjà ou auraient été créés sans l'aide. Les cabinets de conseil captent 15-20% des montants en frais d'accompagnement. Zombie discret mais tenace.",
+      "amountBillions": 0.175,
+      "costPerCitizen": 3,
+      "deckId": "zombies",
+      "icon": "📋",
+      "source": "DARES, IGAS, Cour des comptes",
+      "sourceUrl": null,
+      "level": 1,
+      "tags": [
+        "zombie",
+        "emploi",
+        "revitalisation"
+      ],
+      "trend": null
+    },
+    {
+      "id": "zom-09",
+      "title": "Agences régionales de santé (ARS)",
+      "subtitle": "18 ARS avec 18 DG, 18 sièges, 18 comités, pour un pays de la taille du Texas",
+      "description": "Les ARS pilotent l'offre de soins régionale : autorisations, planification, gestion de crise. Créées en 2010 pour simplifier l'organisation (fusion de 7 structures), elles sont devenues un échelon bureaucratique supplémentaire selon leurs critiques. COVID a révélé leur impuissance face à l'urgence (DG d'ARS sans pouvoir de réquisition, dépendance aux instructions parisiennes). Appréciées pour la gestion des autorisations sanitaires, critiquées pour leur lourdeur administrative.",
+      "amountBillions": 0.7,
+      "costPerCitizen": 10,
+      "deckId": "zombies",
+      "icon": "🏢",
+      "source": "IGAS rapport ARS, PLF 2026, Cour des comptes",
+      "sourceUrl": null,
+      "level": 1,
+      "tags": [
+        "zombie",
+        "santé",
+        "ARS",
+        "bureaucratie"
+      ],
+      "trend": null
+    },
+    {
+      "id": "zom-10",
+      "title": "Fonds de réserve pour les retraites (FRR)",
+      "subtitle": "21 Md€ dormants = 4 mois de déficit de la Sécurité sociale",
+      "description": "Le FRR a été créé en 2001 pour lisser le choc démographique des retraites (baby-boomers). Doté de 37 Md€ en 2010, il a été partiellement ponctionné pour financer la dette sociale (CADES). Il reste 21 Md€ qui dorment... sans mandat clair. Officiellement « en réserve », mais personne ne sait quand ni comment les utiliser. Le Conseil d'orientation des retraites ne l'intègre même plus dans ses projections. Un zombie riche dans un placard.",
+      "amountBillions": 21,
+      "costPerCitizen": 309,
+      "deckId": "zombies",
+      "icon": "🪦",
+      "source": "FRR rapport annuel, COR, Cour des comptes",
+      "sourceUrl": null,
+      "level": 1,
+      "tags": [
+        "zombie",
+        "retraites",
+        "FRR",
+        "réserves"
+      ],
+      "trend": null
+    },
+    {
+      "id": "ukr-01",
+      "title": "Aide militaire directe (matériel livré)",
+      "subtitle": "La France a donné l'équivalent en matériel de ~2,5% du budget annuel de la Défense",
+      "description": "La France a livré plus de 30 canons CAESAR, des blindés AMX-10RC et VAB, des missiles SCALP et Aster, des radars, des munitions d'artillerie (155mm, 120mm) et des équipements individuels. La valorisation se fait au prix du neuf, mais beaucoup de matériel donné était ancien (en fin de vie dans l'armée française). La France a été critiquée pour être arrivée tardivement et en volume modeste comparé aux États-Unis (85 Md€), au Royaume-Uni ou à l'Allemagne.",
+      "amountBillions": 3,
+      "costPerCitizen": 44,
+      "deckId": "ukraine",
+      "icon": "🪖",
+      "source": "Ministère des Armées (liste mai 2024), Institut Kiel",
+      "sourceUrl": "https://www.defense.gouv.fr",
+      "level": 1,
+      "tags": [
+        "Ukraine",
+        "aide militaire",
+        "défense"
+      ],
+      "trend": null
+    },
+    {
+      "id": "ukr-02",
+      "title": "Contribution à la Facilité européenne pour la paix",
+      "subtitle": "La contribution française à la FEP = le budget annuel de la DGSI",
+      "description": "La FEP rembourse aux États membres une partie du coût des armes livrées à l'Ukraine. La France en est le 2e contributeur (~18-20%). Les 7,2 Md€ totaux de la FEP ont été réabondés 5 fois depuis 2022. Ce mécanisme européen permet de mutualiser l'effort : les petits pays (Estonie, Lettonie) ont donné proportionnellement plus que les grands en % de PIB. La France contribue financièrement mais aussi en nature (canons, missiles).",
+      "amountBillions": 2.1,
+      "costPerCitizen": 31,
+      "deckId": "ukraine",
+      "icon": "🇪🇺",
+      "source": "Ministère des Armées, Conseil de l'UE",
+      "sourceUrl": "https://www.defense.gouv.fr",
+      "level": 1,
+      "tags": [
+        "Ukraine",
+        "FEP",
+        "Europe",
+        "défense"
+      ],
+      "trend": null
+    },
+    {
+      "id": "ukr-03",
+      "title": "Fonds spécial bilatéral Ukraine",
+      "subtitle": "Chaque euro du fonds finance un emploi industriel de défense en France",
+      "description": "Créé en octobre 2022, ce fonds permet à l'Ukraine d'acheter directement du matériel auprès de l'industrie de défense française (Nexter, Arquus, Thales, MBDA). C'est un investissement dual : il aide l'Ukraine ET stimule la BITD française (base industrielle et technologique de défense). Les commandes ukrainiennes contribuent à maintenir les chaînes de production ouvertes et à financer la montée en cadence industrielle. Réabondé en 2023 à 200 M€ supplémentaires.",
+      "amountBillions": 0.4,
+      "costPerCitizen": 6,
+      "deckId": "ukraine",
+      "icon": "🤝",
+      "source": "Ministère des Armées, info.gouv.fr",
+      "sourceUrl": "https://www.defense.gouv.fr",
+      "level": 1,
+      "tags": [
+        "Ukraine",
+        "industrie défense",
+        "bilatéral"
+      ],
+      "trend": null
+    },
+    {
+      "id": "ukr-04",
+      "title": "Formation des soldats ukrainiens",
+      "subtitle": "Former 1 soldat ukrainien = ~15 000€ (vs ~100 000€ pour un soldat français)",
+      "description": "La France forme des soldats ukrainiens en Pologne et sur le sol français (entraînement au combat, artillerie CAESAR, maintenance, déminage, pilotage de chasse). Environ 2 000 soldats formés en 2024 par la France seule, dans le cadre de la mission EUMAM. L'armée française déploie ~150 instructeurs permanents. La formation de pilotes de chasse (Rafale ou avions OTAN) a été annoncée en 2023 pour des livraisons en 2024-2025.",
+      "amountBillions": 0.175,
+      "costPerCitizen": 3,
+      "deckId": "ukraine",
+      "icon": "🎯",
+      "source": "Ministère des Armées, EUMAM, info.gouv.fr",
+      "sourceUrl": "https://www.defense.gouv.fr",
+      "level": 1,
+      "tags": [
+        "Ukraine",
+        "formation",
+        "militaire"
+      ],
+      "trend": null
+    },
+    {
+      "id": "ukr-05",
+      "title": "Aide civile et humanitaire",
+      "subtitle": "Les 100 000 réfugiés ukrainiens en France coûtent ~500 M€/an",
+      "description": "Au-delà du militaire, la France a fourni une aide civile : 196 générateurs, matériel médical, aide alimentaire, soutien aux réfugiés, déminage humanitaire, et participation à la Facilité pour l'Ukraine de 50 Md€ (prêts européens). La France a accueilli ~100 000 réfugiés ukrainiens (protection temporaire). Elle s'est engagée dans la future reconstruction (estimée à 400-500 Md€ par la Banque mondiale). La conférence de Paris (déc. 2022) a mobilisé 1 Md€ de dons.",
+      "amountBillions": 1.7,
+      "costPerCitizen": 25,
+      "deckId": "ukraine",
+      "icon": "🏠",
+      "source": "MEAE, conférence Paris déc. 2022, HCR",
+      "sourceUrl": null,
+      "level": 1,
+      "tags": [
+        "Ukraine",
+        "humanitaire",
+        "réfugiés"
+      ],
+      "trend": null
+    },
+    {
+      "id": "ukr-06",
+      "title": "Surcoût énergétique indirect (impact du conflit)",
+      "subtitle": "Le surcoût énergétique du conflit = la moitié du budget annuel de la Défense, chaque année pendant 2 ans",
+      "description": "La guerre a provoqué une flambée des prix du gaz (+200%), du pétrole (+40%) et de l'électricité (x10 en pic). La France importait 17% de son gaz de Russie en 2021 (vs <5% en 2024). Le surcoût énergétique global (ménages + entreprises + collectivités) est estimé à 40-50 Md€ au-delà du budget du bouclier tarifaire. C'est le coût indirect le plus massif du conflit. La crise a aussi accéléré la transition énergétique et le retour au nucléaire.",
+      "amountBillions": 45,
+      "costPerCitizen": 662,
+      "deckId": "ukraine",
+      "icon": "🔥",
+      "source": "INSEE, Banque de France, RTE",
+      "sourceUrl": null,
+      "level": 1,
+      "tags": [
+        "Ukraine",
+        "énergie",
+        "surcoût"
+      ],
+      "trend": null
+    },
+    {
+      "id": "ukr-07",
+      "title": "Hausse du budget Défense (accélération LPM)",
+      "subtitle": "La hausse annuelle du budget Défense (+3,3 Md€) = le budget du SNU x 3",
+      "description": "La LPM 2024-2030 prévoit 413 Md€ sur 7 ans, soit une hausse de 40% par rapport à la LPM précédente. Le budget Défense atteint 50,5 Md€ en 2025. La guerre en Ukraine a justifié cette accélération : reconstitution des stocks (les livraisons à l'Ukraine ont vidé certains arsenaux), montée en cadence de la production de munitions, objectif OTAN de 2% puis 3,5% du PIB. La France est le seul budget en hausse dans le PLF 2026 d'austérité.",
+      "amountBillions": 3.3,
+      "costPerCitizen": 49,
+      "deckId": "ukraine",
+      "icon": "📈",
+      "source": "LPM 2024-2030, PLF 2026, Ministère des Armées",
+      "sourceUrl": "https://www.defense.gouv.fr",
+      "level": 1,
+      "tags": [
+        "Ukraine",
+        "défense",
+        "LPM",
+        "budget"
+      ],
+      "trend": null
+    },
+    {
+      "id": "ukr-08",
+      "title": "Sanctions et gel des avoirs russes",
+      "subtitle": "Les avoirs russes gelés en France = le budget annuel du ministère de la Culture x 5",
+      "description": "L'UE a gelé ~260 Md€ d'actifs de la Banque centrale russe, dont ~22 Md€ localisés en France (Euroclear, banques). Les intérêts générés (~3 Md€/an pour l'UE) sont désormais utilisés pour financer l'aide à l'Ukraine. Le débat sur la confiscation des avoirs eux-mêmes (pas seulement les intérêts) est en cours. La Russie menace de représailles sur les actifs occidentaux en Russie (~80 Md€). La France a aussi sanctionné ~300 individus et entités russes (oligarques, entreprises).",
+      "amountBillions": 22,
+      "costPerCitizen": 0,
+      "deckId": "ukraine",
+      "icon": "🧊",
+      "source": "Conseil de l'UE, Trésor français, Commission européenne",
+      "sourceUrl": null,
+      "level": 1,
+      "tags": [
+        "Ukraine",
+        "sanctions",
+        "avoirs russes"
+      ],
+      "trend": null
+    },
+    {
+      "id": "ukr-09",
+      "title": "Coût total cumulé pour la France (aide directe)",
+      "subtitle": "L'aide française à l'Ukraine = le prix de 2 cafés par Français et par mois pendant 4 ans",
+      "description": "En cumulant l'aide militaire bilatérale (~5,1 Md€), la contribution à la FEP (~2,1 Md€), l'aide civile et humanitaire (~1,7 Md€), la part française des mécanismes européens (~3 Md€), la France a engagé environ 12 Md€ en 4 ans pour l'Ukraine. C'est significatif mais modeste rapporté au PIB (0,1%/an). En % de PIB, l'Estonie (3,5%), la Lituanie et le Danemark donnent proportionnellement 5 à 10x plus que la France.",
+      "amountBillions": 12,
+      "costPerCitizen": 176,
+      "deckId": "ukraine",
+      "icon": "🇫🇷",
+      "source": "Ministère des Armées, Institut Kiel, lesfrancais.press",
+      "sourceUrl": "https://www.defense.gouv.fr",
+      "level": 1,
+      "tags": [
+        "Ukraine",
+        "bilan",
+        "aide totale"
+      ],
+      "trend": null
+    },
+    {
+      "id": "ukr-10",
+      "title": "Conséquences économiques globales du conflit",
+      "subtitle": "La guerre a coûté à la France 10x plus en croissance perdue qu'en aide militaire",
+      "description": "Au-delà des aides directes, le conflit a coûté à la France entre 0,5 et 1 point de PIB/an en croissance perdue : inflation importée, perturbation des chaînes d'approvisionnement, hausse des taux d'intérêt (la BCE a relevé ses taux pour combattre l'inflation liée à l'énergie), chute de la confiance des ménages. Le FMI estime l'impact cumulé à 2-3 points de PIB pour la zone euro sur 2022-2024. La facture totale (directe + indirecte) est sans commune mesure avec les 12 Md€ d'aide.",
+      "amountBillions": 0.75,
+      "costPerCitizen": 600,
+      "deckId": "ukraine",
+      "icon": "📉",
+      "source": "FMI, Banque de France, INSEE, OFCE",
+      "sourceUrl": null,
+      "level": 1,
+      "tags": [
+        "Ukraine",
+        "économie",
+        "croissance",
+        "inflation"
+      ],
+      "trend": null
     }
   ]
 }

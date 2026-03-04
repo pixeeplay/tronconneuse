@@ -4,7 +4,9 @@ import Link from "next/link";
 import { useRef, useEffect, useState, useCallback } from "react";
 import { useRouter } from "next/navigation";
 import { motion, useMotionValue, useTransform, animate } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 import { ChainsawIcon } from "@/components/ChainsawIcon";
+import { Onboarding, useOnboarding } from "@/components/Onboarding";
 import decksData from "@/data/decks.json";
 import type { Deck } from "@/types";
 
@@ -12,6 +14,7 @@ const decks = decksData.decks as Deck[];
 
 export default function HomePage() {
   const scrollRef = useRef<HTMLDivElement>(null);
+  const { showOnboarding, dismissOnboarding } = useOnboarding();
 
   // Auto-scroll categories
   useEffect(() => {
@@ -58,6 +61,11 @@ export default function HomePage() {
 
   return (
     <main className="flex-1 flex flex-col overflow-hidden">
+      {/* Onboarding overlay */}
+      <AnimatePresence>
+        {showOnboarding && <Onboarding onDone={dismissOnboarding} />}
+      </AnimatePresence>
+
       {/* Header */}
       <header className="px-6 pt-10 pb-4 flex items-center justify-between z-20">
         <span className="text-xs font-black tracking-[0.2em] text-foreground uppercase opacity-90">

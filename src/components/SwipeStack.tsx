@@ -1,9 +1,10 @@
 "use client";
 
-import { useState, useCallback } from "react";
+import { useState, useCallback, useRef } from "react";
 import { useRouter } from "next/navigation";
 import { AnimatePresence } from "framer-motion";
 import { SwipeCard } from "./SwipeCard";
+import type { SwipeCardHandle } from "./SwipeCard";
 import { ChainsawIcon } from "./ChainsawIcon";
 import { ShieldIcon } from "./ShieldIcon";
 import { useGameStore } from "@/stores/gameStore";
@@ -28,6 +29,7 @@ export function SwipeStack({
   const { session, startSession, recordVote, nextCard, completeSession } =
     useGameStore();
   const [initialized, setInitialized] = useState(false);
+  const cardRef = useRef<SwipeCardHandle>(null);
 
   // Init session on first render
   if (!initialized) {
@@ -54,6 +56,20 @@ export function SwipeStack({
       }
     },
     [recordVote, nextCard, completeSession, currentIndex, totalCards, cards, router]
+  );
+
+  // Button vote: animate card out, then advance
+  const handleButtonVote = useCallback(
+    (direction: VoteDirection) => {
+      if (!cards[currentIndex]) return;
+      if (cardRef.current) {
+        cardRef.current.triggerSwipe(direction);
+      } else {
+        // Fallback if ref not available
+        handleSwipe(direction);
+      }
+    },
+    [currentIndex, cards, handleSwipe]
   );
 
   const currentCard = cards[currentIndex];
@@ -110,6 +126,7 @@ export function SwipeStack({
           {/* Current card (on top) */}
           {currentCard && (
             <SwipeCard
+              ref={cardRef}
               key={currentCard.id}
               card={currentCard}
               isTop={true}
@@ -133,11 +150,11 @@ export function SwipeStack({
       <div className="px-6 pb-4 flex items-center justify-between">
         <div className="flex flex-col items-center gap-3">
           <button
-            onClick={() => currentCard && handleSwipe("keep")}
+            onClick={() => handleButtonVote("keep")}
             disabled={!currentCard}
-            className="group w-20 h-20 rounded-full bg-card border-[3px] border-primary flex items-center justify-center shadow-lg shadow-primary/30 transition-all active:scale-95 hover:bg-primary hover:scale-105 disabled:opacity-40"
+            className="w-20 h-20 rounded-full bg-card border-[3px] border-primary flex items-center justify-center shadow-lg shadow-primary/30 transition-transform active:scale-90 disabled:opacity-40"
           >
-            <ShieldIcon size={40} className="text-primary group-hover:text-primary-foreground transition-colors" />
+            <ShieldIcon size={40} className="text-primary" />
           </button>
           <span className="text-xs font-bold text-primary tracking-wider uppercase">
             Valider
@@ -157,9 +174,9 @@ export function SwipeStack({
 
         <div className="flex flex-col items-center gap-3">
           <button
-            onClick={() => currentCard && handleSwipe("cut")}
+            onClick={() => handleButtonVote("cut")}
             disabled={!currentCard}
-            className="group w-20 h-20 rounded-full bg-card border-[3px] border-danger flex items-center justify-center shadow-lg shadow-danger/30 transition-all active:scale-95 hover:bg-danger hover:scale-105 disabled:opacity-40"
+            className="w-20 h-20 rounded-full bg-card border-[3px] border-danger flex items-center justify-center shadow-lg shadow-danger/30 transition-transform active:scale-90 disabled:opacity-40"
           >
             <ChainsawIcon size={40} />
           </button>

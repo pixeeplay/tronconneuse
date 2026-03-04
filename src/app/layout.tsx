@@ -14,10 +14,35 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://nicoquipaie.pixeeplay.fr"),
   title: "La Tronçonneuse de Poche",
   description:
     "Le Tinder des dépenses publiques — Swipe pour décider du budget de la France",
   icons: { icon: "/favicon.ico" },
+  openGraph: {
+    title: "La Tronçonneuse de Poche",
+    description:
+      "Swipe les dépenses publiques. Coupe ou protège. Découvre ton profil budgétaire.",
+    url: "https://nicoquipaie.pixeeplay.fr",
+    siteName: "La Tronçonneuse de Poche",
+    images: [
+      {
+        url: "/api/og",
+        width: 1200,
+        height: 630,
+        alt: "La Tronçonneuse de Poche",
+      },
+    ],
+    locale: "fr_FR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "La Tronçonneuse de Poche",
+    description:
+      "Swipe les dépenses publiques. Coupe ou protège. Découvre ton profil budgétaire.",
+    images: ["/api/og"],
+  },
 };
 
 export const viewport: Viewport = {

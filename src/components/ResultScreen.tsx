@@ -1,12 +1,14 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useCallback } from "react";
 import { useGameStore } from "@/stores/gameStore";
 import { useArchetype } from "@/hooks/useArchetype";
 import { ChainsawIcon } from "./ChainsawIcon";
 import { ShieldIcon } from "./ShieldIcon";
 import type { Vote, Card } from "@/types";
+
+const SITE_URL = "https://nicoquipaie.pixeeplay.fr";
 
 /** Format duration in "Xmin Ys" */
 function formatDuration(ms: number): string {
@@ -23,6 +25,7 @@ export function ResultScreen() {
   const reset = useGameStore((s) => s.reset);
   const { archetype, stats } = useArchetype();
   const [showConfetti, setShowConfetti] = useState(true);
+  const [shareCopied, setShareCopied] = useState(false);
 
   // Hide confetti after a few seconds
   useEffect(() => {
@@ -62,6 +65,37 @@ export function ResultScreen() {
     reset();
     router.push("/play");
   }
+
+  const handleShare = useCallback(async () => {
+    const title = `Mon profil budgétaire : ${archetype.name}`;
+    const text = `${archetype.tagline} — J'ai tronçonné ${cutPercent}% du budget !`;
+    const ogUrl = `${SITE_URL}/api/og?archetype=${archetype.id}&keepPercent=${keepPercent}&cutPercent=${cutPercent}&totalCards=${stats.totalCards}`;
+
+    if (typeof navigator !== "undefined" && navigator.share) {
+      try {
+        await navigator.share({ title, text, url: SITE_URL });
+        return;
+      } catch {
+        // User cancelled or share failed — fallback below
+      }
+    }
+
+    // Fallback: copy to clipboard
+    const shareText = `${title}\n${text}\n${SITE_URL}`;
+    try {
+      await navigator.clipboard.writeText(shareText);
+      setShareCopied(true);
+      setTimeout(() => setShareCopied(false), 2000);
+    } catch {
+      // Clipboard not available
+      window.open(
+        `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(SITE_URL)}`,
+        "_blank"
+      );
+    }
+    // Preload OG image
+    void ogUrl;
+  }, [archetype, keepPercent, cutPercent, stats]);
 
   return (
     <div className="flex-1 flex flex-col overflow-y-auto">
@@ -104,8 +138,12 @@ export function ResultScreen() {
       {/* Archetype Card */}
       <div className="p-4">
         <div className="relative flex flex-col items-center justify-center rounded-2xl p-6 shadow-xl bg-card border border-border">
-          <button className="absolute top-4 right-4 h-10 w-10 rounded-full bg-background/50 flex items-center justify-center hover:bg-muted transition-colors text-muted-foreground">
-            <ShareIcon />
+          <button
+            onClick={handleShare}
+            className="absolute top-4 right-4 h-10 w-10 rounded-full bg-background/50 flex items-center justify-center hover:bg-muted transition-colors text-muted-foreground"
+            title={shareCopied ? "Copié !" : "Partager"}
+          >
+            {shareCopied ? <span className="text-primary text-sm">✓</span> : <ShareIcon />}
           </button>
           <div className="text-6xl mb-4">{archetype.icon}</div>
           <p className="text-2xl font-bold leading-tight tracking-tight mb-2">
