@@ -3,11 +3,50 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
+function IconJouer({ className }: { className?: string }) {
+  return (
+    <svg className={className} width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <rect x="2" y="6" width="20" height="12" rx="2" />
+      <path d="M12 12h.01" />
+      <path d="M17 12h.01" />
+      <path d="M7 12h.01" />
+    </svg>
+  );
+}
+
+function IconRang({ className }: { className?: string }) {
+  return (
+    <svg className={className} width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M8 21V12H4v9" />
+      <path d="M14 21V8h-4v13" />
+      <path d="M20 21V3h-4v18" />
+    </svg>
+  );
+}
+
+function IconProfil({ className }: { className?: string }) {
+  return (
+    <svg className={className} width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <circle cx="12" cy="8" r="4" />
+      <path d="M20 21c0-4.4-3.6-8-8-8s-8 3.6-8 8" />
+    </svg>
+  );
+}
+
+function IconInfos({ className }: { className?: string }) {
+  return (
+    <svg className={className} width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z" />
+      <circle cx="12" cy="12" r="3" />
+    </svg>
+  );
+}
+
 const navItems = [
-  { label: "Jouer", href: "/play", icon: "🎮" },
-  { label: "Profil", href: "/profile", icon: "👤" },
-  { label: "Rang", href: "#", icon: "🏆" },
-  { label: "Infos", href: "#", icon: "⚙️" },
+  { label: "Jouer", href: "/play", icon: IconJouer },
+  { label: "Rang", href: "#", icon: IconRang },
+  { label: "Profil", href: "/profile", icon: IconProfil },
+  { label: "Infos", href: "#", icon: IconInfos },
 ];
 
 export function BottomNav() {
@@ -19,13 +58,16 @@ export function BottomNav() {
   }
 
   return (
-    <nav className="sticky bottom-0 bg-card/95 backdrop-blur-xl border-t border-border px-4 pt-2 pb-8 z-50">
+    <nav className="sticky bottom-0 bg-card/70 backdrop-blur-xl rounded-t-[32px] border-t border-border/30 px-4 pt-4 pb-8 z-50">
       <div className="flex items-center justify-around">
         {navItems.map((item) => {
           const isActive =
             item.href === "/"
               ? pathname === "/"
               : pathname === item.href || pathname.startsWith(item.href + "/");
+
+          const Icon = item.icon;
+
           return (
             <Link
               key={item.label}
@@ -36,9 +78,7 @@ export function BottomNav() {
                   : "text-muted-foreground hover:text-foreground"
               }`}
             >
-              <span className={`text-[28px] ${!isActive ? "opacity-70" : ""}`}>
-                {item.icon}
-              </span>
+              <Icon className={!isActive ? "opacity-70" : ""} />
               <span className="text-[10px] font-bold tracking-wide">
                 {item.label}
               </span>

@@ -4,6 +4,8 @@ import { useState, useCallback } from "react";
 import { useRouter } from "next/navigation";
 import { AnimatePresence } from "framer-motion";
 import { SwipeCard } from "./SwipeCard";
+import { ChainsawIcon } from "./ChainsawIcon";
+import { ShieldIcon } from "./ShieldIcon";
 import { useGameStore } from "@/stores/gameStore";
 import type { Card, VoteDirection } from "@/types";
 
@@ -146,9 +148,7 @@ export function SwipeStack({
             disabled={!currentCard}
             className="group w-20 h-20 rounded-full bg-card border-[3px] border-primary flex items-center justify-center shadow-lg shadow-primary/30 transition-all active:scale-95 hover:bg-primary hover:scale-105 disabled:opacity-40"
           >
-            <span className="text-4xl text-primary group-hover:text-primary-foreground transition-colors">
-              🛡️
-            </span>
+            <ShieldIcon size={40} className="text-primary group-hover:text-primary-foreground transition-colors" />
           </button>
           <span className="text-xs font-bold text-primary tracking-wider uppercase">
             Valider
@@ -172,9 +172,7 @@ export function SwipeStack({
             disabled={!currentCard}
             className="group w-20 h-20 rounded-full bg-card border-[3px] border-danger flex items-center justify-center shadow-lg shadow-danger/30 transition-all active:scale-95 hover:bg-danger hover:scale-105 disabled:opacity-40"
           >
-            <span className="text-4xl text-danger group-hover:text-white transition-colors">
-              🪚
-            </span>
+            <ChainsawIcon size={40} />
           </button>
           <span className="text-xs font-bold text-danger tracking-wider uppercase">
             À Revoir

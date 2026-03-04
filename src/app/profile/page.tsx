@@ -2,13 +2,14 @@
 
 import { useState } from "react";
 import { useGameStore } from "@/stores/gameStore";
+import { ChainsawIcon } from "@/components/ChainsawIcon";
 
 const tabs = ["Vue d'ensemble", "Mesures Détaillées", "Journal H.F."] as const;
 type Tab = (typeof tabs)[number];
 
 const achievements = [
   {
-    icon: "🪚",
+    icon: "chainsaw",
     title: "Première coupe",
     description: "Effectuer une réduction budgétaire de plus de 10%.",
     completed: true,
@@ -280,7 +281,7 @@ export default function ProfilePage() {
                           : "bg-muted grayscale"
                       }`}
                     >
-                      {a.icon}
+                      {a.icon === "chainsaw" ? <ChainsawIcon size={24} /> : a.icon}
                     </div>
                     <div className="flex-1">
                       <div className="flex justify-between items-start">

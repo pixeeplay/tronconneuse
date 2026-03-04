@@ -2,6 +2,8 @@
 
 import { useRef, useCallback } from "react";
 import { motion, AnimatePresence, useDragControls } from "framer-motion";
+import { ChainsawIcon } from "./ChainsawIcon";
+import { ShieldIcon } from "./ShieldIcon";
 import type { Card, VoteDirection } from "@/types";
 
 interface CardDetailProps {
@@ -202,14 +204,14 @@ export function CardDetail({ card, onClose, onVote }: CardDetailProps) {
                   onClick={() => handleVote("keep")}
                   className="flex items-center justify-center gap-2 py-3.5 rounded-xl border-2 border-primary/80 text-primary font-bold hover:bg-primary hover:text-primary-foreground active:scale-95 transition-all"
                 >
-                  <span>🛡️</span>
+                  <ShieldIcon size={20} />
                   OK pour moi
                 </button>
                 <button
                   onClick={() => handleVote("cut")}
                   className="flex items-center justify-center gap-2 py-3.5 rounded-xl border-2 border-danger/80 text-danger font-bold hover:bg-danger hover:text-white active:scale-95 transition-all"
                 >
-                  <span>🪚</span>
+                  <ChainsawIcon size={20} />
                   À revoir
                 </button>
               </div>

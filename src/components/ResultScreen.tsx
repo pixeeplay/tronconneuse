@@ -4,6 +4,8 @@ import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { useGameStore } from "@/stores/gameStore";
 import { useArchetype } from "@/hooks/useArchetype";
+import { ChainsawIcon } from "./ChainsawIcon";
+import { ShieldIcon } from "./ShieldIcon";
 import type { Vote, Card } from "@/types";
 
 /** Format duration in "Xmin Ys" */
@@ -142,14 +144,14 @@ export function ResultScreen() {
                 <span className="w-3 h-3 rounded-full bg-primary" />
                 <span className="text-sm font-bold">{keepPercent}%</span>
                 <span className="text-sm text-muted-foreground flex items-center gap-1">
-                  🛡️ OK ({keepCount})
+                  <ShieldIcon size={14} /> OK ({keepCount})
                 </span>
               </div>
               <div className="flex items-center gap-2">
                 <span className="w-3 h-3 rounded-full bg-danger" />
                 <span className="text-sm font-bold">{cutPercent}%</span>
                 <span className="text-sm text-muted-foreground flex items-center gap-1">
-                  🪚 À revoir ({cutCount})
+                  <ChainsawIcon size={14} /> À revoir ({cutCount})
                 </span>
               </div>
             </div>
@@ -198,7 +200,7 @@ export function ResultScreen() {
       <div className="px-4 pb-10">
         <details className="group bg-card rounded-xl border border-border overflow-hidden">
           <summary className="flex items-center justify-center gap-2 p-4 cursor-pointer font-medium text-sm hover:bg-muted/30 transition-colors list-none">
-            🪚 Voir le détail de mes choix
+            <ChainsawIcon size={18} /> Voir le détail de mes choix
             <ChevronIcon />
           </summary>
           <div className="p-4 border-t border-border bg-background/30 flex flex-col gap-3">
@@ -243,13 +245,9 @@ function HistoryItem({ card, vote }: { card: Card; vote: Vote | null }) {
         }`}
       >
         {isKeep ? (
-          <span className="text-primary group-hover/item:text-white transition-colors text-sm">
-            🛡️
-          </span>
+          <ShieldIcon size={16} className="text-primary group-hover/item:text-white transition-colors" />
         ) : (
-          <span className="text-danger group-hover/item:text-white transition-colors text-sm">
-            🪚
-          </span>
+          <ChainsawIcon size={16} />
         )}
       </div>
     </div>
