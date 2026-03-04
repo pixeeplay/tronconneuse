@@ -1,0 +1,49 @@
+{
+  "archetypes": [
+    {
+      "id": "austeritaire",
+      "name": "L'Austéritaire",
+      "icon": "✂️",
+      "tagline": "Tu coupes dans le vif.",
+      "description": "Plus de 80% de tes choix sont \"À revoir\". Tu es convaincu(e) que l'État peut faire beaucoup mieux avec beaucoup moins.",
+      "level": 1,
+      "condition": {
+        "minCutPercent": 80
+      }
+    },
+    {
+      "id": "gardien",
+      "name": "Le Gardien",
+      "icon": "🛡️",
+      "tagline": "Tu protèges les acquis.",
+      "description": "Plus de 80% de tes choix sont \"OK\". Tu considères que la plupart des dépenses publiques sont justifiées et nécessaires.",
+      "level": 1,
+      "condition": {
+        "minKeepPercent": 80
+      }
+    },
+    {
+      "id": "equilibriste",
+      "name": "L'Équilibriste",
+      "icon": "⚖️",
+      "tagline": "Tu pèses le pour et le contre.",
+      "description": "Entre 40% et 60% de \"À revoir\". Tu analyses chaque dépense au cas par cas, sans dogme.",
+      "level": 1,
+      "condition": {
+        "minCutPercent": 40,
+        "maxCutPercent": 60
+      }
+    },
+    {
+      "id": "speedrunner",
+      "name": "Le Speedrunner",
+      "icon": "⚡",
+      "tagline": "Décisions express !",
+      "description": "Tu as terminé la session en moins de 60 secondes. Instinct budgétaire ou impatience ?",
+      "level": 1,
+      "condition": {
+        "maxDurationSeconds": 60
+      }
+    }
+  ]
+}

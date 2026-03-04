@@ -1,0 +1,8 @@
+node_modules
+.next
+.git
+Maquettes
+Visuels-source
+Briefs
+_old
+*.md
