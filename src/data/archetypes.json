@@ -23,11 +23,35 @@
       }
     },
     {
+      "id": "tranchant",
+      "name": "Le Tranchant",
+      "icon": "🔪",
+      "tagline": "Tu tailles dans le budget, mais avec discernement.",
+      "description": "Entre 60% et 80% de tes choix sont \"À revoir\". Tu veux des coupes significatives mais pas totales.",
+      "level": 1,
+      "condition": {
+        "minCutPercent": 60,
+        "maxCutPercent": 80
+      }
+    },
+    {
+      "id": "protecteur",
+      "name": "Le Protecteur",
+      "icon": "🏰",
+      "tagline": "Tu défends la majorité des dépenses.",
+      "description": "Entre 60% et 80% de tes choix sont \"OK\". Tu considères que la plupart des dépenses méritent d'être préservées.",
+      "level": 1,
+      "condition": {
+        "minKeepPercent": 60,
+        "maxKeepPercent": 80
+      }
+    },
+    {
       "id": "equilibriste",
       "name": "L'Équilibriste",
       "icon": "⚖️",
       "tagline": "Tu pèses le pour et le contre.",
-      "description": "Entre 40% et 60% de \"À revoir\". Tu analyses chaque dépense au cas par cas, sans dogme.",
+      "description": "Environ 40% à 60% de \"À revoir\". Tu analyses chaque dépense au cas par cas, sans dogme.",
       "level": 1,
       "condition": {
         "minCutPercent": 40,

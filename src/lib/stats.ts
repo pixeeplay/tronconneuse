@@ -135,8 +135,8 @@ function computeSessionXP(session: StoredSession): number {
 export function saveCompletedSession(session: Session): void {
   if (!session.completed || !session.totalDuration) return;
 
-  const keepVotes = session.votes.filter((v) => v.direction === "keep");
-  const cutVotes = session.votes.filter((v) => v.direction === "cut");
+  const keepVotes = session.votes.filter((v) => v.direction === "keep" || v.direction === "reinforce");
+  const cutVotes = session.votes.filter((v) => v.direction === "cut" || v.direction === "unjustified");
 
   const totalKeptBillions = session.cards
     .filter((c) => keepVotes.some((v) => v.cardId === c.id))

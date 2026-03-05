@@ -21,20 +21,20 @@ Voir historique dans git log. 38 items livres.
 
 **Objectif :** Corriger les 11 findings critiques de l'audit. Stabilite et fiabilite du jeu.
 
-| # | Item | Effort | Ref |
-|---|------|--------|-----|
-| 1 | Guard `completeSession` si `session.completed` | XS | BUG-11 |
-| 2 | Fusionner recordVote+nextCard en `voteAndAdvance()` atomique | S | BUG-12 |
-| 3 | Selectors Zustand avec `useShallow` (SwipeStack + SwipeSession) | S | BUG-13 |
-| 4 | Deplacer startSession dans useEffect | XS | BUG-14 |
-| 5 | Guard isAnimating pour empecher double-swipe | XS | BUG-15 |
-| 6 | Retirer credentials docker-compose + restreindre port PG | S | BACK-07 |
-| 7 | Budget mode : inclure unjustified dans totalCut (ResultScreen + stats) | S | BUG-18 |
-| 8 | Audit L3 Back : deplacer recordVote dans handleAuditSubmit | S | BUG-19 |
-| 9 | Elargir plages archetypes N1 (couvrir gap 60-80%) | S | BUG-22 |
-| 10 | Fix session callback NextAuth pour mode JWT | XS | BUG-20 |
+| # | Item | Effort | Ref | Statut |
+|---|------|--------|-----|--------|
+| 1 | Guard `completeSession` si `session.completed` | XS | BUG-11 | Done |
+| 2 | Fusionner recordVote+nextCard en `voteAndAdvance()` atomique | S | BUG-12 | Done |
+| 3 | Selectors Zustand avec `useShallow` (SwipeStack + SwipeSession) | S | BUG-13 | Done |
+| 4 | Deplacer startSession dans useEffect | XS | BUG-14 | Done |
+| 5 | Guard isAnimating pour empecher double-swipe | XS | BUG-15 | Done |
+| 6 | Retirer credentials docker-compose + restreindre port PG | S | BACK-07 | Done |
+| 7 | Budget mode : inclure unjustified dans totalCut (ResultScreen + stats) | S | BUG-18 | Done |
+| 8 | Audit L3 Back : deplacer recordVote dans handleAuditSubmit | S | BUG-19 | Done |
+| 9 | Elargir plages archetypes N1 (couvrir gap 60-80%) + 2 nouveaux archetypes | S | BUG-22 | Done |
+| 10 | Fix session callback NextAuth pour mode JWT | XS | BUG-20 | Done |
 
-**Effort total :** ~S-M par item, sprint de 1-2 jours
+**Livrable :** 16 archetypes (6 L1 + 6 L2 + 4 L3). Store atomique. 0 critique restant.
 
 ---
 

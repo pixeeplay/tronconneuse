@@ -38,18 +38,18 @@
 
 | ID | Priorite | Effort | Description | Statut |
 |----|----------|--------|-------------|--------|
-| BUG-11 | P0 | XS | Guard completeSession si session.completed | A faire |
-| BUG-12 | P0 | S | Fusionner recordVote+nextCard en action atomique | A faire |
-| BUG-13 | P0 | S | Selectors Zustand (useShallow) SwipeStack/SwipeSession | A faire |
-| BUG-14 | P1 | XS | startSession dans useEffect (pas dans le render) | A faire |
-| BUG-15 | P1 | XS | Guard isAnimating pour empecher double-swipe | A faire |
+| BUG-11 | P0 | XS | Guard completeSession si session.completed | Done Sprint 11 |
+| BUG-12 | P0 | S | Fusionner recordVote+nextCard en voteAndAdvance atomique | Done Sprint 11 |
+| BUG-13 | P0 | S | Selectors Zustand (useShallow) SwipeStack/SwipeSession | Done Sprint 11 |
+| BUG-14 | P1 | XS | startSession dans useEffect (pas dans le render) | Done Sprint 11 |
+| BUG-15 | P1 | XS | Guard isAnimating pour empecher double-swipe | Done Sprint 11 |
 | BUG-16 | P1 | XS | Valider et clamper param level (1-3) server-side | A faire |
 | BUG-17 | P1 | XS | Valider deckId server-side, notFound() si invalide | A faire |
-| BUG-18 | P1 | S | Budget mode : inclure unjustified dans totalCut | A faire |
-| BUG-19 | P1 | S | Audit L3 Back : deplacer recordVote dans handleAuditSubmit | A faire |
-| BUG-20 | P1 | XS | Fix session callback NextAuth pour mode JWT | A faire |
+| BUG-18 | P1 | S | Budget mode : inclure unjustified dans totalCut | Done Sprint 11 |
+| BUG-19 | P1 | S | Audit L3 Back : deplacer recordVote dans handleAuditSubmit | Done Sprint 11 |
+| BUG-20 | P1 | XS | Fix session callback NextAuth pour mode JWT | Done Sprint 11 |
 | BUG-21 | P2 | XS | Quasi-doublon san-04/san-13 (meme montant 37Md) | A faire |
-| BUG-22 | P2 | S | Gap archetypes N1 (cutPercent 60-80% = fallback) | A faire |
+| BUG-22 | P2 | S | Gap archetypes N1 + 2 nouveaux archetypes (Tranchant, Protecteur) | Done Sprint 11 |
 
 ---
 
@@ -95,7 +95,7 @@
 | BACK-04 | P3 | L | Sync multi-device | |
 | BACK-05 | P3 | M | API ouverte / export CSV | |
 | BACK-06 | P3 | L | Integration analytics (Plausible/PostHog) | |
-| BACK-07 | P0 | S | Retirer credentials docker-compose + restreindre port PG | A faire |
+| BACK-07 | P0 | S | Retirer credentials docker-compose + restreindre port PG | Done Sprint 11 |
 | BACK-08 | P1 | S | Headers de securite (CSP, X-Frame-Options, HSTS) | A faire |
 | BACK-09 | P1 | M | Validation payload Zod sur POST /api/sessions | A faire |
 | BACK-10 | P1 | M | Rate limiting API | A faire |
@@ -124,6 +124,6 @@
 
 | Statut | Count |
 |--------|-------|
-| Done | 39 |
-| A faire | 39 |
+| Done | 49 |
+| A faire | 29 |
 | **Total** | **78** |

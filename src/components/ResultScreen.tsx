@@ -66,10 +66,10 @@ export function ResultScreen() {
 
   // Calculate totals by direction in Md€
   const totalKept = session.cards
-    .filter((c) => session.votes.find((v) => v.cardId === c.id && v.direction === "keep"))
+    .filter((c) => session.votes.find((v) => v.cardId === c.id && (v.direction === "keep" || v.direction === "reinforce")))
     .reduce((sum, c) => sum + c.amountBillions, 0);
   const totalCut = session.cards
-    .filter((c) => session.votes.find((v) => v.cardId === c.id && v.direction === "cut"))
+    .filter((c) => session.votes.find((v) => v.cardId === c.id && (v.direction === "cut" || v.direction === "unjustified")))
     .reduce((sum, c) => sum + c.amountBillions, 0);
 
   function handleContinue() {

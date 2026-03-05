@@ -1,7 +1,7 @@
 # Rapport d'Audit Consolide -- La Tronconneuse de Poche
 
 **Date :** 2026-03-05
-**Version :** Post-Sprint 9 + Refacto Data
+**Version :** Post-Sprint 11 (Hotfixes Critiques)
 **Build :** OK (Next.js 15 + serwist, compile sans erreur)
 **Donnees :** 330 cartes, 17 decks, 0 anomalies structurelles
 **Auth :** NextAuth.js v5 (Google + GitHub) pret (a activer avec cles OAuth)

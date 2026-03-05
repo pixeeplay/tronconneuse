@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useCallback, useRef } from "react";
+import { useState, useCallback, useRef, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { AnimatePresence } from "framer-motion";
 import { SwipeCard } from "./SwipeCard";
@@ -8,6 +8,7 @@ import type { SwipeCardHandle } from "./SwipeCard";
 import { ChainsawIcon } from "./ChainsawIcon";
 import { ShieldIcon } from "./ShieldIcon";
 import { useGameStore } from "@/stores/gameStore";
+import { useShallow } from "zustand/react/shallow";
 import { track } from "@/lib/analytics";
 import type { Card, VoteDirection, GameMode } from "@/types";
 
@@ -34,16 +35,25 @@ export function SwipeStack({
   onSwipeComplete,
 }: SwipeStackProps) {
   const router = useRouter();
-  const { session, cardShownAt, startSession, recordVote, nextCard, completeSession } =
-    useGameStore();
+  const { session, cardShownAt, startSession, voteAndAdvance, completeSession } =
+    useGameStore(useShallow((s) => ({
+      session: s.session,
+      cardShownAt: s.cardShownAt,
+      startSession: s.startSession,
+      voteAndAdvance: s.voteAndAdvance,
+      completeSession: s.completeSession,
+    })));
   const [initialized, setInitialized] = useState(false);
   const cardRef = useRef<SwipeCardHandle>(null);
+  const isAnimating = useRef(false);
 
-  if (!initialized) {
-    startSession(deckId, cards, level, gameMode, budgetTarget);
-    track("session_start", { deckId, level, gameMode });
-    setInitialized(true);
-  }
+  useEffect(() => {
+    if (!initialized) {
+      startSession(deckId, cards, level, gameMode, budgetTarget);
+      track("session_start", { deckId, level, gameMode });
+      setInitialized(true);
+    }
+  }, [initialized, startSession, deckId, cards, level, gameMode, budgetTarget]);
 
   const currentIndex = session?.currentIndex ?? 0;
   const totalCards = cards.length;
@@ -51,7 +61,8 @@ export function SwipeStack({
   const handleSwipe = useCallback(
     (direction: VoteDirection) => {
       const card = cards[currentIndex];
-      if (!card) return;
+      if (!card || isAnimating.current) return;
+
       const durationMs = cardShownAt > 0 ? Date.now() - cardShownAt : 0;
       track("card_vote", { cardId: card.id, direction, durationMs });
 
@@ -61,19 +72,20 @@ export function SwipeStack({
         return;
       }
 
-      recordVote(card.id, direction);
-      nextCard();
-      if (currentIndex + 1 >= totalCards) {
+      const isLast = voteAndAdvance(card.id, direction);
+      if (isLast) {
         completeSession();
         setTimeout(() => router.push("/results"), 300);
       }
+      isAnimating.current = false;
     },
-    [recordVote, nextCard, completeSession, currentIndex, totalCards, cards, router, onSwipeComplete, cardShownAt]
+    [voteAndAdvance, completeSession, currentIndex, totalCards, cards, router, onSwipeComplete, cardShownAt]
   );
 
   const handleButtonVote = useCallback(
     (direction: VoteDirection) => {
-      if (!cards[currentIndex]) return;
+      if (!cards[currentIndex] || isAnimating.current) return;
+      isAnimating.current = true;
       if (cardRef.current) {
         cardRef.current.triggerSwipe(direction);
       } else {

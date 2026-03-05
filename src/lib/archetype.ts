@@ -43,14 +43,6 @@ export function determineArchetype(
     (a) => a.level === level
   ) as (Archetype & { condition: ExtendedCondition })[];
 
-  // Speedrunner check first
-  const speedrunner = archetypes.find(
-    (a) =>
-      a.condition.maxDurationSeconds !== undefined &&
-      stats.totalDurationSeconds <= a.condition.maxDurationSeconds
-  );
-  if (speedrunner) return speedrunner;
-
   const reinforcePercent = stats.totalCards > 0
     ? ((stats.reinforceCount ?? 0) / stats.totalCards) * 100
     : 0;
@@ -83,6 +75,14 @@ export function determineArchetype(
       return archetype;
     }
   }
+
+  // Speedrunner check last (so content-based archetypes take priority)
+  const speedrunner = archetypes.find(
+    (a) =>
+      a.condition.maxDurationSeconds !== undefined &&
+      stats.totalDurationSeconds <= a.condition.maxDurationSeconds
+  );
+  if (speedrunner) return speedrunner;
 
   // Fallback
   return archetypes.find((a) => a.id === "equilibriste" || a.id === "stratege") ?? archetypes[0];

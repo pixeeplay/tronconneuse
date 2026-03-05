@@ -7,6 +7,8 @@ const ARCHETYPES: Record<string, { icon: string; name: string }> = {
   // Level 1
   austeritaire: { icon: "✂️", name: "L'Austéritaire" },
   gardien: { icon: "🛡️", name: "Le Gardien" },
+  tranchant: { icon: "🔪", name: "Le Tranchant" },
+  protecteur: { icon: "🏰", name: "Le Protecteur" },
   equilibriste: { icon: "⚖️", name: "L'Équilibriste" },
   speedrunner: { icon: "🔥", name: "Le Speedrunner" },
   // Level 2

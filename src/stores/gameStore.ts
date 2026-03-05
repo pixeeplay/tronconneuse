@@ -19,6 +19,8 @@ interface GameState {
   recordVote: (cardId: string, direction: VoteDirection) => void;
   /** Passer à la carte suivante */
   nextCard: () => void;
+  /** Vote + advance atomique. Retourne true si la session est terminée */
+  voteAndAdvance: (cardId: string, direction: VoteDirection) => boolean;
   /** Terminer la session et calculer l'archétype */
   completeSession: () => void;
   /** Record an audit response (Level 3) */
@@ -99,9 +101,34 @@ export const useGameStore = create<GameState>((set, get) => ({
     });
   },
 
+  voteAndAdvance: (cardId, direction) => {
+    const { session, cardShownAt } = get();
+    if (!session || session.completed) return false;
+    if (session.votes.some((v) => v.cardId === cardId)) return false;
+
+    const now = Date.now();
+    const duration = cardShownAt > 0 ? now - cardShownAt : 0;
+    const newVote: Vote = { cardId, direction, duration, timestamp: now };
+    const newVotes = [...session.votes, newVote];
+    const isLast = session.currentIndex >= session.cards.length - 1;
+
+    if (isLast) {
+      set({
+        session: { ...session, votes: newVotes },
+        cardShownAt: now,
+      });
+    } else {
+      set({
+        session: { ...session, votes: newVotes, currentIndex: session.currentIndex + 1 },
+        cardShownAt: now,
+      });
+    }
+    return isLast;
+  },
+
   completeSession: () => {
     const { session } = get();
-    if (!session) return;
+    if (!session || session.completed) return;
 
     const endedAt = Date.now();
     const completed: Session = {
