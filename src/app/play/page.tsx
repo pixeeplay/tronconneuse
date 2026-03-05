@@ -5,6 +5,7 @@ import { useRouter, useSearchParams } from "next/navigation";
 import Image from "next/image";
 import decksData from "@/data/decks.json";
 import { getPlayedDeckIds } from "@/lib/stats";
+import { track } from "@/lib/analytics";
 import type { Deck } from "@/types";
 
 const decks = decksData.decks as Deck[];
@@ -23,12 +24,11 @@ function PlayPageContent() {
   }, []);
 
   function handleLaunch() {
+    const deckId = randomMode ? "random" : selectedDeck;
+    if (!deckId) return;
+    track("deck_selected", { deckId, level });
     const levelParam = level > 1 ? `?level=${level}` : "";
-    if (randomMode) {
-      router.push(`/play/random${levelParam}`);
-    } else if (selectedDeck) {
-      router.push(`/play/${selectedDeck}${levelParam}`);
-    }
+    router.push(`/play/${deckId}${levelParam}`);
   }
 
   const levelOptions: { value: 1 | 2 | 3; label: string; locked: boolean }[] = [

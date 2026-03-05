@@ -18,9 +18,15 @@ export const metadata: Metadata = {
   title: "La Tronçonneuse de Poche",
   description:
     "Le Tinder des dépenses publiques — Swipe pour décider du budget de la France",
+  manifest: "/manifest.json",
   icons: {
     icon: "/favicon.ico",
     apple: "/apple-touch-icon.png",
+  },
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "black-translucent",
+    title: "Tronçonneuse",
   },
   openGraph: {
     title: "La Tronçonneuse de Poche",

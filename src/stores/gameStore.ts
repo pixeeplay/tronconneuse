@@ -2,6 +2,7 @@ import { create } from "zustand";
 import type { Card, Vote, VoteDirection, Session, SessionStats } from "@/types";
 import { computeStats, determineArchetype } from "@/lib/archetype";
 import { saveCompletedSession } from "@/lib/stats";
+import { track } from "@/lib/analytics";
 
 interface GameState {
   /** Session en cours */
@@ -96,6 +97,17 @@ export const useGameStore = create<GameState>((set, get) => ({
 
     // Persist to localStorage
     saveCompletedSession(completed);
+
+    // Track analytics
+    const rawStats = computeStats(completed.votes, completed.totalDuration ?? 0);
+    const arch = determineArchetype(rawStats, completed.level);
+    track("session_complete", {
+      deckId: completed.deckId,
+      archetype: arch.id,
+      keepPercent: Math.round(rawStats.keepPercent),
+      cutPercent: Math.round(rawStats.cutPercent),
+      totalDurationMs: completed.totalDuration,
+    });
   },
 
   reset: () => set({ session: null }),

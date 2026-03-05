@@ -4,6 +4,7 @@ import { useState, useCallback } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChainsawIcon } from "./ChainsawIcon";
 import { ShieldIcon } from "./ShieldIcon";
+import { track } from "@/lib/analytics";
 
 const ONBOARDED_KEY = "trnc:onboarded";
 
@@ -57,6 +58,7 @@ export function Onboarding({ onDone }: OnboardingProps) {
 
   const goNext = useCallback(() => {
     if (isLast) {
+      track("onboarding_complete", { skipped: false });
       onDone();
       return;
     }
@@ -65,6 +67,7 @@ export function Onboarding({ onDone }: OnboardingProps) {
   }, [isLast, onDone]);
 
   const skip = useCallback(() => {
+    track("onboarding_complete", { skipped: true });
     onDone();
   }, [onDone]);
 

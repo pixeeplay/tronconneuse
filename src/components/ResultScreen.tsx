@@ -7,6 +7,7 @@ import { useGameStore } from "@/stores/gameStore";
 import { useArchetype } from "@/hooks/useArchetype";
 import { ChainsawIcon } from "./ChainsawIcon";
 import { ShieldIcon } from "./ShieldIcon";
+import { track } from "@/lib/analytics";
 import type { Vote, Card } from "@/types";
 
 const SITE_URL = "https://nicoquipaie.pixeeplay.fr";
@@ -73,6 +74,7 @@ export function ResultScreen() {
   }
 
   const handleShare = useCallback(async () => {
+    track("share_result", { archetype: archetype.id, platform: "native" });
     const title = `Mon profil budgétaire : ${archetype.name}`;
     const text = `${archetype.tagline} — J'ai tronçonné ${cutPercent}% du budget !`;
     const ogUrl = `${SITE_URL}/api/og?archetype=${archetype.id}&keepPercent=${keepPercent}&cutPercent=${cutPercent}&totalCards=${stats.totalCards}`;

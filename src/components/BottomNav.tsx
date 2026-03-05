@@ -44,7 +44,7 @@ function IconInfos({ className }: { className?: string }) {
 
 const navItems = [
   { label: "Jouer", href: "/play", icon: IconJouer },
-  { label: "Rang", href: "#", icon: IconRang },
+  { label: "Rang", href: "/ranking", icon: IconRang },
   { label: "Profil", href: "/profile", icon: IconProfil },
   { label: "Infos", href: "#", icon: IconInfos },
 ];

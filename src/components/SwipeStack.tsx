@@ -8,6 +8,7 @@ import type { SwipeCardHandle } from "./SwipeCard";
 import { ChainsawIcon } from "./ChainsawIcon";
 import { ShieldIcon } from "./ShieldIcon";
 import { useGameStore } from "@/stores/gameStore";
+import { track } from "@/lib/analytics";
 import type { Card, VoteDirection } from "@/types";
 
 interface SwipeStackProps {
@@ -33,6 +34,7 @@ export function SwipeStack({
 
   if (!initialized) {
     startSession(deckId, cards, level);
+    track("session_start", { deckId, level });
     setInitialized(true);
   }
 
@@ -43,6 +45,7 @@ export function SwipeStack({
     (direction: VoteDirection) => {
       const card = cards[currentIndex];
       if (!card) return;
+      track("card_vote", { cardId: card.id, direction });
       recordVote(card.id, direction);
       nextCard();
       if (currentIndex + 1 >= totalCards) {
