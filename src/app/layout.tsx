@@ -18,7 +18,10 @@ export const metadata: Metadata = {
   title: "La Tronçonneuse de Poche",
   description:
     "Le Tinder des dépenses publiques — Swipe pour décider du budget de la France",
-  icons: { icon: "/favicon.ico" },
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
   openGraph: {
     title: "La Tronçonneuse de Poche",
     description:
@@ -27,7 +30,7 @@ export const metadata: Metadata = {
     siteName: "La Tronçonneuse de Poche",
     images: [
       {
-        url: "/api/og",
+        url: "/og-default.png",
         width: 1200,
         height: 630,
         alt: "La Tronçonneuse de Poche",
@@ -41,7 +44,7 @@ export const metadata: Metadata = {
     title: "La Tronçonneuse de Poche",
     description:
       "Swipe les dépenses publiques. Coupe ou protège. Découvre ton profil budgétaire.",
-    images: ["/api/og"],
+    images: ["/og-default.png"],
   },
 };
 
