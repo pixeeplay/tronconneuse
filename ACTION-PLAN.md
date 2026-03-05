@@ -98,17 +98,17 @@ Voir historique dans git log. 38 items livres.
 
 **Objectif :** Optimiser le bundle, ameliorer l'architecture.
 
-| # | Item | Effort | Ref |
-|---|------|--------|-----|
-| 1 | Lazy load framer-motion sur homepage (next/dynamic) | M | TECH-10 |
-| 2 | Convertir /infos en RSC (supprimer "use client") | S | TECH-09 |
-| 3 | Index DB sur colonnes requetees | S | BACK-11 |
-| 4 | Connection pooling PostgreSQL | S | BACK-12 |
-| 5 | pb-safe sur BottomNav et footers (iOS) | XS | UX-29 |
-| 6 | Re-acces au tutoriel depuis Infos/Profil | XS | UX-28 |
-| 7 | Ajouter favicon.ico | XS | SEO-05 |
+| # | Item | Effort | Ref | Statut |
+|---|------|--------|-----|--------|
+| 1 | Lazy load framer-motion sur homepage (next/dynamic) | M | TECH-10 | Done |
+| 2 | Convertir /infos en RSC (supprimer "use client") | S | TECH-09 | Done |
+| 3 | Index DB sur colonnes requetees | S | BACK-11 | Reporte (pas de DB en prod) |
+| 4 | Connection pooling PostgreSQL | S | BACK-12 | Reporte (pas de DB en prod) |
+| 5 | pb-safe sur BottomNav et footers (iOS) | XS | UX-29 | Done |
+| 6 | Re-acces au tutoriel depuis Infos/Profil | XS | UX-28 | Done |
+| 7 | Ajouter favicon.ico | XS | SEO-05 | Done |
 
-**Effort total :** ~1-2 jours
+**Livrable :** SlideToPlay lazy-loaded, /infos RSC, pb-safe iOS, tutoriel replay, favicon.
 
 ---
 

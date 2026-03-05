@@ -1,6 +1,5 @@
-"use client";
-
 import { ChainsawIcon } from "@/components/ChainsawIcon";
+import { ReplayTutorialButton } from "@/components/ReplayTutorialButton";
 
 export default function InfosPage() {
   return (
@@ -62,6 +61,11 @@ export default function InfosPage() {
               ))}
             </div>
           </div>
+        </section>
+
+        {/* Replay tutorial */}
+        <section className="px-4 py-2">
+          <ReplayTutorialButton />
         </section>
 
         {/* Sources */}

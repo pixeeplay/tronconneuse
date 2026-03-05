@@ -69,8 +69,8 @@
 | UX-25 | P2 | XS | aria-hidden sur icones SVG decoratives | Done Sprint 13 |
 | UX-26 | P2 | S | 6 badges categorie manquants (complementaires) | Done Sprint 14 |
 | UX-27 | P2 | S | 4 achievements manquants | Done Sprint 14 |
-| UX-28 | P3 | XS | Re-acces au tutoriel depuis Infos/Profil | A faire |
-| UX-29 | P3 | XS | pb-safe sur BottomNav et footers (iOS) | A faire |
+| UX-28 | P3 | XS | Re-acces au tutoriel depuis Infos/Profil | Done Sprint 15 |
+| UX-29 | P3 | XS | pb-safe sur BottomNav et footers (iOS) | Done Sprint 15 |
 | UX-30 | P3 | M | Leaderboard vitesse | |
 | UX-31 | P3 | L | Mode Duel (2 joueurs) | |
 
@@ -83,7 +83,7 @@
 | SEO-01 to SEO-02 | - | - | (Done Sprints 3-4) | Done |
 | SEO-03 | P3 | XS | Metadata profil joueur | |
 | SEO-04 | P2 | S | generateMetadata sur pages client | Done Sprint 14 |
-| SEO-05 | P3 | XS | Ajouter favicon.ico | A faire |
+| SEO-05 | P3 | XS | Ajouter favicon.ico | Done Sprint 15 |
 
 ---
 
@@ -114,8 +114,8 @@
 | TECH-01 to TECH-06 | - | - | (Done Sprints 5-10) | Done |
 | TECH-07 | P1 | S | Ajouter subtitle/source/level dans validateData | Done Sprint 14 |
 | TECH-08 | P2 | S | Schema versioning localStorage + migration | Done Sprint 14 |
-| TECH-09 | P2 | S | Convertir /infos en RSC | A faire |
-| TECH-10 | P2 | M | Lazy load framer-motion sur homepage | A faire |
+| TECH-09 | P2 | S | Convertir /infos en RSC | Done Sprint 15 |
+| TECH-10 | P2 | M | Lazy load framer-motion sur homepage | Done Sprint 15 |
 | TECH-11 | P3 | S | Drizzle migrations tracees | A faire |
 
 ---
@@ -124,6 +124,6 @@
 
 | Statut | Count |
 |--------|-------|
-| Done | 72 |
-| A faire | 6 |
+| Done | 75 |
+| A faire | 3 |
 | **Total** | **78** |

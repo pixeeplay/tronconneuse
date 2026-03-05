@@ -276,7 +276,7 @@ export function SwipeStack({
           onVote={handleButtonVote}
         />
       ) : (
-        <div className="px-6 pb-4 flex items-center justify-between">
+        <div className="px-6 pb-4 pb-safe flex items-center justify-between">
           <div className="flex flex-col items-center gap-3">
             <button
               onClick={() => handleButtonVote("keep")}
@@ -330,7 +330,7 @@ function Level2Buttons({
   onVote: (d: VoteDirection) => void;
 }) {
   return (
-    <div className="px-4 pb-4">
+    <div className="px-4 pb-4 pb-safe">
       <div className="grid grid-cols-4 gap-2">
         <button
           onClick={() => onVote("keep")}
