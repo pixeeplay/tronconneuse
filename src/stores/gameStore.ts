@@ -58,6 +58,7 @@ export const useGameStore = create<GameState>((set, get) => ({
   recordVote: (cardId, direction) => {
     const { session, cardShownAt } = get();
     if (!session || session.completed) return;
+    if (session.votes.some((v) => v.cardId === cardId)) return; // prevent double vote
 
     const now = Date.now();
     const duration = cardShownAt > 0 ? now - cardShownAt : 0;
@@ -80,6 +81,7 @@ export const useGameStore = create<GameState>((set, get) => ({
   nextCard: () => {
     const { session } = get();
     if (!session || session.completed) return;
+    if (session.currentIndex >= session.cards.length - 1) return; // guard bounds
 
     const nextIndex = session.currentIndex + 1;
     set({

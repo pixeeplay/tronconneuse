@@ -4,10 +4,23 @@ import type { NextRequest } from "next/server";
 export const runtime = "edge";
 
 const ARCHETYPES: Record<string, { icon: string; name: string }> = {
-  austere: { icon: "🪚", name: "L'Austéritaire" },
-  guardian: { icon: "🛡️", name: "Le Gardien" },
-  balanced: { icon: "⚖️", name: "L'Équilibriste" },
+  // Level 1
+  austeritaire: { icon: "✂️", name: "L'Austéritaire" },
+  gardien: { icon: "🛡️", name: "Le Gardien" },
+  equilibriste: { icon: "⚖️", name: "L'Équilibriste" },
   speedrunner: { icon: "🔥", name: "Le Speedrunner" },
+  // Level 2
+  stratege: { icon: "🧠", name: "Le Stratège" },
+  reformateur: { icon: "🔧", name: "Le Réformateur" },
+  demolisseur: { icon: "💣", name: "Le Démolisseur" },
+  conservateur: { icon: "🏛️", name: "Le Conservateur" },
+  sceptique: { icon: "🤔", name: "Le Sceptique" },
+  chirurgien: { icon: "🔬", name: "Le Chirurgien" },
+  // Level 3
+  auditeur_rigoureux: { icon: "📋", name: "L'Auditeur rigoureux" },
+  liquidateur_en_chef: { icon: "🗑️", name: "Le Liquidateur en chef" },
+  investisseur_public: { icon: "📈", name: "L'Investisseur public" },
+  optimisateur: { icon: "⚙️", name: "L'Optimisateur" },
 };
 
 export async function GET(request: NextRequest) {
@@ -17,7 +30,7 @@ export async function GET(request: NextRequest) {
   const cutPercent = searchParams.get("cutPercent") ?? "50";
   const totalCards = searchParams.get("totalCards") ?? "10";
 
-  const arch = ARCHETYPES[archetype] ?? ARCHETYPES.balanced;
+  const arch = ARCHETYPES[archetype] ?? ARCHETYPES.equilibriste;
 
   return new ImageResponse(
     (

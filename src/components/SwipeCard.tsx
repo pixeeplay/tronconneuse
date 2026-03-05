@@ -65,7 +65,7 @@ export const SwipeCard = forwardRef<SwipeCardHandle, SwipeCardProps>(
       className="absolute inset-0 rounded-[1.5rem] bg-card border border-primary/30 shadow-[0_8px_30px_rgba(0,0,0,0.2)] overflow-hidden cursor-grab active:cursor-grabbing touch-none select-none"
       style={{ x, y: level >= 2 ? y : undefined, rotate }}
       drag={level >= 2 ? true : "x"}
-      dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
+      dragConstraints={level >= 2 ? { left: -200, right: 200, top: -200, bottom: 200 } : { left: 0, right: 0 }}
       dragElastic={0.9}
       onDragStart={() => { didDrag.current = true; }}
       onDragEnd={(e, info) => { handleDragEnd(e, info); }}

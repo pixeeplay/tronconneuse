@@ -2,6 +2,21 @@ import { SwipeSession } from "./SwipeSession";
 import decksData from "@/data/decks.json";
 import { drawCards, filterByDeck } from "@/lib/deckUtils";
 import type { Card } from "@/types";
+import type { Metadata } from "next";
+
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ deckId: string }>;
+}): Promise<Metadata> {
+  const { deckId } = await params;
+  const deck = decksData.decks.find((d) => d.id === deckId);
+  const name = deck?.name ?? "Mode aléatoire";
+  return {
+    title: `${name} — La Tronçonneuse de Poche`,
+    description: `Swipe les dépenses ${name.toLowerCase()} : garde ou remet en question chaque poste budgétaire.`,
+  };
+}
 
 export default async function SwipePage({
   params,

@@ -60,7 +60,7 @@ export function useSwipeGesture({ onSwipe, level = 1 }: UseSwipeGestureOptions) 
     (_: unknown, info: { offset: { x: number; y: number } }) => {
       const absX = Math.abs(info.offset.x);
       const absY = Math.abs(info.offset.y);
-      const isHorizontal = absX >= absY;
+      const isHorizontal = absX > absY * 1.2; // dead-zone diagonale
 
       if (level >= 2 && !isHorizontal && absY > SWIPE_THRESHOLD) {
         const direction: VoteDirection = info.offset.y < 0 ? "reinforce" : "unjustified";

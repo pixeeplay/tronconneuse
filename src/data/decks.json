@@ -47,7 +47,7 @@
       "icon": "📚",
       "color": "#6366F1",
       "cardCount": 20,
-      "image": "/categories/educuation.svg",
+      "image": "/categories/education.svg",
       "type": "main"
     },
     {
@@ -1628,7 +1628,7 @@
       "subtitle": "Budget annexe de l'aviation civile (DGAC)",
       "description": "~180 millions de passagers/an, 2e marché aérien européen. 100% autofinancé par le secteur (redevances et taxes), pas par l'impôt. Le kérosène reste détaxé, un avantage estimé à ~3-4 Md€/an. 3 liaisons aériennes supprimées en 2023 (TGV <2h30).",
       "amountBillions": 2.3,
-      "costPerCitizen": 0,
+      "costPerCitizen": 34,
       "deckId": "culture",
       "icon": "✈️",
       "source": "DGAC, budget.gouv.fr, Réseau Action Climat",
