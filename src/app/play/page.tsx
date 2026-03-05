@@ -30,6 +30,9 @@ const allDecks = decksData.decks as Deck[];
 const mainDecks = allDecks.filter((d) => d.type !== "thematic");
 const thematicDecks = allDecks.filter((d) => d.type === "thematic");
 
+/** Number of distinct main categories needed to unlock thematic decks */
+const THEMATIC_UNLOCK_CATEGORIES = 3;
+
 const LEVEL_UNLOCK = {
   2: { sessions: 3, label: "3 sessions au Niveau 1" },
   3: { sessions: 5, label: "5 sessions au Niveau 2" },
@@ -69,6 +72,11 @@ function PlayPageContent() {
 
   const isLevel2Unlocked = sessionsCount >= LEVEL_UNLOCK[2].sessions || initialLevel >= 2;
   const isLevel3Unlocked = sessionsCount >= LEVEL_UNLOCK[3].sessions || initialLevel >= 3;
+
+  const mainCategoriesPlayed = playedDecks.filter((id) =>
+    mainDecks.some((d) => d.id === id)
+  ).length;
+  const thematicsUnlocked = mainCategoriesPlayed >= THEMATIC_UNLOCK_CATEGORIES;
 
   const levelOptions: { value: 1 | 2 | 3; label: string; locked: boolean; unlockHint: string }[] = [
     { value: 1, label: "Niveau 1", locked: false, unlockHint: "" },
@@ -215,8 +223,13 @@ function PlayPageContent() {
               <span className="text-[10px] font-bold text-warning bg-warning/15 px-2 py-0.5 rounded-full uppercase">
                 Event
               </span>
+              {!thematicsUnlocked && (
+                <span className="text-[10px] text-muted-foreground ml-auto">
+                  &#128274; {mainCategoriesPlayed}/{THEMATIC_UNLOCK_CATEGORIES} catégories
+                </span>
+              )}
             </div>
-            <div className="grid grid-cols-2 gap-3 px-4 pb-4">
+            <div className={`grid grid-cols-2 gap-3 px-4 pb-4 ${!thematicsUnlocked ? "opacity-40 pointer-events-none" : ""}`}>
               {thematicDecks.map((deck) => (
                 <DeckCard
                   key={deck.id}

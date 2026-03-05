@@ -1,41 +1,47 @@
 # Plan d'Action Priorisé — La Tronçonneuse de Poche
 
 **Date :** 2026-03-05
-**Basé sur :** Audit consolidé + Backlog (32 items)
+**Basé sur :** Audit consolidé + Backlog (33 items)
 
 ---
 
-## Sprint 3 — Hotfixes & Polish (1-2 jours)
+## Sprint 3 — Hotfixes & Polish ✅ TERMINÉ
 
 **Objectif :** Corriger les bugs critiques et améliorer la stabilité.
 
-| # | Item | Effort | Ref |
-|---|------|--------|-----|
-| 1 | Ajuster dragConstraints Level 2+ pour swipe fluide | XS | BUG-01 |
-| 2 | Fix costPerCitizen = 0 sur cul-09, ukr-08 | XS | BUG-02 |
-| 3 | Fix typo image educuation → education | XS | BUG-03 |
-| 4 | Dead-zone diagonale dans useSwipeGesture | XS | BUG-04 |
-| 5 | Guard nextCard() / empêcher double vote | XS | BUG-05/06 |
-| 6 | generateMetadata dynamique /results + /play/[deckId] | S | SEO-01 |
+| # | Item | Effort | Ref | Statut |
+|---|------|--------|-----|--------|
+| 1 | Ajuster dragConstraints Level 2+ pour swipe fluide | XS | BUG-01 | ✅ |
+| 2 | Fix costPerCitizen = 0 sur cul-09, ukr-08 | XS | BUG-02 | ✅ |
+| 3 | Fix typo image educuation → education | XS | BUG-03 | ✅ |
+| 4 | Dead-zone diagonale dans useSwipeGesture | XS | BUG-04 | ✅ |
+| 5 | Guard nextCard() / empêcher double vote | XS | BUG-05/06 | ✅ |
+| 6 | generateMetadata dynamique /results + /play/[deckId] | S | SEO-01 | ✅ |
+| 7 | Fix archétypes OG route (14 archétypes) | XS | — | ✅ |
+| 8 | Fix card count onboarding (270/17) | XS | — | ✅ |
+| 9 | robots.txt + sitemap.xml | XS | — | ✅ |
+| 10 | noindex sur env de dev | XS | — | ✅ |
 
-**Livrable :** Version stable, 0 bug connu, SEO amélioré.
+**Livrable :** Version stable, 0 bug connu, SEO amélioré. Commits `03a7ebb`, `304c152`, `30250b5`.
 
 ---
 
-## Sprint 4 — Gameplay Depth (3-5 jours)
+## Sprint 4 — Gameplay Depth ✅ TERMINÉ
 
 **Objectif :** Enrichir la rejouabilité et la progression.
 
-| # | Item | Effort | Ref |
-|---|------|--------|-----|
-| 1 | Badges par catégorie (Expert Défense, etc.) | S | UX-01 |
-| 2 | Historique + replay anciennes sessions | M | UX-02 |
-| 3 | Rapport d'impact Level 3 (estimation économies) | S | UX-05 |
-| 4 | Distinction XP tronçonneur vs contributeur | S | UX-06 |
-| 5 | Déblocage conditionnel des thématiques | S | UX-03 |
-| 6 | OG image archétype dans meta tags résultats | S | SEO-02 |
+| # | Item | Effort | Ref | Statut |
+|---|------|--------|-----|--------|
+| 1 | Badges par catégorie (8 badges, seuil 3 sessions) | S | UX-01 | ✅ |
+| 2 | Historique + replay anciennes sessions (bouton Rejouer) | M | UX-02 | ✅ |
+| 3 | Rapport d'impact Level 3 (estimation économies) | S | UX-05 | ✅ (existant) |
+| 4 | Déblocage conditionnel des thématiques (3 catégories) | S | UX-03 | ✅ |
+| 5 | OG image archétype via /share page + meta tags | S | SEO-02 | ✅ |
+| 6 | Infobulles acronymes dans la vue détail (80+ acronymes) | M | UX-09 | ✅ |
 
-**Livrable :** Progression plus riche, partage social amélioré.
+**Reporté :** UX-06 (Distinction XP tronçonneur vs contributeur) → à définir après clarification du lien avec nicoquipaie.co (API contenus, univers distincts).
+
+**Livrable :** Progression plus riche, partage social amélioré, acronymes explicables.
 
 ---
 

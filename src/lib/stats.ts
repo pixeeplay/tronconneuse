@@ -28,6 +28,8 @@ export interface GlobalStats {
   totalSessions: number;
   totalCards: number;
   categoriesPlayed: string[];
+  /** Number of sessions completed per deckId */
+  sessionsPerDeck: Record<string, number>;
   auditsN3: number;
   totalKeptBillions: number;
   totalCutBillions: number;
@@ -91,6 +93,7 @@ export function getGlobalStats(): GlobalStats {
     totalSessions: 0,
     totalCards: 0,
     categoriesPlayed: [],
+    sessionsPerDeck: {},
     auditsN3: 0,
     totalKeptBillions: 0,
     totalCutBillions: 0,
@@ -175,6 +178,8 @@ export function saveCompletedSession(session: Session): void {
   if (!stats.categoriesPlayed.includes(stored.deckId)) {
     stats.categoriesPlayed.push(stored.deckId);
   }
+  if (!stats.sessionsPerDeck) stats.sessionsPerDeck = {};
+  stats.sessionsPerDeck[stored.deckId] = (stats.sessionsPerDeck[stored.deckId] || 0) + 1;
   if (stored.level === 3) {
     stats.auditsN3 += 1;
   }

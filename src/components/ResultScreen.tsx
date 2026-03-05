@@ -77,11 +77,11 @@ export function ResultScreen() {
     track("share_result", { archetype: archetype.id, platform: "native" });
     const title = `Mon profil budgétaire : ${archetype.name}`;
     const text = `${archetype.tagline} — J'ai tronçonné ${cutPercent}% du budget !`;
-    const ogUrl = `${SITE_URL}/api/og?archetype=${archetype.id}&keepPercent=${keepPercent}&cutPercent=${cutPercent}&totalCards=${stats.totalCards}`;
+    const shareUrl = `${SITE_URL}/share?a=${archetype.id}&k=${keepPercent}&c=${cutPercent}&n=${stats.totalCards}`;
 
     if (typeof navigator !== "undefined" && navigator.share) {
       try {
-        await navigator.share({ title, text, url: SITE_URL });
+        await navigator.share({ title, text, url: shareUrl });
         return;
       } catch {
         // User cancelled or share failed — fallback below
@@ -89,7 +89,7 @@ export function ResultScreen() {
     }
 
     // Fallback: copy to clipboard
-    const shareText = `${title}\n${text}\n${SITE_URL}`;
+    const shareText = `${title}\n${text}\n${shareUrl}`;
     try {
       await navigator.clipboard.writeText(shareText);
       setShareCopied(true);
@@ -97,12 +97,10 @@ export function ResultScreen() {
     } catch {
       // Clipboard not available
       window.open(
-        `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(SITE_URL)}`,
+        `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(shareUrl)}`,
         "_blank"
       );
     }
-    // Preload OG image
-    void ogUrl;
   }, [archetype, keepPercent, cutPercent, stats]);
 
   return (

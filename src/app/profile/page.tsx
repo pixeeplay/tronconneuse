@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import { useRouter } from "next/navigation";
 import { ChainsawIcon } from "@/components/ChainsawIcon";
 import {
   getGlobalStats,
@@ -16,6 +17,7 @@ const tabs = ["Vue d'ensemble", "Mesures Détaillées", "Journal H.F."] as const
 type Tab = (typeof tabs)[number];
 
 export default function ProfilePage() {
+  const router = useRouter();
   const [activeTab, setActiveTab] = useState<Tab>("Vue d'ensemble");
   const [globalStats, setGlobalStats] = useState<GlobalStats | null>(null);
   const [profile, setProfile] = useState<PlayerProfile | null>(null);
@@ -32,6 +34,7 @@ export default function ProfilePage() {
     totalSessions: 0,
     totalCards: 0,
     categoriesPlayed: [],
+    sessionsPerDeck: {},
     auditsN3: 0,
     totalKeptBillions: 0,
     totalCutBillions: 0,
@@ -49,9 +52,10 @@ export default function ProfilePage() {
     totalBudget > 0 ? 125 - (125 * keptPercent) / 100 : 125;
 
   const completedIds = checkAchievements(stats, sessions);
-  const completedAchievements = ACHIEVEMENTS.filter((a) =>
-    completedIds.includes(a.id)
-  );
+  const generalAchievements = ACHIEVEMENTS.filter((a) => a.category !== "category");
+  const categoryBadges = ACHIEVEMENTS.filter((a) => a.category === "category");
+  const completedGeneral = generalAchievements.filter((a) => completedIds.includes(a.id));
+  const completedCategory = categoryBadges.filter((a) => completedIds.includes(a.id));
 
   return (
     <>
@@ -246,6 +250,52 @@ export default function ProfilePage() {
               </div>
             </div>
 
+            {/* Category Badges */}
+            <div className="pt-2 space-y-3">
+              <div className="flex items-center justify-between px-1">
+                <h3 className="text-xs font-black uppercase tracking-widest text-muted-foreground">
+                  Badges Catégories
+                </h3>
+                <span className="text-[10px] font-mono font-bold text-primary bg-primary/10 px-2 py-0.5 rounded border border-primary/20">
+                  {completedCategory.length} / {categoryBadges.length}
+                </span>
+              </div>
+              <div className="grid grid-cols-4 gap-2">
+                {categoryBadges.map((a) => {
+                  const completed = completedIds.includes(a.id);
+                  const prog = completed ? 100 : a.progress(stats, sessions);
+                  return (
+                    <div
+                      key={a.id}
+                      className={`relative flex flex-col items-center gap-1 p-2 rounded-xl border transition-all ${
+                        completed
+                          ? "bg-primary/10 border-primary/30"
+                          : "bg-card border-border opacity-50"
+                      }`}
+                    >
+                      <span className="text-2xl">{a.icon}</span>
+                      <span className="text-[9px] font-bold text-center leading-tight">
+                        {a.title.replace("Expert ", "")}
+                      </span>
+                      {!completed && (
+                        <div className="w-full h-1 bg-muted rounded-full overflow-hidden">
+                          <div
+                            className="h-full bg-primary/50"
+                            style={{ width: `${prog}%` }}
+                          />
+                        </div>
+                      )}
+                      {completed && (
+                        <span className="absolute -top-1 -right-1 text-[10px] bg-primary text-white w-4 h-4 rounded-full flex items-center justify-center">
+                          &#10003;
+                        </span>
+                      )}
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+
             {/* Journal des Hauts Faits */}
             <div className="pt-2 space-y-3">
               <div className="flex items-center justify-between px-1">
@@ -253,13 +303,13 @@ export default function ProfilePage() {
                   Journal des Hauts Faits
                 </h3>
                 <span className="text-[10px] font-mono font-bold text-primary bg-primary/10 px-2 py-0.5 rounded border border-primary/20">
-                  {completedAchievements.length} / {ACHIEVEMENTS.length}
+                  {completedGeneral.length} / {generalAchievements.length}
                 </span>
               </div>
 
               <div className="bg-card border border-border rounded-xl overflow-hidden divide-y divide-border">
-                {ACHIEVEMENTS.map((a) => {
-                  const completed = a.check(stats, sessions);
+                {generalAchievements.map((a) => {
+                  const completed = completedIds.includes(a.id);
                   const prog = completed ? 100 : a.progress(stats, sessions);
                   return (
                     <div
@@ -288,7 +338,7 @@ export default function ProfilePage() {
                             </span>
                           ) : (
                             <span className="text-xs text-muted-foreground">
-                              🔒
+                              &#128274;
                             </span>
                           )}
                         </div>
@@ -389,36 +439,45 @@ export default function ProfilePage() {
                 {sessions
                   .slice()
                   .reverse()
-                  .map((s) => (
-                    <div
-                      key={s.id}
-                      className="flex items-center gap-3 p-3 bg-card border border-border rounded-xl"
-                    >
-                      <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-lg">
-                        {s.archetypeId === "austenitaire"
-                          ? "🪓"
-                          : s.archetypeId === "gardien"
-                            ? "🛡"
-                            : s.archetypeId === "speedrunner"
-                              ? "🔥"
-                              : "⚖️"}
-                      </div>
-                      <div className="flex-1">
-                        <div className="flex justify-between">
-                          <span className="text-xs font-bold">
-                            {s.archetypeName}
-                          </span>
-                          <span className="text-[10px] text-muted-foreground">
-                            {new Date(s.date).toLocaleDateString("fr-FR")}
-                          </span>
+                  .map((s) => {
+                    const levelParam = s.level > 1 ? `?level=${s.level}` : "";
+                    return (
+                      <div
+                        key={s.id}
+                        className="flex items-center gap-3 p-3 bg-card border border-border rounded-xl"
+                      >
+                        <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center text-lg shrink-0">
+                          {s.archetypeId === "austeritaire"
+                            ? "\u2702\uFE0F"
+                            : s.archetypeId === "gardien"
+                              ? "\uD83D\uDEE1"
+                              : s.archetypeId === "speedrunner"
+                                ? "\uD83D\uDD25"
+                                : "\u2696\uFE0F"}
                         </div>
-                        <p className="text-[10px] text-muted-foreground">
-                          {s.totalCards} cartes · {s.deckId} ·{" "}
-                          {Math.round(s.totalDurationMs / 1000)}s
-                        </p>
+                        <div className="flex-1 min-w-0">
+                          <div className="flex justify-between">
+                            <span className="text-xs font-bold truncate">
+                              {s.archetypeName}
+                            </span>
+                            <span className="text-[10px] text-muted-foreground shrink-0 ml-2">
+                              {new Date(s.date).toLocaleDateString("fr-FR")}
+                            </span>
+                          </div>
+                          <p className="text-[10px] text-muted-foreground">
+                            {s.totalCards} cartes &middot; {s.deckId} &middot; N{s.level} &middot;{" "}
+                            {Math.round(s.totalDurationMs / 1000)}s
+                          </p>
+                        </div>
+                        <button
+                          onClick={() => router.push(`/play/${s.deckId}${levelParam}`)}
+                          className="shrink-0 text-[10px] font-bold text-primary bg-primary/10 border border-primary/20 px-2 py-1 rounded-lg hover:bg-primary/20 transition-colors"
+                        >
+                          Rejouer
+                        </button>
                       </div>
-                    </div>
-                  ))}
+                    );
+                  })}
               </div>
             )}
           </section>

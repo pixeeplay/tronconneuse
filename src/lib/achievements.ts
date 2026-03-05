@@ -6,11 +6,32 @@ export interface Achievement {
   icon: string;
   title: string;
   description: string;
+  /** Optional: "general" (default) or "category" for per-deck badges */
+  category?: "general" | "category";
   check: (stats: GlobalStats, sessions: StoredSession[]) => boolean;
   progress: (stats: GlobalStats, sessions: StoredSession[]) => number;
 }
 
-export const ACHIEVEMENTS: Achievement[] = [
+const BADGE_THRESHOLD = 3;
+
+function deckSessions(stats: GlobalStats, deckId: string): number {
+  return stats.sessionsPerDeck?.[deckId] ?? 0;
+}
+
+/** Category badges — one per main deck, unlocked after BADGE_THRESHOLD sessions */
+const CATEGORY_BADGES: Achievement[] = [
+  { id: "badge_defense", icon: "\u2694\uFE0F", title: "Expert Defense", description: `Jouer ${BADGE_THRESHOLD} sessions Defense.`, category: "category", check: (s) => deckSessions(s, "defense") >= BADGE_THRESHOLD, progress: (s) => Math.min(100, Math.round((deckSessions(s, "defense") / BADGE_THRESHOLD) * 100)) },
+  { id: "badge_energie", icon: "\u26A1", title: "Expert Energie", description: `Jouer ${BADGE_THRESHOLD} sessions Energie.`, category: "category", check: (s) => deckSessions(s, "energie") >= BADGE_THRESHOLD, progress: (s) => Math.min(100, Math.round((deckSessions(s, "energie") / BADGE_THRESHOLD) * 100)) },
+  { id: "badge_sante", icon: "\uD83C\uDFE5", title: "Expert Sante", description: `Jouer ${BADGE_THRESHOLD} sessions Sante.`, category: "category", check: (s) => deckSessions(s, "sante") >= BADGE_THRESHOLD, progress: (s) => Math.min(100, Math.round((deckSessions(s, "sante") / BADGE_THRESHOLD) * 100)) },
+  { id: "badge_social", icon: "\uD83E\uDD1D", title: "Expert Social", description: `Jouer ${BADGE_THRESHOLD} sessions Social.`, category: "category", check: (s) => deckSessions(s, "social") >= BADGE_THRESHOLD, progress: (s) => Math.min(100, Math.round((deckSessions(s, "social") / BADGE_THRESHOLD) * 100)) },
+  { id: "badge_education", icon: "\uD83D\uDCDA", title: "Expert Education", description: `Jouer ${BADGE_THRESHOLD} sessions Education.`, category: "category", check: (s) => deckSessions(s, "education") >= BADGE_THRESHOLD, progress: (s) => Math.min(100, Math.round((deckSessions(s, "education") / BADGE_THRESHOLD) * 100)) },
+  { id: "badge_securite", icon: "\u2696\uFE0F", title: "Expert Securite", description: `Jouer ${BADGE_THRESHOLD} sessions Securite.`, category: "category", check: (s) => deckSessions(s, "securite") >= BADGE_THRESHOLD, progress: (s) => Math.min(100, Math.round((deckSessions(s, "securite") / BADGE_THRESHOLD) * 100)) },
+  { id: "badge_etat", icon: "\uD83C\uDFDB\uFE0F", title: "Expert Etat", description: `Jouer ${BADGE_THRESHOLD} sessions Fonctionnement de l'Etat.`, category: "category", check: (s) => deckSessions(s, "etat") >= BADGE_THRESHOLD, progress: (s) => Math.min(100, Math.round((deckSessions(s, "etat") / BADGE_THRESHOLD) * 100)) },
+  { id: "badge_culture", icon: "\uD83C\uDFAD", title: "Expert Culture", description: `Jouer ${BADGE_THRESHOLD} sessions Culture.`, category: "category", check: (s) => deckSessions(s, "culture") >= BADGE_THRESHOLD, progress: (s) => Math.min(100, Math.round((deckSessions(s, "culture") / BADGE_THRESHOLD) * 100)) },
+];
+
+/** General (non-category) achievements */
+const GENERAL_ACHIEVEMENTS: Achievement[] = [
   {
     id: "first_cut",
     icon: "chainsaw",
@@ -103,6 +124,9 @@ export const ACHIEVEMENTS: Achievement[] = [
     progress: (s) => Math.min(100, Math.round((s.totalCards / 100) * 100)),
   },
 ];
+
+/** All achievements combined */
+export const ACHIEVEMENTS: Achievement[] = [...GENERAL_ACHIEVEMENTS, ...CATEGORY_BADGES];
 
 const UNLOCKED_KEY = "trnc:achievements";
 

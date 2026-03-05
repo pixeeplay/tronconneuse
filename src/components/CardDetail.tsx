@@ -4,6 +4,7 @@ import { useRef, useCallback } from "react";
 import { motion, AnimatePresence, useDragControls } from "framer-motion";
 import { ChainsawIcon } from "./ChainsawIcon";
 import { ShieldIcon } from "./ShieldIcon";
+import { AcronymText } from "./AcronymText";
 import type { Card, VoteDirection } from "@/types";
 
 interface CardDetailProps {
@@ -83,7 +84,7 @@ export function CardDetail({ card, level = 1, onClose, onVote }: CardDetailProps
                   {card.icon} {card.deckId.toUpperCase()}
                 </h2>
                 <h1 className="text-[28px] leading-tight font-bold text-foreground tracking-tight mb-5">
-                  {card.title}
+                  <AcronymText text={card.title} />
                 </h1>
               </div>
 
@@ -107,9 +108,10 @@ export function CardDetail({ card, level = 1, onClose, onVote }: CardDetailProps
                 <h3 className="text-lg font-bold text-foreground mb-3 tracking-tight">
                   Contexte
                 </h3>
-                <p className="text-muted-foreground leading-relaxed text-[15px]">
-                  {card.description}
-                </p>
+                <AcronymText
+                  text={card.description}
+                  className="text-muted-foreground leading-relaxed text-[15px]"
+                />
               </section>
 
               {/* Subtitle / Équivalence */}
@@ -121,9 +123,10 @@ export function CardDetail({ card, level = 1, onClose, onVote }: CardDetailProps
                   </h3>
                   <div className="bg-primary/5 border border-primary/20 rounded-2xl p-4 flex items-start gap-3">
                     <span className="text-2xl mt-0.5">💡</span>
-                    <p className="text-foreground font-medium text-[15px] leading-snug">
-                      {card.subtitle}
-                    </p>
+                    <AcronymText
+                      text={card.subtitle}
+                      className="text-foreground font-medium text-[15px] leading-snug"
+                    />
                   </div>
                 </section>
               )}
