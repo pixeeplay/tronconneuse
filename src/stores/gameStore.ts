@@ -1,5 +1,5 @@
 import { create } from "zustand";
-import type { Card, Vote, VoteDirection, Session, SessionStats } from "@/types";
+import type { Card, Vote, VoteDirection, Session, SessionStats, AuditResponse } from "@/types";
 import { computeStats, determineArchetype } from "@/lib/archetype";
 import { saveCompletedSession } from "@/lib/stats";
 import { track } from "@/lib/analytics";
@@ -19,6 +19,8 @@ interface GameState {
   nextCard: () => void;
   /** Terminer la session et calculer l'archétype */
   completeSession: () => void;
+  /** Record an audit response (Level 3) */
+  recordAudit: (response: AuditResponse) => void;
   /** Reset complet */
   reset: () => void;
 
@@ -115,6 +117,18 @@ export const useGameStore = create<GameState>((set, get) => ({
       keepPercent: Math.round(rawStats.keepPercent),
       cutPercent: Math.round(rawStats.cutPercent),
       totalDurationMs: completed.totalDuration,
+    });
+  },
+
+  recordAudit: (response) => {
+    const { session } = get();
+    if (!session) return;
+    const existing = session.auditResponses ?? [];
+    set({
+      session: {
+        ...session,
+        auditResponses: [...existing, response],
+      },
     });
   },
 

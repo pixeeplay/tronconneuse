@@ -1,0 +1,51 @@
+{
+  "questions": [
+    {
+      "id": "proportioned",
+      "icon": "balance",
+      "text": "Le montant est proportionne ?"
+    },
+    {
+      "id": "legitimate",
+      "icon": "gavel",
+      "text": "La mission est legitime ?"
+    },
+    {
+      "id": "alternative",
+      "icon": "savings",
+      "text": "Une alternative moins couteuse existe ?"
+    }
+  ],
+  "recommendations": [
+    {
+      "id": "keep",
+      "label": "Maintenir le budget",
+      "color": "primary"
+    },
+    {
+      "id": "reduce",
+      "label": "Reduire de moitie",
+      "color": "warning"
+    },
+    {
+      "id": "externalize",
+      "label": "Externaliser",
+      "color": "info"
+    },
+    {
+      "id": "merge",
+      "label": "Fusionner avec un autre poste",
+      "color": "info"
+    },
+    {
+      "id": "reinforce",
+      "label": "Renforcer (+15%)",
+      "color": "primary"
+    },
+    {
+      "id": "delete",
+      "label": "Supprimer",
+      "color": "danger"
+    }
+  ]
+}

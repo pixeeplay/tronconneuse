@@ -17,6 +17,8 @@ interface SwipeStackProps {
   deckName: string;
   level?: 1 | 2 | 3;
   onCardTap?: (card: Card) => void;
+  /** Level 3: delegate swipe handling to parent (card + direction) */
+  onSwipeComplete?: (card: Card, direction: VoteDirection) => void;
 }
 
 export function SwipeStack({
@@ -25,6 +27,7 @@ export function SwipeStack({
   deckName,
   level = 1,
   onCardTap,
+  onSwipeComplete,
 }: SwipeStackProps) {
   const router = useRouter();
   const { session, cardShownAt, startSession, recordVote, nextCard, completeSession } =
@@ -47,6 +50,13 @@ export function SwipeStack({
       if (!card) return;
       const durationMs = cardShownAt > 0 ? Date.now() - cardShownAt : 0;
       track("card_vote", { cardId: card.id, direction, durationMs });
+
+      // Level 3: delegate to parent for audit flow
+      if (onSwipeComplete) {
+        onSwipeComplete(card, direction);
+        return;
+      }
+
       recordVote(card.id, direction);
       nextCard();
       if (currentIndex + 1 >= totalCards) {
@@ -54,7 +64,7 @@ export function SwipeStack({
         setTimeout(() => router.push("/results"), 300);
       }
     },
-    [recordVote, nextCard, completeSession, currentIndex, totalCards, cards, router]
+    [recordVote, nextCard, completeSession, currentIndex, totalCards, cards, router, onSwipeComplete, cardShownAt]
   );
 
   const handleButtonVote = useCallback(

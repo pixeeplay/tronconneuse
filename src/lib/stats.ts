@@ -95,6 +95,7 @@ function computeSessionXP(session: StoredSession): number {
   xp += session.totalCards * 10; // +10 per card
   xp += 50; // +50 for completing a session
   if (session.archetypeId === "speedrunner") xp += 100; // bonus
+  if (session.level === 3) xp += 100; // Level 3 audit bonus
   return xp;
 }
 

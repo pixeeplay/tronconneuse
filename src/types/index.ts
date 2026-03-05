@@ -78,6 +78,8 @@ export interface Session {
   totalDuration?: number;
   /** Session terminée ? */
   completed: boolean;
+  /** Audit responses for Level 3 */
+  auditResponses?: AuditResponse[];
 }
 
 // === ARCHETYPE ===
@@ -108,6 +110,25 @@ export interface ArchetypeCondition {
   maxKeepPercent?: number;
   /** Durée maximum en secondes (pour Speedrunner) */
   maxDurationSeconds?: number;
+}
+
+// === AUDIT (Level 3) ===
+export interface AuditQuestion {
+  id: string;
+  /** Icon name or emoji */
+  icon: string;
+  /** Question text */
+  text: string;
+}
+
+export type AuditRecommendation = "reduce" | "externalize" | "merge" | "delete" | "reinforce" | "keep";
+
+export interface AuditResponse {
+  cardId: string;
+  /** Answers to the 3 diagnostic questions (true = OUI, false = NON) */
+  diagnostics: Record<string, boolean>;
+  /** Chosen recommendation */
+  recommendation: AuditRecommendation;
 }
 
 // === STATS ===

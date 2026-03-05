@@ -34,7 +34,7 @@ function PlayPageContent() {
   const levelOptions: { value: 1 | 2 | 3; label: string; locked: boolean }[] = [
     { value: 1, label: "Niveau 1", locked: false },
     { value: 2, label: "Niveau 2", locked: false },
-    { value: 3, label: "Niveau 3", locked: true },
+    { value: 3, label: "Niveau 3", locked: false },
   ];
 
   return (
