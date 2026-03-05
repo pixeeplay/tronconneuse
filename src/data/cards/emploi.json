@@ -1,0 +1,327 @@
+[
+  {
+    "id": "emp-01",
+    "title": "Formation professionnelle continue",
+    "subtitle": "État + entreprises + Régions + Unédic",
+    "description": "Système très financé mais critiqué pour son opacité. Le CPF permet 500€/an de droits. ~1,5 million de formations CPF/an. Fraude au CPF estimée à 200 M€. France Compétences a été en déficit chronique (4-6 Md€) avant rééquilibrage.",
+    "amountBillions": 32,
+    "costPerCitizen": 470,
+    "deckId": "emploi",
+    "icon": "📖",
+    "source": "DARES, France Compétences, Cour des comptes",
+    "level": 1,
+    "tags": [
+      "emploi",
+      "formation",
+      "CPF"
+    ],
+    "equivalence": "~1 200€ de depense formation par actif et par an"
+  },
+  {
+    "id": "emp-02",
+    "title": "Crédit d'impôt services à la personne",
+    "subtitle": "2e plus grosse niche fiscale — 50% de crédit d'impôt",
+    "description": "Ménage, garde d'enfants, soutien scolaire, aide aux personnes âgées. Soutient ~1,3 million d'emplois. Critique : profite surtout aux ménages aisés qui peuvent avancer les sommes. Le PLF 2026 envisageait un plafonnement, finalement abandonné.",
+    "amountBillions": 6,
+    "costPerCitizen": 88,
+    "deckId": "emploi",
+    "icon": "🏠",
+    "source": "PLF 2026, DGFiP, DARES",
+    "level": 1,
+    "tags": [
+      "emploi",
+      "fiscalité",
+      "services à la personne"
+    ],
+    "equivalence": "2e plus grosse niche fiscale, juste derriere le CIR (7 Md€)"
+  },
+  {
+    "id": "emp-03",
+    "title": "Exonérations Outre-mer (LODEOM)",
+    "subtitle": "Cotisations sociales spécifiques DOM-TOM",
+    "description": "Exonérations pour compenser les surcoûts structurels (éloignement, insularité). Le taux de chômage en Outre-mer reste 2 à 3 fois supérieur à la métropole. Le PLF 2026 réforme ces exonérations pour les recentrer sur les bas salaires.",
+    "amountBillions": 1.5,
+    "costPerCitizen": 22,
+    "deckId": "emploi",
+    "icon": "🏝️",
+    "source": "PLF 2026, IEDOM, Cour des comptes",
+    "level": 1,
+    "tags": [
+      "emploi",
+      "outre-mer",
+      "exonérations"
+    ],
+    "equivalence": "Le transfert net par ultramarin est ~3x superieur a la moyenne des transferts par metropolitain"
+  },
+  {
+    "id": "emp-04",
+    "title": "CVAE (suppression progressive)",
+    "subtitle": "Cotisation sur la valeur ajoutée des entreprises",
+    "description": "Impôt de production payé par les entreprises (CA > 500 000€). La France a les impôts de production les plus élevés d'Europe (~70 Md€). Suppression progressive engagée, fin prévue 2027. Les collectivités perdent une recette, compensée par de la TVA.",
+    "amountBillions": 4,
+    "costPerCitizen": 59,
+    "deckId": "emploi",
+    "icon": "🏭",
+    "trend": -25,
+    "source": "PLF 2026, DGFiP, CCI France",
+    "level": 1,
+    "tags": [
+      "emploi",
+      "compétitivité",
+      "impôt de production"
+    ],
+    "equivalence": "La suppression complete de la CVAE coutera ~10 Md€ a terme a l'Etat"
+  },
+  {
+    "id": "emp-05",
+    "title": "Activité partielle (chômage partiel)",
+    "subtitle": "Régime de croisière — hors crise",
+    "description": "Permet aux entreprises en difficulté de réduire le temps de travail avec rémunération partielle. A explosé pendant le COVID (35 Md€ en 2020-2021). Salué comme ayant sauvé des millions d'emplois pendant la pandémie. Revenu à un niveau normal.",
+    "amountBillions": 0.7,
+    "costPerCitizen": 10,
+    "deckId": "emploi",
+    "icon": "⏱️",
+    "source": "DARES, PLF 2026, Unédic",
+    "level": 1,
+    "tags": [
+      "emploi",
+      "chômage partiel",
+      "crise"
+    ],
+    "equivalence": "Le pic COVID (35 Md€) = 2,5x le budget annuel de la Justice"
+  },
+  {
+    "id": "emp-06",
+    "title": "Prime d'activité",
+    "subtitle": "Complément de revenus pour travailleurs modestes",
+    "description": "~4,5 millions de foyers, ~190€/mois en moyenne. Revalorisée de 90€ en 2019 (Gilets Jaunes). Principal outil de soutien aux travailleurs pauvres. Taux de non-recours ~25%. Critique : elle subventionne de fait les bas salaires.",
+    "amountBillions": 10.5,
+    "costPerCitizen": 154,
+    "deckId": "emploi",
+    "icon": "💶",
+    "source": "CNAF, DREES, PLF 2026",
+    "level": 1,
+    "tags": [
+      "emploi",
+      "prime d'activité",
+      "travailleurs pauvres"
+    ],
+    "equivalence": "La prime d'activite coute plus que le RSA (~10,5 Md€ vs ~10 Md€)"
+  },
+  {
+    "id": "emp-07",
+    "title": "Contrat d'engagement jeune (CEJ)",
+    "subtitle": "16-25 ans sans emploi, formation ni études (NEET)",
+    "description": "Accompagnement intensif (15-20h/semaine) et allocation de ~520€/mois pendant 6-12 mois. ~300 000 jeunes entrés depuis mars 2022. Résultats : ~40% en emploi durable 6 mois après la sortie. ~5 000€ par jeune sur un parcours complet.",
+    "amountBillions": 1.5,
+    "costPerCitizen": 22,
+    "deckId": "emploi",
+    "icon": "🎯",
+    "source": "France Travail, DARES, PLF 2026",
+    "level": 1,
+    "tags": [
+      "emploi",
+      "jeunes",
+      "insertion"
+    ],
+    "equivalence": "~5 000€ par jeune accompagne sur un parcours complet"
+  },
+  {
+    "id": "emp-08",
+    "title": "Ex-CICE (allègements bas salaires)",
+    "subtitle": "Réduction pérenne de cotisations patronales",
+    "description": "Ex-crédit d'impôt de 6% transformé en réduction de cotisations depuis 2019. ~25 Md€ des 65 Md€ d'allègements totaux. Entre 100 000 et 300 000 emplois créés ou sauvés selon les études. Coût par emploi : 80 000 à 250 000€.",
+    "amountBillions": 25,
+    "costPerCitizen": 370,
+    "deckId": "emploi",
+    "icon": "📉",
+    "source": "France Stratégie, Cour des comptes, INSEE",
+    "level": 1,
+    "tags": [
+      "emploi",
+      "CICE",
+      "cotisations"
+    ],
+    "equivalence": "Si 200 000 emplois crees, chaque emploi coute ~125 000€/an au contribuable"
+  },
+  {
+    "id": "emp-09",
+    "title": "Fraude au CPF",
+    "subtitle": "Compte personnel de formation",
+    "description": "Le CPF (500/an par actif, plafonne a 5 000) est devenu un terrain de chasse pour les escrocs. La Caisse des depots a bloque 43 000 comptes suspects en 2023. FranceConnect+ obligatoire depuis 2023, reduisant la fraude de 80%. 40% des formations CPF jugees sans valeur par la Cour des comptes.",
+    "amountBillions": 0.25,
+    "costPerCitizen": 4,
+    "deckId": "emploi",
+    "icon": "🏢",
+    "source": "Caisse des depots, Cour des comptes, France Competences",
+    "level": 1,
+    "tags": [
+      "emploi",
+      "CPF",
+      "fraude"
+    ],
+    "equivalence": "Le CPF distribue 2 Md/an en formation, dont 40% jugees inutiles par la Cour des comptes"
+  },
+  {
+    "id": "emp-10",
+    "title": "Zones franches et ZRR (ruralite)",
+    "subtitle": "Exonerations fiscales et sociales",
+    "description": "Les ZFU (~100 quartiers) et ZRR (~18 000 communes) offrent des exonerations pour attirer les entreprises. Les ZRR remplacees par les France Ruralites Revitalisation (FRR) en 2024. Effet positif modere sur l'emploi local (+5-10%) mais cout eleve par emploi cree (~30 000/an).",
+    "amountBillions": 0.7,
+    "costPerCitizen": 10,
+    "deckId": "emploi",
+    "icon": "🏢",
+    "source": "DGCL, ANCT, Cour des comptes, PLF 2026",
+    "level": 1,
+    "tags": [
+      "emploi",
+      "zones franches",
+      "ruralite"
+    ],
+    "equivalence": "18 000 communes en ZRR = la moitie des communes francaises beneficient d'avantages fiscaux"
+  },
+  {
+    "id": "emp-11",
+    "title": "Dialogue social et representativite",
+    "subtitle": "Financement syndicats + patronat",
+    "description": "L'AGFPN repartit ~130 M/an entre les 5 syndicats representatifs et les 3 organisations patronales. Le taux de syndicalisation en France est de ~8% (plus bas d'Europe). Les cotisations syndicales ne couvrent que 40% du budget des syndicats.",
+    "amountBillions": 0.13,
+    "costPerCitizen": 2,
+    "deckId": "emploi",
+    "icon": "🏢",
+    "source": "AGFPN, DARES, DREES",
+    "level": 1,
+    "tags": [
+      "emploi",
+      "syndicats",
+      "dialogue social"
+    ],
+    "equivalence": "2/an par Francais pour financer un dialogue social avec 8% de syndiques — le plus bas taux d'Europe"
+  },
+  {
+    "id": "emp-12",
+    "title": "Travail detache (travailleurs europeens)",
+    "subtitle": "300 000 travailleurs declares + fraude",
+    "description": "300 000 travailleurs detaches declares en France (BTP, agriculture, transport). Payes aux conditions francaises mais cotisant dans leur pays d'origine. La fraude au detachement est estimee a 200 000-500 000 travailleurs supplementaires. Un travailleur detache coute 20-30% de moins qu'un salarie francais.",
+    "amountBillions": 2.5,
+    "costPerCitizen": 35,
+    "deckId": "emploi",
+    "icon": "🏢",
+    "source": "DGT, Commission europeenne, Cour des comptes",
+    "level": 1,
+    "tags": [
+      "emploi",
+      "detachement",
+      "Europe"
+    ],
+    "equivalence": "1 travailleur detache coute 20-30% de moins qu'un salarie francais a poste equivalent"
+  },
+  {
+    "id": "emp-13",
+    "title": "Inspection du travail",
+    "subtitle": "2 000 inspecteurs pour 20 millions de salaries",
+    "description": "1 inspecteur pour 10 000 salaries (OIT recommande 1 pour 8 000). 450 000 interventions/an, 25 000 PV. 200 agressions declarees/an. Le travail dissimule est estime a 6-8% du PIB (~180 Md), dont l'essentiel echappe aux controles.",
+    "amountBillions": 0.6,
+    "costPerCitizen": 9,
+    "deckId": "emploi",
+    "icon": "🏢",
+    "source": "DGT, OIT, PLF 2026",
+    "level": 1,
+    "tags": [
+      "emploi",
+      "inspection",
+      "travail"
+    ],
+    "equivalence": "1 inspecteur du travail pour 10 000 salaries — 1 policier pour 300 habitants"
+  },
+  {
+    "id": "emp-14",
+    "title": "Travail illegal et economie souterraine",
+    "subtitle": "6-8% du PIB soit 170-220 Md/an",
+    "description": "L'economie souterraine est moins elevee qu'en Italie (~20%) ou Grece (~25%), mais superieure a l'Allemagne (~4%). Les cotisations eludees : 20-25 Md/an. Secteurs touches : BTP (25%), restauration (20%), services a la personne (30%). La task force recouvre ~1 Md/an, soit 5% du manque a gagner.",
+    "amountBillions": 200,
+    "costPerCitizen": 2900,
+    "deckId": "emploi",
+    "icon": "🏢",
+    "source": "ACOSS/URSSAF, INSEE, CNLTI, Cour des comptes",
+    "level": 1,
+    "tags": [
+      "emploi",
+      "travail illegal",
+      "economie souterraine"
+    ],
+    "equivalence": "Le travail au noir represente 2x le budget de la Defense en cotisations perdues"
+  },
+  {
+    "id": "emp-15",
+    "title": "Temps de travail et 35 heures",
+    "subtitle": "Cout et debat depuis 25 ans",
+    "description": "Les 35 heures compensees par des allegements de ~12 Md/an. Les Francais travaillent 1 607h/an (vs 1 800 en Allemagne). Mais la duree effective des salaries a temps complet est de 39,1h/semaine. Les etudes divergent : 300 000 emplois crees (DARES) vs 0 emploi net (IFRAP).",
+    "amountBillions": 12,
+    "costPerCitizen": 176,
+    "deckId": "emploi",
+    "icon": "🏢",
+    "source": "DARES, INSEE, Cour des comptes",
+    "level": 1,
+    "tags": [
+      "emploi",
+      "35 heures",
+      "temps de travail"
+    ],
+    "equivalence": "Les Francais travaillent officiellement 35h mais effectivement 39h — debat depuis 25 ans"
+  },
+  {
+    "id": "emp-16",
+    "title": "RSE et index egalite professionnelle",
+    "subtitle": "Score moyen 88/100 mais ecart reel 16%",
+    "description": "L'index d'egalite professionnelle oblige les entreprises de +50 salaries a publier un score sur 100. Ecart salarial H/F toutes choses egales : ~5-7%. La CSRD europeenne (2024) impose un reporting extra-financier. Cout de conformite : ~100 000/an pour une ETI.",
+    "amountBillions": 0.2,
+    "costPerCitizen": 0,
+    "deckId": "emploi",
+    "icon": "🏢",
+    "source": "Ministere Travail, DARES, Commission europeenne CSRD",
+    "level": 1,
+    "tags": [
+      "emploi",
+      "RSE",
+      "egalite"
+    ],
+    "equivalence": "Score moyen 88/100 mais ecart salarial reel de 16% — l'index mesure mal ce qu'il est cense corriger"
+  },
+  {
+    "id": "emp-17",
+    "title": "Accidents du travail mortels",
+    "subtitle": "2 morts par jour — pire bilan d'Europe de l'Ouest",
+    "description": "~650 000 accidents/an dont ~700 mortels. Taux de mortalite 2x superieur a l'Allemagne et 3x aux Pays-Bas. Le BTP concentre 20% des accidents mortels pour 8% des emplois. Un interimaire a 2x plus de risques qu'un CDI.",
+    "amountBillions": 50,
+    "costPerCitizen": 735,
+    "deckId": "emploi",
+    "icon": "🏢",
+    "source": "CNAM AT-MP, Eurostat, DARES, ANACT",
+    "level": 1,
+    "tags": [
+      "emploi",
+      "accidents",
+      "securite"
+    ],
+    "equivalence": "2 morts au travail par jour en France — 3x plus qu'aux Pays-Bas, et personne n'en parle"
+  },
+  {
+    "id": "emp-18",
+    "title": "Seniors et emploi",
+    "subtitle": "Taux d'emploi 60-64 ans : 38%",
+    "description": "1 senior sur 2 est hors emploi avant l'age de la retraite. La reforme des retraites (64 ans) aggrave le probleme : sans emploi pour les seniors, ils basculent au chomage/RSA. La retraite progressive ne concerne que 25 000 personnes. L'index senior annule au Conseil constitutionnel en 2023.",
+    "amountBillions": 2,
+    "costPerCitizen": 29,
+    "deckId": "emploi",
+    "icon": "🏢",
+    "source": "DARES, France Strategie, COR, INSEE",
+    "level": 1,
+    "tags": [
+      "emploi",
+      "seniors",
+      "retraite"
+    ],
+    "equivalence": "Repousser la retraite a 64 ans sans emploi pour les seniors = transformer le chomage en RSA"
+  }
+]

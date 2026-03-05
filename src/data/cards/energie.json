@@ -1,0 +1,580 @@
+[
+  {
+    "id": "ene-01",
+    "title": "Subventions éolien & solaire",
+    "subtitle": "Charges de service public de l'énergie (CSPE)",
+    "description": "L'État garantit un prix de rachat aux producteurs ENR. Quand le prix de marché est inférieur, il paie la différence. La CRE a révisé ses prévisions 2025 de +43%. Le cumul 2003-2026 des subventions éolien + solaire atteint ~46 Md€.",
+    "amountBillions": 7.6,
+    "costPerCitizen": 112,
+    "deckId": "energie",
+    "icon": "🌬️",
+    "trend": 43,
+    "source": "CRE 2025, PIEBÎEM",
+    "level": 1,
+    "tags": [
+      "énergie",
+      "renouvelables",
+      "subventions"
+    ],
+    "equivalence": "2x le budget annuel de la recherche publique francaise"
+  },
+  {
+    "id": "ene-02",
+    "title": "Éolien offshore",
+    "subtitle": "Parcs éoliens en mer — subventions et développement",
+    "description": "3 parcs en service (1,5 GW), objectif PPE3 : 18 GW en 2035. L'éolien offshore est la filière la plus coûteuse en subventions par GW installé (~293 M€/GW/an). Les nouveaux appels d'offres sont nettement moins chers que les premiers parcs.",
+    "amountBillions": 0.922,
+    "costPerCitizen": 14,
+    "deckId": "energie",
+    "icon": "🌊",
+    "source": "CRE 2025, PPE3 décret fév. 2026",
+    "level": 1,
+    "tags": [
+      "énergie",
+      "éolien",
+      "mer"
+    ],
+    "equivalence": "1 GW offshore coute en subventions l'equivalent du budget annuel de 3 prefectures"
+  },
+  {
+    "id": "ene-03",
+    "title": "Nouveaux EPR2 (nucléaire)",
+    "subtitle": "Construction de 6 réacteurs EPR2 (+ 8 en option)",
+    "description": "Relance du nucléaire annoncée à Belfort (2022), première mise en service prévue ~2037. Coût réévalué fin 2025 : +40% vs estimation initiale. Flamanville (EPR1) : 12 ans de retard, coût passé de 3,5 à 19,1 Md€. Le nucléaire produit ~70% de l'électricité française.",
+    "amountBillions": 72.8,
+    "costPerCitizen": 1070,
+    "deckId": "energie",
+    "icon": "⚛️",
+    "trend": 40,
+    "source": "PPE3, Vert.eco",
+    "level": 1,
+    "tags": [
+      "énergie",
+      "nucléaire",
+      "construction"
+    ],
+    "equivalence": "6 EPR = ~4x le cout du tunnel sous la Manche (ajuste inflation)"
+  },
+  {
+    "id": "ene-04",
+    "title": "Importations pétrole et gaz",
+    "subtitle": "Facture annuelle d'importation d'énergies fossiles",
+    "description": "Pétrole, gaz naturel, charbon — achetés à l'étranger. Les fossiles représentent encore ~60% du mix énergétique français. Ces 64 Md€ partent intégralement à l'étranger. La PPE3 vise une réduction de 30% des importations fossiles d'ici 2035.",
+    "amountBillions": 64,
+    "costPerCitizen": 940,
+    "deckId": "energie",
+    "icon": "🛢️",
+    "source": "France Renouvelables, economie.gouv.fr PPE3",
+    "sourceUrl": "https://www.economie.gouv.fr",
+    "level": 1,
+    "tags": [
+      "énergie",
+      "fossiles",
+      "importation"
+    ],
+    "equivalence": "64 Md€ = le budget total de la Defense + celui de la Justice"
+  },
+  {
+    "id": "ene-05",
+    "title": "Modernisation réseau électrique",
+    "subtitle": "Investissements RTE et Enedis",
+    "description": "Remplacement de lignes vieillissantes, adaptation au changement climatique, raccordement des nouvelles capacités. ~200 Md€ cumulés d'ici 2040. Financé par le TURPE (composante de la facture d'électricité), pas directement par l'impôt.",
+    "amountBillions": 13,
+    "costPerCitizen": 190,
+    "deckId": "energie",
+    "icon": "⚡",
+    "source": "RTE, Enedis, PPE3, Public Sénat",
+    "level": 1,
+    "tags": [
+      "énergie",
+      "réseau",
+      "infrastructure"
+    ],
+    "equivalence": "200 Md€ sur 15 ans = ~1 Grand Paris Express tous les 3 ans"
+  },
+  {
+    "id": "ene-06",
+    "title": "Bonus écologique véhicules",
+    "subtitle": "Bonus écologique à l'achat de véhicules électriques",
+    "description": "Prime allant jusqu'à 4 000€ par véhicule (7 000€ sous conditions de revenus). En 2024, ~300 000 véhicules électriques immatriculés, loin des 430 000 prévus. Le réseau de bornes reste insuffisant (~150 000 points vs objectif 400 000 en 2030).",
+    "amountBillions": 1.5,
+    "costPerCitizen": 22,
+    "deckId": "energie",
+    "icon": "🚗",
+    "trend": -15,
+    "source": "economie.gouv.fr, PPE3",
+    "sourceUrl": "https://www.economie.gouv.fr",
+    "level": 1,
+    "tags": [
+      "énergie",
+      "mobilité",
+      "électrique"
+    ],
+    "equivalence": "1,5 Md€ = le cout de 2 ans de fonctionnement du reseau de tramways francais"
+  },
+  {
+    "id": "ene-07",
+    "title": "MaPrimeRénov'",
+    "subtitle": "Aide à la rénovation énergétique des logements",
+    "description": "Isolation, changement de chauffage, pompes à chaleur, fenêtres. En 2024, seulement ~85 000 rénovations globales financées contre 200 000 prévues. 4,8 millions de logements sont des « passoires thermiques ». La PPE3 vise 900 000 rénovations/an d'ici 2030.",
+    "amountBillions": 3,
+    "costPerCitizen": 44,
+    "deckId": "energie",
+    "icon": "🏠",
+    "source": "PPE3, Vert.eco, ANAH",
+    "level": 1,
+    "tags": [
+      "énergie",
+      "rénovation",
+      "logement"
+    ],
+    "equivalence": "3 Md€ = l'isolation complete de ~150 000 logements/an"
+  },
+  {
+    "id": "ene-08",
+    "title": "Grand carénage nucléaire",
+    "subtitle": "Prolongation des 57 réacteurs existants au-delà de 40 ans",
+    "description": "Remplacement de gros composants, renforcement post-Fukushima, maintenance lourde. Total ~66 Md€ sur 2014-2035. Le nucléaire existant est largement amorti et produit l'électricité la moins chère d'Europe (~42 €/MWh).",
+    "amountBillions": 5,
+    "costPerCitizen": 74,
+    "deckId": "energie",
+    "icon": "🔧",
+    "source": "EDF, PPE3, ASN",
+    "level": 1,
+    "tags": [
+      "énergie",
+      "nucléaire",
+      "maintenance"
+    ],
+    "equivalence": "Prolonger 1 reacteur coute ~20x moins cher que d'en construire un neuf (EPR2)"
+  },
+  {
+    "id": "ene-09",
+    "title": "Subventions ENR futures (PPE3)",
+    "subtitle": "Nouveaux projets éolien & solaire prévus par la PPE3",
+    "description": "Contrats de complément de rémunération (CfD) pour les projets 2025-2035. Bataille de chiffres : gouvernement annonce 30-50 Md€, critiques avancent 100 à 212 Md€. Le coût réel dépend du prix futur de l'électricité.",
+    "amountBillions": 1.15,
+    "costPerCitizen": 17,
+    "deckId": "energie",
+    "icon": "☀️",
+    "source": "economie.gouv.fr PPE3, CRE",
+    "sourceUrl": "https://www.economie.gouv.fr",
+    "level": 1,
+    "tags": [
+      "énergie",
+      "renouvelables",
+      "PPE3"
+    ],
+    "equivalence": "Dans le pire scenario, 212 Md€ = la moitie du cout de la LPM militaire 2024-2030"
+  },
+  {
+    "id": "ene-10",
+    "title": "Exportations d'électricité",
+    "subtitle": "Exportations nettes d'électricité française",
+    "description": "La France est le 1er exportateur européen d'électricité grâce à son mix nucléaire + hydro + renouvelable. Record en 2023 avec ~100 TWh exportés. Chaque MWh exporté rapporte à EDF et à la balance commerciale. C'est une recette, pas une dépense.",
+    "amountBillions": 6,
+    "costPerCitizen": 88,
+    "deckId": "energie",
+    "icon": "💰",
+    "source": "RTE bilan électrique 2023-2024, EDF",
+    "level": 1,
+    "tags": [
+      "énergie",
+      "exportation",
+      "recettes"
+    ],
+    "equivalence": "Les exportations d'electricite rapportent autant que l'industrie aeronautique civile"
+  },
+  {
+    "id": "cre-01",
+    "title": "Bouclier tarifaire (coût global)",
+    "subtitle": "Entre 1 et 3 ans de budget de la Défense engloutis en 3 ans de crise",
+    "description": "Le coût du bouclier tarifaire varie du simple au triple selon qui calcule : 20,4 Md€ nets selon la CRE, 60 Md€ selon la Banque de France (2,2% du PIB sur 2022-2023), jusqu'à 72 Md€ selon la Cour des comptes en incluant toutes les mesures connexes. L'écart s'explique par l'inclusion ou non des remises carburant, chèques énergie, aides aux entreprises et charges absorbées par EDF. Ce flou comptable est en soi un problème démocratique.",
+    "amountBillions": 26,
+    "costPerCitizen": 382,
+    "deckId": "energie",
+    "icon": "🛡️",
+    "source": "CRE (juil. 2024), Banque de France, Cour des comptes",
+    "sourceUrl": null,
+    "level": 1,
+    "tags": [
+      "énergie",
+      "bouclier tarifaire",
+      "crise"
+    ],
+    "trend": null,
+    "equivalence": "Entre 1 et 3 ans de budget de la Defense engloutis en 3 ans de crise"
+  },
+  {
+    "id": "cre-02",
+    "title": "Bouclier électricité (volet principal)",
+    "subtitle": "19,2 Md€ en 2023 = le budget annuel entier de la Justice x 2",
+    "description": "L'État a plafonné les tarifs réglementés d'électricité : +4% en 2022 (au lieu de +35%), +15% en 2023 (au lieu de +45%). Le pic de dépense a été en 2023 : 19,2 Md€ sur une seule année. L'accise sur l'électricité a été réduite de 32€/MWh à 1€/MWh pendant la crise, avant de revenir à 33,70€/MWh en février 2025. Les ménages n'ont absorbé qu'un tiers de la hausse réelle des prix.",
+    "amountBillions": 21.5,
+    "costPerCitizen": 316,
+    "deckId": "energie",
+    "icon": "💡",
+    "source": "CRE délibération juil. 2024, vie-publique.fr",
+    "sourceUrl": "https://www.vie-publique.fr",
+    "level": 1,
+    "tags": [
+      "énergie",
+      "électricité",
+      "bouclier tarifaire"
+    ],
+    "trend": null,
+    "equivalence": "19,2 Md€ en 2023 = le budget annuel entier de la Justice x 2"
+  },
+  {
+    "id": "cre-03",
+    "title": "Remise sur les carburants",
+    "subtitle": "8,5 Md€ = le double du budget annuel du ministère de la Culture",
+    "description": "En 2022, l'État a financé une remise de 18 centimes/litre (avril-août) puis 30 centimes/litre (sept-oct) sur tous les carburants. Mesure critiquée : elle bénéficiait davantage aux gros rouleurs et SUV qu'aux ménages modestes. Une aide ciblée sur les revenus aurait coûté 3x moins pour le même effet sur les plus fragiles. La remise a été remplacée par une indemnité carburant en 2023 (100€ pour 10M de ménages).",
+    "amountBillions": 8.5,
+    "costPerCitizen": 125,
+    "deckId": "energie",
+    "icon": "⛽",
+    "source": "Cour des comptes, vie-publique.fr, PLF 2023",
+    "sourceUrl": "https://www.vie-publique.fr",
+    "level": 1,
+    "tags": [
+      "énergie",
+      "carburant",
+      "transport"
+    ],
+    "trend": null,
+    "equivalence": "8,5 Md€ = le double du budget annuel du ministere de la Culture"
+  },
+  {
+    "id": "cre-04",
+    "title": "Nationalisation d'EDF",
+    "subtitle": "Le prix de 8 EPR2 (coût unitaire estimé ~1,2 Md€ hors surcoûts)",
+    "description": "L'État détenait déjà 84% d'EDF. En 2022, il a racheté les 16% restants pour sortir l'entreprise de la Bourse, au prix de 12€/action. La nationalisation visait à donner à l'État les mains libres pour gérer la crise (ARENH, bouclier) et piloter le programme EPR2. EDF portait alors une dette de 65 Md€ et des pertes historiques liées au bouclier. L'action valait 35€ en 2017. Les petits actionnaires ont perdu 2/3 de leur mise.",
+    "amountBillions": 9.7,
+    "costPerCitizen": 143,
+    "deckId": "energie",
+    "icon": "🏭",
+    "source": "Gouvernement, AMF, rapport parlementaire EDF",
+    "sourceUrl": null,
+    "level": 1,
+    "tags": [
+      "énergie",
+      "EDF",
+      "nationalisation"
+    ],
+    "trend": null,
+    "equivalence": "Le prix de 8 EPR2 (cout unitaire estime ~1,2 Md€ hors surcouts)"
+  },
+  {
+    "id": "cre-05",
+    "title": "Relèvement de l'ARENH",
+    "subtitle": "EDF a vendu son électricité 5 à 10x moins cher que le marché, sur ordre de l'État",
+    "description": "En 2022, l'État a relevé le volume d'ARENH (accès régulé au nucléaire) de 100 à 120 TWh, forçant EDF à vendre 20 TWh de plus à prix cassé (42€/MWh) alors que le marché était à 200-400€/MWh. Perte sèche pour EDF, qui s'est retrouvée à subventionner indirectement ses propres concurrents. Le mécanisme ARENH a pris fin au 31 décembre 2025.",
+    "amountBillions": 8,
+    "costPerCitizen": 118,
+    "deckId": "energie",
+    "icon": "⚛️",
+    "source": "CRE, EDF rapport annuel 2022, Cour des comptes",
+    "sourceUrl": null,
+    "level": 1,
+    "tags": [
+      "énergie",
+      "ARENH",
+      "nucléaire",
+      "EDF"
+    ],
+    "trend": null,
+    "equivalence": "EDF a vendu son electricite 5 a 10x moins cher que le marche, sur ordre de l'Etat"
+  },
+  {
+    "id": "cre-06",
+    "title": "Chèques énergie et aides ciblées",
+    "subtitle": "200€ de chèque énergie = environ 1 mois de chauffage pour un studio",
+    "description": "Les chèques énergie (100-200€) ont été distribués à 12 millions de ménages modestes fin 2022. S'y ajoutent les chèques fioul, bois, et l'aide au chauffage collectif. Mesures jugées plus justes socialement que le bouclier (qui aide tout le monde, riches et pauvres), mais insuffisantes pour les ménages les plus précaires. La précarité énergétique touche 5,2 millions de ménages en France.",
+    "amountBillions": 3,
+    "costPerCitizen": 44,
+    "deckId": "energie",
+    "icon": "🎫",
+    "source": "ADEME, ONPE, vie-publique.fr",
+    "sourceUrl": "https://www.vie-publique.fr",
+    "level": 1,
+    "tags": [
+      "énergie",
+      "aide sociale",
+      "précarité"
+    ],
+    "trend": null,
+    "equivalence": "200€ de cheque energie = environ 1 mois de chauffage pour un studio"
+  },
+  {
+    "id": "cre-07",
+    "title": "Aides aux entreprises énergivores",
+    "subtitle": "La France a dépensé 3x moins que l'Allemagne pour protéger ses entreprises",
+    "description": "Les entreprises grandes consommatrices d'énergie (industrie, boulangeries, serres, piscines publiques) ont bénéficié d'aides de guichet et d'un « amortisseur électricité » sur 50% de leur consommation. Le dispositif a été critiqué pour sa complexité administrative (dossiers indigestes) et sa lenteur de versement. Certaines PME ont fait faillite avant de recevoir l'aide. L'industrie française reste plus exposée que l'allemande (qui a déployé 200 Md€).",
+    "amountBillions": 7,
+    "costPerCitizen": 103,
+    "deckId": "energie",
+    "icon": "🏗️",
+    "source": "Cour des comptes rapport énergie, vie-publique.fr",
+    "sourceUrl": "https://www.vie-publique.fr",
+    "level": 1,
+    "tags": [
+      "énergie",
+      "entreprises",
+      "industrie"
+    ],
+    "trend": null,
+    "equivalence": "La France a depense 3x moins que l'Allemagne pour proteger ses entreprises"
+  },
+  {
+    "id": "cre-08",
+    "title": "Recettes ENR (l'argent que la crise a rapporté)",
+    "subtitle": "Les éoliennes ont remboursé l'équivalent de 2 ans de chèques énergie",
+    "description": "Paradoxe de la crise : quand les prix du marché dépassent le prix garanti aux opérateurs ENR, ce sont eux qui reversent la différence à l'État. En 2023, l'éolien terrestre a rapporté 3,4 Md€ au budget. Autrement dit, une partie du coût du bouclier a été financée par les énergies renouvelables — un argument rarement mentionné dans le débat public. En 2024-2025, les prix redescendant, les ENR redeviennent un coût net.",
+    "amountBillions": 5.9,
+    "costPerCitizen": 87,
+    "deckId": "energie",
+    "icon": "🌬️",
+    "source": "CRE délibération juil. 2024, RTE",
+    "sourceUrl": null,
+    "level": 1,
+    "tags": [
+      "énergie",
+      "renouvelables",
+      "recettes"
+    ],
+    "trend": null,
+    "equivalence": "Les eoliennes ont rembourse l'equivalent de 2 ans de cheques energie"
+  },
+  {
+    "id": "cre-09",
+    "title": "Facture d'importation de gaz et pétrole",
+    "subtitle": "La France envoie chaque année l'équivalent du budget de l'Éducation nationale à l'étranger pour ses hydrocarbures",
+    "description": "La France importe 98% de son pétrole et 100% de son gaz. La flambée des prix en 2022 a doublé la facture énergétique nationale. Chaque hausse de 10$/baril coûte ~5 Md€ à la balance commerciale française. La diversification post-Russie (GNL américain, norvégien, qatari) a réduit la dépendance à Moscou de 17% à <5% des importations de gaz. Le terminal GNL du Havre a été construit en urgence en 6 mois.",
+    "amountBillions": 90,
+    "costPerCitizen": 1324,
+    "deckId": "energie",
+    "icon": "🛢️",
+    "source": "Douanes françaises, DGEC, bilan énergétique 2023",
+    "sourceUrl": null,
+    "level": 1,
+    "tags": [
+      "énergie",
+      "importations",
+      "hydrocarbures"
+    ],
+    "trend": null,
+    "equivalence": "La France envoie chaque annee l'equivalent du budget de l'Education nationale a l'etranger pour ses hydrocarbures"
+  },
+  {
+    "id": "cre-10",
+    "title": "Coût total de la crise énergétique",
+    "subtitle": "85 Md€ = la moitié de la charge annuelle de la dette publique",
+    "description": "En cumulant bouclier tarifaire, remises carburant, chèques énergie, aides entreprises, surcoûts ARENH absorbés par EDF et mesures connexes, la Cour des comptes estime le coût total des aides à la consommation d'énergie à environ 85 Md€. C'est plus que le plan de relance COVID (100 Md€ mais sur 2 ans et incluant des investissements productifs). La sortie du bouclier en février 2025 ne signifie pas la fin des coûts : la dette générée pèsera pendant des décennies.",
+    "amountBillions": 85,
+    "costPerCitizen": 1250,
+    "deckId": "energie",
+    "icon": "📊",
+    "source": "Cour des comptes (mars 2024), vie-publique.fr, Banque de France",
+    "sourceUrl": "https://www.vie-publique.fr",
+    "level": 1,
+    "tags": [
+      "énergie",
+      "bilan",
+      "crise"
+    ],
+    "trend": null,
+    "equivalence": "85 Md€ = la moitie de la charge annuelle de la dette publique"
+  },
+  {
+    "id": "ene-11",
+    "title": "Strategie nationale hydrogene",
+    "subtitle": "9 Md EUR sur 2020-2030",
+    "description": "L'hydrogene vert est le pari industriel francais pour decarboner l'industrie lourde et les transports lourds. La France vise 6,5 GW d'electrolyseurs en 2030. Critique : le prix de l'hydrogene vert reste 3x superieur a l'hydrogene gris. La rentabilite depend du prix du carbone.",
+    "amountBillions": 0.9,
+    "costPerCitizen": 13,
+    "deckId": "energie",
+    "icon": "💧",
+    "trend": 0,
+    "source": "France 2030, ADEME, France Hydrogene",
+    "sourceUrl": "https://www.ademe.fr",
+    "level": 1,
+    "tags": [
+      "hydrogene",
+      "industrie",
+      "transition"
+    ],
+    "equivalence": "1 kg d'hydrogene vert = 5-8€ (vs 1,5€ pour le gris), mais zero CO2"
+  },
+  {
+    "id": "ene-12",
+    "title": "Dechets nucleaires (Cigeo)",
+    "subtitle": "Stockage geologique profond a Bure",
+    "description": "Cigeo est le projet de stockage des dechets radioactifs les plus dangereux a Bure (Meuse). Chantier prevu vers 2027-2028, exploitation d'un siecle. Les dechets resteront radioactifs pendant 100 000 ans. L'estimation de cout a double en 10 ans (de 15 a 25 Md EUR).",
+    "amountBillions": 0.5,
+    "costPerCitizen": 7,
+    "deckId": "energie",
+    "icon": "☢️",
+    "trend": 8,
+    "source": "ANDRA, ASN, PLF 2026",
+    "sourceUrl": "https://www.andra.fr",
+    "level": 1,
+    "tags": [
+      "nucleaire",
+      "dechets",
+      "stockage"
+    ],
+    "equivalence": "Le projet le plus long de l'histoire humaine : 100 ans de chantier pour 100 000 ans de stockage"
+  },
+  {
+    "id": "ene-13",
+    "title": "Precarite energetique",
+    "subtitle": "Cheque energie pour 5,6 millions de foyers",
+    "description": "5,2 millions de menages (12% des foyers) sont en precarite energetique. Le cheque energie (150-277 EUR/an) est distribue a 5,6 millions de foyers. Insuffisant : un foyer precaire depense en moyenne 1 800 EUR/an en energie. La vraie solution est la renovation thermique.",
+    "amountBillions": 0.8,
+    "costPerCitizen": 12,
+    "deckId": "energie",
+    "icon": "🔌",
+    "trend": -5,
+    "source": "ONPE, ADEME, PLF 2026",
+    "sourceUrl": "https://www.ecologie.gouv.fr",
+    "level": 1,
+    "tags": [
+      "precarite",
+      "social",
+      "energie"
+    ],
+    "equivalence": "Le cheque energie couvre ~1 mois de chauffage sur 6 mois d'hiver"
+  },
+  {
+    "id": "ene-14",
+    "title": "Bornes de recharge vehicules electriques",
+    "subtitle": "Objectif 400 000 bornes en 2030",
+    "description": "La France compte ~150 000 bornes publiques. Le programme ADVENIR subventionne l'installation. Les prix varient de 0,25 EUR/kWh a domicile a 0,80 EUR/kWh sur autoroute. L'interdiction des vehicules thermiques neufs en 2035 rend cet investissement incontournable.",
+    "amountBillions": 0.7,
+    "costPerCitizen": 10,
+    "deckId": "energie",
+    "icon": "🔋",
+    "trend": 20,
+    "source": "AVERE France, ADVENIR, France 2030",
+    "sourceUrl": "https://www.avere-france.org",
+    "level": 1,
+    "tags": [
+      "electrique",
+      "transport",
+      "infrastructure"
+    ],
+    "equivalence": "1,5 Md€ = le cout de 2 ans de fonctionnement du reseau de tramways francais"
+  },
+  {
+    "id": "ene-15",
+    "title": "Accise sur l'electricite",
+    "subtitle": "Taxe post-bouclier tarifaire",
+    "description": "L'accise sur l'electricite (ex-CSPE) est revenue a 33,70 EUR/MWh en 2025, representant ~20% de la facture d'electricite. Elle finance les energies renouvelables et la perequation tarifaire. Le consommateur paie moins cher l'electricite brute, mais davantage de taxes.",
+    "amountBillions": 10,
+    "costPerCitizen": 147,
+    "deckId": "energie",
+    "icon": "⚡",
+    "trend": 200,
+    "source": "CRE, PLF 2026, Selectra",
+    "sourceUrl": "https://www.cre.fr",
+    "level": 1,
+    "tags": [
+      "taxe",
+      "electricite",
+      "recette"
+    ],
+    "equivalence": "Sur une facture de 1 500€/an, ~300€ sont des taxes (accise + TVA sur la taxe)"
+  },
+  {
+    "id": "ene-16",
+    "title": "Dette d'EDF et restructuration",
+    "subtitle": "Dette nette EDF post-nationalisation",
+    "description": "EDF, detenu a 100% par l'Etat depuis 2023, porte une dette de 54 Md€ (en baisse vs 65 Md€ en 2022), accumulee par le bouclier tarifaire, l'ARENH, les retards EPR Flamanville (+12 Md€ de surcout). Les investissements necessaires sont massifs : 6 EPR2 (~60 Md€), 70 Md€ de grand carenage, developpement des ENR. EDF a besoin de ~25 Md€/an d'investissement.",
+    "amountBillions": 54,
+    "costPerCitizen": 794,
+    "deckId": "energie",
+    "icon": "⚡",
+    "source": "EDF rapport annuel, Cour des comptes, CRE",
+    "level": 1,
+    "tags": [
+      "energie",
+      "edf",
+      "dette"
+    ],
+    "equivalence": "La dette d'EDF = le budget annuel du ministere de la Defense"
+  },
+  {
+    "id": "ene-17",
+    "title": "Hydroelectricite (barrages)",
+    "subtitle": "Concessions hydroelectriques",
+    "description": "L'hydroelectricite est la 1re source d'energie renouvelable francaise : ~12% de la production electrique, 2 500 ouvrages dont 400 grands barrages. La France est le 2e producteur europeen. La mise en concurrence des concessions (exigee par l'UE depuis 2006) est bloquee par la France. La valeur patrimoniale des barrages est estimee a 40-50 Md€. Le changement climatique reduit la disponibilite en eau.",
+    "amountBillions": 2,
+    "costPerCitizen": 29,
+    "deckId": "energie",
+    "icon": "🌊",
+    "source": "EDF, CRE, Commission europeenne",
+    "level": 1,
+    "tags": [
+      "energie",
+      "hydro",
+      "barrages"
+    ],
+    "equivalence": "Les barrages francais stockent l'equivalent de 6 heures de consommation nationale — une batterie geante gratuite"
+  },
+  {
+    "id": "ene-18",
+    "title": "Pompes a chaleur (aides)",
+    "subtitle": "MaPrimeRenov' PAC + CEE + TVA reduite",
+    "description": "La France vise 1 million de pompes a chaleur installees/an d'ici 2027 (contre ~500 000 en 2024). Les aides cumulees peuvent couvrir 60-80% du cout d'installation (~12 000€ en moyenne). Le marche a chute de 15% en 2024. La France est le 1er marche europeen de PAC. Probleme : la filiere francaise est faible (Daikin, Mitsubishi dominent) — la France subventionne l'industrie japonaise.",
+    "amountBillions": 1.5,
+    "costPerCitizen": 22,
+    "deckId": "energie",
+    "icon": "🌡️",
+    "trend": -15,
+    "source": "ADEME, Uniclima, MaPrimeRenov', France 2030",
+    "level": 1,
+    "tags": [
+      "energie",
+      "pac",
+      "renovation"
+    ],
+    "equivalence": "1 pompe a chaleur divise par 3 la facture de chauffage, mais les aides financent surtout des marques japonaises"
+  },
+  {
+    "id": "ene-19",
+    "title": "Biogaz et biomethane",
+    "subtitle": "Tarif d'achat garanti biomethane",
+    "description": "Le biomethane (methane produit par methanisation de dechets agricoles et alimentaires) est injecte dans le reseau de gaz. La France vise 10% de gaz renouvelable en 2030. Environ 700 methaniseurs sont en fonctionnement. Le tarif d'achat garanti (~95€/MWh, vs ~30€ pour le gaz fossile) est critique pour son cout. Les agriculteurs y voient un complement de revenu vital (~50 000€/an par exploitation).",
+    "amountBillions": 1.5,
+    "costPerCitizen": 22,
+    "deckId": "energie",
+    "icon": "♻️",
+    "source": "GRDF, ADEME, CRE, PLF 2026",
+    "level": 1,
+    "tags": [
+      "energie",
+      "biogaz",
+      "methanisation"
+    ],
+    "equivalence": "1 methaniseur produit le gaz de ~2 000 foyers a partir de dechets agricoles"
+  },
+  {
+    "id": "ene-20",
+    "title": "Geothermie profonde",
+    "subtitle": "ADEME + Fonds chaleur + France 2030",
+    "description": "La France a le 1er reseau de chaleur geothermique d'Europe (Ile-de-France : 40 installations, 350 000 logements chauffes). La geothermie profonde (2-3 km, 60-90°C) est une energie renouvelable disponible 24h/24, sans intermittence. Le plan vise un triplement d'ici 2030. Cout d'un forage : 5-15 M€, avec un risque geologique (1 forage sur 5 est sec).",
+    "amountBillions": 0.2,
+    "costPerCitizen": 3,
+    "deckId": "energie",
+    "icon": "🌋",
+    "source": "ADEME, BRGM, AFPG",
+    "level": 1,
+    "tags": [
+      "energie",
+      "geothermie",
+      "renouvelable"
+    ],
+    "equivalence": "1 installation geothermique chauffe 10 000 logements pendant 30 ans — quasi zero CO2"
+  }
+]

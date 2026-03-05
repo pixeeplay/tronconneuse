@@ -8,7 +8,7 @@ import { getGlobalStats, getPlayerProfile, getSessions, type GlobalStats, type P
 import { RadarChart } from "@/components/RadarChart";
 import { computeRadarFromHistory } from "@/lib/radarData";
 import { useCommunityStats } from "@/hooks/useCommunityStats";
-import decksData from "@/data/decks.json";
+import decksData from "@/data";
 
 type Tab = "archetypes" | "top" | "semaine";
 

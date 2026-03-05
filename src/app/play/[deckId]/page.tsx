@@ -1,5 +1,5 @@
 import { SwipeSession } from "./SwipeSession";
-import decksData from "@/data/decks.json";
+import decksData from "@/data";
 import { drawCards, filterByDeck } from "@/lib/deckUtils";
 import { validateDecksData } from "@/lib/validateData";
 import type { Card, Deck, GameMode } from "@/types";

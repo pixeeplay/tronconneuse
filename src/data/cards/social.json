@@ -1,0 +1,621 @@
+[
+  {
+    "id": "soc-01",
+    "title": "Retraites",
+    "subtitle": "Total des pensions de retraite (tous régimes)",
+    "description": "17,2 millions de retraités, pension moyenne : ~1 660€ bruts/mois. 1er poste de dépenses sociales, 13,1% du PIB. La réforme Borne (2023) a relevé l'âge à 64 ans mais la LFSS 2026 la suspend. Déficit du système : ~15 Md€/an.",
+    "amountBillions": 370,
+    "costPerCitizen": 5440,
+    "deckId": "social",
+    "icon": "👵",
+    "source": "DREES, LFSS 2026, Vie-publique.fr",
+    "sourceUrl": "https://www.vie-publique.fr",
+    "level": 1,
+    "tags": [
+      "social",
+      "retraites",
+      "pensions"
+    ],
+    "equivalence": "370 Md€ de retraites = 7x le budget de la Defense"
+  },
+  {
+    "id": "soc-02",
+    "title": "Réforme des retraites",
+    "subtitle": "Impact financier de la réforme de 2023",
+    "description": "Relèvement progressif de l'âge légal de 62 à 64 ans. ~18 Md€ d'économies annuelles attendues à horizon 2030. La suspension en 2026-2027 coûtera ~2,6 Md€. 70% des Français restent opposés à la réforme selon les sondages.",
+    "amountBillions": 18,
+    "costPerCitizen": 265,
+    "deckId": "social",
+    "icon": "📊",
+    "source": "COR rapport annuel 2024, LFSS 2026, Vie-publique.fr",
+    "sourceUrl": "https://www.vie-publique.fr",
+    "level": 1,
+    "tags": [
+      "social",
+      "réforme",
+      "retraites"
+    ],
+    "equivalence": "Chaque annee de recul de l'age legal = ~7 Md€ d'economies"
+  },
+  {
+    "id": "soc-03",
+    "title": "Retraites des fonctionnaires",
+    "subtitle": "Pensions civiles et militaires + régimes spéciaux",
+    "description": "L'État employeur cotise à ~74% du traitement brut (4× le privé). Les régimes spéciaux (SNCF, RATP) en extinction progressive depuis 2023, mais les droits acquis seront versés pendant encore 40 ans. La CNRACL est en déficit croissant.",
+    "amountBillions": 80,
+    "costPerCitizen": 1175,
+    "deckId": "social",
+    "icon": "🏛️",
+    "source": "Budget.gouv.fr CAS Pensions 2025, LFSS 2025, Sénat",
+    "sourceUrl": "https://www.budget.gouv.fr",
+    "level": 1,
+    "tags": [
+      "social",
+      "retraites",
+      "fonctionnaires"
+    ],
+    "equivalence": "Le CAS Pensions = le 3e budget de l'Etat, devant la Defense"
+  },
+  {
+    "id": "soc-04",
+    "title": "Assurance chômage",
+    "subtitle": "Dépenses d'indemnisation du chômage (Unédic)",
+    "description": "~2,8 millions de demandeurs d'emploi indemnisés, allocation moyenne : ~1 020€ nets/mois. L'Unédic redevenue excédentaire en 2023 grâce à la réforme qui a durci les conditions. La dette cumulée reste de ~50 Md€ (héritage Covid).",
+    "amountBillions": 40,
+    "costPerCitizen": 588,
+    "deckId": "social",
+    "icon": "📋",
+    "source": "Unédic bilan 2024, France Travail, Vie-publique.fr",
+    "sourceUrl": "https://www.vie-publique.fr",
+    "level": 1,
+    "tags": [
+      "social",
+      "chômage",
+      "emploi"
+    ],
+    "equivalence": "La dette de l'Unedic (50 Md€) = le cout de 3 EPR2 nucleaires"
+  },
+  {
+    "id": "soc-05",
+    "title": "Allocations familiales",
+    "subtitle": "Branche Famille de la Sécu",
+    "description": "~5,7 millions de familles allocataires. La LFSS 2026 crée un « congé de naissance ». La France reste le pays le plus fécond d'Europe (1,68 enfant/femme). Il manque ~200 000 places de crèche pour le service public de la petite enfance.",
+    "amountBillions": 59.5,
+    "costPerCitizen": 875,
+    "deckId": "social",
+    "icon": "👶",
+    "source": "CNAF, LFSS 2025 et 2026, Vie-publique.fr",
+    "sourceUrl": "https://www.vie-publique.fr",
+    "level": 1,
+    "tags": [
+      "social",
+      "famille",
+      "natalité"
+    ],
+    "equivalence": "59,5 Md€ = le budget combine de la Justice + Interieur + Culture"
+  },
+  {
+    "id": "soc-06",
+    "title": "RSA et minima sociaux",
+    "subtitle": "RSA + AAH + ASS + ASPA (minimum vieillesse)",
+    "description": "~4,2 millions de foyers bénéficiaires. RSA : 635€/mois, conditionné depuis 2024 à 15h d'activité. Le non-recours reste massif : ~30% des ayants-droit ne demandent pas le RSA. L'AAH a été « déconjugalisée » en 2023.",
+    "amountBillions": 30,
+    "costPerCitizen": 441,
+    "deckId": "social",
+    "icon": "🤝",
+    "source": "DREES, CNAF, Vie-publique.fr",
+    "sourceUrl": "https://www.vie-publique.fr",
+    "level": 1,
+    "tags": [
+      "social",
+      "solidarité",
+      "minima sociaux"
+    ],
+    "equivalence": "Les 30 Md€ de minima sociaux = 6% du budget total de l'Etat"
+  },
+  {
+    "id": "soc-07",
+    "title": "Aides au logement (APL)",
+    "subtitle": "Aides personnelles au logement — APL, ALS, ALF",
+    "description": "~6,5 millions de ménages bénéficiaires. La réforme « APL en temps réel » (2021) a fait sortir ~500 000 ménages du dispositif. Le logement social (HLM) accueille ~10 millions de personnes. Le budget global logement avoisine ~40 Md€/an.",
+    "amountBillions": 16.5,
+    "costPerCitizen": 243,
+    "deckId": "social",
+    "icon": "🏘️",
+    "trend": -3,
+    "source": "CNAF, Cour des comptes, budget.gouv.fr",
+    "sourceUrl": "https://www.budget.gouv.fr",
+    "level": 1,
+    "tags": [
+      "social",
+      "logement",
+      "APL"
+    ],
+    "equivalence": "16,5 Md€ d'APL = le cout de construction de ~80 000 logements sociaux/an"
+  },
+  {
+    "id": "soc-08",
+    "title": "Allègements cotisations patronales",
+    "subtitle": "Exonérations de cotisations sur les bas salaires",
+    "description": "Allègements Fillon, CICE devenu baisse pérenne, exonérations sectorielles. Créent une « trappe à bas salaires » : augmenter au-delà de 1,6 SMIC coûte proportionnellement plus cher. La Cour des comptes demande depuis 2019 une évaluation d'efficacité.",
+    "amountBillions": 80,
+    "costPerCitizen": 1175,
+    "deckId": "social",
+    "icon": "🏭",
+    "source": "LFSS 2025, Cour des comptes, OFCE",
+    "level": 1,
+    "tags": [
+      "social",
+      "emploi",
+      "cotisations"
+    ],
+    "equivalence": "Les 80 Md€ d'exonerations = plus que le budget de l'Education nationale"
+  },
+  {
+    "id": "soc-09",
+    "title": "Fraude retraites à l'étranger",
+    "subtitle": "Pensions versées à des bénéficiaires à l'étranger",
+    "description": "1,1 million de retraités à l'étranger. La Cour des comptes a détecté entre 3% et 22% de décès non signalés en Algérie et au Maroc. La reconnaissance faciale biométrique est déployée depuis 2025. Fraude estimée à 200-400 M€/an.",
+    "amountBillions": 5.9,
+    "costPerCitizen": 87,
+    "deckId": "social",
+    "icon": "✈️",
+    "source": "Cour des comptes, Sénat",
+    "level": 1,
+    "tags": [
+      "social",
+      "fraude",
+      "retraites"
+    ],
+    "equivalence": "5,9 Md€ = le budget annuel du ministere de la Culture"
+  },
+  {
+    "id": "soc-10",
+    "title": "Déficit de la Sécurité sociale",
+    "subtitle": "Déficit annuel de la Sécu (toutes branches)",
+    "description": "~22,1 Md€ de déficit en 2025 (contre 15,3 Md€ en 2024). Porté à 75% par la branche Vieillesse et 25% par la branche Maladie. La CADES a encore ~130 Md€ à rembourser d'ici 2033. Le retour à l'équilibre « après 2030 » n'est jugé crédible par personne.",
+    "amountBillions": 22.1,
+    "costPerCitizen": 325,
+    "deckId": "social",
+    "icon": "📉",
+    "trend": 44,
+    "source": "Cour des comptes, LFSS 2026, HCFP",
+    "level": 1,
+    "tags": [
+      "social",
+      "déficit",
+      "sécurité sociale"
+    ],
+    "equivalence": "Le deficit annuel de la Secu = 2x le budget de la Justice"
+  },
+  {
+    "id": "soc-11",
+    "title": "Apprentissage",
+    "subtitle": "Aides à l'apprentissage versées aux employeurs",
+    "description": "Prime de 6 000€ par apprenti, ~1 million d'apprentis. Nombre multiplié par 3 depuis 2018 mais la Cour des comptes questionne le coût par apprenti et l'effet d'aubaine (beaucoup de bac+5 vs métiers manuels). Budget multiplié par 4 en 6 ans.",
+    "amountBillions": 20,
+    "costPerCitizen": 294,
+    "deckId": "social",
+    "icon": "🎓",
+    "trend": 25,
+    "source": "France Compétences, Cour des comptes, DARES",
+    "level": 1,
+    "tags": [
+      "social",
+      "apprentissage",
+      "formation"
+    ],
+    "equivalence": "Les aides a l'apprentissage ont ete multipliees par 4 en 6 ans"
+  },
+  {
+    "id": "soc-12",
+    "title": "Protection sociale totale",
+    "subtitle": "Dépenses totales de protection sociale (tous risques)",
+    "description": "Maladie, retraites, famille, emploi, logement, pauvreté, dépendance. ~32% du PIB — record mondial, devant le Danemark (28%). Les prélèvements obligatoires atteignent 44% du PIB. Pour les uns, c'est le « modèle social français », pour les autres un « poids » sur la compétitivité.",
+    "amountBillions": 850,
+    "costPerCitizen": 12500,
+    "deckId": "social",
+    "icon": "🛡️",
+    "source": "DREES, Eurostat",
+    "level": 1,
+    "tags": [
+      "social",
+      "protection sociale",
+      "modèle français"
+    ],
+    "equivalence": "La protection sociale francaise = le PIB total de la Suisse"
+  },
+  {
+    "id": "ret-01",
+    "title": "Régime général (salariés du privé)",
+    "subtitle": "Pour 1 retraité du privé, 1,7 actif cotise (contre 4 en 1960)",
+    "description": "Le régime général couvre ~18 millions de retraités du privé. La pension moyenne de base CNAV est de ~750€/mois, complétée par l'Agirc-Arrco (~700€/mois en moyenne). Le système est financé par les cotisations (salarié + employeur = ~28% du salaire brut). Avec le baby-boom partant à la retraite, le ratio actifs/retraités passe de 2,1 à 1,7 en 2030.",
+    "amountBillions": 140,
+    "costPerCitizen": 2059,
+    "deckId": "social",
+    "icon": "👷",
+    "source": "CNAV, Agirc-Arrco, COR",
+    "sourceUrl": null,
+    "level": 1,
+    "tags": [
+      "retraites",
+      "régime général",
+      "privé"
+    ],
+    "trend": null,
+    "equivalence": "Pour 1 retraite du prive, 1,7 actif cotise (contre 4 en 1960)"
+  },
+  {
+    "id": "ret-02",
+    "title": "Agirc-Arrco (complémentaire, excédentaire)",
+    "subtitle": "Les réserves Agirc-Arrco (70 Md€) = le budget du ministère de l'Éducation nationale",
+    "description": "Fait rare dans le paysage des retraites : l'Agirc-Arrco est excédentaire. Ses réserves dépassent 70 Md€. C'est un régime paritaire (géré par les syndicats et le patronat, pas par l'État). L'État a tenté en 2023 de ponctionner les réserves pour financer d'autres régimes, provoquant un bras de fer avec les partenaires sociaux. La sous-indexation des pensions Agirc-Arrco (-0,4 point vs inflation) a été décidée en 2023 pour préserver les réserves.",
+    "amountBillions": 90,
+    "costPerCitizen": 1324,
+    "deckId": "social",
+    "icon": "📈",
+    "source": "Agirc-Arrco rapport annuel 2024, COR",
+    "sourceUrl": null,
+    "level": 1,
+    "tags": [
+      "retraites",
+      "Agirc-Arrco",
+      "complémentaire"
+    ],
+    "trend": null,
+    "equivalence": "Les reserves Agirc-Arrco (70 Md€) = le budget du ministere de l'Education nationale"
+  },
+  {
+    "id": "ret-03",
+    "title": "Retraites des fonctionnaires d'État",
+    "subtitle": "La pension moyenne d'un fonctionnaire d'État = ~2 200€/mois brut (vs ~1 500€ régime général)",
+    "description": "Les fonctionnaires d'État ont un régime spécifique : pension calculée sur les 6 derniers mois de traitement (vs 25 meilleures années dans le privé). Le taux de cotisation « employeur » de l'État est de ~74% (vs ~17% dans le privé), mais c'est un jeu d'écriture comptable (l'État se paye à lui-même). La réforme des retraites n'a pas unifié les modes de calcul. Les militaires partent en moyenne à 48 ans, les enseignants à 62 ans.",
+    "amountBillions": 57,
+    "costPerCitizen": 838,
+    "deckId": "social",
+    "icon": "🏛️",
+    "source": "CAS Pensions, DGAFP, COR",
+    "sourceUrl": null,
+    "level": 1,
+    "tags": [
+      "retraites",
+      "fonctionnaires",
+      "État"
+    ],
+    "trend": null,
+    "equivalence": "La pension moyenne d'un fonctionnaire d'Etat = ~2 200€/mois brut (vs ~1 500€ regime general)"
+  },
+  {
+    "id": "ret-04",
+    "title": "Régimes spéciaux (SNCF, RATP, EDF, Opéra...)",
+    "subtitle": "L'État subventionne ~75% des pensions SNCF/RATP (les cotisants ne financent que 25%)",
+    "description": "Les régimes spéciaux (SNCF, RATP, industries électriques/gazières, Banque de France, Opéra de Paris, Comédie-Française, marins, mineurs...) sont fermés aux nouveaux entrants depuis la réforme 2023, mais les droits acquis perdurent 40+ ans. Le ratio cotisants/retraités est catastrophique dans certains régimes (1 pour 3 aux mines). L'État verse une subvention d'équilibre de ~7 Md€/an. Un retraité de la RATP perçoit en moyenne ~2 800€/mois.",
+    "amountBillions": 9,
+    "costPerCitizen": 132,
+    "deckId": "social",
+    "icon": "🚂",
+    "source": "COR, Cour des comptes rapport régimes spéciaux, PLF 2026",
+    "sourceUrl": null,
+    "level": 1,
+    "tags": [
+      "retraites",
+      "régimes spéciaux",
+      "SNCF",
+      "RATP"
+    ],
+    "trend": null,
+    "equivalence": "L'Etat subventionne ~75% des pensions SNCF/RATP (les cotisants ne financent que 25%)"
+  },
+  {
+    "id": "ret-05",
+    "title": "Minimum vieillesse (ASPA)",
+    "subtitle": "300 000 retraités éligibles ne demandent pas l'ASPA, par méconnaissance ou peur de la récupération sur succession",
+    "description": "L'Allocation de Solidarité aux Personnes Âgées (ASPA, ex-minimum vieillesse) garantit un revenu minimum de 1 012€/mois pour une personne seule de 65+ ans. Environ 600 000 bénéficiaires. Particularité : l'ASPA est récupérable sur succession (si patrimoine > 100 000€), ce qui dissuade de nombreux ayants droit. Le taux de non-recours est estimé à 50% — la moitié des personnes éligibles ne la demandent pas.",
+    "amountBillions": 4,
+    "costPerCitizen": 59,
+    "deckId": "social",
+    "icon": "👴",
+    "source": "DREES, CNAV, Fondation Abbé Pierre",
+    "sourceUrl": null,
+    "level": 1,
+    "tags": [
+      "retraites",
+      "minimum vieillesse",
+      "ASPA",
+      "solidarité"
+    ],
+    "trend": null,
+    "equivalence": "300 000 retraites eligibles ne demandent pas l'ASPA, par meconnaissance ou par peur de la recuperation sur succession"
+  },
+  {
+    "id": "ret-06",
+    "title": "Réforme des retraites 2023 (report à 64 ans)",
+    "subtitle": "18 Md€ d'économies sur 7 ans = moins d'1 an de charge de la dette",
+    "description": "La réforme reportant l'âge légal de 62 à 64 ans et accélérant l'allongement de la durée de cotisation (43 annuités) a été adoptée au 49.3 en mars 2023. Les économies attendues (18 Md€ sur 2023-2030) sont revues à la baisse par le COR. La réforme a été « suspendue » (gel de l'application de certaines mesures) en 2026-2027 dans le cadre de négociations entre les partenaires sociaux. 67% des Français restent opposés à cette réforme selon les sondages.",
+    "amountBillions": 18,
+    "costPerCitizen": 265,
+    "deckId": "social",
+    "icon": "📜",
+    "source": "COR projections 2024, Sénat, DREES",
+    "sourceUrl": null,
+    "level": 1,
+    "tags": [
+      "retraites",
+      "réforme",
+      "âge légal"
+    ],
+    "trend": null,
+    "equivalence": "18 Md€ d'economies sur 7 ans = moins d'1 an de charge de la dette"
+  },
+  {
+    "id": "ret-07",
+    "title": "Pénibilité et départs anticipés",
+    "subtitle": "Un ouvrier vit en moyenne 6 ans de moins qu'un cadre, mais part seulement 2 ans plus tôt",
+    "description": "25% des départs à la retraite se font de manière anticipée (avant l'âge légal) : carrières longues (début avant 20 ans), pénibilité (C2P, exposition à des facteurs de risque), handicap, inaptitude. Le Compte professionnel de prévention (C2P) a été jugé inefficace : seuls 3 000 salariés/an l'utilisent pour partir plus tôt. Les critères de pénibilité ont été réduits en 2017 (suppression de 4 facteurs sur 10). Les métiers physiques (BTP, aide-soignants) sont les plus pénalisés.",
+    "amountBillions": 3,
+    "costPerCitizen": 44,
+    "deckId": "social",
+    "icon": "⛏️",
+    "source": "DREES, CNAV, COR",
+    "sourceUrl": null,
+    "level": 1,
+    "tags": [
+      "retraites",
+      "pénibilité",
+      "carrières longues"
+    ],
+    "trend": null,
+    "equivalence": "Un ouvrier vit en moyenne 6 ans de moins qu'un cadre, mais part seulement 2 ans plus tot"
+  },
+  {
+    "id": "ret-08",
+    "title": "Réversion (pension de survie)",
+    "subtitle": "La réversion moyenne = ~600€/mois, souvent insuffisante pour une veuve âgée",
+    "description": "La pension de réversion (54% de la pension du conjoint décédé dans le régime général, 60% en complémentaire) concerne 4,3 millions de bénéficiaires, à 88% des femmes. Conditions : avoir été marié (pas pacsé), et sous condition de ressources au régime général. Les réversions représentent 10% des dépenses de retraite. Débat : faut-il ouvrir la réversion aux pacsés ? Faut-il l'augmenter (54% est faible vs 70% en Italie) ou la réduire ?",
+    "amountBillions": 37,
+    "costPerCitizen": 544,
+    "deckId": "social",
+    "icon": "💍",
+    "source": "DREES, COR, CNAV",
+    "sourceUrl": null,
+    "level": 1,
+    "tags": [
+      "retraites",
+      "réversion",
+      "veuvage"
+    ],
+    "trend": null,
+    "equivalence": "La reversion moyenne = ~600€/mois, souvent insuffisante pour une veuve agee"
+  },
+  {
+    "id": "ret-09",
+    "title": "Retraite des indépendants et agriculteurs",
+    "subtitle": "Un agriculteur retraité gagne moitié moins qu'un fonctionnaire retraité",
+    "description": "Les travailleurs indépendants (artisans, commerçants) et agriculteurs ont les retraites les plus faibles : pension moyenne de ~780€/mois pour les indépendants, ~730€/mois pour les agriculteurs (bien en dessous du seuil de pauvreté). La retraite agricole a été revalorisée à 85% du SMIC en 2021 pour les carrières complètes, mais beaucoup ont des carrières incomplètes. Les cotisations des indépendants sont plus basses (pas de part « employeur »), d'où des pensions plus faibles.",
+    "amountBillions": 18,
+    "costPerCitizen": 265,
+    "deckId": "social",
+    "icon": "🌾",
+    "source": "MSA, SSI, DREES, COR",
+    "sourceUrl": null,
+    "level": 1,
+    "tags": [
+      "retraites",
+      "indépendants",
+      "agriculteurs"
+    ],
+    "trend": null,
+    "equivalence": "Un agriculteur retraite gagne moitie moins qu'un fonctionnaire retraite, apres une carriere souvent plus longue"
+  },
+  {
+    "id": "ret-10",
+    "title": "Comparaison internationale",
+    "subtitle": "Un Français passe ~42% de sa vie adulte au travail et ~33% à la retraite",
+    "description": "La France consacre 13,1% de son PIB aux retraites, record mondial (Italie : 15,7% mais en baisse, Allemagne : 10,3%, Suède : 7,5%, USA : 6,8%). L'âge effectif moyen de départ est de 62,5 ans (OCDE : 64,3 ans). Les Français passent en moyenne 27 ans à la retraite (espérance de vie à 62 ans) vs 22 ans dans l'OCDE. Le taux de remplacement (pension/salaire) est de ~74% (OCDE : ~58%). Le système français offre les retraites les plus généreuses du monde développé, mais pose un problème de soutenabilité.",
+    "amountBillions": 370,
+    "costPerCitizen": 5441,
+    "deckId": "social",
+    "icon": "🌐",
+    "source": "OCDE Pensions at a Glance 2025, COR, Eurostat",
+    "sourceUrl": null,
+    "level": 1,
+    "tags": [
+      "retraites",
+      "comparaison",
+      "OCDE",
+      "international"
+    ],
+    "trend": null,
+    "equivalence": "Un Francais passe ~42% de sa vie adulte au travail et ~33% a la retraite"
+  },
+  {
+    "id": "soc-13",
+    "title": "Allocation adultes handicapes (AAH)",
+    "subtitle": "1 033 EUR/mois pour 1,4 million de personnes",
+    "description": "L'AAH garantit un revenu minimum a 1,4 million de personnes handicapees. Deconjugalisee depuis 2023. Montant en dessous du seuil de pauvrete (~1 200 EUR). La France consacre au total 52 Md EUR/an au handicap (2% du PIB). Delai moyen MDPH : 4 a 8 mois.",
+    "amountBillions": 13,
+    "costPerCitizen": 191,
+    "deckId": "social",
+    "icon": "♿",
+    "trend": 5,
+    "source": "CNAF, MDPH, PLF 2026",
+    "sourceUrl": "https://www.caf.fr",
+    "level": 1,
+    "tags": [
+      "handicap",
+      "AAH",
+      "social"
+    ],
+    "equivalence": "L'AAH (1 033€) est inferieure au seuil de pauvrete (1 200€) — un handicape est pauvre par defaut"
+  },
+  {
+    "id": "soc-14",
+    "title": "Accueil petite enfance (creches)",
+    "subtitle": "22% des enfants obtiennent une place",
+    "description": "La France dispose de ~480 000 places en creche pour ~2,2 millions d'enfants de 0-3 ans. Le SPPE vise 200 000 places supplementaires d'ici 2030. Cout moyen d'une place : ~15 000 EUR/an. Inegalites enormes : 1 place pour 3 enfants en Ile-de-France, 1 pour 8 en Seine-Saint-Denis.",
+    "amountBillions": 8,
+    "costPerCitizen": 118,
+    "deckId": "social",
+    "icon": "👶",
+    "trend": 8,
+    "source": "CNAF, HCFEA, PLF 2026",
+    "sourceUrl": "https://www.caf.fr",
+    "level": 1,
+    "tags": [
+      "creches",
+      "petite enfance",
+      "famille"
+    ],
+    "equivalence": "1 place en creche coute autant qu'1 an d'universite"
+  },
+  {
+    "id": "soc-15",
+    "title": "Branche autonomie (5e branche Secu)",
+    "subtitle": "40 Md EUR pour la dependance",
+    "description": "La 5e branche de la Securite sociale gere la perte d'autonomie des personnes agees et handicapees : APA, PCH, financement des EHPAD. Le vieillissement doublera les besoins d'ici 2050. La loi grand age promise depuis 2019 n'a jamais ete votee.",
+    "amountBillions": 40,
+    "costPerCitizen": 588,
+    "deckId": "social",
+    "icon": "🧓",
+    "trend": 6,
+    "source": "CNSA, DREES, PLF 2026",
+    "sourceUrl": "https://www.cnsa.fr",
+    "level": 1,
+    "tags": [
+      "autonomie",
+      "dependance",
+      "EHPAD"
+    ],
+    "equivalence": "La France comptera 4,8 millions de personnes de 85+ ans en 2050 (vs 2,2 millions aujourd'hui)"
+  },
+  {
+    "id": "soc-16",
+    "title": "Accidents du travail (AT-MP)",
+    "subtitle": "Branche excedentaire mais siphonnee",
+    "description": "La branche AT-MP indemnise ~650 000 accidents du travail et ~50 000 maladies professionnelles par an. Financee par les cotisations employeurs. Structurellement excedentaire (~1-2 Md EUR/an), l'Etat la pontionne regulierement pour financer les branches deficitaires.",
+    "amountBillions": 14,
+    "costPerCitizen": 206,
+    "deckId": "social",
+    "icon": "⚠️",
+    "trend": 2,
+    "source": "CNAM AT-MP, DREES, LFSS 2026",
+    "sourceUrl": "https://www.ameli.fr",
+    "level": 1,
+    "tags": [
+      "travail",
+      "accidents",
+      "cotisations"
+    ],
+    "equivalence": "La branche AT-MP est excedentaire mais l'Etat siphonne ses reserves pour boucher les trous de la Secu"
+  },
+  {
+    "id": "soc-17",
+    "title": "Pauvrete des enfants",
+    "subtitle": "3 millions d'enfants sous le seuil de pauvrete",
+    "description": "21% des moins de 18 ans vivent sous le seuil de pauvrete. L'ASE prend en charge ~370 000 enfants dont ~180 000 places. Un placement en foyer coute ~50 000 EUR/an. 1 EUR investi dans un enfant de 0-5 ans rapporte 7-13 EUR a la societe sur 40 ans (Heckman).",
+    "amountBillions": 10,
+    "costPerCitizen": 147,
+    "deckId": "social",
+    "icon": "🧒",
+    "trend": 3,
+    "source": "DREES, Observatoire des inegalites, UNICEF France",
+    "sourceUrl": "https://www.inegalites.fr",
+    "level": 1,
+    "tags": [
+      "pauvrete",
+      "enfants",
+      "ASE"
+    ],
+    "equivalence": "1€ investi dans un enfant de 0-5 ans pauvre rapporte 7-13€ a la societe sur 40 ans"
+  },
+  {
+    "id": "soc-18",
+    "title": "Conge parental (PreParE)",
+    "subtitle": "Prestation partagee d'education de l'enfant",
+    "description": "La PreParE remunere le parent qui reduit ou arrete son activite : 428€/mois a taux plein. Le nombre de beneficiaires a chute de 50% en 10 ans (de 500 000 a 250 000) : le montant est trop faible pour compenser la perte de salaire. Les pays nordiques offrent 80% du salaire pendant 12-18 mois. La reforme annoncee en 2024 (conge de naissance) est reportee.",
+    "amountBillions": 1.5,
+    "costPerCitizen": 22,
+    "deckId": "social",
+    "icon": "👨‍👩‍👧",
+    "source": "CNAF, HCFEA, PLF 2026",
+    "level": 1,
+    "tags": [
+      "social",
+      "conge-parental",
+      "famille"
+    ],
+    "equivalence": "428€/mois = 30% du SMIC — aucun menage ne peut vivre avec ca"
+  },
+  {
+    "id": "soc-19",
+    "title": "Aide alimentaire",
+    "subtitle": "Restos du coeur, Banques alimentaires, Secours populaire",
+    "description": "5,5 millions de personnes recourent a l'aide alimentaire en France. Le nombre de beneficiaires a augmente de 30% depuis le COVID. L'Etat finance ~45% via le programme europeen FEAD. Les Restos du coeur ont failli arreter en 2023 (deficit de 35 M€). Le gaspillage alimentaire en France represente 10 millions de tonnes/an, dont une fraction seulement est recuperee par l'aide alimentaire.",
+    "amountBillions": 1.5,
+    "costPerCitizen": 22,
+    "deckId": "social",
+    "icon": "🍞",
+    "source": "Restos du coeur, Banques alimentaires, DGCS, FEAD",
+    "level": 1,
+    "tags": [
+      "social",
+      "aide-alimentaire",
+      "pauvrete"
+    ],
+    "equivalence": "La France gaspille en nourriture 10x plus que ce que coute l'aide alimentaire"
+  },
+  {
+    "id": "soc-20",
+    "title": "Pensions alimentaires impayees (ARIPA)",
+    "subtitle": "Agence de recouvrement des impayes",
+    "description": "L'ARIPA intervient quand un parent ne paie pas la pension alimentaire fixee par le juge. 30-40% des pensions alimentaires sont partiellement ou totalement impayees. 700 000 familles monoparentales sont touchees. Le taux de recouvrement effectif reste faible (~40%). Les familles monoparentales (85% de femmes) sont les plus exposees a la pauvrete.",
+    "amountBillions": 0.3,
+    "costPerCitizen": 4,
+    "deckId": "social",
+    "icon": "💔",
+    "source": "ARIPA/CAF, INSEE, DREES",
+    "level": 1,
+    "tags": [
+      "social",
+      "pensions",
+      "famille"
+    ],
+    "equivalence": "1 pension alimentaire sur 3 n'est pas payee — 1re cause de pauvrete des meres isolees"
+  },
+  {
+    "id": "soc-21",
+    "title": "Protection de l'enfance (ASE)",
+    "subtitle": "Aide sociale a l'enfance",
+    "description": "L'ASE protege ~370 000 enfants : 180 000 places (familles d'accueil ou foyers) et 190 000 suivis a domicile. Cout moyen d'un placement en foyer : 50 000€/an. Les familles d'accueil sont en crise d'attractivite. 23% des personnes sans domicile ont ete placees enfant. La loi Taquet (2022) renforce les droits des enfants places mais les departements manquent de moyens.",
+    "amountBillions": 9,
+    "costPerCitizen": 132,
+    "deckId": "social",
+    "icon": "👦",
+    "source": "DREES, ONPE, departements de France, Fondation Abbe Pierre",
+    "level": 1,
+    "tags": [
+      "social",
+      "enfance",
+      "ase"
+    ],
+    "equivalence": "Un enfant place en foyer coute 137€/jour — et 23% des SDF en France sont d'anciens enfants de l'ASE"
+  },
+  {
+    "id": "soc-22",
+    "title": "Fraude aux prestations sociales",
+    "subtitle": "Fraude detectee et estimee toutes branches",
+    "description": "La fraude aux prestations (RSA, allocations familiales, assurance maladie, chomage) est estimee entre 6 et 8 Md€/an par la Cour des comptes. Seuls ~2 Md€ sont detectes et 800 M€ effectivement recouvres. A comparer avec la fraude fiscale (80-120 Md€/an estimee) : la fraude aux prestations est 10-15x plus faible mais 10x plus mediatisee.",
+    "amountBillions": 2,
+    "costPerCitizen": 30,
+    "deckId": "social",
+    "icon": "🔍",
+    "source": "Cour des comptes rapport fraude, CNAF, CNAM, Unedic",
+    "level": 1,
+    "tags": [
+      "social",
+      "fraude",
+      "prestations"
+    ],
+    "equivalence": "La fraude sociale (~7 Md€) = 6% de la fraude fiscale (~120 Md€), mais occupe 60% du debat public"
+  }
+]

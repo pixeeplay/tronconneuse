@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import Image from "next/image";
-import decksData from "@/data/decks.json";
+import decksData from "@/data";
 import { getPlayedDeckIds, getGlobalStats } from "@/lib/stats";
 import { track } from "@/lib/analytics";
 import type { Deck } from "@/types";

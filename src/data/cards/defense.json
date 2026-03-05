@@ -1,0 +1,390 @@
+[
+  {
+    "id": "def-01",
+    "title": "Dissuasion nucléaire",
+    "subtitle": "Force de dissuasion nucléaire française",
+    "description": "Maintien en condition, modernisation des têtes, sous-marins SNLE, missiles M51, composante aérienne (Rafale + ASMP-A). La LPM 2024-2030 consacre 54 Md€ à la dissuasion. Le renouvellement complet des SNLE est en cours, premier livré en 2035.",
+    "amountBillions": 7,
+    "costPerCitizen": 103,
+    "deckId": "defense",
+    "icon": "☢️",
+    "trend": 13,
+    "source": "Vie-publique.fr, LPM 2024-2030, Sénat",
+    "sourceUrl": "https://www.vie-publique.fr",
+    "level": 1,
+    "tags": [
+      "militaire",
+      "nucléaire",
+      "souveraineté"
+    ],
+    "equivalence": "Le budget cumule des ministeres de la Justice ET de la Culture"
+  },
+  {
+    "id": "def-02",
+    "title": "Porte-avions Charles de Gaulle",
+    "subtitle": "Fonctionnement et entretien du porte-avions",
+    "description": "Maintien en condition opérationnelle, carburant nucléaire, équipage (~2 000 personnes), groupe aérien embarqué. Seul porte-avions français, en service depuis 2001. Son remplacement (PA-NG) est programmé pour ~2038, coût estimé à 10 Md€.",
+    "amountBillions": 1.2,
+    "costPerCitizen": 18,
+    "deckId": "defense",
+    "icon": "🚢",
+    "source": "Ministère des Armées PLF 2025, LPM 2024-2030",
+    "sourceUrl": "https://www.defense.gouv.fr",
+    "level": 1,
+    "tags": [
+      "militaire",
+      "marine",
+      "équipement"
+    ],
+    "equivalence": "Le salaire annuel de ~30 000 infirmieres hospitalieres"
+  },
+  {
+    "id": "def-03",
+    "title": "Opérations extérieures (OPEX)",
+    "subtitle": "Opérations militaires extérieures et missions opérationnelles",
+    "description": "OPEX (interventions à l'étranger) + MISSOPS (flanc Est OTAN : Estonie, Roumanie). Depuis 1995, la France a mené plus de 106 OPEX. La provision budgétaire est systématiquement sous-estimée : 750 M€ prévus, dépassement réel de plus d'1 Md€ chaque année.",
+    "amountBillions": 1.8,
+    "costPerCitizen": 27,
+    "deckId": "defense",
+    "icon": "🎯",
+    "source": "Vie-publique.fr, Cour des comptes, FOB",
+    "sourceUrl": "https://www.vie-publique.fr",
+    "level": 1,
+    "tags": [
+      "militaire",
+      "opérations",
+      "OTAN"
+    ],
+    "equivalence": "Le budget annuel complet de la Gendarmerie nationale"
+  },
+  {
+    "id": "def-04",
+    "title": "Cyberdéfense (COMCYBER)",
+    "subtitle": "Commandement de la cyberdéfense",
+    "description": "Cybersécurité militaire, lutte informatique offensive et défensive, recrutement de spécialistes. La LPM prévoit 1 500 cyber-combattants supplémentaires d'ici 2030. Le COMCYBER assure aussi la protection du système de commandement de la dissuasion nucléaire.",
+    "amountBillions": 0.3,
+    "costPerCitizen": 4,
+    "deckId": "defense",
+    "icon": "🛡️",
+    "trend": 15,
+    "source": "Ministère des Armées PLF 2025",
+    "sourceUrl": "https://www.defense.gouv.fr",
+    "level": 1,
+    "tags": [
+      "militaire",
+      "cyber",
+      "technologie"
+    ],
+    "equivalence": "Le cout de 3 satellites militaires d'observation"
+  },
+  {
+    "id": "def-05",
+    "title": "Renseignement (DGSE)",
+    "subtitle": "Direction générale de la sécurité extérieure",
+    "description": "Espionnage, contre-espionnage, renseignement stratégique, opérations clandestines. La DGSE emploie environ 7 000 agents. Son budget a augmenté de 60% depuis 2017. Nouveau siège en construction au Fort Neuf de Vincennes (livraison 2028).",
+    "amountBillions": 0.6,
+    "costPerCitizen": 9,
+    "deckId": "defense",
+    "icon": "🕵️",
+    "trend": 13,
+    "source": "Ministère des Armées PLF 2025, Sénat",
+    "sourceUrl": "https://www.defense.gouv.fr",
+    "level": 1,
+    "tags": [
+      "militaire",
+      "renseignement",
+      "souveraineté"
+    ],
+    "equivalence": "~2x le budget annuel de l'Opera national de Paris"
+  },
+  {
+    "id": "def-06",
+    "title": "Service de santé des armées",
+    "subtitle": "SSA — 8 hôpitaux militaires",
+    "description": "Hôpitaux militaires (dont Percy et Bégin), médecine de guerre, recherche biomédicale, soutien des OPEX. Le SSA emploie ~16 000 personnes. Ses hôpitaux sont ouverts aux civils (~70% des patients). Crise de fidélisation : les médecins militaires partent vers le civil.",
+    "amountBillions": 1.8,
+    "costPerCitizen": 27,
+    "deckId": "defense",
+    "icon": "🏥",
+    "source": "Ministère des Armées PLF 2025",
+    "sourceUrl": "https://www.defense.gouv.fr",
+    "level": 1,
+    "tags": [
+      "militaire",
+      "santé",
+      "hôpitaux"
+    ],
+    "equivalence": "Le fonctionnement de ~10 CHU de taille moyenne"
+  },
+  {
+    "id": "def-07",
+    "title": "Spatial militaire",
+    "subtitle": "Programme spatial militaire",
+    "description": "Satellites d'observation (CSO), télécommunication (Syracuse), surveillance de l'espace (GRAVES), Commandement de l'Espace. La France est la 1ère puissance spatiale militaire européenne. L'espace est devenu un champ de confrontation entre puissances.",
+    "amountBillions": 0.7,
+    "costPerCitizen": 10,
+    "deckId": "defense",
+    "icon": "🛰️",
+    "trend": 15,
+    "source": "Ministère des Armées PLF 2025, LPM 2024-2030",
+    "sourceUrl": "https://www.defense.gouv.fr",
+    "level": 1,
+    "tags": [
+      "militaire",
+      "espace",
+      "technologie"
+    ],
+    "equivalence": "~2 missions de la sonde Rosetta (ESA)"
+  },
+  {
+    "id": "def-08",
+    "title": "Infrastructures militaires",
+    "subtitle": "Construction, rénovation, logement des familles",
+    "description": "Bases aériennes, base navale de Toulon, logements pour les militaires et leurs familles. L'armée est le 2e propriétaire foncier de France. Beaucoup de casernes sont vétustes (certaines datent du XIXe siècle). L'état des logements est la 1ère cause de démission chez les sous-officiers.",
+    "amountBillions": 2.4,
+    "costPerCitizen": 35,
+    "deckId": "defense",
+    "icon": "🏗️",
+    "trend": 12,
+    "source": "Ministère des Armées PLF 2025",
+    "sourceUrl": "https://www.defense.gouv.fr",
+    "level": 1,
+    "tags": [
+      "militaire",
+      "infrastructure",
+      "logement"
+    ],
+    "equivalence": "La construction de ~24 000 logements sociaux / an"
+  },
+  {
+    "id": "def-09",
+    "title": "Innovation & technologies de rupture",
+    "subtitle": "Budget innovation et études amont",
+    "description": "Drones de combat, armes à énergie dirigée, intelligence artificielle, maîtrise des fonds marins, guerre algorithmique. La DGA pilote ces programmes avec des startups et des labos. L'enjeu : ne pas décrocher face aux investissements américains et chinois.",
+    "amountBillions": 1.2,
+    "costPerCitizen": 18,
+    "deckId": "defense",
+    "icon": "🤖",
+    "source": "Ministère des Armées PLF 2025, LPM 2024-2030",
+    "sourceUrl": "https://www.defense.gouv.fr",
+    "level": 1,
+    "tags": [
+      "militaire",
+      "innovation",
+      "technologie"
+    ],
+    "equivalence": "4x le budget annuel du CNRS en sciences informatiques"
+  },
+  {
+    "id": "def-10",
+    "title": "Objectif OTAN 3,5% du PIB",
+    "subtitle": "Hausse programmée du budget défense",
+    "description": "De 50,5 Md€ (2025, 2% du PIB) vers 91 Md€ (objectif 3,5%). Au sommet OTAN de La Haye (2025), les 32 membres se sont engagés à 5% du PIB d'ici 2035. Atteindre 3,5% = trouver ~40 Md€/an supplémentaires.",
+    "amountBillions": 40,
+    "costPerCitizen": 590,
+    "deckId": "defense",
+    "icon": "📈",
+    "source": "Vie-publique.fr, IFRAP, Sénat",
+    "sourceUrl": "https://www.vie-publique.fr",
+    "level": 1,
+    "tags": [
+      "militaire",
+      "OTAN",
+      "trajectoire"
+    ],
+    "equivalence": "Les +40 Md€ recherches = le budget total de l'Education nationale hors salaires"
+  },
+  {
+    "id": "def-11",
+    "title": "Exportations d'armement",
+    "subtitle": "Prises de commandes record",
+    "description": "La France est le 2e exportateur mondial d'armes. Les contrats Rafale, sous-marins, missiles MBDA constituent le gros des ventes. Ces exportations financent la BITD et réduisent le coût unitaire des équipements. Critique : ventes à des régimes controversés (Arabie saoudite, Egypte).",
+    "amountBillions": 18,
+    "costPerCitizen": 265,
+    "deckId": "defense",
+    "icon": "🛩️",
+    "trend": 40,
+    "source": "Rapport au Parlement sur les exportations d'armement 2025, DGA",
+    "sourceUrl": "https://www.defense.gouv.fr",
+    "level": 1,
+    "tags": [
+      "armement",
+      "exportation",
+      "industrie"
+    ],
+    "equivalence": "Les exportations d'armes rapportent plus que le tourisme a Paris"
+  },
+  {
+    "id": "def-12",
+    "title": "Reserve militaire et Garde nationale",
+    "subtitle": "80 000 reservistes operationnels",
+    "description": "La Garde nationale regroupe les reservistes des armees, de la gendarmerie et de la police. Actives pour Sentinelle, les JOP 2024, les catastrophes naturelles. Un reserviste est paye ~80EUR/jour. La LPM 2024-2030 double le budget de la reserve.",
+    "amountBillions": 0.5,
+    "costPerCitizen": 7,
+    "deckId": "defense",
+    "icon": "🎖️",
+    "trend": 15,
+    "source": "LPM 2024-2030, Ministere des Armees",
+    "sourceUrl": "https://www.defense.gouv.fr",
+    "level": 1,
+    "tags": [
+      "reserve",
+      "garde nationale",
+      "defense"
+    ],
+    "equivalence": "Un reserviste coute 5x moins qu'un militaire d'active pour une mission similaire"
+  },
+  {
+    "id": "def-13",
+    "title": "Stocks de munitions et reconstitution",
+    "subtitle": "Montee en cadence post-Ukraine",
+    "description": "Les livraisons a l'Ukraine ont revele la faiblesse des stocks francais. La France produisait 2 000 obus de 155mm/mois en 2022, objectif 3 000/mois en 2025. La reconstitution complete prendra 5-7 ans. KNDS monte de nouvelles lignes a Bourges et Tarbes.",
+    "amountBillions": 3,
+    "costPerCitizen": 44,
+    "deckId": "defense",
+    "icon": "💣",
+    "trend": 50,
+    "source": "LPM, KNDS, Senat commission defense",
+    "sourceUrl": "https://www.senat.fr",
+    "level": 1,
+    "tags": [
+      "munitions",
+      "industrie",
+      "defense"
+    ],
+    "equivalence": "1 obus de 155mm coute ~3 000€ — l'Ukraine en tire 4 000-6 000/jour"
+  },
+  {
+    "id": "def-14",
+    "title": "Service de sante des armees",
+    "subtitle": "Crise capacitaire du SSA",
+    "description": "Le SSA (8 hopitaux militaires, 15 000 personnels) traverse une crise d'attractivite. Le Val-de-Grace a ferme en 2016. Le SSA doit pouvoir traiter 700 blesses simultanement, mais les effectifs de chirurgiens militaires sont en forte baisse. Ouverture progressive aux civils.",
+    "amountBillions": 1.8,
+    "costPerCitizen": 26,
+    "deckId": "defense",
+    "icon": "🏥",
+    "trend": 5,
+    "source": "SSA rapport, LPM, Senat",
+    "sourceUrl": "https://www.defense.gouv.fr",
+    "level": 1,
+    "tags": [
+      "sante",
+      "militaire",
+      "hopital"
+    ],
+    "equivalence": "Le fonctionnement de ~10 CHU de taille moyenne"
+  },
+  {
+    "id": "def-15",
+    "title": "Participation francaise a l'OTAN",
+    "subtitle": "Contribution directe au budget OTAN",
+    "description": "La France contribue ~11% du budget commun de l'OTAN. Elle deploie ~10 000 militaires sous commandement OTAN (Estonie, Roumanie, Mediterranee). Le debat s'est deplace vers 3-3,5% du PIB suite aux declarations Trump et a la guerre en Ukraine.",
+    "amountBillions": 0.35,
+    "costPerCitizen": 5,
+    "deckId": "defense",
+    "icon": "🌐",
+    "trend": 10,
+    "source": "OTAN, Ministere des Armees, LPM",
+    "sourceUrl": "https://www.nato.int",
+    "level": 1,
+    "tags": [
+      "OTAN",
+      "alliance",
+      "defense"
+    ],
+    "equivalence": "Passer de 2% a 3,5% du PIB pour la defense = +40 Md€/an, soit 2x le budget de la Justice"
+  },
+  {
+    "id": "def-16",
+    "title": "Operation Sentinelle",
+    "subtitle": "Securite interieure militaire",
+    "description": "Depuis les attentats de 2015, l'armee deploie en permanence ~7 000 a 10 000 soldats sur le territoire national : gares, sites touristiques, lieux de culte, evenements. Le surcout annuel est de ~250 M€ (prime opex, hebergement, transport). Sentinelle monopolise 15-20% des effectifs de l'armee de Terre, au detriment de l'entrainement. Le dispositif devait etre temporaire — il dure depuis 10 ans.",
+    "amountBillions": 0.25,
+    "costPerCitizen": 4,
+    "deckId": "defense",
+    "icon": "🛡️",
+    "trend": -5,
+    "source": "Ministere des Armees, Senat rapport OPINT, PLF 2026",
+    "level": 1,
+    "tags": [
+      "defense",
+      "securite-interieure",
+      "sentinelle"
+    ],
+    "equivalence": "10 000 soldats en patrouille permanente = l'effectif d'une brigade blindee entiere, immobilisee"
+  },
+  {
+    "id": "def-17",
+    "title": "Anciens combattants et memoire",
+    "subtitle": "Mission Monde combattant, memoire et liens avec la Nation",
+    "description": "Pensions militaires d'invalidite (~620 M€), allocation de reconnaissance du combattant (~835€/an pour les anciens combattants de 65+ ans), institution nationale des Invalides, politique de memoire. Le budget baisse naturellement de ~6%/an car les anciens combattants d'Algerie ont 80-90 ans. Le point de PMI n'est pas revalorise en 2026 malgre l'inflation.",
+    "amountBillions": 1.7,
+    "costPerCitizen": 25,
+    "deckId": "defense",
+    "icon": "🎖️",
+    "trend": -6,
+    "source": "PLF 2026 mission Monde combattant, Senat, ONACVG",
+    "level": 1,
+    "tags": [
+      "defense",
+      "veterans",
+      "memoire"
+    ],
+    "equivalence": "Le budget baisse de 1 Md€ en 10 ans — les veterans decedent, le budget fond avec eux"
+  },
+  {
+    "id": "def-18",
+    "title": "Forces speciales (COS)",
+    "subtitle": "Commandement des operations speciales",
+    "description": "Le COS regroupe ~5 000 operateurs d'elite (1er RPIMa, commandos marine, 13e RDP, CPA 10). La France est la seule nation europeenne avec le Royaume-Uni a maintenir des capacites de forces speciales projetables au niveau mondial. Les FS ont mene plus de 60% des operations francaises au Sahel. Le surcout est estime a ~200 000€/an par operateur (vs ~50 000€ pour un soldat classique).",
+    "amountBillions": 1,
+    "costPerCitizen": 15,
+    "deckId": "defense",
+    "icon": "🎯",
+    "source": "Senat commission defense, LPM 2024-2030",
+    "level": 1,
+    "tags": [
+      "defense",
+      "forces-speciales",
+      "cos"
+    ],
+    "equivalence": "1 operateur des forces speciales coute 4x plus qu'un soldat conventionnel mais vaut 10x plus en impact operationnel"
+  },
+  {
+    "id": "def-19",
+    "title": "DGA et acquisition d'armement",
+    "subtitle": "Direction generale de l'armement — titre 5 equipement des forces",
+    "description": "La DGA pilote les programmes d'armement : Rafale, SCAF (avion 6e generation), MGCS (char du futur), sous-marins Barracuda, fregates FDI, satellites, drones. Le titre 5 passe de 18 a 22 Md€ entre 2024 et 2026. Les retards et surcouts sont endemiques : le programme Scorpion derive de 30% en cout. La cooperation franco-allemande (SCAF, MGCS) est paralysee par les desaccords industriels.",
+    "amountBillions": 22,
+    "costPerCitizen": 324,
+    "deckId": "defense",
+    "icon": "⚙️",
+    "trend": 22,
+    "source": "DGA rapport, PLF 2026 mission Defense, Senat",
+    "level": 1,
+    "tags": [
+      "defense",
+      "armement",
+      "dga"
+    ],
+    "equivalence": "1 Rafale coute ~120 M€ — la France commande 42 Rafale F5 d'ici 2030"
+  },
+  {
+    "id": "def-20",
+    "title": "Bases militaires outre-mer",
+    "subtitle": "Forces de souverainete et forces de presence",
+    "description": "La France maintient ~7 000 militaires dans ses territoires ultramarins et ~5 000 dans ses bases pre-positionnees (Djibouti, Emirats, Senegal, Cote d'Ivoire, Gabon). Ces forces permettent d'intervenir sur 3 oceans en moins de 48h. Apres le retrait du Sahel, le dispositif africain est en restructuration. La Nouvelle-Caledonie a mobilise 3 000 militaires supplementaires lors des troubles de 2024.",
+    "amountBillions": 1.7,
+    "costPerCitizen": 25,
+    "deckId": "defense",
+    "icon": "🌍",
+    "source": "Ministere des Armees, LPM, Senat",
+    "level": 1,
+    "tags": [
+      "defense",
+      "outre-mer",
+      "bases"
+    ],
+    "equivalence": "La France est le seul pays europeen present militairement sur tous les continents"
+  }
+]

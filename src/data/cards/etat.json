@@ -1,0 +1,382 @@
+[
+  {
+    "id": "eta-01",
+    "title": "Charge de la dette",
+    "subtitle": "Intérêts annuels payés sur la dette publique",
+    "description": "Dette totale : ~3 300 Md€ (113% du PIB). La charge a doublé en 3 ans (27 Md€ en 2021). Elle dépasse le budget de l'Éducation nationale hors pensions. Chaque hausse de 1 point de taux = ~3 Md€/an de charge supplémentaire.",
+    "amountBillions": 55,
+    "costPerCitizen": 809,
+    "deckId": "etat",
+    "icon": "📊",
+    "trend": 15,
+    "source": "Agence France Trésor, budget.gouv.fr, Cour des comptes",
+    "sourceUrl": "https://www.budget.gouv.fr",
+    "level": 1,
+    "tags": [
+      "état",
+      "dette",
+      "intérêts"
+    ],
+    "equivalence": "Les 55 Md€ d'interets = le budget complet de la Defense"
+  },
+  {
+    "id": "eta-02",
+    "title": "Masse salariale de l'État",
+    "subtitle": "Rémunérations des agents de l'État",
+    "description": "~2,5 millions d'agents de l'État (sur 5,7 millions de fonctionnaires au total). ~40% du budget de l'État. La hausse du point d'indice de 2022-2023 a coûté ~7 Md€/an. Le gel du point d'indice 2010-2022 a érodé le pouvoir d'achat de ~20%.",
+    "amountBillions": 165,
+    "costPerCitizen": 2425,
+    "deckId": "etat",
+    "icon": "👔",
+    "source": "Budget.gouv.fr, DGAFP",
+    "sourceUrl": "https://www.budget.gouv.fr",
+    "level": 1,
+    "tags": [
+      "état",
+      "fonctionnaires",
+      "salaires"
+    ],
+    "equivalence": "Les 5,7 millions de fonctionnaires = 20% de l'emploi total"
+  },
+  {
+    "id": "eta-03",
+    "title": "Collectivités territoriales",
+    "subtitle": "Transferts financiers État → collectivités locales",
+    "description": "36 000 communes, 101 départements, 13 régions. La DGF (~27 Md€) baisse en valeur réelle depuis 2014. Les collectivités assurent 70% de l'investissement public civil. Le gouvernement leur impose 5 Md€ d'économies en 2025.",
+    "amountBillions": 55,
+    "costPerCitizen": 809,
+    "deckId": "etat",
+    "icon": "🏘️",
+    "source": "Budget.gouv.fr, AMF, Cour des comptes",
+    "sourceUrl": "https://www.budget.gouv.fr",
+    "level": 1,
+    "tags": [
+      "état",
+      "collectivités",
+      "décentralisation"
+    ],
+    "equivalence": "Les 36 000 communes francaises = plus que tous les pays de l'UE reunis"
+  },
+  {
+    "id": "eta-04",
+    "title": "Fraude fiscale",
+    "subtitle": "Manque à gagner de la fraude fiscale",
+    "description": "TVA, impôt sur le revenu, IS, travail dissimulé. Premier « trou » budgétaire de l'État, largement supérieur au déficit de la Sécu. Le gouvernement recouvre ~15 Md€/an après contrôles. La fraude à la TVA (carrousels) représente ~20 Md€ selon le Sénat.",
+    "amountBillions": 100,
+    "costPerCitizen": 1470,
+    "deckId": "etat",
+    "icon": "🕳️",
+    "source": "Solidaires Finances Publiques, Sénat, Cour des comptes",
+    "level": 1,
+    "tags": [
+      "état",
+      "fraude",
+      "recettes"
+    ],
+    "equivalence": "Si la fraude fiscale etait recuperee integralement, elle solderait le deficit public"
+  },
+  {
+    "id": "eta-05",
+    "title": "Niches fiscales",
+    "subtitle": "Dépenses fiscales — réductions et crédits d'impôt",
+    "description": "~465 « niches » recensées, manque à gagner de ~90 Md€/an. Les plus grosses : allègements Fillon (~25 Md€), CIR (~7 Md€), abattement pensions (~4,5 Md€). La Cour des comptes dénonce l'absence d'évaluation de la moitié des niches.",
+    "amountBillions": 90,
+    "costPerCitizen": 1323,
+    "deckId": "etat",
+    "icon": "🏷️",
+    "source": "CPO, Cour des comptes, PLF 2025",
+    "level": 1,
+    "tags": [
+      "état",
+      "fiscalité",
+      "niches"
+    ],
+    "equivalence": "Les niches fiscales = le budget combine Defense + Justice + Interieur"
+  },
+  {
+    "id": "eta-06",
+    "title": "Aide publique au développement",
+    "subtitle": "Solidarité internationale — AFD",
+    "description": "La France est le 4e donateur mondial. L'APD a augmenté de +70% depuis 2017. Mais le PLF 2025 prévoit une coupe de ~2 Md€, sacrifiant des programmes en Afrique. 25% de l'APD = annulations de dette. Objectif ONU de 0,7% du RNB non atteint (0,52%).",
+    "amountBillions": 15.4,
+    "costPerCitizen": 226,
+    "deckId": "etat",
+    "icon": "🌍",
+    "trend": -13,
+    "source": "OCDE DAC, budget.gouv.fr, AFD",
+    "sourceUrl": "https://www.budget.gouv.fr",
+    "level": 1,
+    "tags": [
+      "état",
+      "international",
+      "aide"
+    ],
+    "equivalence": "Les 15 Md€ d'APD = le budget annuel des APL (aides au logement)"
+  },
+  {
+    "id": "eta-07",
+    "title": "Subventions aux entreprises",
+    "subtitle": "Aides directes, subventions et dispositifs de soutien",
+    "description": "France 2030, BPI, aides sectorielles. ~60-70 Md€/an hors allègements de cotisations. En ajoutant exonérations sociales + fiscales, le total avoisine ~170 Md€/an. L'efficacité globale de ces aides n'a jamais été évaluée de façon consolidée.",
+    "amountBillions": 65,
+    "costPerCitizen": 955,
+    "deckId": "etat",
+    "icon": "🏢",
+    "source": "CAE, IPP, France Stratégie",
+    "level": 1,
+    "tags": [
+      "état",
+      "entreprises",
+      "subventions"
+    ],
+    "equivalence": "Les aides totales aux entreprises = les prestations sociales versees aux menages modestes"
+  },
+  {
+    "id": "eta-08",
+    "title": "Outre-mer",
+    "subtitle": "Transferts nets État → DOM-TOM",
+    "description": "2,2 millions de citoyens ultramarins, 12 collectivités. Les transferts incluent surcoûts de rémunération des fonctionnaires (+40% à +53%), prestations sociales et surcoût des infrastructures. Taux de chômage moyen : ~20% (3× la métropole).",
+    "amountBillions": 27,
+    "costPerCitizen": 397,
+    "deckId": "etat",
+    "icon": "🏝️",
+    "source": "Budget.gouv.fr, IEDOM/IEOM, Cour des comptes",
+    "sourceUrl": "https://www.budget.gouv.fr",
+    "level": 1,
+    "tags": [
+      "état",
+      "outre-mer",
+      "territoires"
+    ],
+    "equivalence": "Le transfert net par ultramarin est ~3x superieur a la moyenne des transferts par metropolitain"
+  },
+  {
+    "id": "eta-09",
+    "title": "Diplomatie et réseau consulaire",
+    "subtitle": "Budget du ministère des Affaires étrangères",
+    "description": "163 ambassades (2e réseau mondial), 232 consulats. 3,4 millions de Français vivent à l'étranger. Le réseau des lycées français (580 établissements, 139 pays) scolarise 390 000 élèves. Budget +15% depuis 2022.",
+    "amountBillions": 6.3,
+    "costPerCitizen": 93,
+    "deckId": "etat",
+    "icon": "🏛️",
+    "trend": 15,
+    "source": "Budget.gouv.fr PLF 2025, MEAE, AEFE",
+    "sourceUrl": "https://www.budget.gouv.fr",
+    "level": 1,
+    "tags": [
+      "état",
+      "diplomatie",
+      "affaires étrangères"
+    ],
+    "equivalence": "Le budget du Quai d'Orsay = 1/10e de celui de la Defense"
+  },
+  {
+    "id": "eta-10",
+    "title": "Déficit et endettement public",
+    "subtitle": "Déficit public annuel et trajectoire d'endettement",
+    "description": "~170 Md€ de déficit en 2024 (~6,1% du PIB, pire hors Covid depuis 1995). Chaque Français « porte » ~48 500€ de dette. Les agences de notation ont dégradé ou mis sous surveillance la France en 2024. Objectif de 3% « d'ici 2029 » jugé irréaliste.",
+    "amountBillions": 170,
+    "costPerCitizen": 2500,
+    "deckId": "etat",
+    "icon": "📉",
+    "trend": 6.1,
+    "source": "INSEE, Cour des comptes, Agence France Trésor",
+    "level": 1,
+    "tags": [
+      "état",
+      "déficit",
+      "dette"
+    ],
+    "equivalence": "La dette francaise (3 300 Md€) = le PIB de l'Inde"
+  },
+  {
+    "id": "eta-11",
+    "title": "Presidence, Matignon, cabinets",
+    "subtitle": "Elysee ~115 M EUR, Matignon ~130 M EUR",
+    "description": "Le budget de l'Elysee est de ~115 M EUR/an (dont 72 M EUR de masse salariale, ~830 agents). Les cabinets ministeriels comptent ~500 conseillers. L'Elysee coute ~1,70 EUR par Francais par an, soit un croissant tous les 6 mois.",
+    "amountBillions": 0.4,
+    "costPerCitizen": 6,
+    "deckId": "etat",
+    "icon": "🏛️",
+    "trend": 3,
+    "source": "PLF 2026, Cour des comptes, Assemblee nationale",
+    "sourceUrl": "https://www.elysee.fr",
+    "level": 1,
+    "tags": [
+      "presidence",
+      "cabinets",
+      "executif"
+    ],
+    "equivalence": "L'Elysee coute ~1,70€ par Francais par an, soit un croissant tous les 6 mois"
+  },
+  {
+    "id": "eta-12",
+    "title": "Parlement (AN + Senat)",
+    "subtitle": "577 deputes + 348 senateurs",
+    "description": "L'Assemblee coute ~600 M EUR/an, le Senat ~350 M EUR. Un depute gagne ~7 500 EUR brut/mois + IRFM de ~5 645 EUR pour ses frais. Les deux chambres jouissent d'une autonomie budgetaire sans controle de la Cour des comptes.",
+    "amountBillions": 1,
+    "costPerCitizen": 15,
+    "deckId": "etat",
+    "icon": "🗳️",
+    "trend": 2,
+    "source": "AN budget, Senat budget, HATVP",
+    "sourceUrl": "https://www.assemblee-nationale.fr",
+    "level": 1,
+    "tags": [
+      "parlement",
+      "deputes",
+      "senateurs"
+    ],
+    "equivalence": "Un depute coute ~1 M€/an tout compris (remuneration + collaborateurs + fonctionnement)"
+  },
+  {
+    "id": "eta-13",
+    "title": "Immobilier de l'Etat",
+    "subtitle": "190 millions de m2 de batiments publics",
+    "description": "L'Etat possede ~190 millions de m2 (ministeres, prefectures, casernes, universites). Patrimoine estime a ~65 Md EUR. Le teletravail post-COVID a libere 10-15% des surfaces. Les batiments universitaires sont les plus degrades (40 Md EUR de travaux necessaires).",
+    "amountBillions": 8,
+    "costPerCitizen": 118,
+    "deckId": "etat",
+    "icon": "🏢",
+    "trend": 3,
+    "source": "DIE, PLF 2026, Cour des comptes",
+    "sourceUrl": "https://www.budget.gouv.fr",
+    "level": 1,
+    "tags": [
+      "immobilier",
+      "patrimoine",
+      "batiments"
+    ],
+    "equivalence": "L'Etat est le plus gros proprietaire immobilier de France — 190 millions de m2, dont beaucoup sous-occupes"
+  },
+  {
+    "id": "eta-14",
+    "title": "Systemes d'information (IT public)",
+    "subtitle": "60% des applications critiques ont plus de 15 ans",
+    "description": "Les ministeres depensent ~10 Md EUR/an en informatique. Grands echecs : Louvois (500 M EUR de surcout), Operateur national de paie (abandonne apres 300 M EUR). La DINUM tente de rationaliser mais chaque ministere garde ses propres systemes.",
+    "amountBillions": 10,
+    "costPerCitizen": 147,
+    "deckId": "etat",
+    "icon": "💻",
+    "trend": 6,
+    "source": "DINUM, PLF 2026, Cour des comptes",
+    "sourceUrl": "https://www.numerique.gouv.fr",
+    "level": 1,
+    "tags": [
+      "informatique",
+      "numerique",
+      "modernisation"
+    ],
+    "equivalence": "L'Etat depense autant en IT que le budget du Senegal, avec des resultats souvent mediocres"
+  },
+  {
+    "id": "eta-15",
+    "title": "Jours feries (cout pour l'economie)",
+    "subtitle": "11 jours feries, ~3-4 Md EUR perdus chacun",
+    "description": "La France compte 11 jours feries legaux (dont 6 religieux). Chaque jour ferie coute ~0,15% de PIB. La journee de solidarite rapporte ~2,4 Md EUR/an. Supprimer 1 jour ferie = financer le budget de la Culture (4,4 Md EUR). Politiquement suicidaire.",
+    "amountBillions": 3.5,
+    "costPerCitizen": 550,
+    "deckId": "etat",
+    "icon": "📅",
+    "trend": 0,
+    "source": "INSEE, Tresor, OFCE",
+    "sourceUrl": "https://www.insee.fr",
+    "level": 1,
+    "tags": [
+      "jours feries",
+      "economie",
+      "productivite"
+    ],
+    "equivalence": "Supprimer 1 jour ferie = financer le budget de la Culture (4,4 Md€), mais aucun politique n'osera"
+  },
+  {
+    "id": "eta-16",
+    "title": "Prefectures et sous-prefectures",
+    "subtitle": "Administration territoriale de l'Etat (programme 354)",
+    "description": "101 prefectures et 233 sous-prefectures maillent le territoire. La dematerialisation des titres a supprime le guichet pour 80% des demarches, provoquant une fracture numerique (13M de Francais en difficulte). 5 sous-prefectures ont ferme depuis 2020. La reforme France Services a transforme d'anciennes sous-prefectures en maisons de services publics multifonctions.",
+    "amountBillions": 2.5,
+    "costPerCitizen": 37,
+    "deckId": "etat",
+    "icon": "🏛️",
+    "source": "PLF 2026, Cour des comptes, DGAFP",
+    "level": 1,
+    "tags": [
+      "etat",
+      "prefectures",
+      "administration"
+    ],
+    "equivalence": "233 sous-prefectures pour 35 000 communes — 1 sous-prefet pour 150 communes en moyenne"
+  },
+  {
+    "id": "eta-17",
+    "title": "INSP (ex-ENA) et hauts fonctionnaires",
+    "subtitle": "Formation des administrateurs de l'Etat",
+    "description": "L'INSP (ex-ENA depuis 2022) forme ~80 hauts fonctionnaires/an apres un concours ultra-selectif. Cout de formation par eleve : ~120 000€ sur 2 ans. Les 5 IRA forment 700 attaches/an. La reforme visait a diversifier le recrutement. Bilan mitige : 40% des admis sont encore enfants de cadres superieurs, les classes preparatoires Talents n'ont attire que 200 candidats.",
+    "amountBillions": 0.1,
+    "costPerCitizen": 2,
+    "deckId": "etat",
+    "icon": "🎓",
+    "source": "INSP, PLF 2026, Cour des comptes",
+    "level": 1,
+    "tags": [
+      "etat",
+      "ena",
+      "formation"
+    ],
+    "equivalence": "Former 1 haut fonctionnaire coute 120 000€ — il restera en poste 35 ans, c'est un bon investissement"
+  },
+  {
+    "id": "eta-18",
+    "title": "Cour des comptes et inspections generales",
+    "subtitle": "Cour des comptes + CRC + IGF + IGAS + IGA",
+    "description": "La Cour des comptes (700 magistrats et rapporteurs) certifie les comptes de l'Etat, evalue les politiques publiques et produit ~200 rapports/an. Les CRC controlent les collectivites. Ces corps identifient chaque annee des milliards d'economies possibles... rarement suivies d'effet. La Cour estime que si ses recommandations avaient ete appliquees, l'Etat economiserait 15-20 Md€/an.",
+    "amountBillions": 0.3,
+    "costPerCitizen": 4,
+    "deckId": "etat",
+    "icon": "🔍",
+    "source": "Cour des comptes rapport annuel, PLF 2026, IGAS",
+    "level": 1,
+    "tags": [
+      "etat",
+      "audit",
+      "controle"
+    ],
+    "equivalence": "4€ de controle pour identifier 15-20 Md€ d'economies potentielles — meilleur ROI de la Republique"
+  },
+  {
+    "id": "eta-19",
+    "title": "Conseil d'Etat et juridictions administratives",
+    "subtitle": "Conseil d'Etat + 42 TA + 9 CAA",
+    "description": "Les juridictions administratives traitent ~250 000 recours/an. Le contentieux des etrangers (OQTF, asile, visas) represente ~50% des affaires des tribunaux administratifs (saturation). Le delai moyen est de 9 mois en TA, 12 mois en appel. Les membres du Conseil d'Etat sont les fonctionnaires les mieux payes de France (~8 000-15 000€ nets/mois).",
+    "amountBillions": 0.5,
+    "costPerCitizen": 7,
+    "deckId": "etat",
+    "icon": "⚖️",
+    "source": "Conseil d'Etat rapport annuel, PLF 2026",
+    "level": 1,
+    "tags": [
+      "etat",
+      "justice-admin",
+      "contentieux"
+    ],
+    "equivalence": "50% du contentieux administratif = droit des etrangers — un tribunal sur deux ne fait plus que ca"
+  },
+  {
+    "id": "eta-20",
+    "title": "Vehicules de l'Etat",
+    "subtitle": "Parc automobile des administrations",
+    "description": "L'Etat possede ~65 000 vehicules (hors armee et police). La loi impose 50% de vehicules electriques dans les renouvellements depuis 2026. Le parc vieillit (age moyen : 7 ans). Voitures de fonction avec chauffeur : ~2 000 pour les ministres, directeurs d'administration et prefets (cout : ~50 000€/an par vehicule avec chauffeur).",
+    "amountBillions": 1.5,
+    "costPerCitizen": 22,
+    "deckId": "etat",
+    "icon": "🚗",
+    "source": "DIE, UGAP, PLF 2026",
+    "level": 1,
+    "tags": [
+      "etat",
+      "vehicules",
+      "logistique"
+    ],
+    "equivalence": "65 000 vehicules = la flotte d'une grande entreprise de location, pour un cout de ~23 000€/vehicule/an"
+  }
+]

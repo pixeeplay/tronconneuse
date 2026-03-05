@@ -1,0 +1,208 @@
+[
+  {
+    "id": "zom-01",
+    "title": "France Compétences (le trou noir de la formation)",
+    "subtitle": "Le déficit de France Compétences = 2x le budget du ministère de la Culture",
+    "description": "France Compétences, l'opérateur qui régule la formation professionnelle et l'apprentissage, a accumulé un déficit abyssal : jusqu'à 6 Md€ de trou en une seule année (2022). Cause : le succès incontrôlé du CPF et de l'apprentissage a généré des dépenses bien supérieures aux recettes. L'État a dû reprendre une partie de la dette. Paradoxe : la formation professionnelle est « réformée » tous les 5 ans depuis 1971, et personne ne comprend jamais le système.",
+    "amountBillions": 14,
+    "costPerCitizen": 206,
+    "deckId": "zombies",
+    "icon": "🕳️",
+    "source": "Cour des comptes, France Compétences rapport, PLF 2026",
+    "sourceUrl": null,
+    "level": 1,
+    "tags": [
+      "zombie",
+      "formation",
+      "CPF",
+      "déficit"
+    ],
+    "trend": null,
+    "equivalence": "Le deficit de France Competences = 2x le budget du ministere de la Culture"
+  },
+  {
+    "id": "zom-02",
+    "title": "Aides COVID encore en remboursement",
+    "subtitle": "Les PGE = un prêt de 200 000€ en moyenne par entreprise, garanti par vous",
+    "description": "Le dispositif de Prêts Garantis par l'État (PGE), lancé en urgence en mars 2020, a distribué 145 Md€ à 700 000 entreprises. La plupart remboursent sur 6 ans (jusqu'en 2026-2027). Le taux de défaut final est estimé à 5-7%, soit ~7-10 Md€ de pertes pour l'État. Certaines entreprises « zombies » n'ont survécu que grâce au PGE et font faillite au moment du remboursement. Le dispositif « sortie de crise » ferme fin 2026.",
+    "amountBillions": 17.5,
+    "costPerCitizen": 40,
+    "deckId": "zombies",
+    "icon": "🧟",
+    "source": "BPI France, Banque de France, Cour des comptes rapport PGE",
+    "sourceUrl": null,
+    "level": 1,
+    "tags": [
+      "zombie",
+      "COVID",
+      "PGE",
+      "dette"
+    ],
+    "trend": null,
+    "equivalence": "Les PGE = un pret de 200 000€ en moyenne par entreprise, garanti par vous"
+  },
+  {
+    "id": "zom-03",
+    "title": "L'ARENH (mort mais ses effets perdurent)",
+    "subtitle": "EDF a vendu son électricité à perte pendant 15 ans sur ordre de l'État",
+    "description": "L'ARENH (Accès Régulé à l'Électricité Nucléaire Historique) obligeait EDF à vendre 25% de sa production nucléaire à 42€/MWh à ses concurrents. Créé en 2010 pour « favoriser la concurrence », il a surtout subventionné les fournisseurs alternatifs et affaibli EDF. En 2022, le prix du marché était 10x supérieur au prix ARENH. Le mécanisme a pris fin le 31/12/2025 mais ses effets (dette EDF, retard d'investissement) se feront sentir 20 ans. Un zombie budgétaire au sens propre.",
+    "amountBillions": 8,
+    "costPerCitizen": 118,
+    "deckId": "zombies",
+    "icon": "⚡",
+    "source": "CRE, Cour des comptes, EDF",
+    "sourceUrl": null,
+    "level": 1,
+    "tags": [
+      "zombie",
+      "ARENH",
+      "énergie",
+      "EDF"
+    ],
+    "trend": null,
+    "equivalence": "EDF a vendu son electricite a perte pendant 15 ans sur ordre de l'Etat, pour creer de la concurrence"
+  },
+  {
+    "id": "zom-04",
+    "title": "Fonds de garantie des victimes",
+    "subtitle": "20+ fonds d'indemnisation là où 3-4 suffiraient",
+    "description": "Il existe en France plus d'une vingtaine de fonds d'indemnisation spécialisés : FGAO (accidents auto), FGTI (terrorisme), FIVA (amiante), ONIAM (accidents médicaux), fonds nucléaire, fonds mines, etc. Chacun a sa propre gouvernance, son conseil d'administration, ses locaux. La Cour des comptes recommande régulièrement des fusions, mais chaque fonds a ses défenseurs. Certains indemnisent moins de 100 personnes/an avec des frais de gestion de plusieurs millions.",
+    "amountBillions": 0.5,
+    "costPerCitizen": 7,
+    "deckId": "zombies",
+    "icon": "🏦",
+    "source": "Cour des comptes, IGAS, PLF annexe opérateurs",
+    "sourceUrl": null,
+    "level": 1,
+    "tags": [
+      "zombie",
+      "indemnisation",
+      "mille-feuille"
+    ],
+    "trend": null,
+    "equivalence": "20+ fonds d'indemnisation la ou 3-4 suffiraient"
+  },
+  {
+    "id": "zom-05",
+    "title": "Taxe d'habitation (morte mais pas enterrée)",
+    "subtitle": "La suppression a été compensée à l'euro près — le contribuable paie toujours, mais autrement",
+    "description": "La suppression de la taxe d'habitation (2018-2023, promesse Macron) a coûté 23 Md€/an au budget de l'État, compensés par le transfert de parts de TVA aux communes. Le ménage ne la paye plus directement, mais la paie via d'autres impôts. La taxe foncière, elle, a explosé pour compenser (communes). Résultat net : un simple transfert de charge, pas une vraie baisse d'impôts. Les propriétaires paient plus, les locataires paient moins directement. Les résidences secondaires restent assujetties.",
+    "amountBillions": 23,
+    "costPerCitizen": 338,
+    "deckId": "zombies",
+    "icon": "🏠",
+    "source": "DGCL, DGFiP, Cour des comptes",
+    "sourceUrl": null,
+    "level": 1,
+    "tags": [
+      "zombie",
+      "fiscalité",
+      "taxe d'habitation"
+    ],
+    "trend": null,
+    "equivalence": "La suppression a ete compensee a l'euro pres — le contribuable paie toujours, mais autrement"
+  },
+  {
+    "id": "zom-06",
+    "title": "CESE (Conseil économique, social et environnemental)",
+    "subtitle": "45 M€ = le prix de 3 écoles neuves par an",
+    "description": "Le CESE, 3e chambre constitutionnelle, produit des avis consultatifs non contraignants. Ses 175 membres (mandatés par les syndicats, patronat, associations) sont rémunérés ~4 000€/mois. Réformé en 2021 pour intégrer les Conventions citoyennes, il reste largement méconnu du public. Aucun de ses avis n'a jamais été cité dans un débat parlementaire majeur ces dernières années. Coût faible, mais symbole d'une institution dont la valeur ajoutée est discutée.",
+    "amountBillions": 0.045,
+    "costPerCitizen": 1,
+    "deckId": "zombies",
+    "icon": "🏛️",
+    "source": "PLF 2026, CESE rapport d'activité, Cour des comptes",
+    "sourceUrl": null,
+    "level": 1,
+    "tags": [
+      "zombie",
+      "institution",
+      "CESE"
+    ],
+    "trend": null,
+    "equivalence": "45 M€ = le prix de 3 ecoles neuves par an"
+  },
+  {
+    "id": "zom-07",
+    "title": "Opérateurs de l'État (le mille-feuille)",
+    "subtitle": "438 opérateurs = plus que le nombre de députés (577) — chacun avec son DG, son CA et ses locaux",
+    "description": "L'État finance 438 « opérateurs » : agences, offices, instituts, autorités, centres. Certains comptent 20 000 agents (Pôle Emploi/France Travail), d'autres moins de 10. La Cour des comptes identifie régulièrement des doublons, chevauchements de missions et frais de structure disproportionnés. Exemples : l'ADEME et l'OFB sur l'environnement, l'ANCT et l'ANRU sur les territoires, le CEREMA et l'IGN sur la géographie. Chaque tentative de fusion échoue face aux résistances corporatistes.",
+    "amountBillions": 80,
+    "costPerCitizen": 1176,
+    "deckId": "zombies",
+    "icon": "🗂️",
+    "source": "PLF 2026 annexe opérateurs, Cour des comptes, Fondation IFRAP",
+    "sourceUrl": null,
+    "level": 1,
+    "tags": [
+      "zombie",
+      "opérateurs",
+      "mille-feuille",
+      "administration"
+    ],
+    "trend": null,
+    "equivalence": "438 operateurs = plus que le nombre de deputes (577) — chacun avec son DG, son CA et ses locaux"
+  },
+  {
+    "id": "zom-08",
+    "title": "Conventions de revitalisation",
+    "subtitle": "~50 000€ par emploi « créé », dont une partie enrichit les consultants",
+    "description": "Quand une grande entreprise licencie > 50 salariés dans un bassin d'emploi fragile, elle doit financer une convention de revitalisation (2-4x le SMIC par emploi supprimé). Ces fonds sont censés créer des emplois de substitution. En pratique, les études montrent que les emplois « créés » existaient souvent déjà ou auraient été créés sans l'aide. Les cabinets de conseil captent 15-20% des montants en frais d'accompagnement. Zombie discret mais tenace.",
+    "amountBillions": 0.175,
+    "costPerCitizen": 3,
+    "deckId": "zombies",
+    "icon": "📋",
+    "source": "DARES, IGAS, Cour des comptes",
+    "sourceUrl": null,
+    "level": 1,
+    "tags": [
+      "zombie",
+      "emploi",
+      "revitalisation"
+    ],
+    "trend": null,
+    "equivalence": "~50 000€ par emploi cree, dont une partie enrichit les consultants"
+  },
+  {
+    "id": "zom-09",
+    "title": "Agences régionales de santé (ARS)",
+    "subtitle": "18 ARS avec 18 DG, 18 sièges, 18 comités, pour un pays de la taille du Texas",
+    "description": "Les ARS pilotent l'offre de soins régionale : autorisations, planification, gestion de crise. Créées en 2010 pour simplifier l'organisation (fusion de 7 structures), elles sont devenues un échelon bureaucratique supplémentaire selon leurs critiques. COVID a révélé leur impuissance face à l'urgence (DG d'ARS sans pouvoir de réquisition, dépendance aux instructions parisiennes). Appréciées pour la gestion des autorisations sanitaires, critiquées pour leur lourdeur administrative.",
+    "amountBillions": 0.7,
+    "costPerCitizen": 10,
+    "deckId": "zombies",
+    "icon": "🏢",
+    "source": "IGAS rapport ARS, PLF 2026, Cour des comptes",
+    "sourceUrl": null,
+    "level": 1,
+    "tags": [
+      "zombie",
+      "santé",
+      "ARS",
+      "bureaucratie"
+    ],
+    "trend": null,
+    "equivalence": "18 ARS avec 18 DG, 18 sieges, 18 comites, pour un pays de la taille du Texas"
+  },
+  {
+    "id": "zom-10",
+    "title": "Fonds de réserve pour les retraites (FRR)",
+    "subtitle": "21 Md€ dormants = 4 mois de déficit de la Sécurité sociale",
+    "description": "Le FRR a été créé en 2001 pour lisser le choc démographique des retraites (baby-boomers). Doté de 37 Md€ en 2010, il a été partiellement ponctionné pour financer la dette sociale (CADES). Il reste 21 Md€ qui dorment... sans mandat clair. Officiellement « en réserve », mais personne ne sait quand ni comment les utiliser. Le Conseil d'orientation des retraites ne l'intègre même plus dans ses projections. Un zombie riche dans un placard.",
+    "amountBillions": 21,
+    "costPerCitizen": 309,
+    "deckId": "zombies",
+    "icon": "🪦",
+    "source": "FRR rapport annuel, COR, Cour des comptes",
+    "sourceUrl": null,
+    "level": 1,
+    "tags": [
+      "zombie",
+      "retraites",
+      "FRR",
+      "réserves"
+    ],
+    "trend": null,
+    "equivalence": "21 Md€ dormants = 4 mois de deficit de la Securite sociale"
+  }
+]

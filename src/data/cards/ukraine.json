@@ -1,0 +1,205 @@
+[
+  {
+    "id": "ukr-01",
+    "title": "Aide militaire directe (matériel livré)",
+    "subtitle": "La France a donné l'équivalent en matériel de ~2,5% du budget annuel de la Défense",
+    "description": "La France a livré plus de 30 canons CAESAR, des blindés AMX-10RC et VAB, des missiles SCALP et Aster, des radars, des munitions d'artillerie (155mm, 120mm) et des équipements individuels. La valorisation se fait au prix du neuf, mais beaucoup de matériel donné était ancien (en fin de vie dans l'armée française). La France a été critiquée pour être arrivée tardivement et en volume modeste comparé aux États-Unis (85 Md€), au Royaume-Uni ou à l'Allemagne.",
+    "amountBillions": 3,
+    "costPerCitizen": 44,
+    "deckId": "ukraine",
+    "icon": "🪖",
+    "source": "Ministère des Armées (liste mai 2024), Institut Kiel",
+    "sourceUrl": "https://www.defense.gouv.fr",
+    "level": 1,
+    "tags": [
+      "Ukraine",
+      "aide militaire",
+      "défense"
+    ],
+    "trend": null,
+    "equivalence": "La France a donne l'equivalent en materiel de ~2,5% du budget annuel de la Defense"
+  },
+  {
+    "id": "ukr-02",
+    "title": "Contribution à la Facilité européenne pour la paix",
+    "subtitle": "La contribution française à la FEP = le budget annuel de la DGSI",
+    "description": "La FEP rembourse aux États membres une partie du coût des armes livrées à l'Ukraine. La France en est le 2e contributeur (~18-20%). Les 7,2 Md€ totaux de la FEP ont été réabondés 5 fois depuis 2022. Ce mécanisme européen permet de mutualiser l'effort : les petits pays (Estonie, Lettonie) ont donné proportionnellement plus que les grands en % de PIB. La France contribue financièrement mais aussi en nature (canons, missiles).",
+    "amountBillions": 2.1,
+    "costPerCitizen": 31,
+    "deckId": "ukraine",
+    "icon": "🇪🇺",
+    "source": "Ministère des Armées, Conseil de l'UE",
+    "sourceUrl": "https://www.defense.gouv.fr",
+    "level": 1,
+    "tags": [
+      "Ukraine",
+      "FEP",
+      "Europe",
+      "défense"
+    ],
+    "trend": null,
+    "equivalence": "La contribution francaise a la FEP = le budget annuel de la DGSI"
+  },
+  {
+    "id": "ukr-03",
+    "title": "Fonds spécial bilatéral Ukraine",
+    "subtitle": "Chaque euro du fonds finance un emploi industriel de défense en France",
+    "description": "Créé en octobre 2022, ce fonds permet à l'Ukraine d'acheter directement du matériel auprès de l'industrie de défense française (Nexter, Arquus, Thales, MBDA). C'est un investissement dual : il aide l'Ukraine ET stimule la BITD française (base industrielle et technologique de défense). Les commandes ukrainiennes contribuent à maintenir les chaînes de production ouvertes et à financer la montée en cadence industrielle. Réabondé en 2023 à 200 M€ supplémentaires.",
+    "amountBillions": 0.4,
+    "costPerCitizen": 6,
+    "deckId": "ukraine",
+    "icon": "🤝",
+    "source": "Ministère des Armées, info.gouv.fr",
+    "sourceUrl": "https://www.defense.gouv.fr",
+    "level": 1,
+    "tags": [
+      "Ukraine",
+      "industrie défense",
+      "bilatéral"
+    ],
+    "trend": null,
+    "equivalence": "Chaque euro du fonds finance un emploi industriel de defense en France"
+  },
+  {
+    "id": "ukr-04",
+    "title": "Formation des soldats ukrainiens",
+    "subtitle": "Former 1 soldat ukrainien = ~15 000€ (vs ~100 000€ pour un soldat français)",
+    "description": "La France forme des soldats ukrainiens en Pologne et sur le sol français (entraînement au combat, artillerie CAESAR, maintenance, déminage, pilotage de chasse). Environ 2 000 soldats formés en 2024 par la France seule, dans le cadre de la mission EUMAM. L'armée française déploie ~150 instructeurs permanents. La formation de pilotes de chasse (Rafale ou avions OTAN) a été annoncée en 2023 pour des livraisons en 2024-2025.",
+    "amountBillions": 0.175,
+    "costPerCitizen": 3,
+    "deckId": "ukraine",
+    "icon": "🎯",
+    "source": "Ministère des Armées, EUMAM, info.gouv.fr",
+    "sourceUrl": "https://www.defense.gouv.fr",
+    "level": 1,
+    "tags": [
+      "Ukraine",
+      "formation",
+      "militaire"
+    ],
+    "trend": null,
+    "equivalence": "Former 1 soldat ukrainien = ~15 000€ (vs ~100 000€ pour un soldat francais)"
+  },
+  {
+    "id": "ukr-05",
+    "title": "Aide civile et humanitaire",
+    "subtitle": "Les 100 000 réfugiés ukrainiens en France coûtent ~500 M€/an",
+    "description": "Au-delà du militaire, la France a fourni une aide civile : 196 générateurs, matériel médical, aide alimentaire, soutien aux réfugiés, déminage humanitaire, et participation à la Facilité pour l'Ukraine de 50 Md€ (prêts européens). La France a accueilli ~100 000 réfugiés ukrainiens (protection temporaire). Elle s'est engagée dans la future reconstruction (estimée à 400-500 Md€ par la Banque mondiale). La conférence de Paris (déc. 2022) a mobilisé 1 Md€ de dons.",
+    "amountBillions": 1.7,
+    "costPerCitizen": 25,
+    "deckId": "ukraine",
+    "icon": "🏠",
+    "source": "MEAE, conférence Paris déc. 2022, HCR",
+    "sourceUrl": null,
+    "level": 1,
+    "tags": [
+      "Ukraine",
+      "humanitaire",
+      "réfugiés"
+    ],
+    "trend": null,
+    "equivalence": "Les 100 000 refugies ukrainiens en France coutent ~500 M€/an (logement, sante, education)"
+  },
+  {
+    "id": "ukr-06",
+    "title": "Surcoût énergétique indirect (impact du conflit)",
+    "subtitle": "Le surcoût énergétique du conflit = la moitié du budget annuel de la Défense, chaque année pendant 2 ans",
+    "description": "La guerre a provoqué une flambée des prix du gaz (+200%), du pétrole (+40%) et de l'électricité (x10 en pic). La France importait 17% de son gaz de Russie en 2021 (vs <5% en 2024). Le surcoût énergétique global (ménages + entreprises + collectivités) est estimé à 40-50 Md€ au-delà du budget du bouclier tarifaire. C'est le coût indirect le plus massif du conflit. La crise a aussi accéléré la transition énergétique et le retour au nucléaire.",
+    "amountBillions": 45,
+    "costPerCitizen": 662,
+    "deckId": "ukraine",
+    "icon": "🔥",
+    "source": "INSEE, Banque de France, RTE",
+    "sourceUrl": null,
+    "level": 1,
+    "tags": [
+      "Ukraine",
+      "énergie",
+      "surcoût"
+    ],
+    "trend": null,
+    "equivalence": "Le surcout energetique du conflit = la moitie du budget annuel de la Defense, chaque annee pendant 2 ans"
+  },
+  {
+    "id": "ukr-07",
+    "title": "Hausse du budget Défense (accélération LPM)",
+    "subtitle": "La hausse annuelle du budget Défense (+3,3 Md€) = le budget du SNU x 3",
+    "description": "La LPM 2024-2030 prévoit 413 Md€ sur 7 ans, soit une hausse de 40% par rapport à la LPM précédente. Le budget Défense atteint 50,5 Md€ en 2025. La guerre en Ukraine a justifié cette accélération : reconstitution des stocks (les livraisons à l'Ukraine ont vidé certains arsenaux), montée en cadence de la production de munitions, objectif OTAN de 2% puis 3,5% du PIB. La France est le seul budget en hausse dans le PLF 2026 d'austérité.",
+    "amountBillions": 3.3,
+    "costPerCitizen": 49,
+    "deckId": "ukraine",
+    "icon": "📈",
+    "source": "LPM 2024-2030, PLF 2026, Ministère des Armées",
+    "sourceUrl": "https://www.defense.gouv.fr",
+    "level": 1,
+    "tags": [
+      "Ukraine",
+      "défense",
+      "LPM",
+      "budget"
+    ],
+    "trend": null,
+    "equivalence": "La hausse annuelle du budget Defense (+3,3 Md€) = le budget du SNU x 3"
+  },
+  {
+    "id": "ukr-08",
+    "title": "Sanctions et gel des avoirs russes",
+    "subtitle": "Les avoirs russes gelés en France = le budget annuel du ministère de la Culture x 5",
+    "description": "L'UE a gelé ~260 Md€ d'actifs de la Banque centrale russe, dont ~22 Md€ localisés en France (Euroclear, banques). Les intérêts générés (~3 Md€/an pour l'UE) sont désormais utilisés pour financer l'aide à l'Ukraine. Le débat sur la confiscation des avoirs eux-mêmes (pas seulement les intérêts) est en cours. La Russie menace de représailles sur les actifs occidentaux en Russie (~80 Md€). La France a aussi sanctionné ~300 individus et entités russes (oligarques, entreprises).",
+    "amountBillions": 22,
+    "costPerCitizen": 0,
+    "deckId": "ukraine",
+    "icon": "🧊",
+    "source": "Conseil de l'UE, Trésor français, Commission européenne",
+    "sourceUrl": null,
+    "level": 1,
+    "tags": [
+      "Ukraine",
+      "sanctions",
+      "avoirs russes"
+    ],
+    "trend": null,
+    "equivalence": "Les avoirs russes geles en France = le budget annuel du ministere de la Culture x 5"
+  },
+  {
+    "id": "ukr-09",
+    "title": "Coût total cumulé pour la France (aide directe)",
+    "subtitle": "L'aide française à l'Ukraine = le prix de 2 cafés par Français et par mois pendant 4 ans",
+    "description": "En cumulant l'aide militaire bilatérale (~5,1 Md€), la contribution à la FEP (~2,1 Md€), l'aide civile et humanitaire (~1,7 Md€), la part française des mécanismes européens (~3 Md€), la France a engagé environ 12 Md€ en 4 ans pour l'Ukraine. C'est significatif mais modeste rapporté au PIB (0,1%/an). En % de PIB, l'Estonie (3,5%), la Lituanie et le Danemark donnent proportionnellement 5 à 10x plus que la France.",
+    "amountBillions": 12,
+    "costPerCitizen": 176,
+    "deckId": "ukraine",
+    "icon": "🇫🇷",
+    "source": "Ministère des Armées, Institut Kiel, lesfrancais.press",
+    "sourceUrl": "https://www.defense.gouv.fr",
+    "level": 1,
+    "tags": [
+      "Ukraine",
+      "bilan",
+      "aide totale"
+    ],
+    "trend": null,
+    "equivalence": "L'aide francaise a l'Ukraine = le prix de 2 cafes par Francais et par mois pendant 4 ans"
+  },
+  {
+    "id": "ukr-10",
+    "title": "Conséquences économiques globales du conflit",
+    "subtitle": "La guerre a coûté à la France 10x plus en croissance perdue qu'en aide militaire",
+    "description": "Au-delà des aides directes, le conflit a coûté à la France entre 0,5 et 1 point de PIB/an en croissance perdue : inflation importée, perturbation des chaînes d'approvisionnement, hausse des taux d'intérêt (la BCE a relevé ses taux pour combattre l'inflation liée à l'énergie), chute de la confiance des ménages. Le FMI estime l'impact cumulé à 2-3 points de PIB pour la zone euro sur 2022-2024. La facture totale (directe + indirecte) est sans commune mesure avec les 12 Md€ d'aide.",
+    "amountBillions": 0.75,
+    "costPerCitizen": 600,
+    "deckId": "ukraine",
+    "icon": "📉",
+    "source": "FMI, Banque de France, INSEE, OFCE",
+    "sourceUrl": null,
+    "level": 1,
+    "tags": [
+      "Ukraine",
+      "économie",
+      "croissance",
+      "inflation"
+    ],
+    "trend": null,
+    "equivalence": "La guerre a coute a la France 10x plus en croissance perdue qu'en aide militaire"
+  }
+]

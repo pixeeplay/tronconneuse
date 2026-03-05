@@ -1,0 +1,165 @@
+{
+  "decks": [
+    {
+      "id": "defense",
+      "name": "Défense",
+      "description": "Budget des armées, renseignement, gendarmerie",
+      "icon": "⚔️",
+      "color": "#3B82F6",
+      "cardCount": 20,
+      "image": "/categories/defense.svg",
+      "type": "main"
+    },
+    {
+      "id": "energie",
+      "name": "Énergie",
+      "description": "Nucléaire, renouvelables, hydrogène, crise énergétique, précarité",
+      "icon": "⚡",
+      "color": "#F59E0B",
+      "cardCount": 30,
+      "image": "/categories/energie.svg",
+      "type": "main"
+    },
+    {
+      "id": "sante",
+      "name": "Santé",
+      "description": "Hôpitaux, médicaments, prévention, urgences, addictions",
+      "icon": "🏥",
+      "color": "#EF4444",
+      "cardCount": 30,
+      "image": "/categories/sante.svg",
+      "type": "main"
+    },
+    {
+      "id": "social",
+      "name": "Social",
+      "description": "Retraites, famille, handicap, dépendance, pauvreté",
+      "icon": "🤝",
+      "color": "#8B5CF6",
+      "cardCount": 32,
+      "image": "/categories/social.svg",
+      "type": "main"
+    },
+    {
+      "id": "education",
+      "name": "Éducation",
+      "description": "Enseignement, universités, recherche",
+      "icon": "📚",
+      "color": "#6366F1",
+      "cardCount": 20,
+      "image": "/categories/education.svg",
+      "type": "main"
+    },
+    {
+      "id": "securite",
+      "name": "Sécurité & Justice",
+      "description": "Police, gendarmerie, tribunaux, prisons",
+      "icon": "⚖️",
+      "color": "#14B8A6",
+      "cardCount": 18,
+      "image": "/categories/justice.svg",
+      "type": "main"
+    },
+    {
+      "id": "etat",
+      "name": "Fonctionnement de l'État",
+      "description": "Administration, dette, collectivités, diplomatie",
+      "icon": "🏛️",
+      "color": "#64748B",
+      "cardCount": 20,
+      "image": "/categories/etat.svg",
+      "type": "main"
+    },
+    {
+      "id": "culture",
+      "name": "Culture, Sport & Transports",
+      "description": "Patrimoine, audiovisuel, rail, routes, écologie",
+      "icon": "🎭",
+      "color": "#EC4899",
+      "cardCount": 20,
+      "image": "/categories/culture.svg",
+      "type": "main"
+    },
+    {
+      "id": "agriculture",
+      "name": "Agriculture & Alimentation",
+      "description": "PAC, forêts, eau, sécurité alimentaire",
+      "icon": "🌾",
+      "color": "#84CC16",
+      "cardCount": 20,
+      "type": "main"
+    },
+    {
+      "id": "logement",
+      "name": "Logement & Territoire",
+      "description": "Logement social, hébergement, rénovation urbaine",
+      "icon": "🏠",
+      "color": "#F97316",
+      "cardCount": 18,
+      "type": "main"
+    },
+    {
+      "id": "immigration",
+      "name": "Immigration & Asile",
+      "description": "Accueil, intégration, rétention, AME",
+      "icon": "🛂",
+      "color": "#06B6D4",
+      "cardCount": 18,
+      "type": "main"
+    },
+    {
+      "id": "numerique",
+      "name": "Numérique & Innovation",
+      "description": "France 2030, spatial, IA, quantique",
+      "icon": "🚀",
+      "color": "#A855F7",
+      "cardCount": 18,
+      "type": "main"
+    },
+    {
+      "id": "recettes",
+      "name": "Recettes de l'État",
+      "description": "TVA, IR, IS, CSG, impôts locaux",
+      "icon": "💰",
+      "color": "#EAB308",
+      "cardCount": 18,
+      "type": "main"
+    },
+    {
+      "id": "emploi",
+      "name": "Emploi & Compétitivité",
+      "description": "Formation, primes, aides à l'emploi",
+      "icon": "🏢",
+      "color": "#0EA5E9",
+      "cardCount": 18,
+      "type": "main"
+    },
+    {
+      "id": "france-europe",
+      "name": "La France dans l'Europe",
+      "description": "Combien coûte l'Europe ? Combien rapporte-t-elle ?",
+      "icon": "🇪🇺",
+      "color": "#3B82F6",
+      "cardCount": 10,
+      "type": "thematic"
+    },
+    {
+      "id": "zombies",
+      "name": "Zombies budgétaires",
+      "description": "Les dépenses qui auraient dû mourir mais qui persistent",
+      "icon": "💀",
+      "color": "#64748B",
+      "cardCount": 10,
+      "type": "thematic"
+    },
+    {
+      "id": "ukraine",
+      "name": "Guerre en Ukraine",
+      "description": "Le coût du conflit pour la France depuis février 2022",
+      "icon": "🇺🇦",
+      "color": "#0EA5E9",
+      "cardCount": 10,
+      "type": "thematic"
+    }
+  ]
+}

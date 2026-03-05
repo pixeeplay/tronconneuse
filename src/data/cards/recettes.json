@@ -1,0 +1,331 @@
+[
+  {
+    "id": "rec-01",
+    "title": "TVA",
+    "subtitle": "Taxe sur la valeur ajoutée — 1ère recette fiscale",
+    "description": "Taux : 20% (normal), 10% (restauration), 5,5% (alimentation, énergie), 2,1% (médicaments, presse). Plus de la moitié transférée aux collectivités et à la Sécu. La France a le taux normal le plus élevé d'Europe après la Scandinavie.",
+    "amountBillions": 200,
+    "costPerCitizen": 2940,
+    "deckId": "recettes",
+    "icon": "🧾",
+    "source": "PLF 2026, Sénat, vie-publique.fr",
+    "sourceUrl": "https://www.vie-publique.fr",
+    "level": 1,
+    "tags": [
+      "recettes",
+      "TVA",
+      "consommation"
+    ],
+    "equivalence": "Chaque Francais paie ~8€ de TVA par jour sans le savoir"
+  },
+  {
+    "id": "rec-02",
+    "title": "Impôt sur le revenu (IR)",
+    "subtitle": "2e impôt le plus productif — 44% des foyers le paient",
+    "description": "56% des foyers fiscaux n'y sont pas assujettis. Les 10% les plus aisés paient 70% du total. En 2026, le barème n'est pas indexé sur l'inflation (hausse déguisée). La contribution différentielle sur les hauts revenus (taux minimum 20% > 250 000€) est reconduite.",
+    "amountBillions": 104,
+    "costPerCitizen": 1530,
+    "deckId": "recettes",
+    "icon": "📋",
+    "trend": 9,
+    "source": "PLF 2026, DGFiP, vie-publique.fr",
+    "sourceUrl": "https://www.vie-publique.fr",
+    "level": 1,
+    "tags": [
+      "recettes",
+      "IR",
+      "impôt"
+    ],
+    "equivalence": "Un foyer impose paie en moyenne ~3 500€/an d'IR"
+  },
+  {
+    "id": "rec-03",
+    "title": "Impôt sur les sociétés (IS)",
+    "subtitle": "Taux normal 25% — surtaxe temporaire sur les grandes entreprises",
+    "description": "Surtaxe de 10-20% sur les CA > 1 Md€ en 2025-2026, rapportant ~4 Md€ supplémentaires. L'IS réel payé par les multinationales reste inférieur au taux nominal. L'accord OCDE sur l'imposition minimale à 15% est progressivement appliqué.",
+    "amountBillions": 59,
+    "costPerCitizen": 870,
+    "deckId": "recettes",
+    "icon": "🏢",
+    "source": "PLF 2026, DGFiP, Parlement",
+    "level": 1,
+    "tags": [
+      "recettes",
+      "IS",
+      "entreprises"
+    ],
+    "equivalence": "Les 40 entreprises du CAC40 paient ensemble ~30 Md€ d'IS (la moitie du total)"
+  },
+  {
+    "id": "rec-04",
+    "title": "CSG",
+    "subtitle": "Contribution sociale généralisée — 1ère ressource de la Sécu",
+    "description": "Prélevée sur tous les revenus (salaires, retraites, patrimoine) à 6,2-9,2%. Créée en 1991, devenue la première ressource de la Sécu. Pas de progressivité (quasi proportionnel). Débat : la rendre progressive ou la fusionner avec l'IR.",
+    "amountBillions": 130,
+    "costPerCitizen": 1910,
+    "deckId": "recettes",
+    "icon": "💊",
+    "source": "LFSS 2026, URSSAF, vie-publique.fr",
+    "sourceUrl": "https://www.vie-publique.fr",
+    "level": 1,
+    "tags": [
+      "recettes",
+      "CSG",
+      "cotisations"
+    ],
+    "equivalence": "Sur 100€ bruts de salaire, ~7,50€ partent en CSG avant meme l'IR"
+  },
+  {
+    "id": "rec-05",
+    "title": "Accises sur l'énergie",
+    "subtitle": "Ex-TICPE sur les carburants — 4e recette fiscale",
+    "description": "~60 centimes/L d'essence et ~50 centimes/L de gazole. Une partie transférée aux collectivités et à l'AFITF. Le verdissement de la fiscalité énergétique est au point mort politique depuis les Gilets Jaunes (2018).",
+    "amountBillions": 33,
+    "costPerCitizen": 485,
+    "deckId": "recettes",
+    "icon": "⛽",
+    "source": "PLF 2026, Douanes, DGEC",
+    "level": 1,
+    "tags": [
+      "recettes",
+      "carburants",
+      "taxe"
+    ],
+    "equivalence": "Sur un plein de 60L a 1,80€/L, ~40€ sont des taxes (accises + TVA)"
+  },
+  {
+    "id": "rec-06",
+    "title": "Droits de succession",
+    "subtitle": "Droits de mutation à titre gratuit",
+    "description": "Jusqu'à 45% en ligne directe au-delà de 1,8 M€. Abattement de 100 000€/enfant (non revalorisé depuis 2012). ~50% des transmissions échappent à l'imposition grâce aux exonérations. Sujet ultra-clivant : taxer l'héritage ou protéger la transmission familiale.",
+    "amountBillions": 20,
+    "costPerCitizen": 294,
+    "deckId": "recettes",
+    "icon": "📜",
+    "source": "DGFiP, CAE, France Stratégie",
+    "level": 1,
+    "tags": [
+      "recettes",
+      "succession",
+      "patrimoine"
+    ],
+    "equivalence": "Les Francais transmettent ~300 Md€ par an, l'Etat en preleve ~7%"
+  },
+  {
+    "id": "rec-07",
+    "title": "Taxes foncières",
+    "subtitle": "Principale ressource fiscale des communes",
+    "description": "Depuis la suppression de la taxe d'habitation (2023), le foncier est la principale recette directe des communes. Calculé sur des valeurs cadastrales de 1970, profondément injuste. Révision reportée sine die. Les taux ont flambé dans beaucoup de communes (+52% à Paris en 2 ans).",
+    "amountBillions": 45,
+    "costPerCitizen": 660,
+    "deckId": "recettes",
+    "icon": "🏠",
+    "source": "DGFiP, DGCL, Observatoire des finances locales",
+    "level": 1,
+    "tags": [
+      "recettes",
+      "foncier",
+      "communes"
+    ],
+    "equivalence": "Un proprietaire francais paie en moyenne ~800€/an de foncier (tres variable)"
+  },
+  {
+    "id": "rec-08",
+    "title": "IFI (impôt sur la fortune immobilière)",
+    "subtitle": "Patrimoine immobilier net > 1,3 M€ — ~160 000 foyers",
+    "description": "A remplacé l'ISF en 2018 en excluant les actifs financiers. Taux de 0,5% à 1,5%. L'IFI rapporte 2 Md€ mais la suppression de l'ISF a coûté ~3,5 Md€. Les débats sur le rétablissement d'un ISF élargi reviennent à chaque PLF.",
+    "amountBillions": 2,
+    "costPerCitizen": 29,
+    "deckId": "recettes",
+    "icon": "💎",
+    "source": "PLF 2026, DGFiP, France Stratégie, IFRAP",
+    "level": 1,
+    "tags": [
+      "recettes",
+      "IFI",
+      "fortune"
+    ],
+    "equivalence": "Le retour a l'ISF rapporterait ~3,5 Md€ de plus"
+  },
+  {
+    "id": "rec-09",
+    "title": "Prélèvements obligatoires totaux",
+    "subtitle": "43,9% du PIB — record des grandes économies",
+    "description": "Inclut impôts d'État, locaux, et cotisations sociales. Moyenne OCDE : ~34%. Finance un modèle social généreux mais pèse sur la compétitivité. Malgré ce niveau record, le déficit reste à ~5% du PIB.",
+    "amountBillions": 1260,
+    "costPerCitizen": 18530,
+    "deckId": "recettes",
+    "icon": "📊",
+    "source": "PLF 2026, vie-publique.fr, OCDE",
+    "sourceUrl": "https://www.vie-publique.fr",
+    "level": 1,
+    "tags": [
+      "recettes",
+      "prélèvements",
+      "PIB"
+    ],
+    "equivalence": "Un salarie au SMIC travaille de janvier a debut juin uniquement pour les prelevements"
+  },
+  {
+    "id": "rec-10",
+    "title": "Recettes non fiscales",
+    "subtitle": "Dividendes, amendes, domaine, jeux",
+    "description": "Dividendes d'entreprises publiques (EDF, La Poste, BPI — ~6 Md€), fréquences et concessions (~3 Md€), amendes radars (~3 Md€), jeux FDJ/PMU (~4 Md€). Recettes volatiles : dividendes EDF entre 0€ et 4 Md€ selon les années.",
+    "amountBillions": 25,
+    "costPerCitizen": 370,
+    "deckId": "recettes",
+    "icon": "🎰",
+    "source": "PLF 2026 Voies et moyens, Sénat",
+    "level": 1,
+    "tags": [
+      "recettes",
+      "non fiscal",
+      "dividendes"
+    ],
+    "equivalence": "Les amendes radars rapportent ~1,8 Md€/an, soit le budget du ministere de la Culture"
+  },
+  {
+    "id": "rec-11",
+    "title": "Taxe GAFAM (services numeriques)",
+    "subtitle": "3% du CA en France",
+    "description": "Taxe de 3% sur le CA realise en France par les geants du numerique. Les Etats-Unis ont menace de represailles commerciales. La taxe devait etre temporaire (accord OCDE Pilier 1 en retard), mais elle est reconduite chaque annee. La France est le seul grand pays a l'avoir maintenue.",
+    "amountBillions": 0.7,
+    "costPerCitizen": 10,
+    "deckId": "recettes",
+    "icon": "💰",
+    "source": "PLF 2026, DGFiP, OCDE",
+    "level": 1,
+    "tags": [
+      "recettes",
+      "GAFAM",
+      "numerique"
+    ],
+    "equivalence": "Google paie ~200 M/an de taxe GAFAM en France — moins qu'une PME de 500 salaries en IS"
+  },
+  {
+    "id": "rec-12",
+    "title": "Taxe sur les transactions financieres (TTF)",
+    "subtitle": "0,3% sur les achats d'actions",
+    "description": "La TTF rapporte ~2 Md/an. Creee en 2012, affectee au budget general et a l'aide au developpement. La taxe Tobin europeenne est bloquee depuis 20 ans. La France applique seule la taxe la plus elevee d'Europe, penalisant la Place de Paris face a Amsterdam et Francfort.",
+    "amountBillions": 2,
+    "costPerCitizen": 29,
+    "deckId": "recettes",
+    "icon": "💰",
+    "source": "PLF 2026, DGFiP, AMF",
+    "level": 1,
+    "tags": [
+      "recettes",
+      "TTF",
+      "finance"
+    ],
+    "equivalence": "La TTF rapporte 2 Md/an — autant que le budget du ministere de la Culture"
+  },
+  {
+    "id": "rec-13",
+    "title": "Cotisations sociales (detail)",
+    "subtitle": "480 Md/an — le 1er prelevement obligatoire",
+    "description": "Sur 100 de salaire brut, ~22 partent en cotisations salariales et ~32 en cotisations patronales. Le cout du travail francais est le 2e plus eleve de la zone euro. Les allegements sur les bas salaires creent une trappe a bas salaires au-dela de 1,6 SMIC.",
+    "amountBillions": 480,
+    "costPerCitizen": 7060,
+    "deckId": "recettes",
+    "icon": "💰",
+    "source": "URSSAF, LFSS 2026, Senat",
+    "level": 1,
+    "tags": [
+      "recettes",
+      "cotisations",
+      "Secu"
+    ],
+    "equivalence": "Pour un salarie paye 2 000 net, l'entreprise verse 3 500 au total (dont 1 500 de cotisations)"
+  },
+  {
+    "id": "rec-14",
+    "title": "Taxe fonciere entreprises et CFE",
+    "subtitle": "15 Md/an — impots de production",
+    "description": "Les entreprises paient ~15 Md de taxe fonciere et CFE. Le commerce physique paie plein pot alors que le e-commerce (entrepots en peripherie) est peu taxe. Amazon paie ~4/m2 de CFE pour ses entrepots ruraux, quand un petit commerce paie ~30/m2.",
+    "amountBillions": 15,
+    "costPerCitizen": 0,
+    "deckId": "recettes",
+    "icon": "💰",
+    "source": "DGFiP, CCI France, DGCL",
+    "level": 1,
+    "tags": [
+      "recettes",
+      "foncier",
+      "entreprises"
+    ],
+    "equivalence": "Un commerce de centre-ville paie 7x plus de foncier au m2 qu'un entrepot Amazon"
+  },
+  {
+    "id": "rec-15",
+    "title": "Jeux d'argent (FDJ, PMU, paris)",
+    "subtitle": "50 Md/an de mises, 6 Md de recettes fiscales",
+    "description": "Les Francais misent ~50 Md/an. L'Etat preleve ~12%. La FDJ reverse ~3,5 Md/an a l'Etat. Les paris sportifs en ligne explosent (+25%/an). L'addiction aux jeux touche ~600 000 personnes. Les sites illegaux offshore proliferent.",
+    "amountBillions": 6,
+    "costPerCitizen": 88,
+    "deckId": "recettes",
+    "icon": "💰",
+    "source": "ANJ, FDJ, PLF 2026",
+    "level": 1,
+    "tags": [
+      "recettes",
+      "jeux",
+      "FDJ"
+    ],
+    "equivalence": "Les Francais jouent 50 Md/an — davantage que le budget de l'Education nationale"
+  },
+  {
+    "id": "rec-16",
+    "title": "Amendes et sanctions administratives",
+    "subtitle": "Radars + PV + sanctions CNIL",
+    "description": "Radars (~800 M), PV stationnement (~1,5 Md pour les communes), amendes penales (~800 M), sanctions CNIL/AMF/ADLC (~400 M). 48% des Francais estiment que les radars servent davantage a remplir les caisses qu'a sauver des vies.",
+    "amountBillions": 3.5,
+    "costPerCitizen": 51,
+    "deckId": "recettes",
+    "icon": "💰",
+    "source": "ONISR, DGFIP, CNIL, PLF 2026",
+    "level": 1,
+    "tags": [
+      "recettes",
+      "amendes",
+      "radars"
+    ],
+    "equivalence": "1 radar rapporte en moyenne ~170 000/an a l'Etat"
+  },
+  {
+    "id": "rec-17",
+    "title": "Taxe d'habitation residences secondaires",
+    "subtitle": "3,6 millions de residences secondaires",
+    "description": "Maintenue sur les residences secondaires, peut etre majoree de 5 a 60% en zones tendues. Paris applique +60%. Vise a inciter les proprietaires a remettre leurs logements sur le marche locatif. Recettes en hausse (+15%) depuis la suppression de la TH residences principales.",
+    "amountBillions": 2.5,
+    "costPerCitizen": 0,
+    "deckId": "recettes",
+    "icon": "💰",
+    "source": "DGFiP, DGCL, PLF 2026",
+    "level": 1,
+    "tags": [
+      "recettes",
+      "taxe habitation",
+      "secondaire"
+    ],
+    "equivalence": "3,6 millions de residences secondaires = plus que le stock de logements sociaux en attente"
+  },
+  {
+    "id": "rec-18",
+    "title": "Dividendes et participations de l'Etat (APE)",
+    "subtitle": "83 entreprises, 160 Md de portefeuille",
+    "description": "L'APE gere un portefeuille de ~160 Md (EDF, La Poste, Engie, Orange, Thales, Airbus, Renault, ADP, FDJ). Dividendes de 3 a 6 Md/an. L'Etat actionnaire est critique pour gerer ses participations comme un fonds de pension plutot que comme un stratege industriel.",
+    "amountBillions": 4.5,
+    "costPerCitizen": 66,
+    "deckId": "recettes",
+    "icon": "💰",
+    "source": "APE, PLF 2026, Cour des comptes",
+    "level": 1,
+    "tags": [
+      "recettes",
+      "APE",
+      "participations"
+    ],
+    "equivalence": "L'Etat est actionnaire de 83 entreprises valant 160 Md — le plus gros portefeuille d'Europe"
+  }
+]

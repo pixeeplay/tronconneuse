@@ -1,0 +1,329 @@
+[
+  {
+    "id": "log-01",
+    "title": "Logement social",
+    "subtitle": "Financement global — aides à la pierre + fiscalité + APL bailleurs",
+    "description": "~5,2 millions de logements sociaux abritant 10 millions de personnes. ~2,4 millions de ménages en attente (délai : 2-3 ans, jusqu'à 10 ans en Île-de-France). La production neuve est en chute : moins de 80 000 agréments en 2024, loin de l'objectif de 120 000.",
+    "amountBillions": 17,
+    "costPerCitizen": 250,
+    "deckId": "logement",
+    "icon": "🏘️",
+    "source": "Fondation Abbé Pierre, USH, Cour des comptes, PLF 2026",
+    "level": 1,
+    "tags": [
+      "logement",
+      "social",
+      "HLM"
+    ],
+    "equivalence": "Chaque logement social neuf coute environ 150 000€ en aides publiques"
+  },
+  {
+    "id": "log-02",
+    "title": "Hébergement d'urgence",
+    "subtitle": "CHRS, hôtels, centres d'accueil",
+    "description": "~200 000 personnes hébergées chaque nuit. L'État réquisitionne ~67 000 nuits d'hôtel quotidiennes. Le 115 ne peut pas répondre à toutes les demandes en période hivernale. La Cour des comptes pointe un coût hôtelier très élevé pour un service de mauvaise qualité.",
+    "amountBillions": 3.1,
+    "costPerCitizen": 46,
+    "deckId": "logement",
+    "icon": "🛏️",
+    "source": "PLF 2026 Cohésion des territoires, Cour des comptes, Fondation Abbé Pierre",
+    "level": 1,
+    "tags": [
+      "logement",
+      "urgence",
+      "sans-abri"
+    ],
+    "equivalence": "~42€ par nuit et par personne hebergee (dont beaucoup en hotel)"
+  },
+  {
+    "id": "log-03",
+    "title": "Rénovation urbaine (ANRU)",
+    "subtitle": "NPNRU — 450 quartiers prioritaires",
+    "description": "Démolition-reconstruction de logements, création d'équipements publics, désenclavement. 12 Md€ dont 6 Md€ d'Action Logement. Les opérations prennent 10-15 ans. Certains quartiers rénovés dans les années 2000 nécessitent déjà de nouvelles interventions.",
+    "amountBillions": 1.2,
+    "costPerCitizen": 18,
+    "deckId": "logement",
+    "icon": "🏗️",
+    "source": "ANRU, PLF 2026, Cour des comptes",
+    "level": 1,
+    "tags": [
+      "logement",
+      "rénovation urbaine",
+      "quartiers"
+    ],
+    "equivalence": "450 quartiers renoves, soit ~27 M€ par quartier en moyenne"
+  },
+  {
+    "id": "log-04",
+    "title": "Prêt à taux zéro (PTZ)",
+    "subtitle": "Aide aux primo-accédants",
+    "description": "Le PTZ aide les primo-accédants sans intérêts bancaires (l'État compense les banques). 40 000 à 60 000 PTZ/an, en baisse. Recentré sur le neuf en zones tendues et l'ancien avec travaux. Prolongé jusqu'en 2027. Critique : il alimente la hausse des prix immobiliers.",
+    "amountBillions": 2,
+    "costPerCitizen": 29,
+    "deckId": "logement",
+    "icon": "🏡",
+    "source": "SGFGAS, vie-publique.fr, Cour des comptes",
+    "sourceUrl": "https://www.vie-publique.fr",
+    "level": 1,
+    "tags": [
+      "logement",
+      "PTZ",
+      "accession"
+    ],
+    "equivalence": "~40 000€ de subvention implicite par menage beneficiaire"
+  },
+  {
+    "id": "log-05",
+    "title": "Politique de la ville",
+    "subtitle": "Quartiers prioritaires — volet humain et social",
+    "description": "1 514 quartiers prioritaires (QPV) où vivent 5,4 millions de personnes. Actions éducatives, médiation sociale, soutien à l'emploi. Cités éducatives, « Quartiers d'été », emplois francs. Distinct de l'ANRU (rénovation physique) : ici c'est le volet humain.",
+    "amountBillions": 0.6,
+    "costPerCitizen": 9,
+    "deckId": "logement",
+    "icon": "🤝",
+    "source": "PLF 2026, ANCT, Observatoire national de la politique de la ville",
+    "level": 1,
+    "tags": [
+      "logement",
+      "politique de la ville",
+      "QPV"
+    ],
+    "equivalence": "~110€ par habitant de quartier prioritaire et par an"
+  },
+  {
+    "id": "log-06",
+    "title": "Plan France Très Haut Débit",
+    "subtitle": "Aménagement numérique — fibre optique pour tous",
+    "description": "3,3 Md€ d'investissement public depuis 2013 pour fibrer les zones rurales non rentables. Fin 2025, ~85% des locaux éligibles à la fibre. Les derniers raccordements coûtent beaucoup plus cher au km. Objectif repoussé à 2026-2027 pour les zones les plus rurales.",
+    "amountBillions": 0.5,
+    "costPerCitizen": 7,
+    "deckId": "logement",
+    "icon": "🌐",
+    "source": "ARCEP, ANCT, France THD",
+    "level": 1,
+    "tags": [
+      "logement",
+      "numérique",
+      "fibre"
+    ],
+    "equivalence": "Le budget de 6 CNRS chaque annee pendant 5 ans"
+  },
+  {
+    "id": "log-07",
+    "title": "Mission Cohésion des territoires",
+    "subtitle": "Budget global — APL incluses",
+    "description": "Regroupe APL (~16,5 Md€), hébergement d'urgence (~3,1 Md€), politique de la ville, urbanisme. 3e plus grosse mission budgétaire de l'État. Budget 2026 recule de 900 M€. Paradoxe : un budget considérable mais une crise du logement persistante.",
+    "amountBillions": 22.2,
+    "costPerCitizen": 326,
+    "deckId": "logement",
+    "icon": "🏛️",
+    "trend": -4,
+    "source": "PLF 2026, vie-publique.fr",
+    "sourceUrl": "https://www.vie-publique.fr",
+    "level": 1,
+    "tags": [
+      "logement",
+      "budget",
+      "cohésion"
+    ],
+    "equivalence": "Plus que le budget de la Defense (hors pensions)"
+  },
+  {
+    "id": "log-08",
+    "title": "Niches fiscales immobilières",
+    "subtitle": "Pinel, Denormandie et autres dispositifs",
+    "description": "Le Pinel a pris fin fin 2024 après 10 ans. Son coût cumulé reste élevé (avantages sur 6-12 ans). La Cour des comptes a critiqué : effet inflationniste, qualité médiocre, effet d'aubaine. Pourtant, la suppression fait chuter la construction neuve.",
+    "amountBillions": 2.5,
+    "costPerCitizen": 37,
+    "deckId": "logement",
+    "icon": "🏷️",
+    "source": "Cour des comptes, PLF 2026",
+    "level": 1,
+    "tags": [
+      "logement",
+      "fiscalité",
+      "investissement locatif"
+    ],
+    "equivalence": "Les niches fiscales = le budget combine Defense + Justice + Interieur"
+  },
+  {
+    "id": "log-09",
+    "title": "Action Logement (1% patronal)",
+    "subtitle": "PEEC — participation des employeurs",
+    "description": "Action Logement collecte 0,45% de la masse salariale et redistribue : aide a la mobilite, garantie Visale (caution gratuite), prets accession, financement HLM et renovation urbaine (ANRU). 2e financeur du logement social. L'Etat ponctionne regulierement ses reserves (~300 M en 2025).",
+    "amountBillions": 5,
+    "costPerCitizen": 0,
+    "deckId": "logement",
+    "icon": "🏠",
+    "source": "Action Logement, PLF 2026, Cour des comptes",
+    "level": 1,
+    "tags": [
+      "logement",
+      "action logement",
+      "patronal"
+    ],
+    "equivalence": "Visale a garanti 1,2 million de baux depuis 2016 — 1er dispositif anti-galere locative des jeunes actifs"
+  },
+  {
+    "id": "log-10",
+    "title": "Coproprietes degradees et habitat indigne",
+    "subtitle": "ANAH + Plan Initiative Coproprietes",
+    "description": "100 000 coproprietes fragiles en France, dont 15 000 en grande difficulte. L'habitat indigne touche 420 000 logements. L'effondrement de la rue d'Aubagne a Marseille (8 morts, 2018) a declenche l'evacuation de 10 000 personnes et un plan d'urgence de 3 Md.",
+    "amountBillions": 0.5,
+    "costPerCitizen": 7,
+    "deckId": "logement",
+    "icon": "🏠",
+    "source": "ANAH, Fondation Abbe Pierre rapport 2025, PLF 2026",
+    "level": 1,
+    "tags": [
+      "logement",
+      "coproprietes",
+      "habitat indigne"
+    ],
+    "equivalence": "420 000 logements indignes en France, 6e puissance mondiale — un paradoxe national"
+  },
+  {
+    "id": "log-11",
+    "title": "Logement intermediaire (classes moyennes)",
+    "subtitle": "Banque des Territoires — loyers sous le marche",
+    "description": "Le logement intermediaire (loyers 15-20% sous le marche) cible les classes moyennes coincees. 155 000 logements intermediaires crees en 10 ans. La crise du credit immobilier (taux passes de 1% a 4%) a fait exploser la demande en locatif intermediaire.",
+    "amountBillions": 10,
+    "costPerCitizen": 0,
+    "deckId": "logement",
+    "icon": "🏠",
+    "source": "Banque des Territoires, CDC, USH",
+    "level": 1,
+    "tags": [
+      "logement",
+      "intermediaire",
+      "classes moyennes"
+    ],
+    "equivalence": "Un loyer intermediaire a Paris = ~20/m2 (vs 25-30 dans le prive, vs 7-12 en HLM)"
+  },
+  {
+    "id": "log-12",
+    "title": "RLS : la ponction sur les HLM",
+    "subtitle": "Reduction de loyer de solidarite",
+    "description": "En 2018, l'Etat a baisse les APL de 5/mois et compense en imposant aux bailleurs HLM une RLS du meme montant. Depuis 2017, 16 Md ponctionnes aux organismes HLM, reduisant leur capacite a construire et renover. L'USH qualifie ce mecanisme de toxique.",
+    "amountBillions": 1.3,
+    "costPerCitizen": 15,
+    "deckId": "logement",
+    "icon": "🏠",
+    "source": "USH, PLF 2026, Public Senat",
+    "level": 1,
+    "tags": [
+      "logement",
+      "HLM",
+      "RLS"
+    ],
+    "equivalence": "16 Md ponctionnes en 7 ans = 200 000 logements sociaux qui auraient pu etre construits"
+  },
+  {
+    "id": "log-13",
+    "title": "Airbnb et meubles touristiques",
+    "subtitle": "800 000 annonces — regulation",
+    "description": "La France compte ~800 000 annonces Airbnb (1re destination mondiale). A Paris, 25 000 logements entiers retires du marche locatif. La loi Le Meur (2024) reduit la niche fiscale des meubles touristiques. Impact : +5 a 15% sur les loyers dans les zones touristiques tendues.",
+    "amountBillions": 0.3,
+    "costPerCitizen": 0,
+    "deckId": "logement",
+    "icon": "🏠",
+    "source": "DGFIP, Observatoire Airbnb, loi Le Meur, APUR",
+    "level": 1,
+    "tags": [
+      "logement",
+      "Airbnb",
+      "tourisme"
+    ],
+    "equivalence": "25 000 logements Airbnb retires du marche a Paris = 10 ans de construction de logements sociaux parisiens"
+  },
+  {
+    "id": "log-14",
+    "title": "Passoires thermiques et DPE",
+    "subtitle": "5,2 millions de logements classes F ou G",
+    "description": "Depuis janvier 2025, les logements G ne peuvent plus etre loues. Les F interdits en 2028, les E en 2034. MaPrimeRenov finance une partie (5-20 000/logement) mais le reste a charge est prohibitif pour les proprietaires modestes. Risque social : retrait du marche locatif.",
+    "amountBillions": 150,
+    "costPerCitizen": 30000,
+    "deckId": "logement",
+    "icon": "🏠",
+    "source": "ADEME, Observatoire DPE, CNR Logement, loi Climat Resilience",
+    "level": 1,
+    "tags": [
+      "logement",
+      "DPE",
+      "renovation"
+    ],
+    "equivalence": "5,2 millions de passoires = 1 logement sur 5 bientot interdit a la location"
+  },
+  {
+    "id": "log-15",
+    "title": "Loi SRU et obligation de 25% HLM",
+    "subtitle": "1 113 communes deficitaires",
+    "description": "La loi SRU impose 25% de logements sociaux. 280 communes sont carencees et paient une penalite majoree. Neuilly-sur-Seine paie ~8 M/an de penalite et continue de ne pas construire. L'objectif de 25% reporte a 2031 par la loi 3DS (2022).",
+    "amountBillions": 0.2,
+    "costPerCitizen": 3,
+    "deckId": "logement",
+    "icon": "🏠",
+    "source": "DHUP, Fondation Abbe Pierre, PLF 2026",
+    "level": 1,
+    "tags": [
+      "logement",
+      "SRU",
+      "HLM"
+    ],
+    "equivalence": "Neuilly prefere payer 8 M/an d'amende plutot que construire des HLM — la loi sans les dents"
+  },
+  {
+    "id": "log-16",
+    "title": "Mal-logement (rapport Fondation Abbe Pierre)",
+    "subtitle": "4,2 millions de personnes mal logees",
+    "description": "330 000 sans domicile (record, +130% en 10 ans), 900 000 en hebergement contraint, 2,4 millions en surpeuplement. Le mal-logement aggrave tout : echec scolaire (+3 points), problemes de sante (+30%), chomage. C'est le multiplicateur invisible des autres depenses sociales.",
+    "amountBillions": 6.5,
+    "costPerCitizen": 0,
+    "deckId": "logement",
+    "icon": "🏠",
+    "source": "Fondation Abbe Pierre rapport 2025, INSEE, DREES",
+    "level": 1,
+    "tags": [
+      "logement",
+      "mal-logement",
+      "social"
+    ],
+    "equivalence": "330 000 personnes sans domicile en France = la population de Nice"
+  },
+  {
+    "id": "log-17",
+    "title": "Accession a la propriete",
+    "subtitle": "Taux et pouvoir d'achat immobilier",
+    "description": "Taux de proprietaires en France : 58% (stable, vs 65% en moyenne UE). La crise du credit (taux de 1% a 4%) a fait chuter les primo-accedants de 35%. Il faut en moyenne 7 annees de salaire pour acheter un logement moyen. A Paris, 15 ans.",
+    "amountBillions": 5,
+    "costPerCitizen": 74,
+    "deckId": "logement",
+    "icon": "🏠",
+    "source": "Notaires de France, CGEDD, SGFGAS",
+    "level": 1,
+    "tags": [
+      "logement",
+      "accession",
+      "credit"
+    ],
+    "equivalence": "A Paris, il faut epargner 15 ans de salaire pour acheter un appartement — c'etait 5 ans en 1998"
+  },
+  {
+    "id": "log-18",
+    "title": "Amenagement commercial et friches",
+    "subtitle": "170 000 hectares a recycler",
+    "description": "170 000 hectares de friches en France. L'objectif ZAN (zero artificialisation nette) d'ici 2050 impose de recycler ces friches. Le fonds friches a permis 1 400 projets. 50 000 locaux commerciaux vacants en centre-ville. La reconversion d'une friche coute 2-5x plus qu'un terrain vierge.",
+    "amountBillions": 0.5,
+    "costPerCitizen": 7,
+    "deckId": "logement",
+    "icon": "🏠",
+    "source": "CEREMA, ANCT, fonds friches, loi Climat Resilience",
+    "level": 1,
+    "tags": [
+      "logement",
+      "friches",
+      "ZAN"
+    ],
+    "equivalence": "Recycler 170 000 ha de friches = eviter l'artificialisation de 2x la surface de Paris intra-muros"
+  }
+]

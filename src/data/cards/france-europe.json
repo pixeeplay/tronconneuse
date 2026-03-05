@@ -1,0 +1,208 @@
+[
+  {
+    "id": "fre-01",
+    "title": "Contribution française au budget de l'UE",
+    "subtitle": "Chaque Français paie ~1€/jour pour l'Union européenne",
+    "description": "La France est le 2e contributeur net au budget de l'UE. Sa contribution a augmenté de 50% depuis le Brexit (le Royaume-Uni payait ~10 Md€/an). Le budget annuel de l'UE est de ~170 Md€. La France verse environ 14% du total. La contribution est calculée sur la base du RNB (revenu national brut), un prélèvement TVA et des droits de douane. Le « solde net » (contribution moins retours) est négatif d'environ 8-10 Md€.",
+    "amountBillions": 23.5,
+    "costPerCitizen": 346,
+    "deckId": "france-europe",
+    "icon": "💶",
+    "source": "PLF 2026, prélèvement sur recettes UE, Commission européenne",
+    "sourceUrl": null,
+    "level": 1,
+    "tags": [
+      "Europe",
+      "contribution",
+      "budget UE"
+    ],
+    "trend": null,
+    "equivalence": "Chaque Francais paie ~1€/jour pour l'Union europeenne"
+  },
+  {
+    "id": "fre-02",
+    "title": "Retours de l'UE vers la France",
+    "subtitle": "La France reçoit 65 centimes pour chaque euro versé à l'UE",
+    "description": "La France reçoit ~9,3 Md€ de la PAC (1er bénéficiaire européen), ~3 Md€ des fonds structurels (FEDER, FSE), ~1 Md€ d'Horizon Europe (recherche) et des montants plus modestes pour Erasmus (~500 M€), LIFE (environnement), etc. Le solde net négatif (~8-10 Md€) est le « prix de l'adhésion ». La France bénéficie aussi d'effets indirects non comptabilisés : accès au marché unique (estimé à 3-5% du PIB), stabilité de l'euro, poids géopolitique.",
+    "amountBillions": 15,
+    "costPerCitizen": 221,
+    "deckId": "france-europe",
+    "icon": "🔄",
+    "source": "Commission européenne, Toute l'Europe, PLF 2026",
+    "sourceUrl": null,
+    "level": 1,
+    "tags": [
+      "Europe",
+      "retours",
+      "PAC",
+      "fonds structurels"
+    ],
+    "trend": null,
+    "equivalence": "La France recoit 65 centimes pour chaque euro verse a l'UE"
+  },
+  {
+    "id": "fre-03",
+    "title": "Plan de relance européen (NextGenerationEU)",
+    "subtitle": "La France reçoit plus de NextGenerationEU que ce que coûte son budget Justice en 4 ans",
+    "description": "NextGenerationEU est un emprunt commun inédit de 750 Md€. La France reçoit 40,3 Md€ en subventions (4e bénéficiaire). L'argent finance la rénovation énergétique, le numérique, la santé, les transports. C'est la première dette commune européenne — un tabou brisé par le COVID. Le remboursement (2028-2058) sera assuré par de nouvelles ressources propres de l'UE (taxe carbone aux frontières, taxe GAFAM). Les eurosceptiques y voient un engrenage fédéraliste.",
+    "amountBillions": 40.3,
+    "costPerCitizen": 593,
+    "deckId": "france-europe",
+    "icon": "🚀",
+    "source": "Commission européenne, France Relance, Cour des comptes européenne",
+    "sourceUrl": null,
+    "level": 1,
+    "tags": [
+      "Europe",
+      "relance",
+      "NextGenerationEU"
+    ],
+    "trend": null,
+    "equivalence": "La France recoit plus de NextGenerationEU que ce que coute son budget Justice en 4 ans"
+  },
+  {
+    "id": "fre-04",
+    "title": "Facilité européenne pour la paix (FEP)",
+    "subtitle": "La contribution française à la FEP = le budget annuel de l'aide juridictionnelle",
+    "description": "La FEP, créée en 2021, est devenue le principal mécanisme de financement des livraisons d'armes à l'Ukraine par les États membres de l'UE. Hors budget officiel de l'UE (car les traités interdisent les dépenses militaires), elle est financée directement par les capitales. La France est le 2e contributeur. La FEP a été réabondée 5 fois depuis 2022. Son extension au-delà de l'Ukraine fait débat.",
+    "amountBillions": 7.2,
+    "costPerCitizen": 21,
+    "deckId": "france-europe",
+    "icon": "🕊️",
+    "source": "Conseil de l'UE, Ministère des Armées",
+    "sourceUrl": null,
+    "level": 1,
+    "tags": [
+      "Europe",
+      "défense",
+      "Ukraine",
+      "FEP"
+    ],
+    "trend": null,
+    "equivalence": "La contribution francaise a la FEP = le budget annuel de l'aide juridictionnelle"
+  },
+  {
+    "id": "fre-05",
+    "title": "Erasmus+",
+    "subtitle": "6€/an par Français pour 600 000 échanges étudiants/an en Europe",
+    "description": "Erasmus+ finance la mobilité de ~600 000 Européens/an (étudiants, apprentis, enseignants). La France est le 1er pays d'envoi et le 2e pays d'accueil. 20% des étudiants Erasmus restent dans le pays d'accueil après leurs études. Le programme a un taux de satisfaction de 98%. Budget doublé pour 2021-2027 (26,2 Md€ sur 7 ans). Critique : Erasmus profite surtout aux classes moyennes-supérieures, malgré les bourses complémentaires pour les étudiants modestes.",
+    "amountBillions": 4.3,
+    "costPerCitizen": 6,
+    "deckId": "france-europe",
+    "icon": "🎓",
+    "source": "Agence Erasmus+ France, Commission européenne",
+    "sourceUrl": null,
+    "level": 1,
+    "tags": [
+      "Europe",
+      "éducation",
+      "Erasmus",
+      "mobilité"
+    ],
+    "trend": null,
+    "equivalence": "6€/an par Francais pour 600 000 echanges etudiants/an en Europe"
+  },
+  {
+    "id": "fre-06",
+    "title": "Frontex et contrôle des frontières",
+    "subtitle": "Le budget Frontex = le prix de 2 heures d'opérations militaires françaises par jour",
+    "description": "Frontex est l'agence européenne de garde-frontières. Son budget a été multiplié par 10 en 10 ans. L'objectif : 10 000 agents permanents d'ici 2027. La France déploie environ 150-200 agents Frontex sur les frontières extérieures de l'UE. L'agence a été critiquée pour des refoulements (pushbacks) illégaux en Méditerranée et en mer Égée. Le nouveau Pacte migratoire (2026) renforce son rôle dans la procédure de filtrage aux frontières.",
+    "amountBillions": 0.95,
+    "costPerCitizen": 1,
+    "deckId": "france-europe",
+    "icon": "🛂",
+    "source": "Frontex, Commission européenne, Cour des comptes européenne",
+    "sourceUrl": null,
+    "level": 1,
+    "tags": [
+      "Europe",
+      "frontières",
+      "immigration",
+      "Frontex"
+    ],
+    "trend": null,
+    "equivalence": "Le budget Frontex = le prix de 2 heures d'operations militaires francaises par jour"
+  },
+  {
+    "id": "fre-07",
+    "title": "Galileo (GPS européen)",
+    "subtitle": "Galileo est utilisé chaque jour par 3,5 milliards d'appareils dans le monde",
+    "description": "Galileo est le système de navigation par satellite européen, concurrent du GPS américain, du GLONASS russe et du BeiDou chinois. Opérationnel depuis 2016, il offre une précision de 20 cm (vs 3-5 m pour le GPS civil). 3,5 milliards de smartphones utilisent Galileo. L'indépendance de positionnement est un enjeu de souveraineté (le GPS peut être dégradé ou coupé par les États-Unis). Les satellites de 2e génération sont en cours de déploiement.",
+    "amountBillions": 1.6,
+    "costPerCitizen": 5,
+    "deckId": "france-europe",
+    "icon": "🛰️",
+    "source": "CNES, ESA, Commission européenne programme spatial",
+    "sourceUrl": null,
+    "level": 1,
+    "tags": [
+      "Europe",
+      "spatial",
+      "souveraineté",
+      "Galileo"
+    ],
+    "trend": null,
+    "equivalence": "Galileo est utilise chaque jour par 3,5 milliards d'appareils dans le monde"
+  },
+  {
+    "id": "fre-08",
+    "title": "Politique agricole commune (PAC)",
+    "subtitle": "Sans la PAC, le prix du panier de courses augmenterait de ~5-10%",
+    "description": "La PAC représente ~31% du budget de l'UE (en baisse : c'était 70% en 1980). La France en est le 1er bénéficiaire en volume mais pas par hectare (les aides sont plus élevées en Grèce ou aux Pays-Bas). Débat européen permanent : faut-il continuer à subventionner l'agriculture intensive ou réorienter vers l'agroécologie ? La PAC post-2027 est en négociation, avec une pression forte pour réduire son poids.",
+    "amountBillions": 53,
+    "costPerCitizen": 78,
+    "deckId": "france-europe",
+    "icon": "🌾",
+    "source": "Commission européenne, Sénat, Toute l'Europe",
+    "sourceUrl": null,
+    "level": 1,
+    "tags": [
+      "Europe",
+      "agriculture",
+      "PAC"
+    ],
+    "trend": null,
+    "equivalence": "Sans la PAC, le prix du panier de courses augmenterait de ~5-10% selon les estimations"
+  },
+  {
+    "id": "fre-09",
+    "title": "Mécanisme d'ajustement carbone aux frontières (MACF)",
+    "subtitle": "Le MACF pourrait devenir la 1re ressource propre de l'UE",
+    "description": "Le MACF (« taxe carbone aux frontières ») entre en phase transitoire en 2026 et pleine application en 2027. Il taxe les importations de produits à forte empreinte carbone (acier, ciment, aluminium, engrais, électricité, hydrogène) provenant de pays sans prix du carbone équivalent. Objectif : empêcher les « fuites de carbone » (délocalisation industrielle vers des pays moins exigeants). Première taxe environnementale mondiale de cette ampleur. Critiqué par la Chine, l'Inde et les pays émergents.",
+    "amountBillions": 11.5,
+    "costPerCitizen": 15,
+    "deckId": "france-europe",
+    "icon": "🌍",
+    "source": "Commission européenne, Conseil de l'UE, Parlement européen",
+    "sourceUrl": null,
+    "level": 1,
+    "tags": [
+      "Europe",
+      "environnement",
+      "carbone",
+      "MACF"
+    ],
+    "trend": null,
+    "equivalence": "Le MACF pourrait devenir la 1re ressource propre de l'UE"
+  },
+  {
+    "id": "fre-10",
+    "title": "Coût du Brexit pour la France et l'UE",
+    "subtitle": "Le Brexit coûte à chaque Français l'équivalent d'un abonnement de streaming par mois",
+    "description": "Le départ du Royaume-Uni (2020) a privé l'UE de son 2e contributeur net. Les 27 restants ont dû combler le trou : la contribution française a augmenté de ~4-5 Md€/an. Côté britannique, le Brexit a coûté 4% de PIB selon le FMI. Les échanges commerciaux franco-britanniques ont baissé de 15-20% (barrières douanières). La pêche française a perdu 25% de ses quotas dans les eaux britanniques. La City reste dominante en finance, mais Amsterdam et Paris gagnent du terrain.",
+    "amountBillions": 13.5,
+    "costPerCitizen": 35,
+    "deckId": "france-europe",
+    "icon": "🇬🇧",
+    "source": "Commission européenne, FMI, Trésor français",
+    "sourceUrl": null,
+    "level": 1,
+    "tags": [
+      "Europe",
+      "Brexit",
+      "commerce"
+    ],
+    "trend": null,
+    "equivalence": "Le Brexit coute a chaque Francais l'equivalent d'un abonnement de streaming par mois"
+  }
+]

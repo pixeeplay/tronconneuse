@@ -1,0 +1,373 @@
+[
+  {
+    "id": "edu-01",
+    "title": "Éducation nationale",
+    "subtitle": "Mission « Enseignement scolaire » — 1er poste de l'État",
+    "description": "12,3 millions d'élèves, 1,2 million de personnels, 58 100 écoles. ~88,6 Md€ avec CAS Pensions. 4 035 postes d'enseignants supprimés en 2025. Le privé sous contrat reçoit 8,9 Md€ (~13%). La France dépense moins par élève du primaire que la moyenne OCDE.",
+    "amountBillions": 88.6,
+    "costPerCitizen": 1302,
+    "deckId": "education",
+    "icon": "🏫",
+    "trend": 0.2,
+    "source": "Sénat PLF 2025, DEPP 2025",
+    "level": 1,
+    "tags": [
+      "éducation",
+      "budget",
+      "enseignement"
+    ],
+    "equivalence": "Le budget de l'EN = les recettes fiscales de la TVA sur l'alimentation"
+  },
+  {
+    "id": "edu-02",
+    "title": "Enseignement supérieur et recherche",
+    "subtitle": "Budget du ministère de l'Enseignement supérieur",
+    "description": "~2,9 millions d'étudiants, 72 universités. 1/3 des universités déficitaires en 2024. Budget amputé de 588 M€ par décret en février 2024. Le privé capte 25% des étudiants (vs 14% il y a 20 ans).",
+    "amountBillions": 26.7,
+    "costPerCitizen": 393,
+    "deckId": "education",
+    "icon": "🎓",
+    "source": "PLF 2025, EducPros, Sénat",
+    "level": 1,
+    "tags": [
+      "éducation",
+      "supérieur",
+      "universités"
+    ],
+    "equivalence": "Le budget recherche + superieur = la moitie du budget Defense"
+  },
+  {
+    "id": "edu-03",
+    "title": "Salaires des enseignants",
+    "subtitle": "Masse salariale des enseignants du public",
+    "description": "~860 000 enseignants, 40% du budget de l'EN. Un débutant gagne ~2 100€ nets/mois, ~20% de moins que la moyenne OCDE. Crise d'attractivité : en 2024, 56% des établissements avaient au moins un poste non pourvu. Recours croissant aux contractuels (12%).",
+    "amountBillions": 48,
+    "costPerCitizen": 706,
+    "deckId": "education",
+    "icon": "👩‍🏫",
+    "source": "DEPP 2025, OCDE, Sénat",
+    "level": 1,
+    "tags": [
+      "éducation",
+      "salaires",
+      "enseignants"
+    ],
+    "equivalence": "Augmenter tous les enseignants de 300€/mois couterait ~3 Md€/an"
+  },
+  {
+    "id": "edu-04",
+    "title": "Rénovation du bâti scolaire",
+    "subtitle": "Rénovation énergétique et mise aux normes",
+    "description": "~40 Md€ nécessaires selon le rapport Demarcq. Le programme EduRénov prévoit 2 Md€ pour 10 000 établissements, 20× moins que le besoin. 1,3 million d'élèves exposés à >35°C en classe d'ici 2030. Parc scolaire parmi les plus vétustes d'Europe.",
+    "amountBillions": 2,
+    "costPerCitizen": 39,
+    "deckId": "education",
+    "icon": "🏗️",
+    "source": "Rapport Demarcq, EduRénov, Oxfam France",
+    "level": 1,
+    "tags": [
+      "éducation",
+      "infrastructure",
+      "rénovation"
+    ],
+    "equivalence": "Les 40 Md€ necessaires = le cout de 6 EPR2 nucleaires"
+  },
+  {
+    "id": "edu-05",
+    "title": "Inclusion scolaire (AESH)",
+    "subtitle": "École inclusive — accompagnants d'élèves handicapés",
+    "description": "247 000 élèves en situation de handicap scolarisés. 134 368 AESH, nombre multiplié par 3 depuis 2017. Mais les AESH gagnent ~900€ nets/mois (temps partiel subi). Créer un vrai statut à temps plein à 1 700€ ne coûterait que ~216 M€ de plus.",
+    "amountBillions": 4.5,
+    "costPerCitizen": 66,
+    "deckId": "education",
+    "icon": "♿",
+    "source": "Sénat PLF 2025, SUD Éducation, DEPP",
+    "level": 1,
+    "tags": [
+      "éducation",
+      "handicap",
+      "inclusion"
+    ],
+    "equivalence": "Le budget ecole inclusive = le prix de 2 sous-marins nucleaires"
+  },
+  {
+    "id": "edu-06",
+    "title": "Recherche publique",
+    "subtitle": "CNRS, INSERM, CEA, INRIA, ANR…",
+    "description": "CNRS (25 000 agents) est le 1er producteur mondial de publications scientifiques par institution. Mais les salaires des chercheurs sont 30-40% inférieurs à l'Allemagne ou au Royaume-Uni. Le CIR (~7 Md€/an) subventionne la R&D privée mais son efficacité est contestée.",
+    "amountBillions": 20,
+    "costPerCitizen": 294,
+    "deckId": "education",
+    "icon": "🔬",
+    "source": "MESRI, HCERES, OCDE",
+    "level": 1,
+    "tags": [
+      "éducation",
+      "recherche",
+      "CNRS"
+    ],
+    "equivalence": "Le budget recherche publique = 1/5e de ce que les USA y consacrent (a population comparable)"
+  },
+  {
+    "id": "edu-07",
+    "title": "Bourses étudiantes",
+    "subtitle": "Bourses sur critères sociaux + CROUS",
+    "description": "~750 000 boursiers, 40% des étudiants. Le montant maximal : ~528€/mois sur 10 mois — insuffisant en Île-de-France où un studio coûte ~700-900€. 20% des étudiants vivent sous le seuil de pauvreté. La réforme promise en 2023 reste inachevée.",
+    "amountBillions": 3.2,
+    "costPerCitizen": 47,
+    "deckId": "education",
+    "icon": "📝",
+    "source": "CNOUS, DGESIP, Observatoire de la vie étudiante",
+    "level": 1,
+    "tags": [
+      "éducation",
+      "bourses",
+      "étudiants"
+    ],
+    "equivalence": "Doubler les bourses couterait ~2,4 Md€/an, soit moins que le CIR"
+  },
+  {
+    "id": "edu-08",
+    "title": "Crédit d'impôt recherche (CIR)",
+    "subtitle": "Subvention fiscale à la R&D privée",
+    "description": "~8 000 entreprises bénéficiaires, dont les grands groupes (50% du montant). Plus grosse « niche fiscale » française. La Cour des comptes critique un manque d'évaluation depuis 2013. La France est malgré tout devenue le pays le plus attractif pour la R&D étrangère en Europe.",
+    "amountBillions": 7,
+    "costPerCitizen": 103,
+    "deckId": "education",
+    "icon": "💡",
+    "source": "MESRI, Cour des comptes, France Stratégie",
+    "level": 1,
+    "tags": [
+      "éducation",
+      "fiscalité",
+      "R&D"
+    ],
+    "equivalence": "7 Md€ de CIR = le budget annuel de la recherche publique au CNRS"
+  },
+  {
+    "id": "edu-09",
+    "title": "Service national universel (SNU)",
+    "subtitle": "Service civique obligatoire pour les 15-17 ans",
+    "description": "Devait être généralisé à 800 000 jeunes/an, mais seuls ~80 000 y ont participé en 2024 (volontariat). Coût logistique jugé prohibitif. Coûterait 2× le budget des bourses étudiantes. Le gouvernement a tacitement abandonné l'objectif de généralisation.",
+    "amountBillions": 4.25,
+    "costPerCitizen": 63,
+    "deckId": "education",
+    "icon": "🎖️",
+    "source": "Rapport Sénat 2024, INJEP, Ministère des Armées",
+    "level": 1,
+    "tags": [
+      "éducation",
+      "citoyenneté",
+      "jeunesse"
+    ],
+    "equivalence": "Generaliser le SNU couterait autant que l'ensemble des bourses + CROUS + ecole inclusive"
+  },
+  {
+    "id": "edu-10",
+    "title": "Enseignement privé sous contrat",
+    "subtitle": "Financement public des écoles privées",
+    "description": "~2 millions d'élèves, 7 500 établissements (catholiques à 96%). Budget augmente plus vite que le public (+6,7% vs +4,6-5,4%). L'IPS moyen du privé est 15-20 points supérieur au public. 85% des collèges favorisés proches d'un défavorisé sont des privés.",
+    "amountBillions": 13,
+    "costPerCitizen": 191,
+    "deckId": "education",
+    "icon": "🏫",
+    "source": "PLF 2025, Rapport Vannier-Weissberg 2024",
+    "level": 1,
+    "tags": [
+      "éducation",
+      "privé",
+      "mixité sociale"
+    ],
+    "equivalence": "13 Md€ = le budget annuel du ministere de la Justice"
+  },
+  {
+    "id": "edu-11",
+    "title": "Education prioritaire (REP/REP+)",
+    "subtitle": "1,7 million d'eleves en zone prioritaire",
+    "description": "1 093 reseaux REP et 364 REP+ scolarisent 1,7 million d'eleves. Classes dedoublees en CP-CE1 (12 eleves au lieu de 24), primes enseignants jusqu'a 5 000 EUR/an en REP+. Amelioration de +15% en francais et maths en CP-CE1, mais l'ecart persiste au college.",
+    "amountBillions": 2,
+    "costPerCitizen": 29,
+    "deckId": "education",
+    "icon": "🏫",
+    "trend": 5,
+    "source": "DEPP, Ministere de l'Education nationale",
+    "sourceUrl": "https://www.education.gouv.fr",
+    "level": 1,
+    "tags": [
+      "REP",
+      "prioritaire",
+      "egalite"
+    ],
+    "equivalence": "Un eleve en REP+ coute ~30% de plus qu'un eleve hors education prioritaire"
+  },
+  {
+    "id": "edu-12",
+    "title": "Cantine scolaire",
+    "subtitle": "8 millions d'eleves a la cantine chaque jour",
+    "description": "Le repas coute 8-10 EUR a produire, dont 3-4 EUR a la charge des familles. La loi EGalim impose 50% de produits durables et 20% de bio, objectifs atteints a 30% seulement. La cantine est souvent le seul repas equilibre pour les enfants defavorises.",
+    "amountBillions": 7,
+    "costPerCitizen": 103,
+    "deckId": "education",
+    "icon": "🍽️",
+    "trend": 3,
+    "source": "CNFCE, ADEME, Ministere de l'Education nationale",
+    "sourceUrl": "https://www.education.gouv.fr",
+    "level": 1,
+    "tags": [
+      "cantine",
+      "alimentation",
+      "ecole"
+    ],
+    "equivalence": "Nourrir un enfant a l'ecole coute 2€/jour au contribuable, soit le prix d'un cafe"
+  },
+  {
+    "id": "edu-13",
+    "title": "Lycees professionnels",
+    "subtitle": "620 000 lyceens en voie professionnelle",
+    "description": "1/3 des lyceens sont en voie professionnelle. Taux de decrochage : 25% (vs 5% en voie generale). La reforme 2023 introduit des gratifications de stage et la fermeture des formations sans debouche. Le taux d'insertion des CAP/bac pro en apprentissage atteint 70%.",
+    "amountBillions": 7,
+    "costPerCitizen": 103,
+    "deckId": "education",
+    "icon": "🔧",
+    "trend": 7,
+    "source": "DEPP, Ministere de l'Education nationale, CEREQ",
+    "sourceUrl": "https://www.education.gouv.fr",
+    "level": 1,
+    "tags": [
+      "lycee pro",
+      "formation",
+      "apprentissage"
+    ],
+    "equivalence": "Un lyceen professionnel coute ~11 000€/an a l'Etat (vs ~9 000€ en voie generale, stages inclus)"
+  },
+  {
+    "id": "edu-14",
+    "title": "AEFE (lycees francais a l'etranger)",
+    "subtitle": "580 etablissements dans 139 pays",
+    "description": "L'AEFE gere ou homologue 580 etablissements scolarisant 392 000 eleves (dont 40% de Francais). Les frais de scolarite varient de 3 000 a 30 000 EUR/an. C'est le 1er reseau scolaire mondial a l'etranger et un outil majeur de soft power.",
+    "amountBillions": 1.2,
+    "costPerCitizen": 6,
+    "deckId": "education",
+    "icon": "🌍",
+    "trend": 2,
+    "source": "AEFE, PLF 2026 Action exterieure, Senat",
+    "sourceUrl": "https://www.aefe.fr",
+    "level": 1,
+    "tags": [
+      "AEFE",
+      "etranger",
+      "soft power"
+    ],
+    "equivalence": "580 lycees francais dans 139 pays — plus que McDonald's dans certains continents"
+  },
+  {
+    "id": "edu-15",
+    "title": "Recherche spatiale et ESA",
+    "subtitle": "1er contributeur de l'Agence spatiale europeenne",
+    "description": "Le programme 193 finance la contribution francaise a l'ESA (~25% du budget). Missions scientifiques, lanceurs Ariane 6, observation de la Terre. La concurrence de SpaceX menace Ariane : cout de lancement 2x superieur. L'ESA investit dans un demonstrateur reutilisable.",
+    "amountBillions": 1.7,
+    "costPerCitizen": 25,
+    "deckId": "education",
+    "icon": "🚀",
+    "trend": 4,
+    "source": "PLF 2026, CNES, ESA",
+    "sourceUrl": "https://www.esa.int",
+    "level": 1,
+    "tags": [
+      "espace",
+      "ESA",
+      "recherche"
+    ],
+    "equivalence": "25€/Francais/an pour comprendre le climat, lancer des satellites et maintenir l'Europe dans l'espace"
+  },
+  {
+    "id": "edu-16",
+    "title": "Numerique educatif",
+    "subtitle": "Tablettes, ENT, logiciels scolaires",
+    "description": "Le plan numerique educatif finance les tablettes, les espaces numeriques de travail (ENT), les manuels numeriques et la formation des enseignants. Les collectivites supportent 70% du cout materiel. Le bilan est mitige : 65% des classes sont equipees mais l'usage pedagogique reel reste superficiel. La France interdit les smartphones au college et en debat pour le lycee.",
+    "amountBillions": 1,
+    "costPerCitizen": 15,
+    "deckId": "education",
+    "icon": "💻",
+    "source": "DNE, DEPP, Cour des comptes rapport numerique educatif",
+    "level": 1,
+    "tags": [
+      "education",
+      "numerique",
+      "tablettes"
+    ],
+    "equivalence": "1 Md€/an de numerique educatif mais 25% des enseignants declarent ne jamais utiliser le materiel"
+  },
+  {
+    "id": "edu-17",
+    "title": "CROUS et vie etudiante",
+    "subtitle": "Residences universitaires + restaurants + accompagnement social",
+    "description": "Les 26 CROUS gerent 175 000 logements universitaires (pour 2,9 millions d'etudiants — taux de couverture : 6%). Le repas au restaurant universitaire coute 3,30€ (1€ pour les boursiers). Plan 60 000 logements lance en 2018, a peine 30 000 livres en 2025. 20% des etudiants vivent sous le seuil de pauvrete.",
+    "amountBillions": 2,
+    "costPerCitizen": 29,
+    "deckId": "education",
+    "icon": "🏫",
+    "source": "CNOUS, OVE, Cour des comptes",
+    "level": 1,
+    "tags": [
+      "education",
+      "etudiants",
+      "crous"
+    ],
+    "equivalence": "6% des etudiants ont un logement CROUS — 94% se debrouillent seuls, souvent en precarite"
+  },
+  {
+    "id": "edu-18",
+    "title": "Parcoursup et orientation",
+    "subtitle": "Plateforme d'admission post-bac",
+    "description": "Parcoursup traite ~900 000 dossiers/an depuis 2018. 70% des candidats obtiennent un de leurs 3 premiers voeux. Mais l'algorithme reste opaque, le stress des familles est maximal en juin, et les filieres en tension refusent 80% des candidats. L'orientation au college et lycee est le parent pauvre : les conseillers d'orientation couvrent 1 500 eleves chacun.",
+    "amountBillions": 0.05,
+    "costPerCitizen": 1,
+    "deckId": "education",
+    "icon": "🎯",
+    "source": "MESRI, Cour des comptes rapport Parcoursup, ONISEP",
+    "level": 1,
+    "tags": [
+      "education",
+      "parcoursup",
+      "orientation"
+    ],
+    "equivalence": "Parcoursup decide du destin de 900 000 jeunes/an pour un budget equivalent a 5 centimes par candidat"
+  },
+  {
+    "id": "edu-19",
+    "title": "Harcelement scolaire",
+    "subtitle": "Plan de lutte pHARe + formations + numero 3018",
+    "description": "700 000 a 1 million d'eleves sont victimes de harcelement scolaire chaque annee. Le cyberharcelement touche 20% des adolescents. Le plan pHARe forme les adultes-referents et systematise le signalement. Depuis 2023, le harcelement est un delit penal. Le changement d'etablissement concerne desormais le harceleur (et non plus la victime). Budget faible au regard de l'ampleur du probleme.",
+    "amountBillions": 0.1,
+    "costPerCitizen": 2,
+    "deckId": "education",
+    "icon": "🚫",
+    "source": "Ministere de l'Education nationale, programme pHARe, 3018",
+    "level": 1,
+    "tags": [
+      "education",
+      "harcelement",
+      "jeunesse"
+    ],
+    "equivalence": "100 M€ pour proteger 700 000 enfants harceles = 143€ par enfant victime et par an"
+  },
+  {
+    "id": "edu-20",
+    "title": "Formation continue des enseignants",
+    "subtitle": "Formation professionnelle Education nationale",
+    "description": "Les enseignants francais recoivent en moyenne 3 jours de formation continue par an (contre 8 en Finlande, 12 au Japon). Le budget formation est le premier coupe en periode d'austerite. Seuls 40% des enseignants jugent leur formation utile. Le recrutement est en crise : le concours n'attire que 0,8 candidat par poste en maths. En 2024, des contractuels recrutes en 4 jours ont ete mis devant des classes sans aucune formation.",
+    "amountBillions": 0.5,
+    "costPerCitizen": 7,
+    "deckId": "education",
+    "icon": "👩‍🏫",
+    "source": "DEPP, OCDE TALIS, Cour des comptes",
+    "level": 1,
+    "tags": [
+      "education",
+      "enseignants",
+      "formation"
+    ],
+    "equivalence": "Un enseignant francais est forme 3 jours/an (vs 12 au Japon) — et on s'etonne du niveau PISA"
+  }
+]

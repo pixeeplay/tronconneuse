@@ -8,7 +8,7 @@ import { AnimatePresence } from "framer-motion";
 import { ChainsawIcon } from "@/components/ChainsawIcon";
 import { Onboarding, useOnboarding } from "@/components/Onboarding";
 import { getGlobalStats } from "@/lib/stats";
-import decksData from "@/data/decks.json";
+import decksData from "@/data";
 import type { Deck } from "@/types";
 
 const decks = (decksData.decks as Deck[]).filter((d) => d.type !== "thematic");
