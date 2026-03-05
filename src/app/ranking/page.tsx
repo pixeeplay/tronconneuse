@@ -4,7 +4,7 @@ import { useState, useEffect, useRef } from "react";
 import { ChainsawIcon } from "@/components/ChainsawIcon";
 import { ShieldIcon } from "@/components/ShieldIcon";
 import leaderboardData from "@/data/leaderboard.json";
-import { getGlobalStats, getPlayerProfile } from "@/lib/stats";
+import { getGlobalStats, getPlayerProfile, type GlobalStats, type PlayerProfile } from "@/lib/stats";
 
 type Tab = "archetypes" | "top" | "semaine";
 
@@ -44,12 +44,16 @@ const mostProtected = [
 export default function RankingPage() {
   const [tab, setTab] = useState<Tab>("archetypes");
   const [players, setPlayers] = useState<LeaderboardPlayer[]>([]);
+  const [myProfile, setMyProfile] = useState<PlayerProfile | null>(null);
+  const [myStats, setMyStats] = useState<GlobalStats | null>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
   const [showChevron, setShowChevron] = useState(false);
 
   useEffect(() => {
     const profile = getPlayerProfile();
     const stats = getGlobalStats();
+    setMyProfile(profile);
+    setMyStats(stats);
 
     const currentPlayer: LeaderboardPlayer = {
       id: "current",
@@ -93,9 +97,41 @@ export default function RankingPage() {
       {/* Header */}
       <header className="flex items-center p-4 pb-2 justify-center bg-background/90 backdrop-blur-md z-10 border-b border-border">
         <h1 className="text-xl font-bold leading-tight tracking-[-0.015em] text-center">
-          Classement & Tendances
+          Communauté
         </h1>
       </header>
+
+      {/* My profile vs community */}
+      {myProfile && myStats && (
+        <div className="px-4 pt-3 pb-1">
+          <div className="flex items-center gap-3 rounded-xl p-3 bg-primary/10 border border-primary/30">
+            <div className="w-12 h-12 rounded-xl bg-card border border-primary/20 flex items-center justify-center text-xl shrink-0">
+              {myProfile.archetypeIcon || "👤"}
+            </div>
+            <div className="flex-1 min-w-0">
+              <div className="flex items-center gap-2">
+                <span className="text-sm font-bold text-primary truncate">
+                  {myProfile.username}
+                </span>
+                <span className="bg-primary/20 text-primary text-[10px] font-bold px-1.5 py-0.5 rounded-full shrink-0">
+                  N{myProfile.level}
+                </span>
+              </div>
+              <p className="text-xs text-muted-foreground truncate">
+                {myProfile.archetypeName || "Pas encore d'archétype"} · {myStats.xp.toLocaleString("fr-FR")} XP · {myStats.totalSessions} sessions
+              </p>
+            </div>
+            <div className="text-right shrink-0">
+              <p className="text-lg font-mono font-bold text-primary">
+                #{players.find((p) => p.isCurrentPlayer)
+                  ? players.findIndex((p) => p.isCurrentPlayer) + 1
+                  : "—"}
+              </p>
+              <p className="text-[10px] text-muted-foreground uppercase font-bold">Rang</p>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Tabs */}
       <div className="px-4 py-3">
