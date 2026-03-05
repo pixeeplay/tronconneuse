@@ -10,118 +10,10 @@ import {
   type PlayerProfile,
   type StoredSession,
 } from "@/lib/stats";
+import { ACHIEVEMENTS, checkAchievements } from "@/lib/achievements";
 
 const tabs = ["Vue d'ensemble", "Mesures Détaillées", "Journal H.F."] as const;
 type Tab = (typeof tabs)[number];
-
-interface Achievement {
-  id: string;
-  icon: string;
-  title: string;
-  description: string;
-  check: (stats: GlobalStats, sessions: StoredSession[]) => boolean;
-  progress: (stats: GlobalStats, sessions: StoredSession[]) => number;
-}
-
-const ACHIEVEMENTS: Achievement[] = [
-  {
-    id: "first_cut",
-    icon: "chainsaw",
-    title: "Première coupe",
-    description: "Compléter une session avec au moins 1 coupe.",
-    check: (s) => s.totalSessions > 0 && s.totalCutBillions > 0,
-    progress: (s) => (s.totalCutBillions > 0 ? 100 : 0),
-  },
-  {
-    id: "fifty_fifty",
-    icon: "⚖️",
-    title: "50/50",
-    description: "Terminer une session avec exactement 50% keep / 50% cut.",
-    check: (_, sessions) =>
-      sessions.some(
-        (s) => s.totalCards > 0 && s.keepCount === s.cutCount
-      ),
-    progress: (_, sessions) => {
-      if (sessions.length === 0) return 0;
-      const closest = sessions.reduce((best, s) => {
-        if (s.totalCards === 0) return best;
-        const ratio = Math.abs(s.keepCount / s.totalCards - 0.5);
-        return ratio < best ? ratio : best;
-      }, 1);
-      return Math.round((1 - closest * 2) * 100);
-    },
-  },
-  {
-    id: "auditor",
-    icon: "📋",
-    title: "Auditeur",
-    description: "Jouer 3 catégories différentes.",
-    check: (s) => s.categoriesPlayed.length >= 3,
-    progress: (s) => Math.min(100, Math.round((s.categoriesPlayed.length / 3) * 100)),
-  },
-  {
-    id: "globe_trotter",
-    icon: "🗺️",
-    title: "Globe-trotter",
-    description: "Explorer toutes les catégories (14 decks).",
-    check: (s) => s.categoriesPlayed.length >= 14,
-    progress: (s) => Math.round((s.categoriesPlayed.length / 14) * 100),
-  },
-  {
-    id: "liquidator",
-    icon: "💀",
-    title: "Liquidateur",
-    description: "Terminer une session avec 100% de coupes.",
-    check: (_, sessions) =>
-      sessions.some((s) => s.totalCards > 0 && s.cutCount === s.totalCards),
-    progress: (_, sessions) => {
-      if (sessions.length === 0) return 0;
-      const best = sessions.reduce(
-        (max, s) =>
-          s.totalCards > 0
-            ? Math.max(max, s.cutCount / s.totalCards)
-            : max,
-        0
-      );
-      return Math.round(best * 100);
-    },
-  },
-  {
-    id: "guardian",
-    icon: "🛡",
-    title: "Gardien suprême",
-    description: "Terminer une session avec 100% de garder.",
-    check: (_, sessions) =>
-      sessions.some((s) => s.totalCards > 0 && s.keepCount === s.totalCards),
-    progress: (_, sessions) => {
-      if (sessions.length === 0) return 0;
-      const best = sessions.reduce(
-        (max, s) =>
-          s.totalCards > 0
-            ? Math.max(max, s.keepCount / s.totalCards)
-            : max,
-        0
-      );
-      return Math.round(best * 100);
-    },
-  },
-  {
-    id: "faithful",
-    icon: "🏅",
-    title: "Fidèle",
-    description: "Compléter 10 sessions.",
-    check: (s) => s.totalSessions >= 10,
-    progress: (s) => Math.min(100, Math.round((s.totalSessions / 10) * 100)),
-  },
-  {
-    id: "centurion",
-    icon: "💯",
-    title: "Centurion",
-    description: "Swiper 100 cartes au total.",
-    check: (s) => s.totalCards >= 100,
-    progress: (s) => Math.min(100, Math.round((s.totalCards / 100) * 100)),
-  },
-];
 
 export default function ProfilePage() {
   const [activeTab, setActiveTab] = useState<Tab>("Vue d'ensemble");
@@ -156,8 +48,9 @@ export default function ProfilePage() {
   const keptDashoffset =
     totalBudget > 0 ? 125 - (125 * keptPercent) / 100 : 125;
 
+  const completedIds = checkAchievements(stats, sessions);
   const completedAchievements = ACHIEVEMENTS.filter((a) =>
-    a.check(stats, sessions)
+    completedIds.includes(a.id)
   );
 
   return (

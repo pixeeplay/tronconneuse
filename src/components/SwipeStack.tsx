@@ -27,7 +27,7 @@ export function SwipeStack({
   onCardTap,
 }: SwipeStackProps) {
   const router = useRouter();
-  const { session, startSession, recordVote, nextCard, completeSession } =
+  const { session, cardShownAt, startSession, recordVote, nextCard, completeSession } =
     useGameStore();
   const [initialized, setInitialized] = useState(false);
   const cardRef = useRef<SwipeCardHandle>(null);
@@ -45,7 +45,8 @@ export function SwipeStack({
     (direction: VoteDirection) => {
       const card = cards[currentIndex];
       if (!card) return;
-      track("card_vote", { cardId: card.id, direction });
+      const durationMs = cardShownAt > 0 ? Date.now() - cardShownAt : 0;
+      track("card_vote", { cardId: card.id, direction, durationMs });
       recordVote(card.id, direction);
       nextCard();
       if (currentIndex + 1 >= totalCards) {

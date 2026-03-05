@@ -7,6 +7,8 @@ import { track } from "@/lib/analytics";
 interface GameState {
   /** Session en cours */
   session: Session | null;
+  /** Timestamp when the current card was shown */
+  cardShownAt: number;
 
   // === Actions ===
   /** Démarrer une nouvelle session */
@@ -33,6 +35,7 @@ interface GameState {
 
 export const useGameStore = create<GameState>((set, get) => ({
   session: null,
+  cardShownAt: 0,
 
   startSession: (deckId, cards, level = 1) => {
     set({
@@ -46,18 +49,22 @@ export const useGameStore = create<GameState>((set, get) => ({
         startedAt: Date.now(),
         completed: false,
       },
+      cardShownAt: Date.now(),
     });
   },
 
   recordVote: (cardId, direction) => {
-    const { session } = get();
+    const { session, cardShownAt } = get();
     if (!session || session.completed) return;
+
+    const now = Date.now();
+    const duration = cardShownAt > 0 ? now - cardShownAt : 0;
 
     const newVote: Vote = {
       cardId,
       direction,
-      duration: 0, // TODO: track per-card duration
-      timestamp: Date.now(),
+      duration,
+      timestamp: now,
     };
 
     set({
@@ -78,6 +85,7 @@ export const useGameStore = create<GameState>((set, get) => ({
         ...session,
         currentIndex: nextIndex,
       },
+      cardShownAt: Date.now(),
     });
   },
 
