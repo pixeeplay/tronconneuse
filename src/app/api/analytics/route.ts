@@ -62,7 +62,12 @@ export async function POST(request: Request) {
     return NextResponse.json({ ok: false, error: "Validation failed" }, { status: 400 });
   }
 
-  const userAgent = request.headers.get("user-agent") ?? undefined;
+  // RGPD: anonymize IP (zero last octet) and drop raw User-Agent
+  const anonymizedIp = ip.includes(".")
+    ? ip.split(".").slice(0, 3).join(".") + ".0"
+    : ip.includes(":")
+      ? ip.replace(/:[\da-f]+$/i, ":0")
+      : "unknown";
 
   try {
     await db.insert(analyticsEvents).values(
@@ -71,8 +76,8 @@ export async function POST(request: Request) {
         properties: e.properties,
         page: e.page,
         referrer: e.referrer,
-        userAgent,
-        ip,
+        userAgent: undefined,
+        ip: anonymizedIp,
       }))
     );
 
