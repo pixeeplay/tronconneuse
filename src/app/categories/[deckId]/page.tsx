@@ -35,7 +35,7 @@ export default async function CategoryPage({ params }: Props) {
   const totalBillions = cards.reduce((sum, c) => sum + c.amountBillions, 0);
 
   return (
-    <div className="min-h-screen bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-50">
+    <>
       {/* Header */}
       <div className="bg-slate-50 dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 py-12 md:py-16">
@@ -105,7 +105,7 @@ export default async function CategoryPage({ params }: Props) {
           </Link>
         </div>
       </div>
-    </div>
+    </>
   );
 }
 
