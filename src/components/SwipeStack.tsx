@@ -84,13 +84,14 @@ export function SwipeStack({
   const handleSwipe = useCallback(
     (direction: VoteDirection) => {
       const card = cards[currentIndex];
-      if (!card || isAnimating.current) return;
+      if (!card) return;
 
       const durationMs = cardShownAt > 0 ? Date.now() - cardShownAt : 0;
       track("card_vote", { cardId: card.id, direction, durationMs });
 
       // Level 3: delegate to parent for audit flow
       if (onSwipeComplete) {
+        isAnimating.current = false;
         onSwipeComplete(card, direction);
         return;
       }
@@ -100,9 +101,10 @@ export function SwipeStack({
         completeSession();
         setTimeout(() => router.push("/results"), 300);
       }
-      isAnimating.current = false;
+      // Reset after a short delay to let AnimatePresence finish exit
+      setTimeout(() => { isAnimating.current = false; }, 200);
     },
-    [voteAndAdvance, completeSession, currentIndex, totalCards, cards, router, onSwipeComplete, cardShownAt]
+    [voteAndAdvance, completeSession, currentIndex, cards, router, onSwipeComplete, cardShownAt]
   );
 
   const handleButtonVote = useCallback(

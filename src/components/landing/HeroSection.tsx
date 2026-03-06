@@ -45,16 +45,18 @@ export function HeroSection() {
             </a>
           </div>
 
+          {(totalSessions > 0 || totalSwipes > 0) && (
           <p className="text-sm text-slate-400 dark:text-slate-500">
             <span className="font-semibold text-slate-600 dark:text-slate-300">
-              {totalSessions > 0 ? totalSessions.toLocaleString("fr-FR") : "12 847"}
+              {totalSessions.toLocaleString("fr-FR")}
             </span>{" "}
             sessions jou&eacute;es{" \u00B7 "}
             <span className="font-semibold text-slate-600 dark:text-slate-300">
-              {totalSwipes > 0 ? totalSwipes.toLocaleString("fr-FR") : "154 208"}
+              {totalSwipes.toLocaleString("fr-FR")}
             </span>{" "}
             cartes swip&eacute;es
           </p>
+        )}
         </motion.div>
       </div>
     </section>

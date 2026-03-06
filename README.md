@@ -9,7 +9,7 @@ Le joueur swipe des cartes de depenses budgetaires francaises :
 
 ## Contenu
 
-- **330 cartes** reparties en **17 categories** (14 principales + 3 thematiques)
+- **370 cartes** reparties en **19 decks** (16 categories + 3 thematiques)
 - **16 archetypes** budgetaires (6 L1, 6 L2, 4 L3)
 - **14 badges** de categorie + **12 achievements** generaux
 
@@ -28,6 +28,8 @@ Le joueur swipe des cartes de depenses budgetaires francaises :
 - **Auth** : NextAuth.js v5 (Google + GitHub)
 - **DB** : PostgreSQL + Drizzle ORM (graceful degradation sans DB)
 - **PWA** : serwist (service worker, offline)
+- **Tests** : Vitest + Testing Library (75 tests)
+- **CI** : GitHub Actions (lint + type-check + build + test + docker)
 - **Deploy** : Docker (output: standalone) via Coolify
 
 ## Demarrage
@@ -73,7 +75,7 @@ src/
 
 ## Donnees
 
-330 cartes, 17 categories. Montants en milliards d'euros (Md EUR), sources officielles (PLF/LFSS 2025-2026, Cour des comptes, Senat, DREES).
+370 cartes, 19 decks (16 categories + 3 thematiques). Montants en milliards d'euros (Md EUR), sources officielles (PLF/LFSS 2025-2026, Cour des comptes, Senat, DREES).
 
 ## Deploy
 
