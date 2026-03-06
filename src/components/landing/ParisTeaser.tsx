@@ -5,19 +5,25 @@ import Image from "next/image";
 
 export function ParisTeaser() {
   const [email, setEmail] = useState("");
-  const [submitted, setSubmitted] = useState(false);
+  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
 
-  function handleSubmit(e: FormEvent) {
+  async function handleSubmit(e: FormEvent) {
     e.preventDefault();
-    if (!email.trim()) return;
+    if (!email.trim() || status === "loading") return;
 
-    const stored = JSON.parse(localStorage.getItem("paris_emails") || "[]") as string[];
-    if (!stored.includes(email)) {
-      stored.push(email);
-      localStorage.setItem("paris_emails", JSON.stringify(stored));
+    setStatus("loading");
+    try {
+      const res = await fetch("/api/waitlist", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email, city: "paris" }),
+      });
+      if (!res.ok) throw new Error("API error");
+      setStatus("success");
+      setEmail("");
+    } catch {
+      setStatus("error");
     }
-    setSubmitted(true);
-    setEmail("");
   }
 
   return (
@@ -48,7 +54,7 @@ export function ParisTeaser() {
           Pistes cyclables, JO, propret&eacute;, logement social...
         </p>
 
-        {submitted ? (
+        {status === "success" ? (
           <div className="inline-flex items-center gap-2 bg-landing-primary/10 text-landing-primary px-6 py-3 rounded-full text-sm font-semibold">
             <span>&#10003;</span> Vous serez pr&eacute;venu(e) du lancement !
           </div>
@@ -64,11 +70,18 @@ export function ParisTeaser() {
             />
             <button
               type="submit"
-              className="h-12 px-6 rounded-xl bg-landing-primary text-white font-heading font-semibold text-sm hover:bg-landing-primary-light transition-colors whitespace-nowrap"
+              disabled={status === "loading"}
+              className="h-12 px-6 rounded-xl bg-landing-primary text-white font-heading font-semibold text-sm hover:bg-landing-primary-light transition-colors whitespace-nowrap disabled:opacity-60"
             >
-              Pr&eacute;venez-moi
+              {status === "loading" ? "..." : "Pr\u00E9venez-moi"}
             </button>
           </form>
+        )}
+
+        {status === "error" && (
+          <p className="text-sm text-red-500 mb-4">
+            Une erreur est survenue. R&eacute;essayez plus tard.
+          </p>
         )}
 
         <p className="text-sm text-slate-400 dark:text-slate-500">

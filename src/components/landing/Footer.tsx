@@ -40,7 +40,7 @@ export function Footer() {
 
         <div className="text-center text-xs text-slate-400 dark:text-slate-500 mt-8">
           <p>
-            Fait avec rigueur, ❤️ et un peu de tronçonneuse par{" "}
+            Fait avec rigueur, un peu de tronçonneuse et ❤️ par{" "}
             <a
               href="https://pixeeplay.fr"
               target="_blank"
