@@ -401,7 +401,7 @@ export default function ProfilePage() {
                 </span>
               </div>
 
-              <div className="bg-card border border-border rounded-xl overflow-hidden divide-y divide-border">
+              <div className="bg-card border border-border rounded-xl divide-y divide-border">
                 {generalAchievements.map((a) => {
                   const completed = completedIds.includes(a.id);
                   const prog = completed ? 100 : a.progress(stats, sessions);
@@ -454,8 +454,8 @@ export default function ProfilePage() {
                         )}
                       </div>
                       {showTip && (
-                        <div className="absolute left-12 right-3 -bottom-1 translate-y-full z-50 bg-card border border-primary/30 rounded-lg p-2 shadow-xl">
-                          <p className="text-[10px] text-primary font-medium leading-snug">
+                        <div className="absolute left-4 right-4 top-full mt-1 z-[100] bg-slate-900 border border-emerald-500/40 rounded-lg p-3 shadow-2xl shadow-black/50">
+                          <p className="text-xs text-slate-100 font-medium leading-snug">
                             {a.description}
                           </p>
                         </div>
