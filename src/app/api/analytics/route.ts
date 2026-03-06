@@ -1,0 +1,84 @@
+import { NextResponse } from "next/server";
+import { z } from "zod";
+import { db, isDbAvailable } from "@/db";
+import { analyticsEvents } from "@/db/schema";
+
+export const dynamic = "force-dynamic";
+
+const eventSchema = z.object({
+  event: z.string().min(1).max(100),
+  properties: z.record(z.string(), z.unknown()).optional().default({}),
+  page: z.string().max(500).optional(),
+  referrer: z.string().max(500).optional(),
+});
+
+const batchSchema = z.object({
+  events: z.array(eventSchema).min(1).max(20),
+});
+
+// Rate limit: 30 requests/minute per IP
+const rateLimitMap = new Map<string, { count: number; resetAt: number }>();
+
+function isRateLimited(ip: string): boolean {
+  const now = Date.now();
+  const entry = rateLimitMap.get(ip);
+  if (!entry || now > entry.resetAt) {
+    rateLimitMap.set(ip, { count: 1, resetAt: now + 60_000 });
+    return false;
+  }
+  entry.count++;
+  return entry.count > 30;
+}
+
+function getClientIp(request: Request): string {
+  const forwarded = request.headers.get("x-forwarded-for");
+  if (forwarded) return forwarded.split(",")[0].trim();
+  return "unknown";
+}
+
+/**
+ * POST /api/analytics
+ * Ingests analytics events in batches. Accepts up to 20 events per request.
+ */
+export async function POST(request: Request) {
+  const ip = getClientIp(request);
+  if (isRateLimited(ip)) {
+    return NextResponse.json({ ok: false, error: "Too many requests" }, { status: 429 });
+  }
+
+  if (!isDbAvailable() || !db) {
+    return NextResponse.json({ ok: true }); // Silently accept, don't block client
+  }
+
+  let rawBody: unknown;
+  try {
+    rawBody = await request.json();
+  } catch {
+    return NextResponse.json({ ok: false, error: "Invalid JSON" }, { status: 400 });
+  }
+
+  const parsed = batchSchema.safeParse(rawBody);
+  if (!parsed.success) {
+    return NextResponse.json({ ok: false, error: "Validation failed" }, { status: 400 });
+  }
+
+  const userAgent = request.headers.get("user-agent") ?? undefined;
+
+  try {
+    await db.insert(analyticsEvents).values(
+      parsed.data.events.map((e) => ({
+        event: e.event,
+        properties: e.properties,
+        page: e.page,
+        referrer: e.referrer,
+        userAgent,
+        ip,
+      }))
+    );
+
+    return NextResponse.json({ ok: true });
+  } catch (error) {
+    console.error("Failed to save analytics:", error);
+    return NextResponse.json({ ok: true }); // Don't expose errors to client
+  }
+}

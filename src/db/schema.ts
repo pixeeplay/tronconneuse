@@ -95,6 +95,22 @@ export const communityVotes = pgTable("community_votes", {
   updatedAt: timestamp("updated_at").defaultNow().notNull(),
 });
 
+// === Analytics events ===
+export const analyticsEvents = pgTable("analytics_events", {
+  id: uuid("id").defaultRandom().primaryKey(),
+  event: text("event").notNull(),
+  properties: jsonb("properties").$type<Record<string, unknown>>(),
+  page: text("page"),
+  referrer: text("referrer"),
+  userAgent: text("user_agent"),
+  ip: text("ip"),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+}, (t) => [
+  index("idx_analytics_event").on(t.event),
+  index("idx_analytics_created_at").on(t.createdAt),
+  index("idx_analytics_page").on(t.page),
+]);
+
 // === Audit responses (Level 3) ===
 export const auditResponses = pgTable("audit_responses", {
   id: uuid("id").defaultRandom().primaryKey(),

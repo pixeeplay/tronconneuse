@@ -8,6 +8,13 @@
       "when": 1772799858621,
       "tag": "0000_faulty_the_anarchist",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1772818311395,
+      "tag": "0001_nosy_mister_sinister",
+      "breakpoints": true
     }
   ]
 }

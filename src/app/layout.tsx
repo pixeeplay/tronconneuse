@@ -1,13 +1,10 @@
 import type { Metadata, Viewport } from "next";
-import Script from "next/script";
 import { Geist, Geist_Mono } from "next/font/google";
 import { BottomNav } from "@/components/BottomNav";
 import { AuthProvider } from "@/components/AuthProvider";
 import { AppInit } from "@/components/AppInit";
+import { PageviewTracker } from "@/components/PageviewTracker";
 import "./globals.css";
-
-const plausibleDomain = process.env.NEXT_PUBLIC_PLAUSIBLE_DOMAIN;
-const plausibleScript = process.env.NEXT_PUBLIC_PLAUSIBLE_SCRIPT_URL || "https://plausible.io/js/script.js";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -77,21 +74,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr" className="dark">
-      <head>
-        {plausibleDomain && (
-          <Script
-            defer
-            data-domain={plausibleDomain}
-            src={plausibleScript}
-            strategy="afterInteractive"
-          />
-        )}
-      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-dvh flex items-center justify-center`}
       >
         <AuthProvider>
           <AppInit />
+          <PageviewTracker />
           <div className="mx-auto max-w-md w-full min-h-dvh lg:min-h-0 lg:h-[900px] lg:max-h-[90vh] lg:rounded-3xl lg:border lg:border-border lg:shadow-2xl lg:overflow-hidden flex flex-col relative">
             {children}
             <BottomNav />
