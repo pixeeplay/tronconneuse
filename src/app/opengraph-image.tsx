@@ -118,7 +118,7 @@ export default function OgImage() {
           >
             <span style={{ fontSize: 24, display: "flex" }}>📊</span>
             <span style={{ fontSize: 22, fontWeight: 700, color: "#F8FAFC", display: "flex" }}>
-              17 categories
+              16 catégories
             </span>
           </div>
           <div
