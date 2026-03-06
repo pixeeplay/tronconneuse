@@ -9,6 +9,10 @@ const withSerwist = withSerwistInit({
 const nextConfig: NextConfig = {
   output: "standalone",
   turbopack: {},
+  env: {
+    NEXT_PUBLIC_AUTH_GOOGLE: process.env.GOOGLE_CLIENT_ID ? "1" : "",
+    NEXT_PUBLIC_AUTH_GITHUB: process.env.GITHUB_ID ? "1" : "",
+  },
   async headers() {
     return [
       {

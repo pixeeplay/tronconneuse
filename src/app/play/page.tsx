@@ -161,7 +161,10 @@ function PlayPageContent() {
               checked={randomMode}
               onChange={(e) => {
                 setRandomMode(e.target.checked);
-                if (e.target.checked) setSelectedDeck(null);
+                if (e.target.checked) {
+                  setSelectedDeck(null);
+                  scrollRef.current?.scrollTo({ top: scrollRef.current.scrollHeight, behavior: "smooth" });
+                }
               }}
             />
           </label>
@@ -272,7 +275,11 @@ function PlayPageContent() {
               onSelect={() => {
                 setRandomMode(false);
                 setTooltip(null);
-                setSelectedDeck(selectedDeck === deck.id ? null : deck.id);
+                const newSelection = selectedDeck === deck.id ? null : deck.id;
+                setSelectedDeck(newSelection);
+                if (newSelection) {
+                  setTimeout(() => scrollRef.current?.scrollTo({ top: scrollRef.current!.scrollHeight, behavior: "smooth" }), 100);
+                }
               }}
             />
           ))}
@@ -304,7 +311,11 @@ function PlayPageContent() {
                   onSelect={() => {
                     setRandomMode(false);
                     setTooltip(null);
-                    setSelectedDeck(selectedDeck === deck.id ? null : deck.id);
+                    const newSelection = selectedDeck === deck.id ? null : deck.id;
+                    setSelectedDeck(newSelection);
+                    if (newSelection) {
+                      setTimeout(() => scrollRef.current?.scrollTo({ top: scrollRef.current!.scrollHeight, behavior: "smooth" }), 100);
+                    }
                   }}
                 />
               ))}

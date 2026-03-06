@@ -22,14 +22,18 @@ export const { handlers, auth, signIn, signOut } = NextAuth({
       }
     : {}),
   providers: [
-    Google({
-      clientId: process.env.GOOGLE_CLIENT_ID,
-      clientSecret: process.env.GOOGLE_CLIENT_SECRET,
-    }),
-    GitHub({
-      clientId: process.env.GITHUB_ID,
-      clientSecret: process.env.GITHUB_SECRET,
-    }),
+    ...(process.env.GOOGLE_CLIENT_ID && process.env.GOOGLE_CLIENT_SECRET
+      ? [Google({
+          clientId: process.env.GOOGLE_CLIENT_ID,
+          clientSecret: process.env.GOOGLE_CLIENT_SECRET,
+        })]
+      : []),
+    ...(process.env.GITHUB_ID && process.env.GITHUB_SECRET
+      ? [GitHub({
+          clientId: process.env.GITHUB_ID,
+          clientSecret: process.env.GITHUB_SECRET,
+        })]
+      : []),
   ],
   session: {
     strategy: db ? "database" : "jwt",

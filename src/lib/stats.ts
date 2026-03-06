@@ -112,8 +112,8 @@ export function getPlayerProfile(): PlayerProfile {
     level: 1,
     username: "",
   });
-  // Generate and persist a random username if none exists
-  if (!profile.username) {
+  // Generate and persist a random username if none exists or is a placeholder
+  if (!profile.username || profile.username === "username") {
     profile.username = generateUsername();
     setItem(PROFILE_KEY, profile);
   }
@@ -185,11 +185,25 @@ export function saveCompletedSession(session: Session): void {
     Math.round((stats.totalKeptBillions + stored.totalKeptBillions) * 10) / 10;
   stats.totalCutBillions =
     Math.round((stats.totalCutBillions + stored.totalCutBillions) * 10) / 10;
-  if (!stats.categoriesPlayed.includes(stored.deckId)) {
-    stats.categoriesPlayed.push(stored.deckId);
-  }
   if (!stats.sessionsPerDeck) stats.sessionsPerDeck = {};
-  stats.sessionsPerDeck[stored.deckId] = (stats.sessionsPerDeck[stored.deckId] || 0) + 1;
+  if (stored.deckId === "random") {
+    // For random sessions, track individual card categories
+    const cardDeckIds = [...new Set(session.votes.map((v) => {
+      const card = session.cards.find((c) => c.id === v.cardId);
+      return card?.deckId;
+    }).filter(Boolean))] as string[];
+    for (const dId of cardDeckIds) {
+      if (!stats.categoriesPlayed.includes(dId)) {
+        stats.categoriesPlayed.push(dId);
+      }
+      stats.sessionsPerDeck[dId] = (stats.sessionsPerDeck[dId] || 0) + 1;
+    }
+  } else {
+    if (!stats.categoriesPlayed.includes(stored.deckId)) {
+      stats.categoriesPlayed.push(stored.deckId);
+    }
+    stats.sessionsPerDeck[stored.deckId] = (stats.sessionsPerDeck[stored.deckId] || 0) + 1;
+  }
   if (stored.level === 3) {
     stats.auditsN3 += 1;
   }
@@ -260,6 +274,6 @@ export function updatePlayerAvatar(emoji: string): void {
 
 /** Get decks that have been played */
 export function getPlayedDeckIds(): string[] {
-  const sessions = getSessions();
-  return [...new Set(sessions.map((s) => s.deckId))];
+  const stats = getGlobalStats();
+  return stats.categoriesPlayed;
 }
