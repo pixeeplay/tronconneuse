@@ -4,7 +4,7 @@
 
 ---
 
-## Sprints termines (3-19) -- 98 items
+## Sprints termines (3-20) -- 108 items
 
 | Sprint | Objectif | Items |
 |--------|----------|-------|
@@ -19,6 +19,7 @@
 | 17 | Communaute donnees reelles + 5 bugfixes | 9 |
 | 18 | Sync multi-device + Analytics self-hosted + fix liens infos | 8 |
 | 19 | SEO-03 OG dynamique profil + UX-30 Leaderboard vitesse | 2 |
+| 20 | Landing page polish, SEO ouverture, onboarding fix | 10 |
 
 ---
 
@@ -59,7 +60,28 @@
 
 ---
 
-## Sprint 20 -- Conformite & Qualite (CRITIQUE)
+## Sprint 20 -- Landing page, SEO & Onboarding (DONE)
+
+**Objectif :** Refonte landing page, ouverture SEO, correction onboarding.
+
+| Ref | Priorite | Effort | Description | Statut |
+|-----|----------|--------|-------------|--------|
+| LP-01 | P1 | S | Landing ParisTeaser : line break, NicoQuiPaie lien rouge loupe | Done |
+| LP-02 | P1 | S | SourcesSection : liens cliquables _blank + icone externe sur acronymes | Done |
+| LP-03 | P1 | S | EcosystemSection : SVG icons (les-chiffres, le-feed, le-simulateur), centrage cards | Done |
+| LP-04 | P1 | S | AnimatedNumber : fix SSR (plus de 0), rAF + easeOutCubic, replay periodique | Done |
+| LP-05 | P1 | S | CategoriesSection : SVG icons pour 16 categories, pages /categories/[deckId] | Done |
+| BUG-02 | P0 | S | Fix deckId mismatch (accents) dans 88 cartes (defense, energie, etat, securite) | Done |
+| UX-35 | P1 | XS | Fix accents manquants (ranking, achievements, metadata layouts) | Done |
+| SEO-04 | P0 | XS | robots.txt : Allow + sitemap ; layout robots: index true | Done |
+| BUG-03 | P1 | XS | Fix onboarding non affiche : wiring useOnboarding + Onboarding dans /jeu | Done |
+| AUTH-01 | P1 | XS | Google OAuth : activation provider + env variables Coolify | Done |
+
+**Total Sprint 20 : 10 items -- DONE**
+
+---
+
+## Sprint 21 -- Conformite & Qualite (CRITIQUE)
 
 **Objectif :** Corriger les bloquants legaux, securite et qualite de base.
 
@@ -71,16 +93,15 @@
 | RGPD-01 | P0 | S | Anonymiser IP (dernier octet) + supprimer User-Agent brut dans analytics |
 | RGPD-02 | P0 | S | Page /privacy ou section dans /infos (politique de confidentialite) |
 | RGPD-03 | P0 | XS | Data retention : cron/endpoint pour purger analytics_events > 90 jours |
-| SEO-04 | P0 | XS | robots.txt : Allow + sitemap decommente ; layout robots: index true |
 | SEO-05 | P0 | S | Sitemap dynamique (sitemap.ts) incluant les 17 decks |
 | PERF-01 | P0 | XS | Supprimer deps inutilisees : radix-ui, @vercel/og, @use-gesture/react |
 | BUG-01 | P0 | XS | Fix archetype fallback (retourner archetype du bon niveau) |
 
-**Total Sprint 20 : 10 items**
+**Total Sprint 21 : 9 items**
 
 ---
 
-## Sprint 21 -- Securite & SEO (HAUTE)
+## Sprint 22 -- Securite & SEO (HAUTE)
 
 | Ref | Priorite | Effort | Description |
 |-----|----------|--------|-------------|
@@ -95,11 +116,11 @@
 | DB-02 | P1 | XS | sessions.userId : ajouter onDelete cascade |
 | DB-03 | P1 | XS | Ajouter statement_timeout (30s) au pool postgres |
 
-**Total Sprint 21 : 10 items**
+**Total Sprint 22 : 10 items**
 
 ---
 
-## Sprint 22 -- Accessibilite & UX (HAUTE)
+## Sprint 23 -- Accessibilite & UX (HAUTE)
 
 | Ref | Priorite | Effort | Description |
 |-----|----------|--------|-------------|
@@ -114,11 +135,11 @@
 | UX-33 | P2 | XS | Reset store dans handleQuitSession avant navigation |
 | UX-34 | P2 | S | Error boundaries par route (/profile, /ranking, /jeu/[deckId]) |
 
-**Total Sprint 22 : 10 items**
+**Total Sprint 23 : 10 items**
 
 ---
 
-## Sprint 23 -- Performance & Architecture (MOYENNE)
+## Sprint 24 -- Performance & Architecture (MOYENNE)
 
 | Ref | Priorite | Effort | Description |
 |-----|----------|--------|-------------|
@@ -133,11 +154,11 @@
 | ARCH-05 | P2 | XS | useShallow dans ResultScreen et useArchetype (coherence) |
 | ARCH-06 | P2 | XS | Mettre a jour README.md (330 cartes, Next.js 15, DB, Auth) |
 
-**Total Sprint 23 : 10 items**
+**Total Sprint 24 : 10 items**
 
 ---
 
-## Sprint 24 -- PWA & Resilience (MOYENNE)
+## Sprint 25 -- PWA & Resilience (MOYENNE)
 
 | Ref | Priorite | Effort | Description |
 |-----|----------|--------|-------------|
@@ -152,11 +173,11 @@
 | API-01 | P2 | S | Standardiser format reponse API ({ ok, data } partout) |
 | API-02 | P2 | XS | Index analytics_events(ip) pour dashboard unique visitors |
 
-**Total Sprint 24 : 10 items**
+**Total Sprint 25 : 10 items**
 
 ---
 
-## Sprint 25 -- Polish & Tests (BASSE)
+## Sprint 26 -- Polish & Tests (BASSE)
 
 | Ref | Priorite | Effort | Description |
 |-----|----------|--------|-------------|
@@ -166,12 +187,11 @@
 | RGPD-04 | P3 | S | Cookie consent banner (si exige par juridiction) |
 | SEC-06 | P3 | S | Valider cardId format + existence dans /api/sessions |
 | SEC-07 | P3 | S | CSRF tokens explicites sur endpoints POST |
-| UX-35 | P3 | S | Typo accents dans metadata play/ranking layouts |
 | UX-36 | P3 | S | OG images dynamiques pour pages /jeu/[deckId] |
 | PWA-06 | P3 | S | Background sync pour sessions offline (Periodic Sync API) |
 | DATA-01 | P3 | XS | Ajouter sourceUrl manquants dans france-europe.json (10 cartes) |
 
-**Total Sprint 25 : 10 items**
+**Total Sprint 26 : 10 items**
 
 ---
 

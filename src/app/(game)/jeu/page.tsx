@@ -2,10 +2,12 @@
 
 import { useState, useEffect, useRef, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
+import { AnimatePresence } from "framer-motion";
 import Image from "next/image";
 import decksData from "@/data";
 import { getPlayedDeckIds, getGlobalStats } from "@/lib/stats";
 import { track } from "@/lib/analytics";
+import { useOnboarding, Onboarding } from "@/components/Onboarding";
 import type { Deck } from "@/types";
 
 function RandomIcon({ size = 24, className }: { size?: number; className?: string }) {
@@ -43,6 +45,7 @@ const BUDGET_TARGETS = [5, 10, 15, 20, 30] as const;
 function PlayPageContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
+  const { showOnboarding, dismissOnboarding } = useOnboarding();
   const initialLevel = (Number(searchParams.get("level")) || 1) as 1 | 2 | 3;
   const [selectedDeck, setSelectedDeck] = useState<string | null>(null);
   const [randomMode, setRandomMode] = useState(false);
@@ -114,6 +117,10 @@ function PlayPageContent() {
 
   return (
     <div className="flex-1 flex flex-col overflow-hidden relative">
+      <AnimatePresence>
+        {showOnboarding && <Onboarding onDone={dismissOnboarding} />}
+      </AnimatePresence>
+
       {/* Header */}
       <div className="flex items-center p-4 justify-between sticky top-0 z-10 bg-background/90 backdrop-blur-md border-b border-border">
         <button

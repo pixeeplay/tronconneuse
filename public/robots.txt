@@ -1,5 +1,4 @@
 User-agent: *
-Disallow: /
+Allow: /
 
-# Dev environment — will be opened when moving to production domain
-# Sitemap: https://nicoquipaie.pixeeplay.fr/sitemap.xml
+Sitemap: https://nicoquipaie.pixeeplay.fr/sitemap.xml

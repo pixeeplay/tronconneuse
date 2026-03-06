@@ -23,7 +23,7 @@ const outfit = Outfit({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://nicoquipaie.pixeeplay.fr"),
-  title: "france-finances.com — Comprendre les finances publiques",
+  title: "\uD83C\uDDEB\uD83C\uDDF7 france-finances.com — Comprendre les finances publiques",
   description:
     "Explorez le budget de la France de manière interactive. 370 cartes, 16 catégories — Comprenez où vont vos impôts.",
   manifest: "/manifest.json",
@@ -32,8 +32,8 @@ export const metadata: Metadata = {
     apple: "/apple-touch-icon.png",
   },
   robots: {
-    index: false,
-    follow: false,
+    index: true,
+    follow: true,
   },
   appleWebApp: {
     capable: true,
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     title: "France Finances",
   },
   openGraph: {
-    title: "france-finances.com — Comprendre les finances publiques",
+    title: "\uD83C\uDDEB\uD83C\uDDF7 france-finances.com — Comprendre les finances publiques",
     description:
       "Explorez le budget de la France de manière interactive. 370 cartes de dépenses publiques à découvrir.",
     url: "https://nicoquipaie.pixeeplay.fr",
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "france-finances.com — Comprendre les finances publiques",
+    title: "\uD83C\uDDEB\uD83C\uDDF7 france-finances.com — Comprendre les finances publiques",
     description:
       "Explorez le budget de la France de manière interactive. 370 cartes de dépenses publiques.",
     images: ["/og-default.png"],
