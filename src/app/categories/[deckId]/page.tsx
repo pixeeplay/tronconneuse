@@ -20,6 +20,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${deck.icon} ${deck.name} — La Tronçonneuse de Poche`,
     description: deck.description,
+    alternates: {
+      canonical: `/categories/${deckId}`,
+    },
   };
 }
 

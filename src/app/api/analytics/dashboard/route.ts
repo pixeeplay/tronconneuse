@@ -2,18 +2,24 @@ import { NextRequest, NextResponse } from "next/server";
 import { db, isDbAvailable } from "@/db";
 import { analyticsEvents } from "@/db/schema";
 import { sql, gte, and } from "drizzle-orm";
+import { auth } from "@/auth";
 
 export const dynamic = "force-dynamic";
 
 /**
  * GET /api/analytics/dashboard?days=7
  * Returns aggregated analytics: pageviews, unique visitors, top events, top pages.
- * Protected by a simple API key (ANALYTICS_SECRET env var).
+ * Protected by NextAuth session, with ANALYTICS_SECRET as fallback for programmatic access.
  */
 export async function GET(request: NextRequest) {
-  // Simple auth: require ANALYTICS_SECRET header or query param
-  const secret = process.env.ANALYTICS_SECRET;
-  if (secret) {
+  // Primary auth: NextAuth session
+  const session = await auth();
+  if (!session?.user) {
+    // Fallback: ANALYTICS_SECRET header/query param (for cron jobs, programmatic access)
+    const secret = process.env.ANALYTICS_SECRET;
+    if (!secret) {
+      return NextResponse.json({ ok: false, error: "Unauthorized" }, { status: 401 });
+    }
     const provided =
       request.headers.get("x-analytics-secret") ??
       request.nextUrl.searchParams.get("secret");

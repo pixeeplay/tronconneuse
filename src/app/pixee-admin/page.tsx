@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
 
 interface DashboardData {
   period: { days: number; since: string };
@@ -13,33 +13,18 @@ interface DashboardData {
 }
 
 export default function AdminPage() {
-  const [secret, setSecret] = useState("");
   const [days, setDays] = useState(7);
   const [data, setData] = useState<DashboardData | null>(null);
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
-  const [authed, setAuthed] = useState(false);
 
-  // Persist secret in sessionStorage
-  useEffect(() => {
-    const stored = sessionStorage.getItem("pixee-admin-secret");
-    if (stored) {
-      setSecret(stored);
-      setAuthed(true);
-    }
-  }, []);
-
-  const fetchData = useCallback(async (s: string, d: number) => {
+  const fetchData = useCallback(async (d: number) => {
     setLoading(true);
     setError("");
     try {
-      const res = await fetch(`/api/analytics/dashboard?days=${d}`, {
-        headers: { "x-analytics-secret": s },
-      });
+      const res = await fetch(`/api/analytics/dashboard?days=${d}`);
       if (res.status === 401) {
-        setError("Cle invalide");
-        setAuthed(false);
-        sessionStorage.removeItem("pixee-admin-secret");
+        setError("Non autorise");
         setLoading(false);
         return;
       }
@@ -50,51 +35,16 @@ export default function AdminPage() {
       }
       const json = await res.json();
       setData(json);
-      setAuthed(true);
-      sessionStorage.setItem("pixee-admin-secret", s);
     } catch {
       setError("Erreur reseau");
     }
     setLoading(false);
   }, []);
 
-  // Auto-fetch on mount if already authed
+  // Auto-fetch on mount and when period changes
   useEffect(() => {
-    if (authed && secret) {
-      fetchData(secret, days);
-    }
-  }, [authed, days]); // eslint-disable-line react-hooks/exhaustive-deps
-
-  const handleLogin = (e: React.FormEvent) => {
-    e.preventDefault();
-    fetchData(secret, days);
-  };
-
-  if (!authed) {
-    return (
-      <div className="flex-1 flex items-center justify-center p-6">
-        <form onSubmit={handleLogin} className="w-full max-w-xs flex flex-col gap-4">
-          <h1 className="text-xl font-bold text-center">Admin Analytics</h1>
-          <input
-            type="password"
-            value={secret}
-            onChange={(e) => setSecret(e.target.value)}
-            placeholder="Cle d'acces"
-            className="w-full px-4 py-3 rounded-xl bg-card border border-border text-sm focus:outline-none focus:ring-2 focus:ring-primary"
-            autoFocus
-          />
-          {error && <p className="text-danger text-xs text-center">{error}</p>}
-          <button
-            type="submit"
-            disabled={loading || !secret}
-            className="px-4 py-3 rounded-xl bg-primary text-white font-semibold text-sm disabled:opacity-50"
-          >
-            {loading ? "..." : "Acceder"}
-          </button>
-        </form>
-      </div>
-    );
-  }
+    fetchData(days); // eslint-disable-line react-hooks/set-state-in-effect -- data fetch on mount
+  }, [days]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const maxEvents = data ? Math.max(...data.perDay.map((d) => d.count), 1) : 1;
 

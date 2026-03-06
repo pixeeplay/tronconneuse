@@ -49,7 +49,7 @@ export const verificationTokens = pgTable("verification_tokens", {
 // === Sessions ===
 export const sessions = pgTable("sessions", {
   id: uuid("id").primaryKey(), // client-generated UUID
-  userId: uuid("user_id").references(() => users.id),
+  userId: uuid("user_id").references(() => users.id, { onDelete: "cascade" }),
   deckId: text("deck_id").notNull(),
   level: smallint("level").notNull().default(1),
   archetypeId: text("archetype_id").notNull(),

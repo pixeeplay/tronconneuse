@@ -34,7 +34,7 @@ export async function GET() {
         lastArchetypeName: sql<string>`(array_agg(${sessions.archetypeName} order by ${sessions.createdAt} desc))[1]`,
       })
       .from(sessions)
-      .innerJoin(users, eq(sessions.userId, users.id))
+      .leftJoin(users, eq(sessions.userId, users.id))
       .groupBy(sessions.userId, users.name)
       .orderBy(desc(sql`sum(
         (${sessions.totalCards} * 10) + 50

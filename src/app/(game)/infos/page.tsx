@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { ChainsawIcon } from "@/components/ChainsawIcon";
 import { ReplayTutorialButton } from "@/components/ReplayTutorialButton";
 
@@ -168,7 +169,13 @@ export default function InfosPage() {
         </section>
 
         {/* Footer */}
-        <div className="px-4 py-6 text-center">
+        <div className="px-4 py-6 text-center flex flex-col gap-2">
+          <Link
+            href="/infos/confidentialite"
+            className="text-xs text-primary hover:underline"
+          >
+            Politique de confidentialit&eacute;
+          </Link>
           <p className="text-xs text-muted-foreground">
             Fait avec rigueur (et un peu de tronçonneuse).
           </p>

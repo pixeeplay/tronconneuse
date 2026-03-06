@@ -28,7 +28,7 @@ export async function GET() {
         totalCards: sql<number>`sum(${sessions.totalCards})::int`,
       })
       .from(sessions)
-      .innerJoin(users, eq(sessions.userId, users.id))
+      .leftJoin(users, eq(sessions.userId, users.id))
       .groupBy(sessions.userId, users.name)
       .having(sql`count(*) >= 3`)
       .orderBy(sql`sum(${sessions.totalDurationMs})::float / nullif(sum(${sessions.totalCards}), 0) asc`)

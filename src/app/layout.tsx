@@ -4,6 +4,7 @@ import { Outfit } from "next/font/google";
 import { AuthProvider } from "@/components/AuthProvider";
 import { AppInit } from "@/components/AppInit";
 import { PageviewTracker } from "@/components/PageviewTracker";
+import { JsonLd } from "@/components/JsonLd";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -30,6 +31,9 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.ico",
     apple: "/apple-touch-icon.png",
+  },
+  alternates: {
+    canonical: "/",
   },
   robots: {
     index: true,
@@ -80,6 +84,7 @@ export default function RootLayout({
   return (
     <html lang="fr" suppressHydrationWarning>
       <head>
+        <JsonLd />
         <script
           dangerouslySetInnerHTML={{
             __html: `(function(){try{if(window.matchMedia('(prefers-color-scheme:dark)').matches){document.documentElement.classList.add('dark')}}catch(e){}})()`,

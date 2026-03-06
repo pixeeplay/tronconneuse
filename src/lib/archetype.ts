@@ -86,5 +86,5 @@ export function determineArchetype(
 
   // Fallback: return a balanced archetype matching the current level
   const fallbackIds: Record<number, string> = { 1: "equilibriste", 2: "stratege", 3: "auditeur_rigoureux" };
-  return archetypes.find((a) => a.id === fallbackIds[level]) ?? archetypes[0];
+  return archetypes.find((a) => a.id === fallbackIds[level]) ?? archetypes.find((a) => a.level === level) ?? archetypes[0];
 }

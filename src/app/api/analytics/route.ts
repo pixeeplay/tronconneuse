@@ -36,11 +36,20 @@ function getClientIp(request: Request): string {
   return "unknown";
 }
 
+// Common bot patterns to filter from analytics
+const BOT_PATTERNS = /bot|crawl|spider|slurp|mediapartners|lighthouse|pagespeed|headless/i;
+
 /**
  * POST /api/analytics
  * Ingests analytics events in batches. Accepts up to 20 events per request.
  */
 export async function POST(request: Request) {
+  // Filter bots early, before rate limiting
+  const ua = request.headers.get("user-agent") ?? "";
+  if (BOT_PATTERNS.test(ua)) {
+    return NextResponse.json({ ok: true }); // silently skip bot traffic
+  }
+
   const ip = getClientIp(request);
   if (isRateLimited(ip)) {
     return NextResponse.json({ ok: false, error: "Too many requests" }, { status: 429 });
