@@ -51,6 +51,61 @@ export function jsonError(message: string, status: number = 500): NextResponse {
   );
 }
 
+// --- Categorized error responses ---
+
+type ErrorType = "validation" | "auth" | "forbidden" | "server";
+
+interface CategorizedErrorBody {
+  ok: false;
+  error: string;
+  type: ErrorType;
+  details?: unknown;
+}
+
+function categorizedError(
+  message: string,
+  type: ErrorType,
+  status: number,
+  details?: unknown,
+): NextResponse {
+  const body: CategorizedErrorBody = { ok: false, error: message, type };
+  if (details !== undefined) body.details = details;
+  return NextResponse.json(body, { status });
+}
+
+/**
+ * Returns a 400 validation error response.
+ * @param message - Error message (default: "Validation failed")
+ * @param details - Optional validation details (e.g. Zod issues)
+ */
+export function validationError(message = "Validation failed", details?: unknown): NextResponse {
+  return categorizedError(message, "validation", 400, details);
+}
+
+/**
+ * Returns a 401 authentication error response.
+ * @param message - Error message (default: "Not authenticated")
+ */
+export function authError(message = "Not authenticated"): NextResponse {
+  return categorizedError(message, "auth", 401);
+}
+
+/**
+ * Returns a 403 forbidden error response.
+ * @param message - Error message (default: "Forbidden")
+ */
+export function forbiddenError(message = "Forbidden"): NextResponse {
+  return categorizedError(message, "forbidden", 403);
+}
+
+/**
+ * Returns a 500 server error response.
+ * @param message - Error message (default: "Internal server error")
+ */
+export function serverError(message = "Internal server error"): NextResponse {
+  return categorizedError(message, "server", 500);
+}
+
 // --- Rate limiter (in-memory, per-process) ---
 
 interface RateLimitEntry {

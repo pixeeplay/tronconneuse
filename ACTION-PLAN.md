@@ -1,6 +1,6 @@
 # Plan d'Action -- La Tronconneuse de Poche
 
-**Derniere mise a jour :** 2026-03-07 (Sprint 31)
+**Derniere mise a jour :** 2026-03-07 (Sprint 32)
 
 ---
 
@@ -15,8 +15,8 @@
 | Achievements generaux | 12                                           |
 | Tests                 | 248 unit + 8 E2E (Vitest + Playwright)       |
 | Coverage              | 87% lines (v8, scope: lib/stores/hooks/data) |
-| Sprints               | 31b (234 items completes)                    |
-| Audit multi-agents    | 136 findings -- 40 resolus Sprint 31+31b     |
+| Sprints               | 32 (251 items completes)                     |
+| Audit multi-agents    | 136 findings -- 57 resolus Sprint 31-32      |
 
 ---
 
@@ -48,6 +48,7 @@
 | 30     | Tests E2E Playwright + audit multi-agents 15 domaines             | 4     |
 | 31     | Sprint P0+P1: securite, a11y, perf, DB, tests, CI, UX (7 agents)  | 36    |
 | 31b    | Coverage 75% + 123 tests lib/hooks + E2E L2/L3 (3 agents)         | 4     |
+| 32     | P2 batch: a11y, UX, landing RSC, SEO, DB, deps, tests (6 agents)  | 17    |
 
 ---
 
@@ -68,7 +69,7 @@
 | ~~PERF-08~~ | Perf     | framer-motion: documente LazyMotion/domAnimation TODO | Fait    |
 | ~~DEP-04~~  | Deps     | zod: ajoute dans dependencies                         | Fait    |
 
-### P1 -- Haute priorite (33 items -- 27 resolus Sprint 31+31b, 6 restants)
+### P1 -- Haute priorite (33 items -- 30 resolus Sprint 31-32, 3 restants)
 
 #### Securite & Erreurs (8 items -- 6 resolus)
 
@@ -103,17 +104,17 @@
 | ~~CI-03~~ | Dockerfile: HEALTHCHECK via node http (plus de wget) | Fait   |
 | ~~CI-08~~ | .dockerignore: .env\* .github .husky ajoutes         | Fait   |
 
-#### Performance & UI (7 items -- 4 resolus)
+#### Performance & UI (7 items -- 7 resolus, TOUS)
 
-| Ref         | Description                                                 | Statut    |
-| ----------- | ----------------------------------------------------------- | --------- |
-| ~~PERF-09~~ | HeroSection: doit rester client (hooks + framer-motion)     | Documente |
-| PERF-10     | Landing: convertir composants client inutiles en RSC        | Reste     |
-| UX-31       | RadarChart: remplacer couleurs hardcodees par CSS variables | Reste     |
-| UX-32       | Landing: harmoniser text-slate-\* avec CSS variables        | Reste     |
-| ~~UX-33~~   | AuditReport: emoji remplaces par SVG icons                  | Fait      |
-| ~~UX-34~~   | Classement: loading skeleton ajoute                         | Fait      |
-| ~~A11Y-05~~ | info color: blue-500 -> blue-400 (6.2:1 contraste)          | Fait      |
+| Ref         | Description                                             | Statut    |
+| ----------- | ------------------------------------------------------- | --------- |
+| ~~PERF-09~~ | HeroSection: doit rester client (hooks + framer-motion) | Documente |
+| ~~PERF-10~~ | Landing: KeyNumbers converti en RSC                     | Fait      |
+| ~~UX-31~~   | RadarChart: couleurs CSS variables (color-mix)          | Fait      |
+| ~~UX-32~~   | Landing: 8 composants harmonises text-muted-foreground  | Fait      |
+| ~~UX-33~~   | AuditReport: emoji remplaces par SVG icons              | Fait      |
+| ~~UX-34~~   | Classement: loading skeleton ajoute                     | Fait      |
+| ~~A11Y-05~~ | info color: blue-500 -> blue-400 (6.2:1 contraste)      | Fait      |
 
 #### SEO & State (4 items -- TOUS resolus)
 
@@ -141,53 +142,53 @@
 
 #### Accessibilite & UX (12 items)
 
-| Ref     | Description                                           | Effort |
-| ------- | ----------------------------------------------------- | ------ |
-| A11Y-02 | Audit contrastes global: rehausser muted text         | M      |
-| A11Y-06 | ResultScreen: ajouter aria-label bouton partager      | XS     |
-| A11Y-07 | Onboarding: ajouter aria-live sur slides              | XS     |
-| A11Y-08 | Avatar picker: ajouter aria-label sur emoji buttons   | XS     |
-| A11Y-09 | jeu/page.tsx: ajouter texte alternatif sur lock emoji | XS     |
-| A11Y-10 | Confetti: ajouter prefers-reduced-motion check        | XS     |
-| UX-35   | Profile: ajouter ProfileHeaderSkeleton                | S      |
-| UX-36   | CardDetail desktop: ajouter lg:rounded-3xl            | XS     |
-| UX-37   | Avatar picker: max-w-[90vw] pour mobile < 384px       | XS     |
-| UX-38   | HeroSection: corriger alt="" image vide               | XS     |
-| SEO-08  | Ajouter canonical manquants sur pages dynamiques      | S      |
-| SEO-09  | Meta description specifique par page categorie        | S      |
+| Ref         | Description                                       | Effort  |
+| ----------- | ------------------------------------------------- | ------- |
+| A11Y-02     | Audit contrastes global: rehausser muted text     | M       |
+| ~~A11Y-06~~ | ResultScreen: aria-label deja present             | Deja OK |
+| ~~A11Y-07~~ | Onboarding: aria-live polite + role group slides  | Fait    |
+| ~~A11Y-08~~ | Avatar picker: aria-label sur emoji buttons       | Fait    |
+| ~~A11Y-09~~ | jeu/page.tsx: sr-only texte alternatif lock emoji | Fait    |
+| ~~A11Y-08~~ | Confetti: useReducedMotion skip animation         | Fait    |
+| ~~UX-35~~   | Profile: loading.tsx skeleton (animate-pulse)     | Fait    |
+| UX-36       | CardDetail desktop: ajouter lg:rounded-3xl        | Reste   |
+| ~~UX-37~~   | Avatar picker: max-w-[90vw] mobile < 384px        | Fait    |
+| ~~UX-38~~   | HeroSection: role=presentation image decorative   | Fait    |
+| ~~SEO-08~~  | Canonical URLs sur 3 pages dynamiques             | Fait    |
+| ~~SEO-09~~  | Meta description dynamique par categorie          | Fait    |
 
 #### CSS/Tailwind (11 items)
 
-| Ref     | Description                                                | Effort |
-| ------- | ---------------------------------------------------------- | ------ |
-| CSS-01  | Creer shadow tokens Tailwind (shadow-card, shadow-glow-\*) | S      |
-| CSS-02  | ResultScreen: extraire glow colors en tokens               | S      |
-| CSS-03  | Remplacer rounded-[1.5rem]/rounded-[32px] par tokens       | XS     |
-| CSS-04  | Standardiser text-[Xpx] vers echelle Tailwind              | S      |
-| CSS-05  | Evaluer suppression tw-animate-css (peu utilise)           | S      |
-| CSS-06  | Harmoniser HSL/hex dans variables couleur                  | S      |
-| CSS-07  | Consolider .hide-scrollbar et .scrollbar-hide              | XS     |
-| CSS-08  | Extraire magic values framer-motion en constantes          | S      |
-| PERF-11 | tw-animate-css: supprimer si inutile (~50KB)               | S      |
-| PWA-07  | Manifest: corriger tailles icons declarees                 | XS     |
-| PWA-08  | Utiliser useInstallPrompt dans un composant UI             | S      |
-| DEP-02  | Supprimer shadcn CLI (dependance morte)                    | XS     |
-| DEP-05  | Supprimer lucide-react inutilise (~150KB gzipped)          | XS     |
+| Ref        | Description                                                | Effort |
+| ---------- | ---------------------------------------------------------- | ------ |
+| CSS-01     | Creer shadow tokens Tailwind (shadow-card, shadow-glow-\*) | S      |
+| CSS-02     | ResultScreen: extraire glow colors en tokens               | S      |
+| CSS-03     | Remplacer rounded-[1.5rem]/rounded-[32px] par tokens       | XS     |
+| CSS-04     | Standardiser text-[Xpx] vers echelle Tailwind              | S      |
+| CSS-05     | Evaluer suppression tw-animate-css (peu utilise)           | S      |
+| CSS-06     | Harmoniser HSL/hex dans variables couleur                  | S      |
+| CSS-07     | Consolider .hide-scrollbar et .scrollbar-hide              | XS     |
+| CSS-08     | Extraire magic values framer-motion en constantes          | S      |
+| PERF-11    | tw-animate-css: supprimer si inutile (~50KB)               | S      |
+| PWA-07     | Manifest: corriger tailles icons declarees                 | XS     |
+| PWA-08     | Utiliser useInstallPrompt dans un composant UI             | S      |
+| ~~DEP-02~~ | Supprimer shadcn CLI (dependance morte)                    | Fait   |
+| ~~DEP-02~~ | Supprimer lucide-react inutilise (~150KB gzipped)          | Fait   |
 
 #### Tests & DB (10 items)
 
-| Ref      | Description                                              | Effort |
-| -------- | -------------------------------------------------------- | ------ |
-| TEST-16  | E2E: remplacer selecteurs text regex par data-testid     | M      |
-| TEST-17  | Tests: ameliorer mocks framer-motion (tester drag logic) | M      |
-| TEST-18  | Tests: couvrir XP bonus (speedrunner, L3, budget)        | S      |
-| TEST-20  | Tests: couvrir routes API (analytics, me/_, community/_) | L      |
-| STATE-02 | ResultScreen: optimiser selectors Zustand (useShallow)   | S      |
-| STATE-03 | sessionStorage: valider schema au chargement             | S      |
-| STATE-04 | SwipeStack: deplacer side effect hors du render          | S      |
-| DB-06    | PostgreSQL: configurer VACUUM/ANALYZE schedule           | S      |
-| DB-07    | Connection pool: ajouter monitoring (log slow queries)   | S      |
-| ERR-05   | API routes: categoriser erreurs (validation/auth/server) | S      |
+| Ref         | Description                                              | Effort |
+| ----------- | -------------------------------------------------------- | ------ |
+| TEST-16     | E2E: remplacer selecteurs text regex par data-testid     | M      |
+| ~~TEST-17~~ | Tests: mocks framer-motion ameliores (drag props)        | Fait   |
+| TEST-18     | Tests: couvrir XP bonus (speedrunner, L3, budget)        | S      |
+| TEST-20     | Tests: couvrir routes API (analytics, me/_, community/_) | L      |
+| STATE-02    | ResultScreen: optimiser selectors Zustand (useShallow)   | S      |
+| STATE-03    | sessionStorage: valider schema au chargement             | S      |
+| STATE-04    | SwipeStack: deplacer side effect hors du render          | S      |
+| ~~DB-06~~   | PostgreSQL: maintenance.sql autovacuum config            | Fait   |
+| ~~DB-07~~   | Connection pool: slow query logging (500ms threshold)    | Fait   |
+| ~~ERR-05~~  | API routes: validationError/authError/serverError        | Fait   |
 
 ### P3 -- Basse priorite (39 items)
 
@@ -272,4 +273,4 @@ Detail complet dans [AUDIT-REPORT.md](AUDIT-REPORT.md).
 
 ---
 
-_Rapport genere le 2026-03-07 -- Sprints 3 a 31, 230 items completes, P0 100% resolus, P1 79% resolus_
+_Rapport genere le 2026-03-07 -- Sprints 3 a 32, 251 items completes, P0 100% resolus, P1 91% resolus_

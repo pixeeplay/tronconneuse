@@ -3,7 +3,7 @@ import { timingSafeEqual } from "crypto";
 import { db, isDbAvailable } from "@/db";
 import { analyticsEvents } from "@/db/schema";
 import { lt } from "drizzle-orm";
-import { dbUnavailableResponse, jsonOk, jsonError } from "@/lib/api-utils";
+import { dbUnavailableResponse, jsonOk, authError, serverError } from "@/lib/api-utils";
 
 export const dynamic = "force-dynamic";
 
@@ -24,7 +24,7 @@ export async function DELETE(request: NextRequest) {
       provided.length !== secret.length ||
       !timingSafeEqual(Buffer.from(provided), Buffer.from(secret))
     ) {
-      return jsonError("Unauthorized", 401);
+      return authError("Unauthorized");
     }
   }
 
@@ -49,6 +49,6 @@ export async function DELETE(request: NextRequest) {
     });
   } catch (error) {
     console.error("[DELETE /api/analytics/purge]", error instanceof Error ? error.message : error);
-    return jsonError("Database error");
+    return serverError("Database error");
   }
 }

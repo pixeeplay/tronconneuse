@@ -40,7 +40,7 @@ export function HeroSection() {
               className="inline-flex items-center gap-3 bg-landing-primary text-white font-heading font-bold text-lg px-10 h-14 rounded-2xl shadow-lg hover-lift hover:bg-landing-primary-light transition-all active:scale-95"
             >
               Jouer &agrave; Budget Swipe
-              <Image src="/chainsaw.svg" alt="" width={24} height={24} className="invert" />
+              <Image src="/chainsaw.svg" alt="" role="presentation" width={24} height={24} className="invert" />
             </Link>
             <a
               href="#categories"

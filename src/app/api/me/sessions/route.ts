@@ -2,7 +2,7 @@ import { auth } from "@/auth";
 import { db } from "@/db";
 import { sessions, votes } from "@/db/schema";
 import { eq, desc, sql } from "drizzle-orm";
-import { withDbCheck, jsonOk, jsonError } from "@/lib/api-utils";
+import { withDbCheck, jsonOk, authError, serverError } from "@/lib/api-utils";
 
 export const dynamic = "force-dynamic";
 
@@ -13,7 +13,7 @@ export const dynamic = "force-dynamic";
 export async function GET() {
   const session = await auth();
   if (!session?.user?.id) {
-    return jsonError("Not authenticated", 401);
+    return authError();
   }
 
   const unavailable = withDbCheck();
@@ -91,6 +91,6 @@ export async function GET() {
     return jsonOk({ sessions: result });
   } catch (error) {
     console.error("[GET /api/me/sessions]", error instanceof Error ? error.message : error);
-    return jsonError("Database error");
+    return serverError("Database error");
   }
 }

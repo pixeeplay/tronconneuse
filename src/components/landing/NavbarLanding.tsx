@@ -43,18 +43,18 @@ export function NavbarLanding() {
 
           {/* Desktop nav */}
           <nav className="hidden md:flex items-center gap-8">
-            <Link href="/#chiffres" className="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-colors">
+            <Link href="/#chiffres" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               Chiffres cl&eacute;s
             </Link>
-            <Link href="/#comment-ca-marche" className="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-colors">
+            <Link href="/#comment-ca-marche" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               Comment &ccedil;a marche
             </Link>
-            <Link href="/#categories" className="text-sm font-medium text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-colors">
+            <Link href="/#categories" className="text-sm font-medium text-muted-foreground hover:text-foreground transition-colors">
               Cat&eacute;gories
             </Link>
             <button
               onClick={toggleTheme}
-              className="w-9 h-9 flex items-center justify-center rounded-full text-slate-600 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
+              className="w-9 h-9 flex items-center justify-center rounded-full text-muted-foreground hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
               aria-label={isDark ? "Mode clair" : "Mode sombre"}
             >
               {isDark ? (
@@ -88,7 +88,7 @@ export function NavbarLanding() {
           <div className="md:hidden flex items-center gap-1">
             <button
               onClick={toggleTheme}
-              className="w-10 h-10 flex items-center justify-center text-slate-700 dark:text-slate-300"
+              className="w-10 h-10 flex items-center justify-center text-foreground"
               aria-label={isDark ? "Mode clair" : "Mode sombre"}
             >
               {isDark ? (
@@ -111,7 +111,7 @@ export function NavbarLanding() {
             </button>
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
-              className="w-10 h-10 flex items-center justify-center text-slate-700 dark:text-slate-300"
+              className="w-10 h-10 flex items-center justify-center text-foreground"
               aria-label="Menu"
             >
               {mobileOpen ? (
@@ -135,21 +135,21 @@ export function NavbarLanding() {
             <Link
               href="/#chiffres"
               onClick={() => setMobileOpen(false)}
-              className="py-2 text-sm font-medium text-slate-600 dark:text-slate-400"
+              className="py-2 text-sm font-medium text-muted-foreground"
             >
               Chiffres cl&eacute;s
             </Link>
             <Link
               href="/#comment-ca-marche"
               onClick={() => setMobileOpen(false)}
-              className="py-2 text-sm font-medium text-slate-600 dark:text-slate-400"
+              className="py-2 text-sm font-medium text-muted-foreground"
             >
               Comment &ccedil;a marche
             </Link>
             <Link
               href="/#categories"
               onClick={() => setMobileOpen(false)}
-              className="py-2 text-sm font-medium text-slate-600 dark:text-slate-400"
+              className="py-2 text-sm font-medium text-muted-foreground"
             >
               Cat&eacute;gories
             </Link>

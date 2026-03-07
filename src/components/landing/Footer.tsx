@@ -10,10 +10,10 @@ export function Footer() {
               <Image src="/france.svg" alt="France" width={24} height={24} />
               <span>france-finances<span className="text-landing-expense">.com</span></span>
             </div>
-            <p className="text-xs text-slate-500 dark:text-slate-400">
+            <p className="text-xs text-muted-foreground">
               Comprendre les finances publiques de mani&egrave;re interactive et accessible.
             </p>
-            <p className="text-xs text-landing-primary dark:text-slate-300 font-heading font-semibold mt-1">
+            <p className="text-xs text-landing-primary dark:text-foreground font-heading font-semibold mt-1">
               Chaque Euro compte. Chaque citoyen aussi.
             </p>
           </div>
@@ -38,7 +38,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="text-center text-xs text-slate-400 dark:text-slate-500 mt-8">
+        <div className="text-center text-xs text-muted-foreground mt-8">
           <p>
             Fait avec rigueur, un peu de tronçonneuse et ❤️ par{" "}
             <a

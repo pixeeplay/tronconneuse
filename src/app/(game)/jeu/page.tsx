@@ -271,7 +271,7 @@ function PlayPageContent() {
               >
                 <span className="flex items-center gap-1">
                   {opt.label}
-                  {opt.locked && <span className="text-xs">&#128683;</span>}
+                  {opt.locked && <><span className="text-xs" aria-hidden="true">&#128683;</span><span className="sr-only">verrouillé</span></>}
                 </span>
               </button>
             ))}
@@ -284,7 +284,7 @@ function PlayPageContent() {
               <div className="absolute left-1/2 -translate-x-1/2 top-full -mt-1 z-20 pointer-events-none">
                 <div className="bg-slate-900 border border-primary/40 rounded-xl px-4 py-3 shadow-2xl shadow-black/60 text-center min-w-[200px]">
                   <p className="text-sm font-bold text-slate-100 mb-1">
-                    &#128683; {opt.label} verrouillé
+                    <span aria-hidden="true">&#128683;</span> {opt.label} verrouillé
                   </p>
                   <p className="text-xs text-slate-400 mb-2">
                     Déblocage : {opt.unlockHint}
@@ -343,7 +343,7 @@ function PlayPageContent() {
               </span>
               {!thematicsUnlocked && (
                 <span className="text-[10px] text-muted-foreground ml-auto">
-                  &#128274; {mainCategoriesPlayed}/{THEMATIC_UNLOCK_CATEGORIES} catégories
+                  <span aria-hidden="true">&#128274;</span> <span className="sr-only">Verrouillé,</span>{mainCategoriesPlayed}/{THEMATIC_UNLOCK_CATEGORIES} catégories
                 </span>
               )}
             </div>

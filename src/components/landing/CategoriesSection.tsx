@@ -12,7 +12,7 @@ export function CategoriesSection() {
         <h2 className="font-heading font-bold text-2xl md:text-3xl text-center mb-2 text-landing-primary dark:text-white">
           Explorer les cat&eacute;gories
         </h2>
-        <p className="text-center text-slate-500 dark:text-slate-400 mb-10 text-sm md:text-base">
+        <p className="text-center text-muted-foreground mb-10 text-sm md:text-base">
           {mainDecks.length} cat&eacute;gories de d&eacute;penses publiques &agrave; passer &agrave; la tron&ccedil;onneuse
         </p>
 
@@ -57,10 +57,10 @@ function CategoryCard({ deck }: { deck: Deck }) {
       ) : (
         <span className="text-3xl">{deck.icon}</span>
       )}
-      <span className="text-sm font-semibold text-slate-900 dark:text-slate-50 leading-tight">
+      <span className="text-sm font-semibold text-foreground leading-tight">
         {deck.name}
       </span>
-      <span className="text-xs text-slate-500 dark:text-slate-400">
+      <span className="text-xs text-muted-foreground">
         {deck.cardCount} cartes
       </span>
     </Link>

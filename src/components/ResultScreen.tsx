@@ -7,6 +7,7 @@ import { useArchetype } from "@/hooks/useArchetype";
 import { ChainsawIcon } from "./ChainsawIcon";
 import { ShieldIcon } from "./ShieldIcon";
 import { track } from "@/lib/analytics";
+import { useReducedMotion } from "framer-motion";
 import dynamic from "next/dynamic";
 const RadarChart = dynamic(() => import("./RadarChart").then((m) => m.RadarChart), {
   ssr: false,
@@ -35,7 +36,8 @@ export function ResultScreen() {
   const session = useGameStore((s) => s.session);
   const reset = useGameStore((s) => s.reset);
   const { archetype, stats } = useArchetype();
-  const [showConfetti, setShowConfetti] = useState(true);
+  const prefersReducedMotion = useReducedMotion();
+  const [showConfetti, setShowConfetti] = useState(!prefersReducedMotion);
   const [shareCopied, setShareCopied] = useState(false);
   const level = session?.level ?? 1;
   const isBudgetMode = session?.gameMode === "budget";

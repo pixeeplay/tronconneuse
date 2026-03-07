@@ -48,7 +48,7 @@ export function ParisTeaser() {
           Budget Swipe arrive pour{" "}
           <span className="text-landing-expense">Paris</span>.
         </h2>
-        <p className="text-slate-500 dark:text-slate-400 mb-8 leading-relaxed">
+        <p className="text-muted-foreground mb-8 leading-relaxed">
           11 Md&euro; de budget municipal &agrave; passer &agrave; la tron&ccedil;onneuse.
           <br />
           Pistes cyclables, JO, propret&eacute;, logement social...
@@ -66,7 +66,7 @@ export function ParisTeaser() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="votre@email.com"
-              className="flex-1 h-12 px-5 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-slate-50 text-sm focus:outline-none focus:ring-2 focus:ring-landing-primary/30"
+              className="flex-1 h-12 px-5 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-landing-primary/30"
             />
             <button
               type="submit"
@@ -84,9 +84,9 @@ export function ParisTeaser() {
           </p>
         )}
 
-        <p className="text-sm text-slate-400 dark:text-slate-500">
+        <p className="text-sm text-muted-foreground">
           Prochaines villes :{" "}
-          <span className="font-medium text-slate-600 dark:text-slate-300">
+          <span className="font-medium text-foreground">
             Lyon &middot; Marseille &middot; Toulouse &middot; Bordeaux
           </span>
         </p>

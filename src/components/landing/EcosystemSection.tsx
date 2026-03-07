@@ -29,7 +29,7 @@ export function EcosystemSection() {
           Avec{" "}
           <a href="https://nicoquipaie.co" target="_blank" rel="noopener noreferrer" className="text-landing-expense hover:scale-110 inline-block transition-transform">NicoQuiPaie</a>
         </h2>
-        <p className="text-center text-slate-500 dark:text-slate-400 mb-10 text-sm md:text-base">
+        <p className="text-center text-muted-foreground mb-10 text-sm md:text-base">
           La communaut&eacute; open-source pour tron&ccedil;onner les d&eacute;penses publiques
         </p>
 
@@ -45,12 +45,12 @@ export function EcosystemSection() {
               <div className="mb-4 flex justify-center">
                 <Image src={item.image} alt={item.title} width={48} height={48} />
               </div>
-              <h3 className="font-heading font-bold text-lg text-slate-900 dark:text-slate-50 mb-2 flex items-center justify-center gap-2">
+              <h3 className="font-heading font-bold text-lg text-foreground mb-2 flex items-center justify-center gap-2">
                 {item.title}
                 <svg
                   width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                   strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
-                  className="text-slate-400 dark:text-slate-500 opacity-0 group-hover:opacity-100 transition-opacity"
+                  className="text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity"
                   aria-hidden="true"
                 >
                   <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
@@ -58,7 +58,7 @@ export function EcosystemSection() {
                   <line x1="10" y1="14" x2="21" y2="3" />
                 </svg>
               </h3>
-              <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+              <p className="text-sm text-muted-foreground leading-relaxed">
                 {item.description}
               </p>
             </a>

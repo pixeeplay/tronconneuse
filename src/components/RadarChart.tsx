@@ -3,6 +3,10 @@
 /**
  * Radar chart comparing player's votes to community average.
  * Displays a polygon SVG with N axes (one per category).
+ *
+ * Colors reference CSS custom properties from globals.css:
+ *   --primary (emerald in dark mode)
+ *   --color-community (slate-400)
  */
 
 interface RadarAxis {
@@ -136,16 +140,16 @@ export function RadarChart({ axes, size = 220 }: RadarChartProps) {
           {/* Community polygon (grey, behind) */}
           <polygon
             points={communityPoints}
-            fill="rgba(148, 163, 184, 0.15)"
-            stroke="#94a3b8"
+            fill="color-mix(in srgb, var(--color-community) 15%, transparent)"
+            stroke="var(--color-community)"
             strokeWidth="0.8"
           />
 
           {/* Player polygon (primary, on top) */}
           <polygon
             points={playerPoints}
-            fill="rgba(16, 185, 129, 0.2)"
-            stroke="#10B981"
+            fill="color-mix(in srgb, var(--primary) 20%, transparent)"
+            stroke="var(--primary)"
             strokeWidth="1.5"
           />
 
@@ -160,7 +164,7 @@ export function RadarChart({ axes, size = 220 }: RadarChartProps) {
                 cx={x}
                 cy={y}
                 r="1.5"
-                fill="#10B981"
+                fill="var(--primary)"
                 stroke="white"
                 strokeWidth="0.5"
               />
@@ -176,8 +180,8 @@ export function RadarChart({ axes, size = 220 }: RadarChartProps) {
           <span className="text-xs text-muted-foreground">Toi</span>
         </div>
         <div className="flex items-center gap-2">
-          <div className="w-3 h-3 rounded-full bg-slate-500" />
-          <span className="text-xs text-muted-foreground">Communauté</span>
+          <div className="w-3 h-3 rounded-full bg-community" />
+          <span className="text-xs text-muted-foreground">{`Communaut\u00e9`}</span>
         </div>
       </div>
     </div>

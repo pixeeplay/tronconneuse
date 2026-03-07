@@ -4,12 +4,31 @@ import { useSession, signIn, signOut } from "next-auth/react";
 import Image from "next/image";
 import { updatePlayerAvatar, type PlayerProfile } from "@/lib/stats";
 
-const AVATAR_EMOJIS = [
-  "\uD83D\uDC64", "\uD83E\uDD8A", "\uD83E\uDD85", "\uD83D\uDC3A", "\uD83E\uDD81",
-  "\uD83D\uDC2F", "\uD83D\uDC3B", "\uD83E\uDD8C", "\uD83E\uDD88", "\uD83D\uDC09",
-  "\uD83E\uDD89", "\uD83E\uDD87", "\uD83D\uDC0D", "\uD83E\uDD85", "\uD83D\uDC3C",
-  "\uD83D\uDE80", "\u2694\uFE0F", "\uD83D\uDEE1\uFE0F", "\uD83C\uDFAF", "\uD83D\uDD25",
-  "\u2702\uFE0F", "\uD83D\uDCCA", "\uD83D\uDCB0", "\uD83C\uDFF4\u200D\u2620\uFE0F",
+const AVATAR_EMOJIS: { emoji: string; label: string }[] = [
+  { emoji: "\uD83D\uDC64", label: "Silhouette" },
+  { emoji: "\uD83E\uDD8A", label: "Renard" },
+  { emoji: "\uD83E\uDD85", label: "Aigle" },
+  { emoji: "\uD83D\uDC3A", label: "Loup" },
+  { emoji: "\uD83E\uDD81", label: "Lion" },
+  { emoji: "\uD83D\uDC2F", label: "Tigre" },
+  { emoji: "\uD83D\uDC3B", label: "Ours" },
+  { emoji: "\uD83E\uDD8C", label: "Cerf" },
+  { emoji: "\uD83E\uDD88", label: "Requin" },
+  { emoji: "\uD83D\uDC09", label: "Dragon" },
+  { emoji: "\uD83E\uDD89", label: "Hibou" },
+  { emoji: "\uD83E\uDD87", label: "Chauve-souris" },
+  { emoji: "\uD83D\uDC0D", label: "Serpent" },
+  { emoji: "\uD83E\uDD85", label: "Aigle royal" },
+  { emoji: "\uD83D\uDC3C", label: "Panda" },
+  { emoji: "\uD83D\uDE80", label: "Fusée" },
+  { emoji: "\u2694\uFE0F", label: "Épées" },
+  { emoji: "\uD83D\uDEE1\uFE0F", label: "Bouclier" },
+  { emoji: "\uD83C\uDFAF", label: "Cible" },
+  { emoji: "\uD83D\uDD25", label: "Feu" },
+  { emoji: "\u2702\uFE0F", label: "Ciseaux" },
+  { emoji: "\uD83D\uDCCA", label: "Graphique" },
+  { emoji: "\uD83D\uDCB0", label: "Sac d'argent" },
+  { emoji: "\uD83C\uDFF4\u200D\u2620\uFE0F", label: "Drapeau pirate" },
 ];
 
 const tabs = ["Vue d'ensemble", "Mesures Détaillées", "Journal"] as const;
@@ -69,12 +88,12 @@ export function ProfileHeader({
             &#9998;
           </div>
           {showAvatarPicker && (
-            <div className="absolute top-full left-0 mt-2 z-50 bg-card border border-border rounded-xl p-3 shadow-2xl w-56">
+            <div className="absolute top-full left-0 mt-2 z-50 bg-card border border-border rounded-xl p-3 shadow-2xl w-56 max-w-[90vw]">
               <p className="text-[10px] font-bold text-muted-foreground uppercase mb-2">
                 Choisis ton avatar
               </p>
               <div className="grid grid-cols-6 gap-1.5">
-                {AVATAR_EMOJIS.map((emoji, i) => (
+                {AVATAR_EMOJIS.map(({ emoji, label }, i) => (
                   <button
                     key={i}
                     onClick={(e) => {
@@ -83,9 +102,10 @@ export function ProfileHeader({
                       setProfile((p) => p ? { ...p, customAvatar: emoji } : p);
                       setShowAvatarPicker(false);
                     }}
+                    aria-label={`Avatar ${label}`}
                     className="w-8 h-8 rounded-lg hover:bg-primary/20 flex items-center justify-center text-lg transition-colors"
                   >
-                    {emoji}
+                    <span aria-hidden="true">{emoji}</span>
                   </button>
                 ))}
               </div>

@@ -17,9 +17,14 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { deckId } = await params;
   const deck = decksData.decks.find((d) => d.id === deckId);
   if (!deck) return {};
+
+  const cards = decksData.cards.filter((c) => c.deckId === deckId);
+  const totalBillions = cards.reduce((sum, c) => sum + c.amountBillions, 0);
+  const description = `Découvrez les dépenses publiques françaises en ${deck.name} : ${cards.length} postes budgétaires pour ${totalBillions.toFixed(1)} Md€. ${deck.description}. Données PLF 2025-2026.`;
+
   return {
     title: `${deck.icon} ${deck.name} — La Tronçonneuse de Poche`,
-    description: deck.description,
+    description,
     alternates: {
       canonical: `/categories/${deckId}`,
     },

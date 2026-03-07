@@ -28,6 +28,9 @@ export async function generateMetadata({
       title: "Mode aléatoire — La Tronçonneuse de Poche",
       description:
         "Swipe des dépenses publiques piochées au hasard : garde ou remet en question chaque poste budgétaire.",
+      alternates: {
+        canonical: `/jeu/${deckId}`,
+      },
     };
   }
 
@@ -38,6 +41,9 @@ export async function generateMetadata({
   return {
     title: `${deck.name} — La Tronçonneuse de Poche`,
     description,
+    alternates: {
+      canonical: `/jeu/${deckId}`,
+    },
   };
 }
 

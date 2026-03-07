@@ -50,13 +50,13 @@ export function HowItWorks() {
                   <span className="text-2xl">{step.icon}</span>
                 )}
               </div>
-              <div className="text-xs font-heading font-semibold text-landing-primary dark:text-slate-300 mb-2 tracking-widest uppercase">
+              <div className="text-xs font-heading font-semibold text-landing-primary dark:text-muted-foreground mb-2 tracking-widest uppercase">
                 Étape {i + 1}
               </div>
-              <h3 className="font-heading font-bold text-xl mb-3 text-slate-900 dark:text-slate-50">
+              <h3 className="font-heading font-bold text-xl mb-3 text-foreground">
                 {step.title}
               </h3>
-              <p className="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">
+              <p className="text-muted-foreground text-sm leading-relaxed">
                 {step.description}
               </p>
             </motion.div>

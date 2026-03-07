@@ -27,7 +27,7 @@ export function SourcesSection() {
               target="_blank"
               rel="noopener noreferrer"
               title={s.title}
-              className="group px-5 py-2.5 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-sm font-medium text-slate-500 dark:text-slate-400 hover:border-landing-primary/40 dark:hover:border-landing-primary/40 hover:text-landing-primary dark:hover:text-white transition-colors"
+              className="group px-5 py-2.5 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-sm font-medium text-muted-foreground hover:border-landing-primary/40 dark:hover:border-landing-primary/40 hover:text-landing-primary dark:hover:text-white transition-colors"
             >
               {s.name}
               <svg
@@ -44,8 +44,8 @@ export function SourcesSection() {
           ))}
         </div>
 
-        <p className="text-slate-500 dark:text-slate-400 text-sm">
-          <strong className="text-slate-700 dark:text-slate-200">400+ sources</strong>.
+        <p className="text-muted-foreground text-sm">
+          <strong className="text-foreground">400+ sources</strong>.
           <br />
           Aucun parti pris.
         </p>

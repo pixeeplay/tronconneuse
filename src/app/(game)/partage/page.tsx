@@ -59,6 +59,9 @@ export async function generateMetadata({
       description: `J'ai tronçonné ${cutPercent}% du budget ! Et toi ?`,
       images: [ogImageUrl],
     },
+    alternates: {
+      canonical: "/partage",
+    },
   };
 }
 

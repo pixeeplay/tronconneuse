@@ -2,7 +2,7 @@ import { z } from "zod";
 import { auth } from "@/auth";
 import { db, isDbAvailable } from "@/db";
 import { sessions, votes, auditResponses } from "@/db/schema";
-import { dbUnavailableResponse, jsonOk, jsonError } from "@/lib/api-utils";
+import { dbUnavailableResponse, jsonOk, jsonError, validationError, serverError } from "@/lib/api-utils";
 
 const VALID_DIRECTIONS = ["keep", "cut", "reinforce", "unjustified"] as const;
 const VALID_RECOMMENDATIONS = ["maintenir", "reduire", "fusionner", "externaliser", "supprimer"] as const;
@@ -78,12 +78,12 @@ export async function POST(request: Request) {
     rawBody = await request.json();
   } catch (error) {
     console.error("[POST /api/sessions] Invalid JSON:", error instanceof Error ? error.message : error);
-    return jsonError("Invalid JSON", 400);
+    return validationError("Invalid JSON");
   }
 
   const parsed = sessionSchema.safeParse(rawBody);
   if (!parsed.success) {
-    return jsonError("Validation failed", 400);
+    return validationError("Validation failed", parsed.error.issues);
   }
 
   const body = parsed.data;
@@ -137,6 +137,6 @@ export async function POST(request: Request) {
     return jsonOk({ ok: true });
   } catch (error) {
     console.error("[POST /api/sessions]", error instanceof Error ? error.message : error);
-    return jsonError("Database error");
+    return serverError("Database error");
   }
 }

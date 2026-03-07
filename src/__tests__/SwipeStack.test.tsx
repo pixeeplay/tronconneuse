@@ -14,42 +14,7 @@ vi.mock("@/lib/analytics", () => ({
   track: vi.fn(),
 }));
 
-// Mock framer-motion to avoid animation issues in tests
-vi.mock("framer-motion", () => ({
-  motion: {
-    div: ({ children, ...props }: Record<string, unknown>) => {
-      const { style, className, onClick, "aria-label": ariaLabel, role, tabIndex } = props as Record<string, unknown>;
-      return (
-        <div
-          style={style as React.CSSProperties}
-          className={className as string}
-          onClick={onClick as React.MouseEventHandler}
-          aria-label={ariaLabel as string}
-          role={role as string}
-          tabIndex={tabIndex as number}
-        >
-          {children as React.ReactNode}
-        </div>
-      );
-    },
-  },
-  AnimatePresence: ({ children }: { children: React.ReactNode }) => <>{children}</>,
-  useMotionValue: (initial: number) => ({
-    get: () => initial,
-    set: vi.fn(),
-    onChange: vi.fn(),
-  }),
-  useTransform: () => ({
-    get: () => 0,
-    set: vi.fn(),
-    onChange: vi.fn(),
-  }),
-  animate: vi.fn((_mv, _target, opts?: { onComplete?: () => void }) => {
-    opts?.onComplete?.();
-    return { stop: vi.fn() };
-  }),
-  useReducedMotion: () => false,
-}));
+// framer-motion mock is provided globally by src/test/setup.ts
 
 // Mock SwipeCard with forwardRef so it can accept ref from SwipeStack
 vi.mock("@/components/SwipeCard", () => ({
