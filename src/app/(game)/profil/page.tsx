@@ -91,9 +91,10 @@ export default function ProfilePage() {
               {authSession?.user?.image ? (
                 <Image
                   src={authSession.user.image}
-                  alt=""
+                  alt={authSession.user.name || "Avatar"}
                   width={44}
                   height={44}
+                  sizes="44px"
                   className="w-full h-full rounded-xl object-cover"
                 />
               ) : (

@@ -30,7 +30,7 @@
 
 ---
 
-## Audit Mars 2026 -- Resultats consolides
+## Audit Mars 2026 -- Resultats consolides (Securite + Archi + Tests)
 
 ### CRITIQUE (a faire en priorite)
 
@@ -40,24 +40,29 @@
 
 ### HAUTE PRIORITE
 
-| Ref     | Composant                 | Description                                                  |
-| ------- | ------------------------- | ------------------------------------------------------------ |
-| SEC-10  | api/og/route.tsx          | Valider params numeriques (keepPercent, cutPercent) avec Zod |
-| SEC-11  | api/ranking, community... | Rate limiting manquant sur endpoints publics GET (DoS)       |
-| SEC-12  | api/analytics/dashboard   | Verifier ANALYTICS_SECRET toujours set (bypass si absent)    |
-| SEC-13  | api/me/profile            | Contrainte UNIQUE username manquante en DB                   |
-| PERF-01 | AcronymText.tsx           | Regex recree a chaque render -> useMemo                      |
+| Ref     | Composant                 | Description                                                        |
+| ------- | ------------------------- | ------------------------------------------------------------------ |
+| SEC-10  | api/og/route.tsx          | Valider params numeriques (keepPercent, cutPercent) avec Zod       |
+| SEC-11  | api/ranking, community... | Rate limiting manquant sur endpoints publics GET (DoS)             |
+| SEC-12  | api/analytics/dashboard   | Verifier ANALYTICS_SECRET toujours set (bypass si absent)          |
+| SEC-13  | api/me/profile            | Contrainte UNIQUE username manquante en DB                         |
+| PERF-01 | AcronymText.tsx           | Regex recree a chaque render -> useMemo                            |
+| TEST-07 | src/components/           | Tests UI manquants (SwipeCard, CardDetail, ResultScreen) ~10 tests |
 
 ### MOYENNE PRIORITE
 
-| Ref     | Composant         | Description                                                         |
-| ------- | ----------------- | ------------------------------------------------------------------- |
-| SEC-14  | Rate limit Map    | Nettoyage entries anciennes (risque memory leak si >10k IPs)        |
-| SEC-15  | api/waitlist      | Email regex trop permissive -> z.string().email()                   |
-| SEC-16  | profil/layout.tsx | Valider archetypeId vs liste connue avant rendu metadata            |
-| PERF-02 | ResultScreen.tsx  | RadarChart dynamic import sans loading fallback -> Skeleton         |
-| PERF-03 | auth.ts           | Log warning si OAuth providers non configures                       |
-| A11Y-02 | Global            | Audit contrastes : rehausser muted text, amber/blue sur fond sombre |
+| Ref     | Composant           | Description                                                         |
+| ------- | ------------------- | ------------------------------------------------------------------- |
+| SEC-14  | Rate limit Map      | Nettoyage entries anciennes (risque memory leak si >10k IPs)        |
+| SEC-15  | api/waitlist        | Email regex trop permissive -> z.string().email()                   |
+| SEC-16  | profil/layout.tsx   | Valider archetypeId vs liste connue avant rendu metadata            |
+| PERF-02 | ResultScreen.tsx    | RadarChart dynamic import sans loading fallback -> Skeleton         |
+| PERF-03 | auth.ts             | Log warning si OAuth providers non configures                       |
+| A11Y-02 | Global              | Audit contrastes : rehausser muted text, amber/blue sur fond sombre |
+| TEST-08 | ci.yml              | Ajouter seuil couverture tests (--coverage, min 60%)                |
+| TEST-09 | sessions.test.ts    | Pattern vi.resetModules() fragile -> beforeEach                     |
+| ARCH-01 | classement/page.tsx | 676 lignes -> extraire LeaderboardTable, SpeedRanking               |
+| ARCH-02 | profil/page.tsx     | 602 lignes -> extraire AchievementsGrid, StatsSection               |
 
 ### BASSE PRIORITE
 
@@ -65,8 +70,14 @@
 | ------- | --------------------- | ------------------------------------------------------ |
 | PERF-04 | analytics.ts          | localStorage setItem sans try/catch QuotaExceededError |
 | PERF-05 | jeu/[deckId]/page.tsx | console.error/warn en production -> gater par NODE_ENV |
-| PERF-06 | profil/page.tsx       | Image OAuth sans prop `sizes="44px"`                   |
 | SEC-17  | auth.ts               | Cleanup old sessions (>30j) pour privacy               |
+| SEO-05  | jeu/[deckId]/page.tsx | Metadata specifique par deck (titre deck dans title)   |
+
+### FAIT (audit quick wins)
+
+| Ref         | Description                                         | Commit    |
+| ----------- | --------------------------------------------------- | --------- |
+| ~~PERF-06~~ | Image OAuth alt + sizes="44px" dans profil/page.tsx | Sprint 27 |
 
 ---
 
@@ -89,3 +100,4 @@
 | Rate limiting Redis   | M      | SEC-08 | Remplacer Map in-memory par Redis (scalabilite)       |
 | Monitoring erreurs    | S      | ERR-04 | Integration Sentry ou equivalent                      |
 | API ouverte           | L      | API-03 | Endpoints publics documentees pour reutilisation data |
+| NextAuth stable       | S      | DEP-01 | Migrer vers NextAuth v5 stable quand disponible       |
