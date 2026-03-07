@@ -50,6 +50,7 @@ function PlayPageContent() {
   const [selectedDeck, setSelectedDeck] = useState<string | null>(null);
   const [randomMode, setRandomMode] = useState(false);
   const [playedDecks, setPlayedDecks] = useState<string[]>([]);
+  const [sessionsPerDeck, setSessionsPerDeck] = useState<Record<string, number>>({});
   const [level, setLevel] = useState<1 | 2 | 3>(initialLevel);
   const [tooltip, setTooltip] = useState<2 | 3 | null>(null);
   const [sessionsCount, setSessionsCount] = useState(0);
@@ -59,8 +60,11 @@ function PlayPageContent() {
   const [showChevron, setShowChevron] = useState(false);
 
   useEffect(() => {
-    setPlayedDecks(getPlayedDeckIds()); // eslint-disable-line react-hooks/set-state-in-effect -- reading localStorage on mount
-    setSessionsCount(getGlobalStats().totalSessions);  
+    const stats = getGlobalStats();
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- hydrating from localStorage on mount
+    setPlayedDecks(getPlayedDeckIds());
+    setSessionsCount(stats.totalSessions);
+    setSessionsPerDeck(stats.sessionsPerDeck ?? {});
   }, []);
 
   // Show chevron if content is scrollable
@@ -307,6 +311,7 @@ function PlayPageContent() {
               deck={deck}
               isSelected={selectedDeck === deck.id}
               isPlayed={playedDecks.includes(deck.id)}
+              deckSessions={sessionsPerDeck[deck.id] ?? 0}
               onSelect={() => {
                 setRandomMode(false);
                 setTooltip(null);
@@ -343,6 +348,7 @@ function PlayPageContent() {
                   deck={deck}
                   isSelected={selectedDeck === deck.id}
                   isPlayed={playedDecks.includes(deck.id)}
+                  deckSessions={sessionsPerDeck[deck.id] ?? 0}
                   onSelect={() => {
                     setRandomMode(false);
                     setTooltip(null);
@@ -387,11 +393,13 @@ function DeckCard({
   deck,
   isSelected,
   isPlayed,
+  deckSessions = 0,
   onSelect,
 }: {
   deck: Deck;
   isSelected: boolean;
   isPlayed: boolean;
+  deckSessions?: number;
   onSelect: () => void;
 }) {
   return (
@@ -429,7 +437,7 @@ function DeckCard({
       <div className="w-full bg-muted rounded-full h-1.5 mt-auto">
         <div
           className="bg-primary h-1.5 rounded-full transition-all"
-          style={{ width: isPlayed ? "100%" : "0%" }}
+          style={{ width: `${Math.min(100, isPlayed ? Math.max(33, (deckSessions / 3) * 100) : (deckSessions / 3) * 100)}%` }}
         />
       </div>
     </button>

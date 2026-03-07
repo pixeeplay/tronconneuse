@@ -187,15 +187,13 @@ export function saveCompletedSession(session: Session): void {
     Math.round((stats.totalCutBillions + stored.totalCutBillions) * 10) / 10;
   if (!stats.sessionsPerDeck) stats.sessionsPerDeck = {};
   if (stored.deckId === "random") {
-    // For random sessions, track individual card categories
+    // For random sessions, increment per-deck counters (used for badges)
+    // but do NOT mark categories as "played" (requires a dedicated session)
     const cardDeckIds = [...new Set(session.votes.map((v) => {
       const card = session.cards.find((c) => c.id === v.cardId);
       return card?.deckId;
     }).filter(Boolean))] as string[];
     for (const dId of cardDeckIds) {
-      if (!stats.categoriesPlayed.includes(dId)) {
-        stats.categoriesPlayed.push(dId);
-      }
       stats.sessionsPerDeck[dId] = (stats.sessionsPerDeck[dId] || 0) + 1;
     }
   } else {
