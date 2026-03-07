@@ -129,7 +129,7 @@ export default function RankingPage() {
   ];
 
   return (
-    <div className="flex-1 flex flex-col overflow-hidden relative">
+    <main className="flex-1 flex flex-col overflow-hidden relative">
       {/* Header */}
       <header className="flex items-center p-4 pb-2 justify-center bg-background/90 backdrop-blur-md z-10 border-b border-border">
         <h1 className="text-xl font-bold leading-tight tracking-[-0.015em] text-center">
@@ -190,6 +190,6 @@ export default function RankingPage() {
           </div>
         </div>
       )}
-    </div>
+    </main>
   );
 }

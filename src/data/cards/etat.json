@@ -201,7 +201,7 @@
     "id": "eta-14",
     "title": "Systèmes d'information (IT public)",
     "subtitle": "60% des applications critiques ont plus de 15 ans",
-    "description": "Les ministères depensent ~10 Md€/an en informatique. Grands echecs : Louvois (500 M€ de surcoût), Opérateur national de paie (abandonne après 300 M€). La DINUM tente de rationaliser mais chaque ministère garde ses propres systèmes.",
+    "description": "Les ministères dépensent ~10 Md€/an en informatique. Grands échecs : Louvois (500 M€ de surcoût), Opérateur national de paie (abandonné après 300 M€). La DINUM tente de rationaliser mais chaque ministère garde ses propres systèmes.",
     "amountBillions": 10,
     "costPerCitizen": 147,
     "deckId": "etat",
@@ -211,7 +211,7 @@
     "sourceUrl": "https://www.numerique.gouv.fr",
     "level": 1,
     "tags": ["informatique", "numerique", "modernisation"],
-    "equivalence": "L'État dépense autant en IT que le budget du Senegal, avec des résultats souvent mediocres"
+    "equivalence": "L'État dépense autant en IT que le budget du Senegal, avec des résultats souvent médiocres"
   },
   {
     "id": "eta-15",

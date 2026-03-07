@@ -66,6 +66,7 @@ export function ParisTeaser() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               placeholder="votre@email.com"
+              aria-label="Adresse email"
               className="flex-1 h-12 px-5 rounded-xl bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 text-foreground text-sm focus:outline-none focus:ring-2 focus:ring-landing-primary/30"
             />
             <button

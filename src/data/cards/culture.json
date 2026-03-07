@@ -284,7 +284,7 @@
     "id": "cul-20",
     "title": "Archéologie préventive (INRAP)",
     "subtitle": "Redevance d'archeologie préventive + INRAP",
-    "description": "Avant tout chantier de construction, un diagnostic archéologique est obligatoire depuis 2001. L'INRAP (2 000 agents) réalisé ~2 000 diagnostics et ~200 fouilles/an. Decouvertes majeures : villa gallo-romaine de Nimes, sepultures medievales sous Notre-Dame de Paris. La redevance (0,60€/m2) est payée par les aménageurs. La France decouvre en moyenne 1 site majeur par semaine.",
+    "description": "Avant tout chantier de construction, un diagnostic archéologique est obligatoire depuis 2001. L'INRAP (2 000 agents) réalisé ~2 000 diagnostics et ~200 fouilles/an. Découvertes majeures : villa gallo-romaine de Nîmes, sépultures médiévales sous Notre-Dame de Paris. La redevance (0,60€/m2) est payée par les aménageurs. La France découvre en moyenne 1 site majeur par semaine.",
     "amountBillions": 0.2,
     "costPerCitizen": 3,
     "deckId": "culture",

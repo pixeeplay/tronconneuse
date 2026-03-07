@@ -1,3 +1,4 @@
+import { memo } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import decksData from "@/data";
@@ -46,7 +47,7 @@ export function CategoriesSection() {
   );
 }
 
-function CategoryCard({ deck }: { deck: Deck }) {
+const CategoryCard = memo(function CategoryCard({ deck }: { deck: Deck }) {
   return (
     <Link
       href={`/categories/${deck.id}`}
@@ -65,4 +66,4 @@ function CategoryCard({ deck }: { deck: Deck }) {
       </span>
     </Link>
   );
-}
+});

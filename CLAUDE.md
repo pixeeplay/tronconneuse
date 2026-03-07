@@ -69,6 +69,8 @@ src/
     api/            # API routes (health, sessions, ranking, waitlist, analytics, etc.)
     (game)/         # Game pages (jeu, profile, ranking, results, infos, share)
     categories/     # Category pages
+    contribuer/     # Contributor guide page
+    a-propos/       # About page
     landing/        # Landing page (home)
     offline/        # Offline fallback
   components/

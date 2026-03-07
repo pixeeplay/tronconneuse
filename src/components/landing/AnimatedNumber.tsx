@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useCallback } from "react";
-import { useInView } from "framer-motion";
+import { useInView, useReducedMotion } from "framer-motion";
 
 interface AnimatedNumberProps {
   value: number;
@@ -30,6 +30,7 @@ export function AnimatedNumber({
 }: AnimatedNumberProps) {
   const ref = useRef<HTMLSpanElement>(null);
   const isInView = useInView(ref, { once: true, margin: "-50px" });
+  const prefersReducedMotion = useReducedMotion();
   const hasAnimated = useRef(false);
 
   const animate = useCallback(() => {
@@ -61,19 +62,23 @@ export function AnimatedNumber({
   useEffect(() => {
     if (isInView && !hasAnimated.current) {
       hasAnimated.current = true;
+      if (prefersReducedMotion) {
+        if (ref.current) ref.current.textContent = `${formatNumber(value)}${suffix}`;
+        return;
+      }
       const cleanup = animate();
       return cleanup;
     }
-  }, [isInView, animate]);
+  }, [isInView, animate, prefersReducedMotion, value, suffix]);
 
   // Replay loop: smooth re-animation without jarring reset
   useEffect(() => {
-    if (!hasAnimated.current || !replayInterval) return;
+    if (!hasAnimated.current || !replayInterval || prefersReducedMotion) return;
     const interval = setInterval(() => {
       animate();
     }, replayInterval);
     return () => clearInterval(interval);
-  }, [isInView, replayInterval, animate]);
+  }, [replayInterval, animate, prefersReducedMotion]);
 
   // SSR: show final value (never flash 0)
   return (

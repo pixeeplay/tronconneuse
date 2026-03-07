@@ -167,7 +167,7 @@
     "id": "sec-12",
     "title": "Police municipale",
     "subtitle": "27 000 agents dans 4 500 communes",
-    "description": "Budget entièrement à la charge des collectivités. Depuis la loi Sécurité globale (2021), pouvoirs elargis. Inégalité territoriale massive : Nice dépense ~200€/habitant/an en police municipale, quand une commune rurale dépense 0€.",
+    "description": "Budget entièrement à la charge des collectivités. Depuis la loi Sécurité globale (2021), pouvoirs élargis. Inégalité territoriale massive : Nice dépense ~200€/habitant/an en police municipale, quand une commune rurale dépense 0€.",
     "amountBillions": 5,
     "costPerCitizen": 74,
     "deckId": "securite",

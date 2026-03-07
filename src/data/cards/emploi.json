@@ -213,8 +213,8 @@
   {
     "id": "emp-16",
     "title": "RSE et index égalité professionnelle",
-    "subtitle": "Score moyen 88/100 mais ecart reel 16%",
-    "description": "L'index d'égalité professionnelle oblige les entreprises de +50 salariés a publier un score sur 100. Ecart salarial H/F toutes choses egales : ~5-7%. La CSRD européenne (2024) impose un reporting extra-financier. Coût de conformite : ~100 000€/an pour une ETI.",
+    "subtitle": "Score moyen 88/100 mais écart réel 16%",
+    "description": "L'index d'égalité professionnelle oblige les entreprises de +50 salariés à publier un score sur 100. Écart salarial H/F toutes choses égales : ~5-7%. La CSRD européenne (2024) impose un reporting extra-financier. Coût de conformité : ~100 000€/an pour une ETI.",
     "amountBillions": 0.2,
     "costPerCitizen": 0,
     "deckId": "emploi",
@@ -222,7 +222,7 @@
     "source": "Ministere Travail, DARES, Commission européenne CSRD",
     "level": 1,
     "tags": ["emploi", "RSE", "egalite"],
-    "equivalence": "Score moyen 88/100 mais ecart salarial reel de 16% — l'index mesure mal ce qu'il est cense corriger"
+    "equivalence": "Score moyen 88/100 mais écart salarial réel de 16% — l'index mesure mal ce qu'il est censé corriger"
   },
   {
     "id": "emp-17",

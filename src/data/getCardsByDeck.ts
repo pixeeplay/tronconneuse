@@ -9,7 +9,8 @@ import type { Card } from "@/types";
  */
 
  
-const deckImportMap: Record<string, () => Promise<{ default: any[] }>> = {
+ 
+const deckImportMap: Record<string, () => Promise<{ default: Record<string, unknown>[] }>> = {
   defense: () => import("./cards/defense.json"),
   energie: () => import("./cards/energie.json"),
   sante: () => import("./cards/sante.json"),
@@ -42,7 +43,7 @@ export async function getDeckCards(deckId: string): Promise<Card[]> {
     return [];
   }
   const mod = await loader();
-  return mod.default as Card[];
+  return mod.default as unknown as Card[];
 }
 
 /** Get all valid deck IDs that can be lazy-loaded */

@@ -123,7 +123,7 @@ export function ResultScreen() {
   }
 
   return (
-    <div className="flex-1 flex flex-col overflow-y-auto scrollbar-hide">
+    <div className="flex-1 flex flex-col overflow-y-auto scrollbar-hide" role="region" aria-live="polite" aria-label="Résultats de la session">
       {/* Header */}
       <div className="flex items-center justify-between p-4 pb-2">
         <h2 className="text-lg font-bold leading-tight tracking-[-0.015em]">
@@ -167,6 +167,7 @@ export function ResultScreen() {
             onClick={handleShare}
             className="absolute top-4 right-4 h-10 w-10 rounded-full bg-background/50 flex items-center justify-center hover:bg-muted transition-colors text-muted-foreground"
             aria-label={shareCopied ? "Copié !" : "Partager les résultats"}
+            aria-live="polite"
           >
             {shareCopied ? <span className="text-primary text-sm">✓</span> : <ShareIcon />}
           </button>

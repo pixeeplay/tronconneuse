@@ -141,6 +141,7 @@ export function AuditScreen({
                 <div className="flex bg-muted p-1 rounded-full w-28 shrink-0">
                   <button
                     onClick={() => handleToggle(q.id, true)}
+                    aria-pressed={diagnostics[q.id] === true}
                     className={`flex-1 text-center py-1.5 rounded-full text-[10px] font-bold transition-all ${
                       diagnostics[q.id] === true
                         ? "bg-primary text-primary-foreground"
@@ -151,6 +152,7 @@ export function AuditScreen({
                   </button>
                   <button
                     onClick={() => handleToggle(q.id, false)}
+                    aria-pressed={diagnostics[q.id] === false}
                     className={`flex-1 text-center py-1.5 rounded-full text-[10px] font-bold transition-all ${
                       diagnostics[q.id] === false
                         ? "bg-card text-foreground shadow-sm"
@@ -166,12 +168,14 @@ export function AuditScreen({
         </section>
 
         {/* Recommendation picker */}
-        <section className="flex flex-col gap-4">
+        <section className="flex flex-col gap-4" aria-live="polite">
           <h3 className="text-base font-bold px-1">Quelle solution recommandes-tu ?</h3>
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap gap-2" role="radiogroup" aria-label="Recommandation d'audit">
             {auditData.recommendations.map((rec) => (
               <button
                 key={rec.id}
+                role="radio"
+                aria-checked={recommendation === rec.id}
                 onClick={() => setRecommendation(rec.id as AuditRecommendation)}
                 className={`px-4 py-3 rounded-xl border text-sm font-medium transition-colors flex items-center gap-2 ${
                   recommendation === rec.id

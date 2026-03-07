@@ -35,7 +35,7 @@ export function NavbarLanding() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center gap-2">
-            <Image src="/france.svg" alt="France" width={28} height={28} />
+            <Image src="/france.svg" alt="France" width={28} height={28} priority />
             <span className="font-heading text-lg font-bold text-landing-primary dark:text-white">
               france-finances<span className="text-landing-expense dark:text-landing-expense">.com</span>
             </span>

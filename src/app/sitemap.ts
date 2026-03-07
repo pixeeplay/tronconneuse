@@ -18,6 +18,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "monthly" as const,
       priority: 0.6,
     })),
+    { url: `${baseUrl}/contribuer`, lastModified: now, changeFrequency: "monthly", priority: 0.6 },
+    { url: `${baseUrl}/a-propos`, lastModified: now, changeFrequency: "monthly", priority: 0.5 },
     { url: `${baseUrl}/profil`, lastModified: now, changeFrequency: "monthly", priority: 0.5 },
     { url: `${baseUrl}/infos`, lastModified: now, changeFrequency: "monthly", priority: 0.5 },
     { url: `${baseUrl}/infos/confidentialite`, lastModified: now, changeFrequency: "monthly", priority: 0.3 },

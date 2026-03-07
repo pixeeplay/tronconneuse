@@ -6,6 +6,15 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/classement",
   },
+  openGraph: {
+    title: "Communauté — La Tronçonneuse de Poche",
+    description: "Découvre les statistiques de la communauté des joueurs.",
+  },
+  twitter: {
+    card: "summary",
+    title: "Communauté — La Tronçonneuse de Poche",
+    description: "Découvre les statistiques de la communauté des joueurs.",
+  },
 };
 
 export default function RankingLayout({ children }: { children: React.ReactNode }) {

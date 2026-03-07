@@ -19,13 +19,15 @@ export default function LandingPage() {
   return (
     <div className="min-h-dvh bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-50">
       <NavbarLanding />
-      <HeroSection />
-      <HowItWorks />
-      <KeyNumbers />
-      <CategoriesSection />
-      <ParisTeaser />
-      <EcosystemSection />
-      <SourcesSection />
+      <main>
+        <HeroSection />
+        <HowItWorks />
+        <KeyNumbers />
+        <CategoriesSection />
+        <ParisTeaser />
+        <EcosystemSection />
+        <SourcesSection />
+      </main>
       <Footer />
     </div>
   );

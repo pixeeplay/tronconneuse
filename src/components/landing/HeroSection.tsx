@@ -1,22 +1,23 @@
 // PERF-09: This component must remain "use client" because:
 // - usePublicStats() is a client hook (useState + useEffect + fetch)
-// - framer-motion <motion.div> requires client-side JS for animations
+// - framer-motion <m.div> requires client-side JS for animations
 // To make this a Server Component, stats would need to be fetched server-side
 // and animations replaced with CSS transitions or a separate client wrapper.
 "use client";
 
 import Link from "next/link";
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { m, LazyMotion, domAnimation } from "framer-motion";
 import { usePublicStats } from "@/hooks/usePublicStats";
 
 export function HeroSection() {
   const { totalSessions, totalSwipes } = usePublicStats();
 
   return (
-    <section id="hero" className="section-padding pt-28 md:pt-36 text-center">
+    <LazyMotion features={domAnimation}>
+      <section id="hero" className="section-padding pt-28 md:pt-36 text-center">
       <div className="max-w-3xl mx-auto px-4 sm:px-6">
-        <motion.div
+        <m.div
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
@@ -62,8 +63,9 @@ export function HeroSection() {
             cartes swip&eacute;es
           </p>
         )}
-        </motion.div>
+        </m.div>
       </div>
     </section>
+    </LazyMotion>
   );
 }

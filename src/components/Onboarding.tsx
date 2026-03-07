@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useCallback } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { m, AnimatePresence, LazyMotion, domAnimation } from "framer-motion";
 import { ChainsawIcon } from "./ChainsawIcon";
 import { ShieldIcon } from "./ShieldIcon";
 import { track } from "@/lib/analytics";
@@ -79,7 +79,8 @@ export function Onboarding({ onDone }: OnboardingProps) {
   const slide = slides[current];
 
   return (
-    <motion.div
+    <LazyMotion features={domAnimation}>
+    <m.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
@@ -98,7 +99,7 @@ export function Onboarding({ onDone }: OnboardingProps) {
       {/* Slide content */}
       <div className="flex-1 flex flex-col items-center justify-center px-8 relative overflow-hidden" aria-live="polite">
         <AnimatePresence mode="wait" custom={direction}>
-          <motion.div
+          <m.div
             key={slide.id}
             custom={direction}
             initial={{ x: direction * 200, opacity: 0 }}
@@ -148,7 +149,7 @@ export function Onboarding({ onDone }: OnboardingProps) {
             <p className="text-muted-foreground text-base font-medium max-w-[280px] leading-relaxed">
               {slide.description}
             </p>
-          </motion.div>
+          </m.div>
         </AnimatePresence>
       </div>
 
@@ -180,6 +181,7 @@ export function Onboarding({ onDone }: OnboardingProps) {
           {isLast ? "Commencer" : "Suivant"}
         </button>
       </div>
-    </motion.div>
+    </m.div>
+    </LazyMotion>
   );
 }

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef, Suspense } from "react";
+import { useState, useEffect, useRef, useCallback, Suspense } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { AnimatePresence } from "framer-motion";
 import Image from "next/image";
@@ -101,17 +101,17 @@ function PlayPageContent() {
     { value: 3, label: "Niveau 3", locked: !isLevel3Unlocked, unlockHint: LEVEL_UNLOCK[3].label, progress: `${Math.min(n2Sessions, LEVEL_UNLOCK[3].sessions)}/${LEVEL_UNLOCK[3].sessions}` },
   ];
 
-  function handleLevelClick(opt: typeof levelOptions[number]) {
+  const handleLevelClick = useCallback((opt: typeof levelOptions[number]) => {
     if (opt.locked) {
       const val = opt.value as 2 | 3;
-      setTooltip(tooltip === val ? null : val);
+      setTooltip((prev) => (prev === val ? null : val));
       return;
     }
     setTooltip(null);
     setLevel(opt.value);
-  }
+  }, [levelOptions]);
 
-  function handleLaunch() {
+  const handleLaunch = useCallback(() => {
     const deckId = randomMode ? "random" : selectedDeck;
     if (!deckId) return;
     track("deck_selected", { deckId, level, mode: budgetMode ? "budget" : "classic" });
@@ -123,10 +123,10 @@ function PlayPageContent() {
     }
     const qs = params.toString();
     router.push(`/jeu/${deckId}${qs ? `?${qs}` : ""}`);
-  }
+  }, [randomMode, selectedDeck, level, budgetMode, budgetTarget, router]);
 
   return (
-    <div className="flex-1 flex flex-col overflow-hidden relative">
+    <main className="flex-1 flex flex-col overflow-hidden relative">
       <AnimatePresence>
         {showOnboarding && <Onboarding onDone={dismissOnboarding} />}
       </AnimatePresence>
@@ -135,13 +135,14 @@ function PlayPageContent() {
       <div className="flex items-center p-4 justify-between sticky top-0 z-10 bg-background/90 backdrop-blur-md border-b border-border">
         <button
           onClick={() => router.push("/")}
+          aria-label="Retour à l'accueil"
           className="w-10 h-10 rounded-full flex items-center justify-center hover:bg-card transition-colors text-muted-foreground"
         >
-          <span className="text-xl">&larr;</span>
+          <span className="text-xl" aria-hidden="true">&larr;</span>
         </button>
-        <h2 className="text-lg font-bold flex-1 text-center">
+        <h1 className="text-lg font-bold flex-1 text-center">
           Choisir une catégorie
-        </h2>
+        </h1>
         <div className="w-10" />
       </div>
 
@@ -173,7 +174,7 @@ function PlayPageContent() {
               style={{ transform: randomMode ? "translateX(1.5rem)" : "translateX(0)" }}
             />
             <input
-              className="invisible absolute"
+              className="sr-only"
               type="checkbox"
               checked={randomMode}
               aria-label="Mode aléatoire"
@@ -212,7 +213,7 @@ function PlayPageContent() {
                 style={{ transform: budgetMode ? "translateX(1.5rem)" : "translateX(0)" }}
               />
               <input
-                className="invisible absolute"
+                className="sr-only"
                 type="checkbox"
                 checked={budgetMode}
                 aria-label="Mode Budget"
@@ -392,7 +393,7 @@ function PlayPageContent() {
           {budgetMode ? `Lancer le défi (${budgetTarget} Md\u20AC)` : `Lancer la session ${level > 1 ? `(N${level})` : ""}`}
         </button>
       </div>
-    </div>
+    </main>
   );
 }
 

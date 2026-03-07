@@ -1,10 +1,7 @@
 "use client";
 
 import { useRef, useImperativeHandle, forwardRef } from "react";
-// TODO PERF-08: framer-motion v12+ supports `import { m } from "framer-motion/m"`
-// for a smaller, tree-shakeable motion component (~30% smaller). Also consider
-// `import { LazyMotion, domAnimation } from "framer-motion"` for deferred feature loading.
-// Not switching now to avoid breaking drag/animate/AnimatePresence interactions.
+// SwipeCard uses drag gestures → requires full `motion` (not `m` + LazyMotion/domAnimation)
 import { motion, animate as fmAnimate, useReducedMotion } from "framer-motion";
 import { useSwipeGesture } from "@/hooks/useSwipeGesture";
 import { ChainsawIcon } from "./ChainsawIcon";

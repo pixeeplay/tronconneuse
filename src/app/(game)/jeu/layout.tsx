@@ -6,6 +6,15 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "/jeu",
   },
+  openGraph: {
+    title: "Jouer — La Tronçonneuse de Poche",
+    description: "Choisis une catégorie et swipe les dépenses publiques.",
+  },
+  twitter: {
+    card: "summary",
+    title: "Jouer — La Tronçonneuse de Poche",
+    description: "Choisis une catégorie et swipe les dépenses publiques.",
+  },
 };
 
 export default function PlayLayout({ children }: { children: React.ReactNode }) {

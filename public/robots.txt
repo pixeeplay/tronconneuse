@@ -1,4 +1,7 @@
 User-agent: *
+Disallow: /api/
+Disallow: /pixee-admin/
+Disallow: /offline
 Allow: /
 
 Sitemap: https://france-finances.com/sitemap.xml

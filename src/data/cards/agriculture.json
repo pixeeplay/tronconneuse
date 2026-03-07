@@ -114,30 +114,30 @@
   },
   {
     "id": "agr-09",
-    "title": "Peche et aquaculture",
+    "title": "Pêche et aquaculture",
     "subtitle": "FEAMPA européen + budget national",
-    "description": "La peche française emploie ~15 000 marins sur ~4 000 navires. La France a perdu 25% de ses quotas post-Brexit. Le FEAMPA financé la modernisation de la flotte et la transition écologique. L'exonération de gazole pour les pecheurs coûte ~100 M€/an. L'aquaculture pese 800 M€ de CA mais reste sous-développée.",
+    "description": "La pêche française emploie ~15 000 marins sur ~4 000 navires. La France a perdu 25% de ses quotas post-Brexit. Le FEAMPA financé la modernisation de la flotte et la transition écologique. L'exonération de gazole pour les pêcheurs coûte ~100 M€/an. L'aquaculture pèse 800 M€ de CA mais reste sous-développée.",
     "amountBillions": 0.4,
     "costPerCitizen": 6,
     "deckId": "agriculture",
     "icon": "🌾",
     "source": "FEAMPA, FranceAgriMer, DPMA",
     "level": 1,
-    "tags": ["agriculture", "peche", "aquaculture"],
-    "equivalence": "La France à le 2e domaine maritime mondial mais importe 70% de sa consommation de poisson"
+    "tags": ["agriculture", "pêche", "aquaculture"],
+    "equivalence": "La France a le 2e domaine maritime mondial mais importe 70% de sa consommation de poisson"
   },
   {
     "id": "agr-10",
     "title": "Bien-être animal et abattoirs",
     "subtitle": "Contrôles DGAL + mises aux normes",
-    "description": "La France compte ~250 abattoirs (divisé par 2 en 20 ans). Cameras obligatoires en abattoir depuis 2023 (taux reel : ~40%). Veterinaires inspecteurs en sous-effectif (-20% en 10 ans). La loi Egalim interdit le broyage des poussins males et la castration a vif des porcelets depuis 2022.",
+    "description": "La France compte ~250 abattoirs (divisé par 2 en 20 ans). Cameras obligatoires en abattoir depuis 2023 (taux réel : ~40%). Veterinaires inspecteurs en sous-effectif (-20% en 10 ans). La loi Egalim interdit le broyage des poussins males et la castration a vif des porcelets depuis 2022.",
     "amountBillions": 0.15,
     "costPerCitizen": 2,
     "deckId": "agriculture",
     "icon": "🌾",
     "source": "DGAL, ANSES, L214, Commission européenne",
     "level": 1,
-    "tags": ["agriculture", "abattoirs", "bien-etre animal"],
+    "tags": ["agriculture", "abattoirs", "bien-être animal"],
     "equivalence": "~2€ par Français par an pour contrôler les conditions d'abattage de 1 milliard d'animaux"
   },
   {

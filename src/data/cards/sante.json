@@ -191,7 +191,7 @@
     "level": 1,
     "tags": ["santé", "hôpital", "T2A", "financement"],
     "trend": null,
-    "equivalence": "Une appendicectomie est remboursée ~2 500€ à l'hôpital, quel que soit le temps reel passe"
+    "equivalence": "Une appendicectomie est remboursée ~2 500€ à l'hôpital, quel que soit le temps réel passé"
   },
   {
     "id": "hop-04",
@@ -339,9 +339,9 @@
   },
   {
     "id": "san-13",
-    "title": "Penuries de médicaments",
+    "title": "Pénuries de médicaments",
     "subtitle": "5 000 signalements en 2024",
-    "description": "80% des principes actifs sont fabriques en Asie. La France a subi ~5 000 signalements de pénuries en 2024 (x10 en 10 ans). Amoxicilline, paracetamol et anticancereux sont les plus touchés. France 2030 investit 1 Md€ pour relocaliser la production.",
+    "description": "80% des principes actifs sont fabriqués en Asie. La France a subi ~5 000 signalements de pénuries en 2024 (x10 en 10 ans). Amoxicilline, paracétamol et anticancéreux sont les plus touchés. France 2030 investit 1 Md€ pour relocaliser la production.",
     "amountBillions": 1,
     "costPerCitizen": 15,
     "deckId": "sante",

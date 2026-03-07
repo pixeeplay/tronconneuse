@@ -28,8 +28,8 @@ Le joueur swipe des cartes de depenses budgetaires francaises :
 - **Auth** : NextAuth.js v5 (Google + GitHub), trustHost: true
 - **DB** : PostgreSQL + Drizzle ORM (graceful degradation sans DB)
 - **PWA** : serwist (service worker, offline fallback)
-- **Tests** : Vitest + Testing Library (86 tests, coverage >60%)
-- **CI** : GitHub Actions (lint + type-check + build + test --coverage + docker), Husky + lint-staged
+- **Tests** : Vitest + Testing Library (273 tests, coverage 87%)
+- **CI** : GitHub Actions (lint + type-check + build + test --coverage + E2E + docker), Husky + lint-staged
 - **Deploy** : Docker (output: standalone) via Coolify
 
 ## Demarrage
@@ -67,6 +67,8 @@ src/
     api/            # API routes (health, sessions, ranking, analytics...)
     (game)/         # Game pages (jeu, profil, classement, resultats, partage)
     categories/     # Pages categorie
+    contribuer/     # Page contribuer (guide contributeur)
+    a-propos/       # Page a propos
     landing/        # Landing page
   components/       # Composants React (SwipeCard, SwipeStack, CardDetail...)
     ui/             # shadcn/ui

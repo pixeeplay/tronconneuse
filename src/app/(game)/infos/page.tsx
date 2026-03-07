@@ -103,10 +103,8 @@ export default function InfosPage() {
               Vous pouvez contribuer en proposant de nouvelles cartes,
               en signalant des erreurs de données, ou en aidant au développement.
             </p>
-            <a
-              href="https://pixeeplay.fr/?intent=contribuer"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/contribuer"
               className="flex items-center gap-2 bg-primary/10 text-primary font-semibold text-sm px-4 py-3 rounded-xl border border-primary/20 hover:bg-primary/20 transition-colors"
             >
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
@@ -116,7 +114,7 @@ export default function InfosPage() {
                 <line x1="22" y1="11" x2="16" y2="11" />
               </svg>
               Contribuer au projet
-            </a>
+            </Link>
           </div>
         </section>
 

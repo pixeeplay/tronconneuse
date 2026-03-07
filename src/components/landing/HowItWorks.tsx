@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { m, LazyMotion, domAnimation } from "framer-motion";
 
 const steps = [
   {
@@ -23,7 +23,8 @@ const steps = [
 
 export function HowItWorks() {
   return (
-    <section id="comment-ca-marche" className="section-padding bg-slate-50 dark:bg-slate-900">
+    <LazyMotion features={domAnimation}>
+      <section id="comment-ca-marche" className="section-padding bg-slate-50 dark:bg-slate-900">
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
         <h2 className="font-heading font-bold text-2xl md:text-3xl text-center mb-12 text-landing-primary dark:text-white">
           Comment ça marche ?
@@ -31,7 +32,7 @@ export function HowItWorks() {
 
         <div className="grid md:grid-cols-3 gap-8">
           {steps.map((step, i) => (
-            <motion.div
+            <m.div
               key={step.title}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -59,10 +60,11 @@ export function HowItWorks() {
               <p className="text-muted-foreground text-sm leading-relaxed">
                 {step.description}
               </p>
-            </motion.div>
+            </m.div>
           ))}
         </div>
       </div>
-    </section>
+      </section>
+    </LazyMotion>
   );
 }

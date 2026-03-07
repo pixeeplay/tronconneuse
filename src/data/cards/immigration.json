@@ -230,17 +230,17 @@
   },
   {
     "id": "imm-17",
-    "title": "Deboutes d'asile (ni regularises, ni expulses)",
+    "title": "Déboutés d'asile (ni régularisés, ni expulsés)",
     "subtitle": "Le stock des ni-ni",
-    "description": "65% des demandeurs d'asile sont deboutes. Beaucoup restent en France dans un statut de ni-ni : ni regularisables, ni expulsables. Ils basculent dans l'hébergement d'urgence, le travail informel et l'AME. Stock estimé : 100 000-300 000 personnes.",
+    "description": "65% des demandeurs d'asile sont déboutés. Beaucoup restent en France dans un statut de ni-ni : ni régularisables, ni expulsables. Ils basculent dans l'hébergement d'urgence, le travail informel et l'AME. Stock estimé : 100 000-300 000 personnes.",
     "amountBillions": 1.5,
     "costPerCitizen": 22,
     "deckId": "immigration",
     "icon": "🛂",
     "source": "Forum Réfugiés, DGEF, Cour des comptes",
     "level": 1,
-    "tags": ["immigration", "asile", "deboutes"],
-    "equivalence": "Le stock de deboutes non expulses grandit chaque année de ~80 000 personnes"
+    "tags": ["immigration", "asile", "déboutés"],
+    "equivalence": "Le stock de déboutés non expulsés grandit chaque année de ~80 000 personnes"
   },
   {
     "id": "imm-18",

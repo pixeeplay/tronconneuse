@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export function Footer() {
   return (
@@ -19,14 +20,12 @@ export function Footer() {
           </div>
 
           <div className="flex items-center gap-3">
-            <a
-              href="https://pixeeplay.fr/?intent=contribuer"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/contribuer"
               className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg border border-landing-primary/30 dark:border-white/30 text-landing-primary dark:text-white text-sm font-heading font-semibold hover:bg-landing-primary/5 dark:hover:bg-white/5 transition-colors"
             >
               🤝 Contribuer
-            </a>
+            </Link>
             <a
               href="https://pixeeplay.fr/?intent=sponsoriser"
               target="_blank"
