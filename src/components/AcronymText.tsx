@@ -65,6 +65,9 @@ export function AcronymText({ text, className }: AcronymTextProps) {
         }
 
         const definition = ACRONYMS[part.value];
+        if (!definition) {
+          return <span key={i}>{part.value}</span>;
+        }
         const isActive = activeAcronym === `${part.value}-${i}`;
         const key = `${part.value}-${i}`;
 

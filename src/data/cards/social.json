@@ -255,7 +255,7 @@
     "level": 1,
     "tags": ["retraites", "minimum vieillesse", "ASPA", "solidarité"],
     "trend": null,
-    "equivalence": "300 000 retraites eligibles ne demandent pas l'ASPA, par méconnaissance ou par peur de la récupération sur succession"
+    "equivalence": "300 000 retraites éligibles ne demandent pas l'ASPA, par méconnaissance ou par peur de la récupération sur succession"
   },
   {
     "id": "ret-06",
@@ -421,7 +421,7 @@
     "id": "soc-18",
     "title": "Conge parental (PreParE)",
     "subtitle": "Prestation partagee d'education de l'enfant",
-    "description": "La PreParE rémunéré le parent qui réduit ou arrete son activité : 428€/mois a taux plein. Le nombre de bénéficiaires a chuté de 50% en 10 ans (de 500 000 a 250 000) : le montant est trop faible pour compenser la perte de salaire. Les pays nordiques offrent 80% du salaire pendant 12-18 mois. La réforme annoncee en 2024 (conge de naissance) est reportee.",
+    "description": "La PreParE rémunéré le parent qui réduit ou arrêté son activité : 428€/mois a taux plein. Le nombre de bénéficiaires a chuté de 50% en 10 ans (de 500 000 a 250 000) : le montant est trop faible pour compenser la perte de salaire. Les pays nordiques offrent 80% du salaire pendant 12-18 mois. La réforme annoncee en 2024 (conge de naissance) est reportee.",
     "amountBillions": 1.5,
     "costPerCitizen": 22,
     "deckId": "social",
@@ -434,8 +434,8 @@
   {
     "id": "soc-19",
     "title": "Aide alimentaire",
-    "subtitle": "Restos du coeur, Banques alimentaires, Secours populaire",
-    "description": "5,5 millions de personnes recourent à l'aide alimentaire en France. Le nombre de bénéficiaires a augmente de 30% depuis le COVID. L'État financé ~45% via le programme europeen FEAD. Les Restos du coeur ont failli arreter en 2023 (déficit de 35 M€). Le gaspillage alimentaire en France représente 10 millions de tonnes/an, dont une fraction seulement est recuperee par l'aide alimentaire.",
+    "subtitle": "Restos du cœur, Banques alimentaires, Secours populaire",
+    "description": "5,5 millions de personnes recourent à l'aide alimentaire en France. Le nombre de bénéficiaires a augmenté de 30% depuis le COVID. L'État finance ~45% via le programme européen FEAD. Les Restos du cœur ont failli arrêter en 2023 (déficit de 35 M€). Le gaspillage alimentaire en France représente 10 millions de tonnes/an, dont une fraction seulement est récupérée par l'aide alimentaire.",
     "amountBillions": 1.5,
     "costPerCitizen": 22,
     "deckId": "social",

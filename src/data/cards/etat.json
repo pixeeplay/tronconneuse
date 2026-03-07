@@ -57,7 +57,7 @@
     "source": "Solidaires Finances Publiques, Sénat, Cour des comptes",
     "level": 1,
     "tags": ["état", "fraude", "recettes"],
-    "equivalence": "Si la fraude fiscale etait recuperee integralement, elle solderait le déficit public"
+    "equivalence": "Si la fraude fiscale etait récupérée integralement, elle solderait le déficit public"
   },
   {
     "id": "eta-05",
@@ -201,7 +201,7 @@
     "id": "eta-14",
     "title": "Systèmes d'information (IT public)",
     "subtitle": "60% des applications critiques ont plus de 15 ans",
-    "description": "Les ministères depensent ~10 Md€/an en informatique. Grands echecs : Louvois (500 M€ de surcout), Operateur national de paie (abandonne apres 300 M€). La DINUM tente de rationaliser mais chaque ministère garde ses propres systèmes.",
+    "description": "Les ministères depensent ~10 Md€/an en informatique. Grands echecs : Louvois (500 M€ de surcoût), Operateur national de paie (abandonne apres 300 M€). La DINUM tente de rationaliser mais chaque ministère garde ses propres systèmes.",
     "amountBillions": 10,
     "costPerCitizen": 147,
     "deckId": "etat",

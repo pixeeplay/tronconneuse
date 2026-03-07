@@ -148,7 +148,7 @@
     "id": "imm-11",
     "title": "Regularisations et sans-papiers",
     "subtitle": "600 000-900 000 personnes en situation irreguliere",
-    "description": "~30 000 regularisations/an. Les sans-papiers travaillent massivement dans le BTP, la restauration, l'aide a domicile. Ils cotisent à la Secu sans pouvoir beneficier de la retraite. Le coût net est un sujet de guerre de chiffres entre think tanks.",
+    "description": "~30 000 régularisations/an. Les sans-papiers travaillent massivement dans le BTP, la restauration, l'aide a domicile. Ils cotisent à la Secu sans pouvoir beneficier de la retraite. Le coût net est un sujet de guerre de chiffres entre think tanks.",
     "amountBillions": 4,
     "costPerCitizen": 60,
     "deckId": "immigration",
@@ -156,11 +156,11 @@
     "source": "DGEF, IGAS, Cour des comptes, estimations INSEE/INED",
     "level": 1,
     "tags": ["immigration", "sans-papiers", "regularisation"],
-    "equivalence": "30 000 regularisations/an sur 600 000-900 000 sans-papiers = un stock qui se renouvelle plus vite qu'il ne se résorbe"
+    "equivalence": "30 000 régularisations/an sur 600 000-900 000 sans-papiers = un stock qui se renouvelle plus vite qu'il ne se résorbe"
   },
   {
     "id": "imm-12",
-    "title": "Accueil refugies ukrainiens",
+    "title": "Accueil réfugiés ukrainiens",
     "subtitle": "Protection temporaire UE",
     "description": "~100 000 Ukrainiens bénéficient de la protection temporaire en France. Droit au travail immediat, ADA, scolarisation. Dispositif distinct de l'asile classique. 65% sont des femmes et enfants. Le taux d'emploi atteint ~30% apres 2 ans (supérieur aux autres flux).",
     "amountBillions": 0.5,
@@ -203,8 +203,8 @@
   {
     "id": "imm-15",
     "title": "Eloignement et OQTF (execution)",
-    "subtitle": "140 000 OQTF/an, 7% executees",
-    "description": "~140 000 OQTF prononcees chaque année, ~7% executees. Un eloignement force coûte ~10 000-15 000. Obstacles : laissez-passer consulaires non delivres, absence de cooperation (Algerie, Maroc, Tunisie), recours suspensifs. L'aide au retour volontaire (2 500/personne) est 5x moins chere.",
+    "subtitle": "140 000 OQTF/an, 7% exécutées",
+    "description": "~140 000 OQTF prononcees chaque année, ~7% exécutées. Un eloignement force coûte ~10 000-15 000. Obstacles : laissez-passer consulaires non delivres, absence de cooperation (Algerie, Maroc, Tunisie), recours suspensifs. L'aide au retour volontaire (2 500/personne) est 5x moins chere.",
     "amountBillions": 0.5,
     "costPerCitizen": 7,
     "deckId": "immigration",
@@ -212,13 +212,13 @@
     "source": "DGEF, Ministere Interieur, Cour des comptes",
     "level": 1,
     "tags": ["immigration", "OQTF", "eloignement"],
-    "equivalence": "Sur 100 OQTF prononcees, 93 ne sont jamais executees"
+    "equivalence": "Sur 100 OQTF prononcees, 93 ne sont jamais exécutées"
   },
   {
     "id": "imm-16",
     "title": "Immigration de travail et métiers en tension",
     "subtitle": "40 000 titres de séjour économiques/an",
-    "description": "60% des entreprises declarent des difficultés de recrutement. Le Passeport Talent vise les profils qualifies : 15 000 delivres/an. Debat : immigration choisie (Canada, Australie) plutôt que subie (regroupement familial = 90 000 titres/an) ?",
+    "description": "60% des entreprises declarent des difficultés de recrutement. Le Passeport Talent vise les profils qualifiés : 15 000 delivres/an. Debat : immigration choisie (Canada, Australie) plutôt que subie (regroupement familial = 90 000 titres/an) ?",
     "amountBillions": 0,
     "costPerCitizen": 0,
     "deckId": "immigration",
@@ -246,7 +246,7 @@
     "id": "imm-18",
     "title": "Naturalisation et acquisition de la nationalite",
     "subtitle": "120 000 nouveaux Français/an",
-    "description": "~50 000 par decret, ~30 000 par mariage, ~30 000 par declaration. Delai moyen 12-18 mois. Conditions : 5 ans de résidence, niveau B1, assimilation. La France est le pays europeen qui naturalise le plus en valeur absolue. Taux de refus ~15%.",
+    "description": "~50 000 par decret, ~30 000 par mariage, ~30 000 par declaration. Delai moyen 12-18 mois. Conditions : 5 ans de résidence, niveau B1, assimilation. La France est le pays européen qui naturalise le plus en valeur absolue. Taux de refus ~15%.",
     "amountBillions": 0.1,
     "costPerCitizen": 1.5,
     "deckId": "immigration",

@@ -146,9 +146,9 @@
   },
   {
     "id": "rec-11",
-    "title": "Taxe GAFAM (services numeriques)",
+    "title": "Taxe GAFAM (services numériques)",
     "subtitle": "3% du CA en France",
-    "description": "Taxe de 3% sur le CA realise en France par les geants du numérique. Les États-Unis ont menace de représailles commerciales. La taxe devait etre temporaire (accord OCDE Pilier 1 en retard), mais elle est reconduite chaque année. La France est le seul grand pays à l'avoir maintenue.",
+    "description": "Taxe de 3% sur le CA réalisé en France par les geants du numérique. Les États-Unis ont menace de représailles commerciales. La taxe devait etre temporaire (accord OCDE Pilier 1 en retard), mais elle est reconduite chaque année. La France est le seul grand pays à l'avoir maintenue.",
     "amountBillions": 0.7,
     "costPerCitizen": 10,
     "deckId": "recettes",

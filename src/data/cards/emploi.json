@@ -116,7 +116,7 @@
     "id": "emp-09",
     "title": "Fraude au CPF",
     "subtitle": "Compte personnel de formation",
-    "description": "Le CPF (500/an par actif, plafonne a 5 000) est devenu un terrain de chasse pour les escrocs. La Caisse des dépôts a bloque 43 000 comptes suspects en 2023. FranceConnect+ obligatoire depuis 2023, reduisant la fraude de 80%. 40% des formations CPF jugees sans valeur par la Cour des comptes.",
+    "description": "Le CPF (500/an par actif, plafonne a 5 000) est devenu un terrain de chasse pour les escrocs. La Caisse des dépôts a bloque 43 000 comptes suspects en 2023. FranceConnect+ obligatoire depuis 2023, reduisant la fraude de 80%. 40% des formations CPF jugées sans valeur par la Cour des comptes.",
     "amountBillions": 0.25,
     "costPerCitizen": 4,
     "deckId": "emploi",
@@ -124,7 +124,7 @@
     "source": "Caisse des depots, Cour des comptes, France Competences",
     "level": 1,
     "tags": ["emploi", "CPF", "fraude"],
-    "equivalence": "Le CPF distribue 2 Md€/an en formation, dont 40% jugees inutiles par la Cour des comptes"
+    "equivalence": "Le CPF distribue 2 Md€/an en formation, dont 40% jugées inutiles par la Cour des comptes"
   },
   {
     "id": "emp-10",
@@ -156,7 +156,7 @@
   },
   {
     "id": "emp-12",
-    "title": "Travail détaché (travailleurs europeens)",
+    "title": "Travail détaché (travailleurs européens)",
     "subtitle": "300 000 travailleurs declares + fraude",
     "description": "300 000 travailleurs detaches declares en France (BTP, agriculture, transport). Payes aux conditions françaises mais cotisant dans leur pays d'origine. La fraude au detachement est estimee a 200 000-500 000 travailleurs supplementaires. Un travailleur détaché coûte 20-30% de moins qu'un salarié français.",
     "amountBillions": 2.5,
@@ -172,7 +172,7 @@
     "id": "emp-13",
     "title": "Inspection du travail",
     "subtitle": "2 000 inspecteurs pour 20 millions de salariés",
-    "description": "1 inspecteur pour 10 000 salariés (OIT recommande 1 pour 8 000). 450 000 interventions/an, 25 000 PV. 200 agressions declarees/an. Le travail dissimule est estimé a 6-8% du PIB (~180 Md€), dont l'essentiel echappe aux contrôles.",
+    "description": "1 inspecteur pour 10 000 salariés (OIT recommande 1 pour 8 000). 450 000 interventions/an, 25 000 PV. 200 agressions déclarées/an. Le travail dissimule est estimé a 6-8% du PIB (~180 Md€), dont l'essentiel echappe aux contrôles.",
     "amountBillions": 0.6,
     "costPerCitizen": 9,
     "deckId": "emploi",
@@ -200,7 +200,7 @@
     "id": "emp-15",
     "title": "Temps de travail et 35 heures",
     "subtitle": "Cout et debat depuis 25 ans",
-    "description": "Les 35 heures compensées par des allegements de ~12 Md€/an. Les Français travaillent 1 607h/an (vs 1 800 en Allemagne). Mais la duree effective des salariés a temps complet est de 39,1h/semaine. Les etudes divergent : 300 000 emplois créés (DARES) vs 0 emploi net (IFRAP).",
+    "description": "Les 35 heures compensées par des allegements de ~12 Md€/an. Les Français travaillent 1 607h/an (vs 1 800 en Allemagne). Mais la durée effective des salariés a temps complet est de 39,1h/semaine. Les etudes divergent : 300 000 emplois créés (DARES) vs 0 emploi net (IFRAP).",
     "amountBillions": 12,
     "costPerCitizen": 176,
     "deckId": "emploi",
@@ -228,7 +228,7 @@
     "id": "emp-17",
     "title": "Accidents du travail mortels",
     "subtitle": "2 morts par jour — pire bilan d'Europe de l'Ouest",
-    "description": "~650 000 accidents/an dont ~700 mortels. Taux de mortalité 2x supérieur à l'Allemagne et 3x aux Pays-Bas. Le BTP concentre 20% des accidents mortels pour 8% des emplois. Un intérimaire a 2x plus de risques qu'un CDI.",
+    "description": "~650 000 accidents/an dont ~700 mortels. Taux de mortalité 2x supérieur à l'Allemagne et 3x aux Pays-Bas. Le BTP concentré 20% des accidents mortels pour 8% des emplois. Un intérimaire a 2x plus de risques qu'un CDI.",
     "amountBillions": 50,
     "costPerCitizen": 735,
     "deckId": "emploi",

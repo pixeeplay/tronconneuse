@@ -181,7 +181,7 @@
     "id": "hop-03",
     "title": "Tarification à l'activité (T2A)",
     "subtitle": "Une appendicectomie est remboursée ~2 500€ à l'hôpital, quel que soit le temps réel passé",
-    "description": "La T2A financé l'hôpital « à l'acte » : chaque séjour, consultation ou intervention est rémunérée selon un tarif national. Critiquée pour inciter à la « course à l'acte » au détriment de la qualité, de la prévention et des pathologies chroniques. La réforme en cours vise à introduire 50% de financement « à la qualité et à la pertinence » d'ici 2028. Les urgences, non rentables en T2A, sont les premières victimes du système.",
+    "description": "La T2A finance l'hôpital « à l'acte » : chaque séjour, consultation ou intervention est rémunérée selon un tarif national. Critiquée pour inciter à la « course à l'acte » au détriment de la qualité, de la prévention et des pathologies chroniques. La réforme en cours vise à introduire 50% de financement « à la qualité et à la pertinence » d'ici 2028. Les urgences, non rentables en T2A, sont les premières victimes du système.",
     "amountBillions": 60,
     "costPerCitizen": 882,
     "deckId": "sante",
@@ -207,7 +207,7 @@
     "level": 1,
     "tags": ["santé", "urgences", "hôpital"],
     "trend": null,
-    "equivalence": "Un passage aux urgences coûte ~240€ en moyenne, vs ~25€ chez le generaliste"
+    "equivalence": "Un passage aux urgences coûte ~240€ en moyenne, vs ~25€ chez le généraliste"
   },
   {
     "id": "hop-05",
@@ -325,7 +325,7 @@
     "id": "san-12",
     "title": "100% Sante (optique, dentaire, audio)",
     "subtitle": "Zero reste a charge",
-    "description": "La réforme 100% Sante a supprime le reste a charge sur un panier de lunettes, protheses dentaires et audioprotheses. ~5 millions de Français en bénéficient. Succes en audioprotheses (appareillages x2), plus mitige en optique. Le renoncement aux soins a baisse de 30%.",
+    "description": "La réforme 100% Sante a supprime le reste a charge sur un panier de lunettes, protheses dentaires et audioprotheses. ~5 millions de Français en bénéficient. Succes en audioprotheses (appareillages x2), plus mitige en optique. Le renoncement aux soins a baissé de 30%.",
     "amountBillions": 3,
     "costPerCitizen": 44,
     "deckId": "sante",
@@ -387,7 +387,7 @@
   },
   {
     "id": "san-16",
-    "title": "Affections de longue duree (ALD)",
+    "title": "Affections de longue durée (ALD)",
     "subtitle": "Prise en charge a 100% des ALD",
     "description": "12,5 millions de Français (19%) sont en ALD (cancer, diabete, insuffisance cardiaque, VIH, maladies psychiatriques graves). Leurs soins sont rembourses a 100% par la Secu. Les ALD concentrent 66% des dépenses de l'Assurance maladie. Le nombre d'ALD augmente de 3%/an. 4 ALD concentrent 50% des dépenses : cancers, diabete, maladies psychiatriques, maladies cardiovasculaires.",
     "amountBillions": 110,
@@ -398,7 +398,7 @@
     "source": "CNAM, DREES, HCAAM",
     "level": 1,
     "tags": ["sante", "ald", "assurance-maladie"],
-    "equivalence": "1 Français sur 5 est en ALD — et concentre les 2/3 des dépenses de soins"
+    "equivalence": "1 Français sur 5 est en ALD — et concentré les 2/3 des dépenses de soins"
   },
   {
     "id": "san-17",
@@ -418,7 +418,7 @@
     "id": "san-18",
     "title": "Obesite et maladies metaboliques",
     "subtitle": "Cout sanitaire direct et indirect de l'obesite",
-    "description": "17% des Français adultes sont obeses, 47% en surpoids. L'obesite est le 1er facteur de risque de diabete de type 2 (4 millions de diabetiques). Le coût sanitaire direct est estimé a 10-12 Md€/an ; le coût indirect a 5-8 Md€/an. Les nouveaux médicaments GLP-1 (Ozempic, Mounjaro) coûtent 300€/mois et pourraient revolutionner le traitement — mais leur remboursement generalise coûterait 5-10 Md€/an supplementaires.",
+    "description": "17% des Français adultes sont obeses, 47% en surpoids. L'obesite est le 1er facteur de risque de diabete de type 2 (4 millions de diabetiques). Le coût sanitaire direct est estimé a 10-12 Md€/an ; le coût indirect a 5-8 Md€/an. Les nouveaux médicaments GLP-1 (Ozempic, Mounjaro) coûtent 300€/mois et pourraient revolutionner le traitement — mais leur remboursement généralisé coûterait 5-10 Md€/an supplementaires.",
     "amountBillions": 17.5,
     "costPerCitizen": 250,
     "deckId": "sante",
@@ -432,7 +432,7 @@
     "id": "san-19",
     "title": "Medecins étrangers (PADHUE)",
     "subtitle": "Medecins a diplômé hors UE",
-    "description": "Environ 12 000 médecins a diplômé hors UE exercent en France, principalement à l'hôpital public dans les specialites en tension. Ils representent ~5% des médecins en activité mais 25% des urgentistes hospitaliers. Paradoxe : la France formé 10 000 médecins/an mais n'en retient pas assez, et fait appel à des médecins formes dans des pays qui en manquent cruellement eux-memes.",
+    "description": "Environ 12 000 médecins a diplômé hors UE exercent en France, principalement à l'hôpital public dans les spécialités en tension. Ils representent ~5% des médecins en activité mais 25% des urgentistes hospitaliers. Paradoxe : la France formé 10 000 médecins/an mais n'en retient pas assez, et fait appel à des médecins formes dans des pays qui en manquent cruellement eux-memes.",
     "amountBillions": 0.5,
     "costPerCitizen": 7,
     "deckId": "sante",
