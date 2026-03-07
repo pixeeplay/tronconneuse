@@ -13,7 +13,7 @@
     "level": 1,
     "tags": ["zombie", "formation", "CPF", "déficit"],
     "trend": null,
-    "equivalence": "Le déficit de France Competences = 2x le budget du ministère de la Culture"
+    "equivalence": "Le déficit de France Compétences = 2x le budget du ministère de la Culture"
   },
   {
     "id": "zom-02",
@@ -29,7 +29,7 @@
     "level": 1,
     "tags": ["zombie", "COVID", "PGE", "dette"],
     "trend": null,
-    "equivalence": "Les PGE = un pret de 200 000€ en moyenne par entreprise, garanti par vous"
+    "equivalence": "Les PGE = un prêt de 200 000€ en moyenne par entreprise, garanti par vous"
   },
   {
     "id": "zom-03",

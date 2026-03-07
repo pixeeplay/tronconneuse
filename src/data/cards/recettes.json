@@ -57,7 +57,7 @@
     "sourceUrl": "https://www.vie-publique.fr",
     "level": 1,
     "tags": ["recettes", "CSG", "cotisations"],
-    "equivalence": "Sur 100€ bruts de salaire, ~7,50€ partent en CSG avant meme l'IR"
+    "equivalence": "Sur 100€ bruts de salaire, ~7,50€ partent en CSG avant même l'IR"
   },
   {
     "id": "rec-05",
@@ -96,10 +96,10 @@
     "costPerCitizen": 660,
     "deckId": "recettes",
     "icon": "🏠",
-    "source": "DGFiP, DGCL, Observatoire des finances locales",
+    "source": "DGFiP, DGCL, Observatoire des financés locales",
     "level": 1,
     "tags": ["recettes", "foncier", "communes"],
-    "equivalence": "Un proprietaire français paie en moyenne ~800€/an de foncier (tres variable)"
+    "equivalence": "Un propriétaire français paie en moyenne ~800€/an de foncier (tres variable)"
   },
   {
     "id": "rec-08",
@@ -128,7 +128,7 @@
     "sourceUrl": "https://www.vie-publique.fr",
     "level": 1,
     "tags": ["recettes", "prélèvements", "PIB"],
-    "equivalence": "Un salarié au SMIC travaille de janvier a debut juin uniquement pour les prélèvements"
+    "equivalence": "Un salarié au SMIC travaille de janvier a début juin uniquement pour les prélèvements"
   },
   {
     "id": "rec-10",
@@ -148,7 +148,7 @@
     "id": "rec-11",
     "title": "Taxe GAFAM (services numériques)",
     "subtitle": "3% du CA en France",
-    "description": "Taxe de 3% sur le CA réalisé en France par les geants du numérique. Les États-Unis ont menace de représailles commerciales. La taxe devait etre temporaire (accord OCDE Pilier 1 en retard), mais elle est reconduite chaque année. La France est le seul grand pays à l'avoir maintenue.",
+    "description": "Taxe de 3% sur le CA réalisé en France par les geants du numérique. Les États-Unis ont menacé de représailles commerciales. La taxe devait être temporaire (accord OCDE Pilier 1 en retard), mais elle est reconduite chaque année. La France est le seul grand pays à l'avoir maintenue.",
     "amountBillions": 0.7,
     "costPerCitizen": 10,
     "deckId": "recettes",
@@ -162,7 +162,7 @@
     "id": "rec-12",
     "title": "Taxe sur les transactions financieres (TTF)",
     "subtitle": "0,3% sur les achats d'actions",
-    "description": "La TTF rapporte ~2 Md€/an. Créée en 2012, affectée au budget général et à l'aide au développement. La taxe Tobin européenne est bloquee depuis 20 ans. La France applique seule la taxe la plus élevée d'Europe, pénalisant la Place de Paris face a Amsterdam et Francfort.",
+    "description": "La TTF rapporte ~2 Md€/an. Créée en 2012, affectée au budget général et à l'aide au développement. La taxe Tobin européenne est bloquée depuis 20 ans. La France applique seule la taxe la plus élevée d'Europe, pénalisant la Place de Paris face a Amsterdam et Francfort.",
     "amountBillions": 2,
     "costPerCitizen": 29,
     "deckId": "recettes",
@@ -176,7 +176,7 @@
     "id": "rec-13",
     "title": "Cotisations sociales (detail)",
     "subtitle": "480 Md/an — le 1er prélèvement obligatoire",
-    "description": "Sur 100 de salaire brut, ~22 partent en cotisations salariales et ~32 en cotisations patronales. Le coût du travail français est le 2e plus élève de la zone euro. Les allegements sur les bas salaires creent une trappe a bas salaires au-dela de 1,6 SMIC.",
+    "description": "Sur 100 de salaire brut, ~22 partent en cotisations salariales et ~32 en cotisations patronales. Le coût du travail français est le 2e plus élève de la zone euro. Les allègements sur les bas salaires creent une trappe a bas salaires au-dela de 1,6 SMIC.",
     "amountBillions": 480,
     "costPerCitizen": 7060,
     "deckId": "recettes",
@@ -232,7 +232,7 @@
     "id": "rec-17",
     "title": "Taxe d'habitation résidences secondaires",
     "subtitle": "3,6 millions de résidences secondaires",
-    "description": "Maintenue sur les résidences secondaires, peut etre majorée de 5 a 60% en zones tendues. Paris applique +60%. Vise a inciter les propriétaires a remettre leurs logements sur le marche locatif. Recettes en hausse (+15%) depuis la suppression de la TH résidences principales.",
+    "description": "Maintenue sur les résidences secondaires, peut être majorée de 5 à 60% en zones tendues. Paris applique +60%. Vise a inciter les propriétaires a remettre leurs logements sur le marché locatif. Recettes en hausse (+15%) depuis la suppression de la TH résidences principales.",
     "amountBillions": 2.5,
     "costPerCitizen": 0,
     "deckId": "recettes",
@@ -246,7 +246,7 @@
     "id": "rec-18",
     "title": "Dividendes et participations de l'État (APE)",
     "subtitle": "83 entreprises, 160 Md de portefeuille",
-    "description": "L'APE gère un portefeuille de ~160 Md€ (EDF, La Poste, Engie, Orange, Thales, Airbus, Renault, ADP, FDJ). Dividendes de 3 a 6 Md€/an. L'État actionnaire est critique pour gérer ses participations comme un fonds de pension plutôt que comme un stratege industriel.",
+    "description": "L'APE gère un portefeuille de ~160 Md€ (EDF, La Poste, Engie, Orange, Thales, Airbus, Renault, ADP, FDJ). Dividendes de 3 à 6 Md€/an. L'État actionnaire est critique pour gérer ses participations comme un fonds de pension plutôt que comme un stratege industriel.",
     "amountBillions": 4.5,
     "costPerCitizen": 66,
     "deckId": "recettes",

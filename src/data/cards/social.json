@@ -27,7 +27,7 @@
     "sourceUrl": "https://www.vie-publique.fr",
     "level": 1,
     "tags": ["social", "réforme", "retraites"],
-    "equivalence": "Chaque année de recul de l'age legal = ~7 Md€ d'economies"
+    "equivalence": "Chaque année de recul de l'age legal = ~7 Md€ d'économies"
   },
   {
     "id": "soc-03",
@@ -161,7 +161,7 @@
     "source": "France Compétences, Cour des comptes, DARES",
     "level": 1,
     "tags": ["social", "apprentissage", "formation"],
-    "equivalence": "Les aides à l'apprentissage ont ete multipliees par 4 en 6 ans"
+    "equivalence": "Les aides à l'apprentissage ont été multipliees par 4 en 6 ans"
   },
   {
     "id": "soc-12",
@@ -271,7 +271,7 @@
     "level": 1,
     "tags": ["retraites", "réforme", "âge légal"],
     "trend": null,
-    "equivalence": "18 Md€ d'economies sur 7 ans = moins d'1 an de charge de la dette"
+    "equivalence": "18 Md€ d'économies sur 7 ans = moins d'1 an de charge de la dette"
   },
   {
     "id": "ret-07",
@@ -303,7 +303,7 @@
     "level": 1,
     "tags": ["retraites", "réversion", "veuvage"],
     "trend": null,
-    "equivalence": "La reversion moyenne = ~600€/mois, souvent insuffisante pour une veuve agee"
+    "equivalence": "La reversion moyenne = ~600€/mois, souvent insuffisante pour une veuve âgée"
   },
   {
     "id": "ret-09",
@@ -319,7 +319,7 @@
     "level": 1,
     "tags": ["retraites", "indépendants", "agriculteurs"],
     "trend": null,
-    "equivalence": "Un agriculteur retraite gagne moitié moins qu'un fonctionnaire retraite, apres une carriere souvent plus longue"
+    "equivalence": "Un agriculteur retraite gagne moitié moins qu'un fonctionnaire retraite, après une carriere souvent plus longue"
   },
   {
     "id": "ret-10",
@@ -341,7 +341,7 @@
     "id": "soc-13",
     "title": "Allocation adultes handicapes (AAH)",
     "subtitle": "1 033€/mois pour 1,4 million de personnes",
-    "description": "L'AAH garantit un revenu minimum a 1,4 million de personnes handicapees. Deconjugalisee depuis 2023. Montant en dessous du seuil de pauvreté (~1 200€). La France consacre au total 52 Md€/an au handicap (2% du PIB). Delai moyen MDPH : 4 a 8 mois.",
+    "description": "L'AAH garantit un revenu minimum a 1,4 million de personnes handicapees. Deconjugalisee depuis 2023. Montant en dessous du seuil de pauvreté (~1 200€). La France consacre au total 52 Md€/an au handicap (2% du PIB). Délai moyen MDPH : 4 à 8 mois.",
     "amountBillions": 13,
     "costPerCitizen": 191,
     "deckId": "social",
@@ -351,13 +351,13 @@
     "sourceUrl": "https://www.caf.fr",
     "level": 1,
     "tags": ["handicap", "AAH", "social"],
-    "equivalence": "L'AAH (1 033€) est inferieure au seuil de pauvreté (1 200€) — un handicape est pauvre par defaut"
+    "equivalence": "L'AAH (1 033€) est inférieure au seuil de pauvreté (1 200€) — un handicape est pauvre par defaut"
   },
   {
     "id": "soc-14",
     "title": "Accueil petite enfance (crèches)",
     "subtitle": "22% des enfants obtiennent une place",
-    "description": "La France dispose de ~480 000 places en crèche pour ~2,2 millions d'enfants de 0-3 ans. Le SPPE vise 200 000 places supplementaires d'ici 2030. Cout moyen d'une place : ~15 000€/an. Inegalites enormes : 1 place pour 3 enfants en Ile-de-France, 1 pour 8 en Seine-Saint-Denis.",
+    "description": "La France dispose de ~480 000 places en crèche pour ~2,2 millions d'enfants de 0-3 ans. Le SPPE vise 200 000 places supplémentaires d'ici 2030. Coût moyen d'une place : ~15 000€/an. Inégalités énormes : 1 place pour 3 enfants en Ile-de-France, 1 pour 8 en Seine-Saint-Denis.",
     "amountBillions": 8,
     "costPerCitizen": 118,
     "deckId": "social",
@@ -373,7 +373,7 @@
     "id": "soc-15",
     "title": "Branche autonomie (5e branche Secu)",
     "subtitle": "40 Md€ pour la dépendance",
-    "description": "La 5e branche de la Sécurité sociale gère la perte d'autonomie des personnes agees et handicapees : APA, PCH, financement des EHPAD. Le vieillissement doublera les besoins d'ici 2050. La loi grand age promise depuis 2019 n'a jamais ete votee.",
+    "description": "La 5e branche de la Sécurité sociale gère la perte d'autonomie des personnes âgées et handicapees : APA, PCH, financement des EHPAD. Le vieillissement doublera les besoins d'ici 2050. La loi grand age promise depuis 2019 n'a jamais ete votee.",
     "amountBillions": 40,
     "costPerCitizen": 588,
     "deckId": "social",
@@ -389,7 +389,7 @@
     "id": "soc-16",
     "title": "Accidents du travail (AT-MP)",
     "subtitle": "Branche excédentaire mais siphonnee",
-    "description": "La branche AT-MP indemnise ~650 000 accidents du travail et ~50 000 maladies professionnelles par an. Financee par les cotisations employeurs. Structurellement excédentaire (~1-2 Md€/an), l'État la pontionne régulièrement pour financer les branches déficitaires.",
+    "description": "La branche AT-MP indemnise ~650 000 accidents du travail et ~50 000 maladies professionnelles par an. Financée par les cotisations employeurs. Structurellement excédentaire (~1-2 Md€/an), l'État la pontionne régulièrement pour financer les branches déficitaires.",
     "amountBillions": 14,
     "costPerCitizen": 206,
     "deckId": "social",
@@ -403,7 +403,7 @@
   },
   {
     "id": "soc-17",
-    "title": "Pauvrete des enfants",
+    "title": "Pauvreté des enfants",
     "subtitle": "3 millions d'enfants sous le seuil de pauvreté",
     "description": "21% des moins de 18 ans vivent sous le seuil de pauvreté. L'ASE prend en charge ~370 000 enfants dont ~180 000 places. Un placement en foyer coûte ~50 000€/an. 1€ investi dans un enfant de 0-5 ans rapporte 7-13€ à la société sur 40 ans (Heckman).",
     "amountBillions": 10,
@@ -411,7 +411,7 @@
     "deckId": "social",
     "icon": "🧒",
     "trend": 3,
-    "source": "DREES, Observatoire des inegalites, UNICEF France",
+    "source": "DREES, Observatoire des inégalités, UNICEF France",
     "sourceUrl": "https://www.inegalites.fr",
     "level": 1,
     "tags": ["pauvrete", "enfants", "ASE"],
@@ -420,8 +420,8 @@
   {
     "id": "soc-18",
     "title": "Conge parental (PreParE)",
-    "subtitle": "Prestation partagee d'education de l'enfant",
-    "description": "La PreParE rémunéré le parent qui réduit ou arrêté son activité : 428€/mois a taux plein. Le nombre de bénéficiaires a chuté de 50% en 10 ans (de 500 000 a 250 000) : le montant est trop faible pour compenser la perte de salaire. Les pays nordiques offrent 80% du salaire pendant 12-18 mois. La réforme annoncee en 2024 (conge de naissance) est reportee.",
+    "subtitle": "Prestation partagee d'éducation de l'enfant",
+    "description": "La PreParE rémunéré le parent qui réduit ou arrêté son activité : 428€/mois a taux plein. Le nombre de bénéficiaires a chuté de 50% en 10 ans (de 500 000 à 250 000) : le montant est trop faible pour compenser la perte de salaire. Les pays nordiques offrent 80% du salaire pendant 12-18 mois. La réforme annoncée en 2024 (conge de naissance) est reportée.",
     "amountBillions": 1.5,
     "costPerCitizen": 22,
     "deckId": "social",
@@ -449,7 +449,7 @@
     "id": "soc-20",
     "title": "Pensions alimentaires impayees (ARIPA)",
     "subtitle": "Agence de recouvrement des impayes",
-    "description": "L'ARIPA intervient quand un parent ne paie pas la pension alimentaire fixee par le juge. 30-40% des pensions alimentaires sont partiellement ou totalement impayees. 700 000 familles monoparentales sont touchees. Le taux de recouvrement effectif reste faible (~40%). Les familles monoparentales (85% de femmes) sont les plus exposees à la pauvreté.",
+    "description": "L'ARIPA intervient quand un parent ne paie pas la pension alimentaire fixee par le juge. 30-40% des pensions alimentaires sont partiellement ou totalement impayees. 700 000 familles monoparentales sont touchées. Le taux de recouvrement effectif reste faible (~40%). Les familles monoparentales (85% de femmes) sont les plus exposees à la pauvreté.",
     "amountBillions": 0.3,
     "costPerCitizen": 4,
     "deckId": "social",
@@ -457,18 +457,18 @@
     "source": "ARIPA/CAF, INSEE, DREES",
     "level": 1,
     "tags": ["social", "pensions", "famille"],
-    "equivalence": "1 pension alimentaire sur 3 n'est pas payee — 1re cause de pauvreté des meres isolees"
+    "equivalence": "1 pension alimentaire sur 3 n'est pas payée — 1re cause de pauvreté des meres isolees"
   },
   {
     "id": "soc-21",
     "title": "Protection de l'enfance (ASE)",
     "subtitle": "Aide sociale à l'enfance",
-    "description": "L'ASE protégé ~370 000 enfants : 180 000 places (familles d'accueil ou foyers) et 190 000 suivis a domicile. Cout moyen d'un placement en foyer : 50 000€/an. Les familles d'accueil sont en crise d'attractivite. 23% des personnes sans domicile ont ete placees enfant. La loi Taquet (2022) renforce les droits des enfants places mais les departements manquent de moyens.",
+    "description": "L'ASE protégé ~370 000 enfants : 180 000 places (familles d'accueil ou foyers) et 190 000 suivis a domicile. Coût moyen d'un placement en foyer : 50 000€/an. Les familles d'accueil sont en crise d'attractivité. 23% des personnes sans domicile ont été placees enfant. La loi Taquet (2022) renforce les droits des enfants places mais les départements manquent de moyens.",
     "amountBillions": 9,
     "costPerCitizen": 132,
     "deckId": "social",
     "icon": "👦",
-    "source": "DREES, ONPE, departements de France, Fondation Abbe Pierre",
+    "source": "DREES, ONPE, départements de France, Fondation Abbé Pierre",
     "level": 1,
     "tags": ["social", "enfance", "ase"],
     "equivalence": "Un enfant place en foyer coûte 137€/jour — et 23% des SDF en France sont d'anciens enfants de l'ASE"
@@ -476,8 +476,8 @@
   {
     "id": "soc-22",
     "title": "Fraude aux prestations sociales",
-    "subtitle": "Fraude detectee et estimee toutes branches",
-    "description": "La fraude aux prestations (RSA, allocations familiales, assurance maladie, chomage) est estimee entre 6 et 8 Md€/an par la Cour des comptes. Seuls ~2 Md€ sont detectes et 800 M€ effectivement recouvres. A comparer avec la fraude fiscale (80-120 Md€/an estimee) : la fraude aux prestations est 10-15x plus faible mais 10x plus mediatisee.",
+    "subtitle": "Fraude detectee et estimée toutes branches",
+    "description": "La fraude aux prestations (RSA, allocations familiales, assurance maladie, chomage) est estimée entre 6 et 8 Md€/an par la Cour des comptes. Seuls ~2 Md€ sont detectes et 800 M€ effectivement recouvres. A comparer avec la fraude fiscale (80-120 Md€/an estimée) : la fraude aux prestations est 10-15x plus faible mais 10x plus mediatisee.",
     "amountBillions": 2,
     "costPerCitizen": 30,
     "deckId": "social",
@@ -485,6 +485,6 @@
     "source": "Cour des comptes rapport fraude, CNAF, CNAM, Unedic",
     "level": 1,
     "tags": ["social", "fraude", "prestations"],
-    "equivalence": "La fraude sociale (~7 Md€) = 6% de la fraude fiscale (~120 Md€), mais occupe 60% du debat public"
+    "equivalence": "La fraude sociale (~7 Md€) = 6% de la fraude fiscale (~120 Md€), mais occupe 60% du débat public"
   }
 ]

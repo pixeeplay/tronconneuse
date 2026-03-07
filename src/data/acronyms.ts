@@ -186,6 +186,7 @@ export const ACRONYMS: Record<string, string> = {
   ANRU: "Agence Nationale pour la Rénovation Urbaine",
   NPNRU: "Nouveau Programme National de Renouvellement Urbain",
   ZAN: "Zéro Artificialisation Nette",
+  "3DS": "Différenciation, Décentralisation, Déconcentration et Simplification (loi)",
 
   // Numérique et innovation
   IA: "Intelligence Artificielle",
@@ -281,7 +282,7 @@ export const ACRONYMS: Record<string, string> = {
   ROI: "Return on Investment (Retour sur investissement)",
   UNESCO: "Organisation des Nations Unies pour l'Éducation, la Science et la Culture",
   UNICEF: "Fonds des Nations Unies pour l'Enfance",
-  COVID: "Coronavirus Disease 2019",
+
   GPS: "Global Positioning System",
   VOD: "Video on Demand (Vidéo à la Demande)",
   PGE: "Prêt Garanti par l'État",

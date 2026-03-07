@@ -28,7 +28,7 @@
     "source": "Ministère de la Santé, Académie de médecine, Sénat",
     "level": 1,
     "tags": ["santé", "hôpital", "déficit"],
-    "equivalence": "Le budget hospitalier annuel = 2x celui de l'ensemble des collectivites locales en investissement"
+    "equivalence": "Le budget hospitalier annuel = 2x celui de l'ensemble des collectivités locales en investissement"
   },
   {
     "id": "san-03",
@@ -113,7 +113,7 @@
     "source": "Cour des comptes, CNAM rapport fraudes 2024",
     "level": 1,
     "tags": ["santé", "fraude", "contrôle"],
-    "equivalence": "La fraude estimee à la Secu (5-8 Md€) = le budget annuel de la recherche publique"
+    "equivalence": "La fraude estimée à la Secu (5-8 Md€) = le budget annuel de la recherche publique"
   },
   {
     "id": "san-09",
@@ -127,7 +127,7 @@
     "source": "DREES, ARS, LFSS 2025",
     "level": 1,
     "tags": ["santé", "accès aux soins", "territoires"],
-    "equivalence": "Former un médecin coûte ~200 000€ à l'État sur 9 a 12 ans d'etudes"
+    "equivalence": "Former un médecin coûte ~200 000€ à l'État sur 9 à 12 ans d'études"
   },
   {
     "id": "san-10",
@@ -175,13 +175,13 @@
     "level": 1,
     "tags": ["santé", "hôpital", "salaires"],
     "trend": null,
-    "equivalence": "Un infirmier hospitalier gagne ~2 100€ nets/mois (apres Segur), vs ~2 800€ dans le privé ou en interim"
+    "equivalence": "Un infirmier hospitalier gagne ~2 100€ nets/mois (après Segur), vs ~2 800€ dans le privé ou en interim"
   },
   {
     "id": "hop-03",
     "title": "Tarification à l'activité (T2A)",
     "subtitle": "Une appendicectomie est remboursée ~2 500€ à l'hôpital, quel que soit le temps réel passé",
-    "description": "La T2A finance l'hôpital « à l'acte » : chaque séjour, consultation ou intervention est rémunérée selon un tarif national. Critiquée pour inciter à la « course à l'acte » au détriment de la qualité, de la prévention et des pathologies chroniques. La réforme en cours vise à introduire 50% de financement « à la qualité et à la pertinence » d'ici 2028. Les urgences, non rentables en T2A, sont les premières victimes du système.",
+    "description": "La T2A financé l'hôpital « à l'acte » : chaque séjour, consultation ou intervention est rémunérée selon un tarif national. Critiquée pour inciter à la « course à l'acte » au détriment de la qualité, de la prévention et des pathologies chroniques. La réforme en cours vise à introduire 50% de financement « à la qualité et à la pertinence » d'ici 2028. Les urgences, non rentables en T2A, sont les premières victimes du système.",
     "amountBillions": 60,
     "costPerCitizen": 882,
     "deckId": "sante",
@@ -191,7 +191,7 @@
     "level": 1,
     "tags": ["santé", "hôpital", "T2A", "financement"],
     "trend": null,
-    "equivalence": "Une appendicectomie est remboursee ~2 500€ à l'hôpital, quel que soit le temps reel passe"
+    "equivalence": "Une appendicectomie est remboursée ~2 500€ à l'hôpital, quel que soit le temps reel passe"
   },
   {
     "id": "hop-04",
@@ -303,13 +303,13 @@
     "level": 1,
     "tags": ["santé", "ambulatoire", "économies"],
     "trend": null,
-    "equivalence": "Chaque point de chirurgie ambulatoire gagne = ~500 M€ d'economies"
+    "equivalence": "Chaque point de chirurgie ambulatoire gagne = ~500 M€ d'économies"
   },
   {
     "id": "san-11",
-    "title": "Prevention et vaccination",
+    "title": "Prévention et vaccination",
     "subtitle": "La France lanterne rouge de la prévention",
-    "description": "Les dépenses de prévention representent ~2% des dépenses totales de sante (vs 5% en Finlande). Le calendrier vaccinal couvre 13 vaccins obligatoires. La vaccination COVID a coûte ~6 Md€ mais a evite un coût hospitalier estimé a 20 Md€.",
+    "description": "Les dépenses de prévention représentent ~2% des dépenses totales de sante (vs 5% en Finlande). Le calendrier vaccinal couvre 13 vaccins obligatoires. La vaccination COVID a coûte ~6 Md€ mais a évité un coût hospitalier estimé à 20 Md€.",
     "amountBillions": 2.5,
     "costPerCitizen": 37,
     "deckId": "sante",
@@ -325,7 +325,7 @@
     "id": "san-12",
     "title": "100% Sante (optique, dentaire, audio)",
     "subtitle": "Zero reste a charge",
-    "description": "La réforme 100% Sante a supprime le reste a charge sur un panier de lunettes, protheses dentaires et audioprotheses. ~5 millions de Français en bénéficient. Succes en audioprotheses (appareillages x2), plus mitige en optique. Le renoncement aux soins a baissé de 30%.",
+    "description": "La réforme 100% Sante a supprimé le reste a charge sur un panier de lunettes, protheses dentaires et audioprothèses. ~5 millions de Français en bénéficient. Succes en audioprothèses (appareillages x2), plus mitige en optique. Le renoncement aux soins a baissé de 30%.",
     "amountBillions": 3,
     "costPerCitizen": 44,
     "deckId": "sante",
@@ -373,7 +373,7 @@
     "id": "san-15",
     "title": "SAMU et transports sanitaires",
     "subtitle": "2e poste de croissance des dépenses de sante",
-    "description": "Les transports sanitaires representent +5%/an depuis 10 ans. Le SAMU reçoit ~30 millions d'appels/an. 15-20% des transports sont juges non pertinents. Un transport en ambulance coûte en moyenne ~200€ à la Secu, un taxi conventionne ~50€.",
+    "description": "Les transports sanitaires représentent +5%/an depuis 10 ans. Le SAMU reçoit ~30 millions d'appels/an. 15-20% des transports sont juges non pertinents. Un transport en ambulance coûte en moyenne ~200€ à la Secu, un taxi conventionne ~50€.",
     "amountBillions": 6,
     "costPerCitizen": 88,
     "deckId": "sante",
@@ -389,7 +389,7 @@
     "id": "san-16",
     "title": "Affections de longue durée (ALD)",
     "subtitle": "Prise en charge a 100% des ALD",
-    "description": "12,5 millions de Français (19%) sont en ALD (cancer, diabete, insuffisance cardiaque, VIH, maladies psychiatriques graves). Leurs soins sont rembourses a 100% par la Secu. Les ALD concentrent 66% des dépenses de l'Assurance maladie. Le nombre d'ALD augmente de 3%/an. 4 ALD concentrent 50% des dépenses : cancers, diabete, maladies psychiatriques, maladies cardiovasculaires.",
+    "description": "12,5 millions de Français (19%) sont en ALD (cancer, diabete, insuffisance cardiaque, VIH, maladies psychiatriques graves). Leurs soins sont remboursés a 100% par la Secu. Les ALD concentrent 66% des dépenses de l'Assurance maladie. Le nombre d'ALD augmente de 3%/an. 4 ALD concentrent 50% des dépenses : cancers, diabete, maladies psychiatriques, maladies cardiovasculaires.",
     "amountBillions": 110,
     "costPerCitizen": 1620,
     "deckId": "sante",
@@ -404,7 +404,7 @@
     "id": "san-17",
     "title": "Maternites et perinatalite",
     "subtitle": "Accouchements + suivi grossesse + neonatologie",
-    "description": "La France a ferme 40% de ses maternites en 20 ans (de 814 en 2000 a 461 en 2024). Certaines femmes font 1h+ de route pour accoucher. La mortalité neonatale française est supérieure à la moyenne européenne (3,7‰ vs 3,1‰). 700 000 accouchements/an, dont 21% par cesarienne. Les sages-femmes ont obtenu des revalorisations salariales apres des greves en 2021-2023.",
+    "description": "La France a ferme 40% de ses maternites en 20 ans (de 814 en 2000 à 461 en 2024). Certaines femmes font 1h+ de route pour accoucher. La mortalité neonatale française est supérieure à la moyenne européenne (3,7‰ vs 3,1‰). 700 000 accouchements/an, dont 21% par cesarienne. Les sages-femmes ont obtenu des revalorisations salariales après des greves en 2021-2023.",
     "amountBillions": 4,
     "costPerCitizen": 59,
     "deckId": "sante",
@@ -418,7 +418,7 @@
     "id": "san-18",
     "title": "Obesite et maladies metaboliques",
     "subtitle": "Cout sanitaire direct et indirect de l'obesite",
-    "description": "17% des Français adultes sont obeses, 47% en surpoids. L'obesite est le 1er facteur de risque de diabete de type 2 (4 millions de diabetiques). Le coût sanitaire direct est estimé a 10-12 Md€/an ; le coût indirect a 5-8 Md€/an. Les nouveaux médicaments GLP-1 (Ozempic, Mounjaro) coûtent 300€/mois et pourraient revolutionner le traitement — mais leur remboursement généralisé coûterait 5-10 Md€/an supplementaires.",
+    "description": "17% des Français adultes sont obeses, 47% en surpoids. L'obesite est le 1er facteur de risque de diabete de type 2 (4 millions de diabetiques). Le coût sanitaire direct est estimé à 10-12 Md€/an ; le coût indirect a 5-8 Md€/an. Les nouveaux médicaments GLP-1 (Ozempic, Mounjaro) coûtent 300€/mois et pourraient revolutionner le traitement — mais leur remboursement généralisé coûterait 5-10 Md€/an supplémentaires.",
     "amountBillions": 17.5,
     "costPerCitizen": 250,
     "deckId": "sante",
@@ -430,9 +430,9 @@
   },
   {
     "id": "san-19",
-    "title": "Medecins étrangers (PADHUE)",
+    "title": "Médecins étrangers (PADHUE)",
     "subtitle": "Medecins a diplômé hors UE",
-    "description": "Environ 12 000 médecins a diplômé hors UE exercent en France, principalement à l'hôpital public dans les spécialités en tension. Ils representent ~5% des médecins en activité mais 25% des urgentistes hospitaliers. Paradoxe : la France formé 10 000 médecins/an mais n'en retient pas assez, et fait appel à des médecins formes dans des pays qui en manquent cruellement eux-memes.",
+    "description": "Environ 12 000 médecins a diplômé hors UE exercent en France, principalement à l'hôpital public dans les spécialités en tension. Ils représentent ~5% des médecins en activité mais 25% des urgentistes hospitaliers. Paradoxe : la France formé 10 000 médecins/an mais n'en retient pas assez, et fait appel à des médecins formes dans des pays qui en manquent cruellement eux-mêmes.",
     "amountBillions": 0.5,
     "costPerCitizen": 7,
     "deckId": "sante",
@@ -446,12 +446,12 @@
     "id": "san-20",
     "title": "Telemedecine et numérique en sante",
     "subtitle": "Segur numérique + Mon espace sante + teleconsultations",
-    "description": "Le Segur du numérique investit 2 Md€ pour moderniser les systèmes d'information hospitaliers, deployer Mon espace sante (75 millions de comptes créés mais usage faible) et generaliser les ordonnances electroniques. Les teleconsultations representent 5% des consultations. La France a 10 ans de retard sur l'Estonie et le Danemark. L'interoperabilite entre systèmes hospitaliers reste un cauchemar.",
+    "description": "Le Segur du numérique investit 2 Md€ pour moderniser les systèmes d'information hospitaliers, déployer Mon espace sante (75 millions de comptes créés mais usage faible) et generaliser les ordonnances électroniques. Les teleconsultations représentent 5% des consultations. La France a 10 ans de retard sur l'Estonie et le Danemark. L'interoperabilite entre systèmes hospitaliers reste un cauchemar.",
     "amountBillions": 2,
     "costPerCitizen": 29,
     "deckId": "sante",
     "icon": "💻",
-    "source": "ANS, Ministere de la Sante, Segur numerique",
+    "source": "ANS, Ministere de la Sante, Segur numérique",
     "level": 1,
     "tags": ["sante", "numerique", "telemedecine"],
     "equivalence": "2 Md€ investis mais 60% des hôpitaux utilisent encore des systèmes informatiques des années 2000"

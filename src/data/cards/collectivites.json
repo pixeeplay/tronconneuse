@@ -8,7 +8,7 @@
     "costPerCitizen": 4120,
     "deckId": "collectivites",
     "icon": "🏘️",
-    "source": "DGCL, Observatoire des finances locales, Fondation Jean-Jaurès",
+    "source": "DGCL, Observatoire des financés locales, Fondation Jean-Jaurès",
     "level": 1,
     "tags": ["collectivités", "budget", "investissement"],
     "equivalence": "Les collectivités = 8 % de la dette mais 58 % de l'investissement public — les ponctionner, c'est casser l'investissement"
@@ -31,7 +31,7 @@
     "id": "col-03",
     "title": "Départements",
     "subtitle": "Les 101 départements et leur mission sociale",
-    "description": "Les 101 départements français consacrent 60 % de leur budget aux dépenses sociales (RSA, APA, protection de l'enfance). La crise des DMTO fragilise leur équilibre financier, certains étant au bord de l'asphyxie. Leur budget total s'élève à 80 Md€ par an.",
+    "description": "Les 101 départements français consacrent 60 % de leur budget aux dépenses sociales (RSA, APA, protection de l'enfance). La crise des DMTO fragilisé leur équilibre financier, certains étant au bord de l'asphyxie. Leur budget total s'élève à 80 Md€ par an.",
     "amountBillions": 80,
     "costPerCitizen": 1176,
     "deckId": "collectivites",
@@ -73,7 +73,7 @@
     "id": "col-06",
     "title": "DILICO",
     "subtitle": "Le fonds de précaution ponctionné sur les collectivités",
-    "description": "Le dispositif de lissage conjoncturel (DILICO) est une ponction de l'État sur les recettes des collectivités pour financer le redressement des finances publiques. Doublé en 2026 à 2 Md€, il cristallise la tension entre l'État et les élus locaux qui dénoncent une recentralisation rampante.",
+    "description": "Le dispositif de lissage conjoncturel (DILICO) est une ponction de l'État sur les recettes des collectivités pour financer le redressement des financés publiques. Doublé en 2026 à 2 Md€, il cristallise la tension entre l'État et les élus locaux qui dénoncent une recentralisation rampante.",
     "amountBillions": 2,
     "costPerCitizen": 29,
     "deckId": "collectivites",
@@ -129,7 +129,7 @@
     "id": "col-10",
     "title": "Péréquation",
     "subtitle": "La solidarité financière entre territoires riches et pauvres",
-    "description": "La péréquation redistribue 8 Md€ par an entre territoires via le FPIC, la DSU et la DSR. L'objectif est de réduire les inégalités de richesse entre communes. Pourtant, la commune la plus riche de France conserve 100 fois plus de recettes par habitant que la plus pauvre.",
+    "description": "La péréquation redistribué 8 Md€ par an entre territoires via le FPIC, la DSU et la DSR. L'objectif est de réduire les inégalités de richesse entre communes. Pourtant, la commune la plus riche de France conserve 100 fois plus de recettes par habitant que la plus pauvre.",
     "amountBillions": 8,
     "costPerCitizen": 118,
     "deckId": "collectivites",
@@ -179,7 +179,7 @@
     "source": "AMF, DGCL, Cour des comptes, Conseil constitutionnel",
     "level": 1,
     "tags": ["fiscalité", "autonomie", "démocratie"],
-    "equivalence": "Les maires ont perdu la moitié de leurs leviers fiscaux en 7 ans — décentralisation en marche arrière"
+    "equivalence": "Les maires ont perdu la moitié de leurs leviers fiscaux en 7 ans — décentralisation en marché arrière"
   },
   {
     "id": "col-14",

@@ -427,8 +427,6 @@ export default function ProfilePage() {
                         completed ? "bg-primary/5" : "opacity-40 cursor-pointer"
                       }`}
                       onClick={() => !completed && setTooltipId(showTip ? null : a.id)}
-                      onMouseEnter={() => !completed && setTooltipId(a.id)}
-                      onMouseLeave={() => !completed && setTooltipId(null)}
                     >
                       <div
                         className={`w-10 h-10 rounded-lg flex items-center justify-center text-xl ${
@@ -458,6 +456,10 @@ export default function ProfilePage() {
                           <p className="text-[10px] text-muted-foreground leading-tight">
                             {a.description}
                           </p>
+                        ) : showTip ? (
+                          <p className="mt-1 text-[10px] text-primary font-medium leading-tight animate-in fade-in duration-200">
+                            {a.description}
+                          </p>
                         ) : (
                           <div className="mt-1 h-1 w-full bg-muted rounded-full overflow-hidden">
                             <div
@@ -467,13 +469,6 @@ export default function ProfilePage() {
                           </div>
                         )}
                       </div>
-                      {showTip && (
-                        <div className="absolute left-4 right-4 bottom-full mb-2 z-[100] bg-slate-900 border border-primary/40 rounded-xl p-3 shadow-2xl shadow-black/60 pointer-events-none">
-                          <p className="text-sm text-slate-100 font-medium leading-snug">
-                            {a.description}
-                          </p>
-                        </div>
-                      )}
                     </div>
                   );
                 })}

@@ -98,7 +98,7 @@
     "source": "Ministère de la Culture, DGMIC, Sénat",
     "level": 1,
     "tags": ["culture", "presse", "médias"],
-    "equivalence": "Les aides à la presse = le budget annuel de 3 grandes bibliotheques nationales"
+    "equivalence": "Les aides à la presse = le budget annuel de 3 grandes bibliothèques nationales"
   },
   {
     "id": "cul-08",
@@ -142,7 +142,7 @@
     "sourceUrl": "https://www.budget.gouv.fr",
     "level": 1,
     "tags": ["environnement", "biodiversité", "écologie"],
-    "equivalence": "Le budget biodiversite français = 1/10e du budget annuel de la PAC européenne"
+    "equivalence": "Le budget biodiversité français = 1/10e du budget annuel de la PAC européenne"
   },
   {
     "id": "cul-11",
@@ -162,9 +162,9 @@
   },
   {
     "id": "cul-12",
-    "title": "Velo et mobilites douces",
+    "title": "Velo et mobilités douces",
     "subtitle": "Plan velo : 2 Md€ sur 4 ans",
-    "description": "Le Plan velo financé pistes cyclables, stationnements sécurisés, aides à l'achat. La France est passee de 3% a 5% de part modale velo en 5 ans (vs 27% aux Pays-Bas). Les vols de velos restent un frein majeur (~400 000€/an). 1 km de piste cyclable coûte ~200 000€.",
+    "description": "Le Plan velo financé pistes cyclables, stationnements sécurisés, aides à l'achat. La France est passée de 3% a 5% de part modale velo en 5 ans (vs 27% aux Pays-Bas). Les vols de velos restent un frein majeur (~400 000€/an). 1 km de piste cyclable coûte ~200 000€.",
     "amountBillions": 0.5,
     "costPerCitizen": 7,
     "deckId": "culture",
@@ -210,9 +210,9 @@
   },
   {
     "id": "cul-15",
-    "title": "Taxe aerien et quotas carbone",
+    "title": "Taxe aérien et quotas carbone",
     "subtitle": "Taxe de solidarite Chirac + ETS",
-    "description": "Taxe de solidarite sur les billets d'avion (1,13€ en eco, 45€ en business) qui financé UNITAID. Depuis 2024, les compagnies doivent acheter des quotas carbone. L'interdiction des vols courts (<2h30 si alternative TGV) ne concerne que 3 lignes.",
+    "description": "Taxe de solidarité sur les billets d'avion (1,13€ en eco, 45€ en business) qui financé UNITAID. Depuis 2024, les compagnies doivent acheter des quotas carbone. L'interdiction des vols courts (<2h30 si alternative TGV) ne concerne que 3 lignes.",
     "amountBillions": 0.5,
     "costPerCitizen": 7,
     "deckId": "culture",
@@ -228,7 +228,7 @@
     "id": "cul-16",
     "title": "Musees nationaux",
     "subtitle": "Louvre, Orsay, Versailles et grands musées",
-    "description": "Le Louvre est le musée le plus visité au monde (8,9 millions de visiteurs en 2024). Ses recettes propres couvrent 60% de son budget (~280 M€). L'État subventionne les 40% restants. Versailles est quasi autonome financièrement. Les 1 200 musées de France forment un réseau sans équivalent mondial. Debat : la gratuité pour les -26 ans attire-t-elle de nouveaux publics ou subventionne-t-elle les touristes étrangers ?",
+    "description": "Le Louvre est le musée le plus visité au monde (8,9 millions de visiteurs en 2024). Ses recettes propres couvrent 60% de son budget (~280 M€). L'État subventionne les 40% restants. Versailles est quasi autonome financièrement. Les 1 200 musées de France forment un réseau sans équivalent mondial. Débat : la gratuité pour les -26 ans attire-t-elle de nouveaux publics ou subventionne-t-elle les touristes étrangers ?",
     "amountBillions": 1.5,
     "costPerCitizen": 22,
     "deckId": "culture",
@@ -242,12 +242,12 @@
     "id": "cul-17",
     "title": "Fret ferroviaire",
     "subtitle": "Aides + subventions + investissement réseau fret",
-    "description": "Le fret ferroviaire ne transporte que 9% des marchandises en France (vs 19% en Allemagne, 30% en Suisse). La part modale a été divisée par 2 en 20 ans. Fret SNCF a accumulé 5 Md€ de dette. L'UE impose l'ouverture à la concurrence. Le gouvernement vise un doublement du fret ferroviaire d'ici 2030. Chaque tonne transportee par train émet 9x moins de CO2 que par camion.",
+    "description": "Le fret ferroviaire ne transporte que 9% des marchandises en France (vs 19% en Allemagne, 30% en Suisse). La part modale a été divisée par 2 en 20 ans. Fret SNCF a accumulé 5 Md€ de dette. L'UE impose l'ouverture à la concurrence. Le gouvernement vise un doublement du fret ferroviaire d'ici 2030. Chaque tonne transportée par train émet 9x moins de CO2 que par camion.",
     "amountBillions": 1,
     "costPerCitizen": 15,
     "deckId": "culture",
     "icon": "🚂",
-    "source": "SNCF Reseau, DGITM, Commission européenne",
+    "source": "SNCF Réseau, DGITM, Commission européenne",
     "level": 1,
     "tags": ["transport", "fret", "ferroviaire"],
     "equivalence": "Transferer 1% de marchandises de la route vers le rail = -500 000 camions/an sur les autoroutes"
@@ -256,7 +256,7 @@
     "id": "cul-18",
     "title": "Ports maritimes",
     "subtitle": "Marseille, Le Havre, Dunkerque",
-    "description": "La France possede le 2e domaine maritime mondial (11 millions de km2) mais ses ports sont en decrochage : Marseille est le 5e port européen (loin derriere Rotterdam, Anvers, Hambourg). Le Havre traite 3 millions de conteneurs/an (vs 14 millions pour Rotterdam). La Strategie nationale portuaire (2021) prevoit 1,5 Md€ d'investissement sur 10 ans.",
+    "description": "La France possede le 2e domaine maritime mondial (11 millions de km2) mais ses ports sont en décrochage : Marseille est le 5e port européen (loin derriere Rotterdam, Anvers, Hambourg). Le Havre traite 3 millions de conteneurs/an (vs 14 millions pour Rotterdam). La Stratégie nationale portuaire (2021) prevoit 1,5 Md€ d'investissement sur 10 ans.",
     "amountBillions": 0.6,
     "costPerCitizen": 9,
     "deckId": "culture",
@@ -268,9 +268,9 @@
   },
   {
     "id": "cul-19",
-    "title": "Bibliotheques publiques",
+    "title": "Bibliothèques publiques",
     "subtitle": "16 500 bibliotheques + BnF",
-    "description": "16 500 bibliotheques publiques maillent le territoire (1er réseau culturel de France). 28% des Français sont inscrits en bibliotheque. La BnF conserve 40 millions de documents. Gallica donne acces a 10 millions de documents gratuits en ligne. Les bibliotheques deviennent des tiers-lieux (coworking, formation numérique, aide aux démarches).",
+    "description": "16 500 bibliothèques publiques maillent le territoire (1er réseau culturel de France). 28% des Français sont inscrits en bibliothèque. La BnF conserve 40 millions de documents. Gallica donne accès a 10 millions de documents gratuits en ligne. Les bibliothèques deviennent des tiers-lieux (coworking, formation numérique, aide aux démarches).",
     "amountBillions": 2,
     "costPerCitizen": 29,
     "deckId": "culture",
@@ -278,13 +278,13 @@
     "source": "Ministere de la Culture, SLL, BnF",
     "level": 1,
     "tags": ["culture", "bibliotheques", "lecture"],
-    "equivalence": "16 500 bibliotheques = plus que le nombre de boulangeries (32 000) rapporte au budget"
+    "equivalence": "16 500 bibliothèques = plus que le nombre de boulangeries (32 000) rapporte au budget"
   },
   {
     "id": "cul-20",
-    "title": "Archeologie preventive (INRAP)",
-    "subtitle": "Redevance d'archeologie preventive + INRAP",
-    "description": "Avant tout chantier de construction, un diagnostic archeologique est obligatoire depuis 2001. L'INRAP (2 000 agents) réalisé ~2 000 diagnostics et ~200 fouilles/an. Decouvertes majeures : villa gallo-romaine de Nimes, sepultures medievales sous Notre-Dame de Paris. La redevance (0,60€/m2) est payee par les amenageurs. La France decouvre en moyenne 1 site majeur par semaine.",
+    "title": "Archéologie préventive (INRAP)",
+    "subtitle": "Redevance d'archeologie préventive + INRAP",
+    "description": "Avant tout chantier de construction, un diagnostic archéologique est obligatoire depuis 2001. L'INRAP (2 000 agents) réalisé ~2 000 diagnostics et ~200 fouilles/an. Decouvertes majeures : villa gallo-romaine de Nimes, sepultures medievales sous Notre-Dame de Paris. La redevance (0,60€/m2) est payée par les aménageurs. La France decouvre en moyenne 1 site majeur par semaine.",
     "amountBillions": 0.2,
     "costPerCitizen": 3,
     "deckId": "culture",

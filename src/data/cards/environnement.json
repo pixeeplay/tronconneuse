@@ -25,7 +25,7 @@
     "source": "ADEME, Reporterre, PLF 2026, Vert.eco",
     "level": 1,
     "tags": ["transition", "agence", "subventions"],
-    "equivalence": "L'ADEME redistribue 50€/an par Français pour la transition — le RN veut supprimer ces 50€"
+    "equivalence": "L'ADEME redistribué 50€/an par Français pour la transition — le RN veut supprimer ces 50€"
   },
   {
     "id": "env-03",
@@ -45,7 +45,7 @@
     "id": "env-04",
     "title": "Fonds vert",
     "subtitle": "Transition écologique des collectivités",
-    "description": "Le Fonds vert finance la transition écologique des collectivités territoriales : rénovation des bâtiments publics, mobilités, adaptation climatique. Créé à 2,5 Md€ en 2023, il a chuté à 650 M€ dans le PLF 2026 — une coupe de 75% en deux ans qui fragilise la planification écologique locale.",
+    "description": "Le Fonds vert finance la transition écologique des collectivités territoriales : rénovation des bâtiments publics, mobilités, adaptation climatique. Créé à 2,5 Md€ en 2023, il a chuté à 650 M€ dans le PLF 2026 — une coupe de 75% en deux ans qui fragilisé la planification écologique locale.",
     "amountBillions": 0.65,
     "costPerCitizen": 10,
     "deckId": "environnement",

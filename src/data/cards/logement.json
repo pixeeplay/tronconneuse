@@ -25,7 +25,7 @@
     "source": "PLF 2026 Cohésion des territoires, Cour des comptes, Fondation Abbé Pierre",
     "level": 1,
     "tags": ["logement", "urgence", "sans-abri"],
-    "equivalence": "~42€ par nuit et par personne hebergee (dont beaucoup en hotel)"
+    "equivalence": "~42€ par nuit et par personne hébergée (dont beaucoup en hôtel)"
   },
   {
     "id": "log-03",
@@ -118,7 +118,7 @@
     "id": "log-09",
     "title": "Action Logement (1% patronal)",
     "subtitle": "PEEC — participation des employeurs",
-    "description": "Action Logement collecte 0,45% de la masse salariale et redistribue : aide à la mobilité, garantie Visale (caution gratuité), prets accession, financement HLM et rénovation urbaine (ANRU). 2e financeur du logement social. L'État ponctionne régulièrement ses réserves (~300 M€ en 2025).",
+    "description": "Action Logement collecte 0,45% de la masse salariale et redistribué : aide à la mobilité, garantie Visale (caution gratuité), prêts accession, financement HLM et rénovation urbaine (ANRU). 2e financeur du logement social. L'État ponctionne régulièrement ses réserves (~300 M€ en 2025).",
     "amountBillions": 5,
     "costPerCitizen": 0,
     "deckId": "logement",
@@ -137,16 +137,16 @@
     "costPerCitizen": 7,
     "deckId": "logement",
     "icon": "🏠",
-    "source": "ANAH, Fondation Abbe Pierre rapport 2025, PLF 2026",
+    "source": "ANAH, Fondation Abbé Pierre rapport 2025, PLF 2026",
     "level": 1,
     "tags": ["logement", "coproprietes", "habitat indigne"],
     "equivalence": "420 000 logements indignes en France, 6e puissance mondiale — un paradoxe national"
   },
   {
     "id": "log-11",
-    "title": "Logement intermediaire (classes moyennes)",
-    "subtitle": "Banque des Territoires — loyers sous le marche",
-    "description": "Le logement intermediaire (loyers 15-20% sous le marche) cible les classes moyennes coincees. 155 000 logements intermediaires créés en 10 ans. La crise du credit immobilier (taux passes de 1% a 4%) a fait exploser la demande en locatif intermediaire.",
+    "title": "Logement intermédiaire (classes moyennes)",
+    "subtitle": "Banque des Territoires — loyers sous le marché",
+    "description": "Le logement intermédiaire (loyers 15-20% sous le marché) cible les classes moyennes coincees. 155 000 logements intermédiaires créés en 10 ans. La crise du credit immobilier (taux passes de 1% a 4%) a fait exploser la demande en locatif intermédiaire.",
     "amountBillions": 10,
     "costPerCitizen": 0,
     "deckId": "logement",
@@ -154,13 +154,13 @@
     "source": "Banque des Territoires, CDC, USH",
     "level": 1,
     "tags": ["logement", "intermediaire", "classes moyennes"],
-    "equivalence": "Un loyer intermediaire a Paris = ~20€/m2 (vs 25-30 dans le privé, vs 7-12 en HLM)"
+    "equivalence": "Un loyer intermédiaire a Paris = ~20€/m2 (vs 25-30 dans le privé, vs 7-12 en HLM)"
   },
   {
     "id": "log-12",
     "title": "RLS : la ponction sur les HLM",
     "subtitle": "Reduction de loyer de solidarite",
-    "description": "En 2018, l'État a baissé les APL de 5/mois et compensé en imposant aux bailleurs HLM une RLS du meme montant. Depuis 2017, 16 Md€ ponctionnes aux organismes HLM, reduisant leur capacite a construire et renover. L'USH qualifie ce mécanisme de toxique.",
+    "description": "En 2018, l'État a baissé les APL de 5/mois et compensé en imposant aux bailleurs HLM une RLS du même montant. Depuis 2017, 16 Md€ ponctionnes aux organismes HLM, reduisant leur capacité a construire et renover. L'USH qualifie ce mécanisme de toxique.",
     "amountBillions": 1.3,
     "costPerCitizen": 15,
     "deckId": "logement",
@@ -168,13 +168,13 @@
     "source": "USH, PLF 2026, Public Senat",
     "level": 1,
     "tags": ["logement", "HLM", "RLS"],
-    "equivalence": "16 Md€ ponctionnes en 7 ans = 200 000 logements sociaux qui auraient pu etre construits"
+    "equivalence": "16 Md€ ponctionnes en 7 ans = 200 000 logements sociaux qui auraient pu être construits"
   },
   {
     "id": "log-13",
     "title": "Airbnb et meubles touristiques",
     "subtitle": "800 000 annonces — régulation",
-    "description": "La France compte ~800 000 annonces Airbnb (1re destination mondiale). A Paris, 25 000 logements entiers retirés du marche locatif. La loi Le Meur (2024) réduit la niche fiscale des meubles touristiques. Impact : +5 a 15% sur les loyers dans les zones touristiques tendues.",
+    "description": "La France compte ~800 000 annonces Airbnb (1re destination mondiale). A Paris, 25 000 logements entiers retirés du marché locatif. La loi Le Meur (2024) réduit la niche fiscale des meubles touristiques. Impact : +5 à 15% sur les loyers dans les zones touristiques tendues.",
     "amountBillions": 0.3,
     "costPerCitizen": 0,
     "deckId": "logement",
@@ -182,13 +182,13 @@
     "source": "DGFIP, Observatoire Airbnb, loi Le Meur, APUR",
     "level": 1,
     "tags": ["logement", "Airbnb", "tourisme"],
-    "equivalence": "25 000 logements Airbnb retirés du marche a Paris = 10 ans de construction de logements sociaux parisiens"
+    "equivalence": "25 000 logements Airbnb retirés du marché a Paris = 10 ans de construction de logements sociaux parisiens"
   },
   {
     "id": "log-14",
     "title": "Passoires thermiques et DPE",
     "subtitle": "5,2 millions de logements classes F ou G",
-    "description": "Depuis janvier 2025, les logements G ne peuvent plus etre loues. Les F interdits en 2028, les E en 2034. MaPrimeRenov finance une partie (5-20 000/logement) mais le reste a charge est prohibitif pour les propriétaires modestes. Risque social : retrait du marche locatif.",
+    "description": "Depuis janvier 2025, les logements G ne peuvent plus être loues. Les F interdits en 2028, les E en 2034. MaPrimeRenov finance une partie (5-20 000/logement) mais le reste a charge est prohibitif pour les propriétaires modestes. Risque social : retrait du marché locatif.",
     "amountBillions": 150,
     "costPerCitizen": 30000,
     "deckId": "logement",
@@ -196,32 +196,32 @@
     "source": "ADEME, Observatoire DPE, CNR Logement, loi Climat Resilience",
     "level": 1,
     "tags": ["logement", "DPE", "renovation"],
-    "equivalence": "5,2 millions de passoires = 1 logement sur 5 bientot interdit à la location"
+    "equivalence": "5,2 millions de passoires = 1 logement sur 5 bientôt interdit à la location"
   },
   {
     "id": "log-15",
     "title": "Loi SRU et obligation de 25% HLM",
     "subtitle": "1 113 communes déficitaires",
-    "description": "La loi SRU impose 25% de logements sociaux. 280 communes sont carencées et paient une pénalité majorée. Neuilly-sur-Seine paie ~8 M€/an de pénalité et continue de ne pas construire. L'objectif de 25% reporte a 2031 par la loi 3DS (2022).",
+    "description": "La loi SRU impose 25% de logements sociaux. 280 communes sont carencées et paient une pénalité majorée. Neuilly-sur-Seine paie ~8 M€/an de pénalité et continue de ne pas construire. L'objectif de 25% reporté à 2031 par la loi 3DS (2022).",
     "amountBillions": 0.2,
     "costPerCitizen": 3,
     "deckId": "logement",
     "icon": "🏠",
-    "source": "DHUP, Fondation Abbe Pierre, PLF 2026",
+    "source": "DHUP, Fondation Abbé Pierre, PLF 2026",
     "level": 1,
     "tags": ["logement", "SRU", "HLM"],
     "equivalence": "Neuilly préfère payer 8 M€/an d'amende plutôt que construire des HLM — la loi sans les dents"
   },
   {
     "id": "log-16",
-    "title": "Mal-logement (rapport Fondation Abbe Pierre)",
+    "title": "Mal-logement (rapport Fondation Abbé Pierre)",
     "subtitle": "4,2 millions de personnes mal logees",
     "description": "330 000 sans domicile (record, +130% en 10 ans), 900 000 en hébergement contraint, 2,4 millions en surpeuplement. Le mal-logement aggrave tout : echec scolaire (+3 points), problèmes de sante (+30%), chomage. C'est le multiplicateur invisible des autres dépenses sociales.",
     "amountBillions": 6.5,
     "costPerCitizen": 0,
     "deckId": "logement",
     "icon": "🏠",
-    "source": "Fondation Abbe Pierre rapport 2025, INSEE, DREES",
+    "source": "Fondation Abbé Pierre rapport 2025, INSEE, DREES",
     "level": 1,
     "tags": ["logement", "mal-logement", "social"],
     "equivalence": "330 000 personnes sans domicile en France = la population de Nice"
@@ -230,7 +230,7 @@
     "id": "log-17",
     "title": "Accession à la propriété",
     "subtitle": "Taux et pouvoir d'achat immobilier",
-    "description": "Taux de propriétaires en France : 58% (stable, vs 65% en moyenne UE). La crise du credit (taux de 1% a 4%) a fait chuter les primo-accedants de 35%. Il faut en moyenne 7 années de salaire pour acheter un logement moyen. A Paris, 15 ans.",
+    "description": "Taux de propriétaires en France : 58% (stable, vs 65% en moyenne UE). La crise du credit (taux de 1% a 4%) a fait chuter les primo-accédants de 35%. Il faut en moyenne 7 années de salaire pour acheter un logement moyen. A Paris, 15 ans.",
     "amountBillions": 5,
     "costPerCitizen": 74,
     "deckId": "logement",
@@ -242,7 +242,7 @@
   },
   {
     "id": "log-18",
-    "title": "Amenagement commercial et friches",
+    "title": "Aménagement commercial et friches",
     "subtitle": "170 000 hectares a recycler",
     "description": "170 000 hectares de friches en France. L'objectif ZAN (zero artificialisation nette) d'ici 2050 impose de recycler ces friches. Le fonds friches a permis 1 400 projets. 50 000 locaux commerciaux vacants en centre-ville. La reconversion d'une friche coûte 2-5x plus qu'un terrain vierge.",
     "amountBillions": 0.5,
@@ -252,6 +252,6 @@
     "source": "CEREMA, ANCT, fonds friches, loi Climat Resilience",
     "level": 1,
     "tags": ["logement", "friches", "ZAN"],
-    "equivalence": "Recycler 170 000 ha de friches = eviter l'artificialisation de 2x la surface de Paris intra-muros"
+    "equivalence": "Recycler 170 000 ha de friches = éviter l'artificialisation de 2x la surface de Paris intra-muros"
   }
 ]
