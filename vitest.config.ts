@@ -13,14 +13,20 @@ export default defineConfig({
     coverage: {
       provider: "v8",
       include: [
-        "src/lib/archetype.ts",
-        "src/lib/deckUtils.ts",
-        "src/lib/stats.ts",
-        "src/stores/gameStore.ts",
+        "src/lib/**/*.ts",
+        "src/stores/**/*.ts",
+        "src/hooks/**/*.ts",
+        "src/data/getCardsByDeck.ts",
+      ],
+      exclude: [
+        "src/lib/index.ts",
+        "src/hooks/index.ts",
+        "src/**/*.test.*",
       ],
       thresholds: {
-        lines: 60,
+        lines: 75,
         functions: 60,
+        branches: 60,
       },
     },
   },

@@ -26,7 +26,7 @@ DNS : Cloudflare (DNS only, pas de proxy)
 - **Auth** : NextAuth.js v5 (Google + GitHub), trustHost: true
 - **DB** : PostgreSQL + Drizzle ORM (graceful degradation sans DB)
 - **PWA** : serwist (service worker, offline fallback)
-- **Tests** : Vitest + Testing Library (86 tests, coverage >60%)
+- **Tests** : Vitest + Testing Library (248 tests, coverage 87%)
 - **CI** : GitHub Actions (lint + type-check + build + test + docker), Husky + lint-staged
 - **Deploy** : Docker (output: standalone) via Coolify
 

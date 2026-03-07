@@ -6,17 +6,17 @@
 
 ## Etat du projet
 
-| Metrique              | Valeur                                                     |
-| --------------------- | ---------------------------------------------------------- |
-| Cartes                | 370 (19 fichiers JSON)                                     |
-| Decks                 | 19 (16 categories + 3 thematiques)                         |
-| Archetypes            | 16 (6 L1 + 6 L2 + 4 L3)                                    |
-| Badges categorie      | 19 (1 par deck)                                            |
-| Achievements generaux | 12                                                         |
-| Tests                 | 125 unit + 3 E2E (Vitest + Playwright)                     |
-| Coverage              | 87% lines (v8, scope: archetype/deckUtils/stats/gameStore) |
-| Sprints               | 31 (230 items completes)                                   |
-| Audit multi-agents    | 136 findings -- 36 resolus Sprint 31                       |
+| Metrique              | Valeur                                       |
+| --------------------- | -------------------------------------------- |
+| Cartes                | 370 (19 fichiers JSON)                       |
+| Decks                 | 19 (16 categories + 3 thematiques)           |
+| Archetypes            | 16 (6 L1 + 6 L2 + 4 L3)                      |
+| Badges categorie      | 19 (1 par deck)                              |
+| Achievements generaux | 12                                           |
+| Tests                 | 248 unit + 8 E2E (Vitest + Playwright)       |
+| Coverage              | 87% lines (v8, scope: lib/stores/hooks/data) |
+| Sprints               | 31b (234 items completes)                    |
+| Audit multi-agents    | 136 findings -- 40 resolus Sprint 31+31b     |
 
 ---
 
@@ -47,6 +47,7 @@
 | 29     | Refacto archi + perf/secu/seo backlog + fix CI                    | 6     |
 | 30     | Tests E2E Playwright + audit multi-agents 15 domaines             | 4     |
 | 31     | Sprint P0+P1: securite, a11y, perf, DB, tests, CI, UX (7 agents)  | 36    |
+| 31b    | Coverage 75% + 123 tests lib/hooks + E2E L2/L3 (3 agents)         | 4     |
 
 ---
 
@@ -67,7 +68,7 @@
 | ~~PERF-08~~ | Perf     | framer-motion: documente LazyMotion/domAnimation TODO | Fait    |
 | ~~DEP-04~~  | Deps     | zod: ajoute dans dependencies                         | Fait    |
 
-### P1 -- Haute priorite (33 items -- 26 resolus Sprint 31, 7 restants)
+### P1 -- Haute priorite (33 items -- 27 resolus Sprint 31+31b, 6 restants)
 
 #### Securite & Erreurs (8 items -- 6 resolus)
 
@@ -82,14 +83,14 @@
 | ~~DB-03~~  | PostgreSQL: error handler + connection check au boot    | Fait    |
 | DB-05      | Configurer backup automatise PostgreSQL (pg_dump cron)  | Reste   |
 
-#### Tests (6 items -- 5 resolus)
+#### Tests (6 items -- TOUS resolus)
 
 | Ref         | Description                                              | Statut |
 | ----------- | -------------------------------------------------------- | ------ |
 | ~~TEST-10~~ | Tests SwipeStack (11 tests: init, quit, keyboard, a11y)  | Fait   |
 | ~~TEST-11~~ | Tests useSwipeGesture (16 tests: seuils, 4 dir, diag)    | Fait   |
 | ~~TEST-12~~ | Tests useSync (12 tests: throttle, timeout, merge)       | Fait   |
-| TEST-15     | E2E: ajouter flows L2 (4 directions) et L3 (micro-audit) | Reste  |
+| ~~TEST-15~~ | E2E: ajouter flows L2 (4 directions) et L3 (micro-audit) | Fait   |
 | ~~TEST-19~~ | CI: Playwright integre dans GitHub Actions               | Fait   |
 | ~~CI-04~~   | CI: job E2E ajoute (needs: quality)                      | Fait   |
 
@@ -127,16 +128,16 @@
 
 #### Securite & CI (8 items)
 
-| Ref     | Description                                              | Effort |
-| ------- | -------------------------------------------------------- | ------ |
-| SEC-24  | .dockerignore: ajouter .env\* (secrets potentiels)       | XS     |
-| CI-05   | CI: ajouter security scan (npm audit ou Dependabot)      | S      |
-| CI-06   | CI: ajouter bundle size monitoring (size-limit)          | S      |
-| CI-07   | CI: ajouter bloc permissions explicites                  | XS     |
-| CI-09   | Coverage: augmenter seuils de 60% a 75%                  | M      |
-| TEST-13 | Coverage: elargir scope a tous les fichiers src/         | S      |
-| TEST-14 | Tests: augmenter seuils coverage a 75%                   | M      |
-| ERR-04  | Error boundaries: logger erreurs vers console/monitoring | S      |
+| Ref         | Description                                              | Effort |
+| ----------- | -------------------------------------------------------- | ------ |
+| SEC-24      | .dockerignore: ajouter .env\* (secrets potentiels)       | XS     |
+| CI-05       | CI: ajouter security scan (npm audit ou Dependabot)      | S      |
+| CI-06       | CI: ajouter bundle size monitoring (size-limit)          | S      |
+| CI-07       | CI: ajouter bloc permissions explicites                  | XS     |
+| ~~CI-09~~   | Coverage: augmenter seuils de 60% a 75%                  | Fait   |
+| ~~TEST-13~~ | Coverage: elargir scope lib/stores/hooks/data            | Fait   |
+| ~~TEST-14~~ | Tests: augmenter seuils coverage a 75%                   | Fait   |
+| ERR-04      | Error boundaries: logger erreurs vers console/monitoring | S      |
 
 #### Accessibilite & UX (12 items)
 
