@@ -223,20 +223,20 @@ function CardContent({
           </div>
         </div>
 
-        <p className="text-sm leading-relaxed text-muted-foreground font-medium line-clamp-3">
+        <p className="text-sm leading-relaxed text-muted-foreground font-medium line-clamp-3 sm:line-clamp-5 lg:line-clamp-none">
           {card.description}
         </p>
 
         {card.equivalence && (
           <div className="flex items-center gap-3 py-2 px-3 rounded-xl bg-white/[0.04] backdrop-blur-sm border border-white/5">
             <div className="w-10 h-10 rounded-lg bg-warning/10 flex items-center justify-center flex-shrink-0 text-warning border border-warning/20">
-              <span className="text-base">📊</span>
+              <span className="text-base" aria-hidden="true">📊</span>
             </div>
             <div className="flex flex-col">
               <span className="text-[9px] font-bold text-warning uppercase tracking-wider mb-0.5">
                 Équivalence
               </span>
-              <p className="text-xs font-bold text-foreground/90 leading-snug line-clamp-2">
+              <p className="text-xs font-bold text-foreground/90 leading-snug line-clamp-2 lg:line-clamp-none">
                 {card.equivalence}
               </p>
             </div>

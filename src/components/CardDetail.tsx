@@ -129,7 +129,7 @@ export function CardDetail({ card, level = 1, onClose, onVote }: CardDetailProps
             </div>
 
             {/* Scrollable Content */}
-            <div className="flex-1 overflow-y-auto px-5 pb-[180px]">
+            <div className="flex-1 overflow-y-auto scrollbar-hide px-5 pb-[180px] relative">
               {/* Category & Title */}
               <div className="pt-2">
                 <h2 className="text-sm font-bold text-muted-foreground tracking-widest uppercase mb-1">
@@ -166,15 +166,32 @@ export function CardDetail({ card, level = 1, onClose, onVote }: CardDetailProps
                 />
               </section>
 
-              {/* Subtitle / Équivalence */}
+              {/* Équivalence */}
+              {card.equivalence && (
+                <section className="mb-8">
+                  <h3 className="text-lg font-bold text-foreground mb-3 flex items-center gap-2 tracking-tight">
+                    <span className="text-warning text-xl" aria-hidden="true">📊</span>
+                    Équivalence
+                  </h3>
+                  <div className="bg-warning/5 border border-warning/20 rounded-2xl p-4 flex items-start gap-3">
+                    <span className="text-2xl mt-0.5" aria-hidden="true">💡</span>
+                    <AcronymText
+                      text={card.equivalence}
+                      className="text-foreground font-medium text-[15px] leading-snug"
+                    />
+                  </div>
+                </section>
+              )}
+
+              {/* Subtitle / Détail */}
               {card.subtitle && (
                 <section className="mb-8">
                   <h3 className="text-lg font-bold text-foreground mb-3 flex items-center gap-2 tracking-tight">
-                    <span className="text-primary text-xl" aria-hidden="true">📊</span>
+                    <span className="text-primary text-xl" aria-hidden="true">📋</span>
                     Détail
                   </h3>
                   <div className="bg-primary/5 border border-primary/20 rounded-2xl p-4 flex items-start gap-3">
-                    <span className="text-2xl mt-0.5">💡</span>
+                    <span className="text-2xl mt-0.5" aria-hidden="true">💡</span>
                     <AcronymText
                       text={card.subtitle}
                       className="text-foreground font-medium text-[15px] leading-snug"
@@ -252,6 +269,9 @@ export function CardDetail({ card, level = 1, onClose, onVote }: CardDetailProps
                 </div>
               )}
             </div>
+
+            {/* Scroll fade hint */}
+            <div className="pointer-events-none absolute bottom-[168px] left-0 right-0 h-12 bg-gradient-to-t from-card to-transparent z-20" />
 
             {/* Sticky Footer Actions */}
             <div className="absolute bottom-0 left-0 right-0 bg-card/95 backdrop-blur-xl border-t border-border p-5 pt-4 rounded-t-3xl z-30 shadow-[0_-10px_20px_rgba(0,0,0,0.05)]">
