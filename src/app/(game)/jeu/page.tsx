@@ -178,8 +178,8 @@ function PlayPageContent() {
           </label>
         </div>
 
-        {/* Budget Mode Toggle */}
-        <div className="flex flex-col border-b border-border">
+        {/* Budget Mode Toggle — N2+ only */}
+        {isLevel2Unlocked && <div className="flex flex-col border-b border-border">
           <div className="flex items-center gap-4 px-4 py-4 justify-between">
             <div className="flex items-center gap-4">
               <div className="w-10 h-10 rounded-lg bg-warning/15 flex items-center justify-center text-warning shrink-0">
@@ -206,7 +206,13 @@ function PlayPageContent() {
                 type="checkbox"
                 checked={budgetMode}
                 aria-label="Mode Budget"
-                onChange={(e) => setBudgetMode(e.target.checked)}
+                onChange={(e) => {
+                  setBudgetMode(e.target.checked);
+                  if (e.target.checked) {
+                    setRandomMode(true);
+                    setSelectedDeck(null);
+                  }
+                }}
               />
             </label>
           </div>
@@ -233,7 +239,7 @@ function PlayPageContent() {
               </div>
             </div>
           )}
-        </div>
+        </div>}
 
         {/* Level Selector */}
         <div className="px-4 py-4 relative">
