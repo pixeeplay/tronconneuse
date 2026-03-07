@@ -68,6 +68,8 @@ export default withSentryConfig(withSerwist(nextConfig), {
   project: process.env.SENTRY_PROJECT,
   silent: !process.env.CI,
   widenClientFileUpload: true,
-  disableLogger: true,
-  automaticVercelMonitors: false,
+  // Skip source map upload if no auth token (local dev, CI without secrets)
+  sourcemaps: {
+    disable: !process.env.SENTRY_AUTH_TOKEN,
+  },
 });
