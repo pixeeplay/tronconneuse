@@ -1,8 +1,8 @@
 # 🪚 Guide du contributeur — Budget Swipe
 
 > **Comment proposer un deck de cartes pour Budget Swipe**
-> Repo : https://github.com/pixeeplay/tronconneuse/
 > Site : france-finances.com
+> Contact : https://pixeeplay.fr/?intent=contribuer
 
 ---
 
@@ -10,7 +10,7 @@
 
 Budget Swipe est un jeu citoyen mobile-first où les joueurs swipent des cartes de dépenses publiques pour les garder (🛡️) ou les remettre en question (🪚). Chaque carte est une dépense ou recette réelle, sourcée, neutre et factuelle.
 
-Le jeu est open source. **Tout le monde peut proposer des cartes ou des decks complets.**
+**Tout le monde peut proposer des cartes ou des decks complets.**
 
 ---
 
@@ -352,36 +352,25 @@ Toujours utiliser `~` (tilde) car les montants budgétaires sont des estimations
 
 ## Comment soumettre
 
-### Option 1 : Pull Request (contributeurs tech)
+### Option 1 : Nous contacter
 
-1. Fork le repo `pixeeplay/tronconneuse`
-2. Créer un fichier dans le bon répertoire :
-   - `src/data/regions/mon-region.json` pour un deck régional
-   - `src/data/community/mon-deck.json` pour un deck thématique
-   - `src/data/community/cartes-complement-defense.json` pour des cartes ajoutées
-3. Valider le JSON (pas de virgule trailing, pas de commentaire)
-4. Ouvrir une Pull Request avec :
-   - Titre : `[REGION] Deck Bretagne` ou `[CARDS] 5 cartes ajoutées à Défense`
-   - Description : pourquoi ces cartes, quelles sources, quel angle nouveau
-5. Un mainteneur review les sources, le ton et le format
-6. Merge après validation
+Envoyez-nous vos propositions via le formulaire de contact :
+https://pixeeplay.fr/?intent=contribuer
 
-### Option 2 : Issue GitHub (contributeurs non-tech)
+Vous pouvez envoyer :
 
-1. Ouvrir une Issue sur `pixeeplay/tronconneuse`
-2. Utiliser le template "Proposition de carte(s)"
-3. Remplir au minimum : titre, montant, contexte, source(s)
-4. Un mainteneur mettra en forme le JSON
+- Un fichier JSON formaté selon le schéma ci-dessus
+- Ou simplement les informations brutes (titre, montant, contexte, sources) — nous nous chargeons de la mise en forme
 
-### Option 3 : Google Form (grand public)
+### Option 2 : Proposition simplifiée
 
-Formulaire simplifié sur france-finances.com/contribuer :
+Si vous n'êtes pas à l'aise avec le JSON, envoyez-nous au minimum :
 
 - Titre de la dépense
 - Montant approximatif
 - Pourquoi c'est intéressant (1-2 phrases)
 - Source(s) web
-- Votre pseudo (optionnel)
+- Votre nom ou pseudo (optionnel)
 
 ---
 

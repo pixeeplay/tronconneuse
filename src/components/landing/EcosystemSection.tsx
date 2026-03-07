@@ -30,7 +30,7 @@ export function EcosystemSection() {
           <a href="https://nicoquipaie.co" target="_blank" rel="noopener noreferrer" className="text-landing-expense hover:scale-110 inline-block transition-transform">NicoQuiPaie</a>
         </h2>
         <p className="text-center text-muted-foreground mb-10 text-sm md:text-base">
-          La communaut&eacute; open-source pour tron&ccedil;onner les d&eacute;penses publiques
+          La communaut&eacute; citoyenne pour tron&ccedil;onner les d&eacute;penses publiques
         </p>
 
         <div className="grid md:grid-cols-3 gap-6">

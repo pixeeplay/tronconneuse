@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Contribuer — france-finances.com",
     description:
-      "Proposez des cartes de dépenses publiques pour Budget Swipe. Open source, ouvert à tous.",
+      "Proposez des cartes de dépenses publiques pour Budget Swipe. Ouvert à tous.",
     url: "https://france-finances.com/contribuer",
   },
 };
@@ -67,8 +67,8 @@ export default function ContribuerPage() {
           Contribuer au projet
         </h1>
         <p className="text-lg text-slate-500 mb-10 leading-relaxed">
-          Budget Swipe est open source. Tout le monde peut proposer des cartes
-          ou des decks complets de dépenses publiques.
+          Tout le monde peut proposer des cartes ou des decks complets
+          de dépenses publiques pour Budget Swipe.
         </p>
 
         {/* Ce qu'on cherche */}
@@ -152,18 +152,18 @@ export default function ContribuerPage() {
           <div className="space-y-4">
             <SubmitOption
               step="1"
-              title="Pull Request (contributeurs tech)"
-              description="Fork le repo, créez vos cartes en JSON, ouvrez une PR."
+              title="Téléchargez le guide"
+              description="Le guide complet détaille le format JSON, les conventions et les règles éditoriales."
             />
             <SubmitOption
               step="2"
-              title="Issue GitHub (contributeurs non-tech)"
-              description="Ouvrez une Issue avec le template « Proposition de carte(s) ». Un mainteneur mettra en forme le JSON."
+              title="Préparez vos cartes"
+              description="Rédigez vos cartes en suivant le format et la checklist de validation."
             />
             <SubmitOption
               step="3"
-              title="Nous contacter directement"
-              description="Envoyez-nous votre proposition via le formulaire de contact."
+              title="Contactez-nous"
+              description="Envoyez-nous votre proposition via le formulaire de contact. Nous nous chargeons de l'intégration."
             />
           </div>
         </Section>
