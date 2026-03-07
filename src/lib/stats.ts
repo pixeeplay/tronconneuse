@@ -87,6 +87,22 @@ function generateUsername(): string {
 
 // === Public API ===
 
+/** Remove sessions older than maxAgeDays to limit localStorage usage */
+export function cleanupOldSessions(maxAgeDays: number = 30): void {
+  const sessions = getItem<StoredSession[]>(SESSIONS_KEY, []);
+  if (sessions.length === 0) return;
+
+  const cutoff = Date.now() - maxAgeDays * 24 * 60 * 60 * 1000;
+  const recent = sessions.filter((s) => {
+    const ts = new Date(s.date).getTime();
+    return !isNaN(ts) && ts >= cutoff;
+  });
+
+  if (recent.length < sessions.length) {
+    setItem(SESSIONS_KEY, recent);
+  }
+}
+
 export function getSessions(): StoredSession[] {
   return getItem<StoredSession[]>(SESSIONS_KEY, []);
 }
@@ -134,6 +150,9 @@ function computeSessionXP(session: StoredSession): number {
 /** Save a completed session and update global stats */
 export function saveCompletedSession(session: Session): void {
   if (!session.completed || !session.totalDuration) return;
+
+  // Cleanup old sessions for privacy and storage hygiene
+  cleanupOldSessions();
 
   const keepVotes = session.votes.filter((v) => v.direction === "keep" || v.direction === "reinforce");
   const cutVotes = session.votes.filter((v) => v.direction === "cut" || v.direction === "unjustified");

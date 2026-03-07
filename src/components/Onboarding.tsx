@@ -39,7 +39,11 @@ export function useOnboarding() {
   });
 
   const dismiss = useCallback(() => {
-    localStorage.setItem(ONBOARDED_KEY, "true");
+    try {
+      localStorage.setItem(ONBOARDED_KEY, "true");
+    } catch {
+      // QuotaExceededError — non-critical
+    }
     setShow(false);
   }, []);
 

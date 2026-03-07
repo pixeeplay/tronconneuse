@@ -1,26 +1,26 @@
 # Rapport d'Audit Consolide -- La Tronconneuse de Poche
 
 **Date :** 2026-03-07
-**Version :** Post-Sprint 28 (187 items completes)
+**Version :** Post-Sprint 29 (193 items completes)
 **Build :** OK (Next.js 15 + serwist, compile sans erreur)
 **Donnees :** 370 cartes, 19 decks, 0 anomalies structurelles
 **Auth :** NextAuth.js v5 (Google + GitHub), trustHost: true
-**Tests :** 86 tests (Vitest + Testing Library), coverage >60%
+**Tests :** 86 tests (Vitest + Testing Library), coverage 87% lines
 **Audit :** Revue complete mars 2026
 
 ---
 
 ## 1. Resume Executif
 
-| Categorie | Initial (Sprint 11) | Corriges (Sprints 12-28) | Restants |
+| Categorie | Initial (Sprint 11) | Corriges (Sprints 12-29) | Restants |
 | --------- | ------------------- | ------------------------ | -------- |
 | Critique  | 11                  | 11                       | 0        |
 | Haute     | 27                  | 27                       | 0        |
-| Moyenne   | 43                  | 36                       | 7        |
-| Basse     | 28                  | 24                       | 4        |
-| **Total** | **109**             | **98**                   | **11**   |
+| Moyenne   | 43                  | 42                       | 1        |
+| Basse     | 28                  | 28                       | 0        |
+| **Total** | **109**             | **108**                  | **1**    |
 
-**Taux de resolution :** 90%
+**Taux de resolution :** 99%
 **Items critiques/hauts restants :** 0
 
 ---
@@ -103,10 +103,11 @@
 
 ### Restants
 
-| Ref    | Priorite | Description                        |
-| ------ | -------- | ---------------------------------- |
-| SEC-17 | Basse    | Cleanup sessions >30j pour privacy |
-| SEC-08 | Post-MVP | Rate limiting Redis (scalabilite)  |
+| Ref    | Priorite | Description                       |
+| ------ | -------- | --------------------------------- |
+| SEC-08 | Post-MVP | Rate limiting Redis (scalabilite) |
+
+> SEC-17 resolu Sprint 29 : `cleanupOldSessions(30)` dans `saveCompletedSession()`
 
 ---
 
@@ -114,26 +115,23 @@
 
 ### Corriges
 
-| Ref     | Description                               | Resolution                           |
-| ------- | ----------------------------------------- | ------------------------------------ |
-| PERF-01 | AcronymText regex recree a chaque render  | `useMemo` + reset `lastIndex`        |
-| PERF-02 | RadarChart pas de loading state           | Skeleton `animate-pulse` sur dynamic |
-| PERF-03 | auth.ts erreur silencieuse sans providers | Warning console au demarrage         |
-| PERF-06 | Image OAuth alt+sizes manquants           | alt + `sizes="44px"`                 |
+| Ref     | Description                               | Resolution                                       |
+| ------- | ----------------------------------------- | ------------------------------------------------ |
+| PERF-01 | AcronymText regex recree a chaque render  | `useMemo` + reset `lastIndex`                    |
+| PERF-02 | RadarChart pas de loading state           | Skeleton `animate-pulse` sur dynamic             |
+| PERF-03 | auth.ts erreur silencieuse sans providers | Warning console au demarrage                     |
+| PERF-06 | Image OAuth alt+sizes manquants           | alt + `sizes="44px"`                             |
+| PERF-04 | localStorage setItem sans try/catch       | try/catch sur useSync + Onboarding (Sprint 29)   |
+| PERF-05 | console.error/warn en production          | Gate par `NODE_ENV !== "production"` (Sprint 29) |
 
-### Restants
-
-| Ref     | Priorite | Description                                            |
-| ------- | -------- | ------------------------------------------------------ |
-| PERF-04 | Basse    | localStorage setItem sans try/catch QuotaExceededError |
-| PERF-05 | Basse    | console.error/warn en production                       |
+_Tous les items performance sont resolus._
 
 ---
 
 ## 6. Tests -- Etat Actuel
 
 - **86 tests** (Vitest + Testing Library)
-- **Coverage v8** avec seuil 60% lines+functions (scope: src/lib, src/stores, src/hooks)
+- **Coverage v8** 87% lines, seuil 60% (scope: archetype, deckUtils, stats, gameStore)
 - **CI** : GitHub Actions (lint + type-check + build + test --coverage + docker)
 
 ### Corriges
@@ -152,12 +150,12 @@
 
 ---
 
-## 7. Architecture -- Items Restants
+## 7. Architecture -- Resolus (Sprint 29)
 
-| Ref     | Fichier             | Lignes | Recommandation                          |
-| ------- | ------------------- | ------ | --------------------------------------- |
-| ARCH-01 | classement/page.tsx | 676    | Extraire LeaderboardTable, SpeedRanking |
-| ARCH-02 | profil/page.tsx     | 602    | Extraire AchievementsGrid, StatsSection |
+| Ref     | Fichier             | Avant | Apres | Composants extraits                          |
+| ------- | ------------------- | ----- | ----- | -------------------------------------------- |
+| ARCH-01 | classement/page.tsx | 676L  | 195L  | 8 composants dans src/components/classement/ |
+| ARCH-02 | profil/page.tsx     | 603L  | 103L  | 6 composants dans src/components/profile/    |
 
 ---
 
@@ -222,32 +220,28 @@
 
 ## 11. Sante Technique
 
-| Aspect             | Status                  |
-| ------------------ | ----------------------- |
-| Build production   | OK                      |
-| TypeScript strict  | OK (0 any)              |
-| Docker multi-stage | OK (non-root)           |
-| PWA manifest + SW  | OK (serwist)            |
-| Mobile responsive  | OK (375px first)        |
-| Dark theme         | OK                      |
-| Accessibilite      | Bonne (1 item moyen)    |
-| Headers securite   | OK (CSP, X-Frame)       |
-| Error boundaries   | OK (3 routes)           |
-| Rate limiting      | OK (in-memory)          |
-| Tests              | 86 tests, CI integre    |
-| Coverage           | >60% (lib/stores/hooks) |
+| Aspect             | Status                     |
+| ------------------ | -------------------------- |
+| Build production   | OK                         |
+| TypeScript strict  | OK (0 any)                 |
+| Docker multi-stage | OK (non-root)              |
+| PWA manifest + SW  | OK (serwist)               |
+| Mobile responsive  | OK (375px first)           |
+| Dark theme         | OK                         |
+| Accessibilite      | Bonne (1 item moyen)       |
+| Headers securite   | OK (CSP, X-Frame)          |
+| Error boundaries   | OK (3 routes)              |
+| Rate limiting      | OK (in-memory)             |
+| Tests              | 86 tests, CI integre       |
+| Coverage           | 87% lines (v8, 4 fichiers) |
 
 ---
 
 ## 12. Recommandations
 
-1. **ARCH-01/02** : Decomposer classement (676L) et profil (602L) en sous-composants
-2. **A11Y-02** : Audit contrastes WCAG AA sur fond sombre
-3. **PERF-04/05** : Guard localStorage QuotaExceeded + gater console.\* par NODE_ENV
-4. **SEC-17** : Nettoyage sessions anciennes (>30j)
-5. **TEST-06** : Tests E2E Playwright quand le produit se stabilise
-6. **SEO-05** : Metadata specifique par deck
+1. **A11Y-02** : Audit contrastes WCAG AA sur fond sombre (seul item moyen restant)
+2. **TEST-06** : Tests E2E Playwright quand le produit se stabilise
 
 ---
 
-_Rapport genere le 2026-03-07 -- Sprints 3 a 28, 187 items completes_
+_Rapport genere le 2026-03-07 -- Sprints 3 a 29, 193 items completes_

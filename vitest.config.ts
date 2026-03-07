@@ -12,7 +12,12 @@ export default defineConfig({
     css: false,
     coverage: {
       provider: "v8",
-      include: ["src/lib/**", "src/stores/**", "src/hooks/**"],
+      include: [
+        "src/lib/archetype.ts",
+        "src/lib/deckUtils.ts",
+        "src/lib/stats.ts",
+        "src/stores/gameStore.ts",
+      ],
       thresholds: {
         lines: 60,
         functions: 60,

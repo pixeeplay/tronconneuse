@@ -101,7 +101,11 @@ async function syncData() {
       const merged = [...localSessions, ...newSessions].sort(
         (a, b) => new Date(a.date).getTime() - new Date(b.date).getTime()
       );
-      localStorage.setItem("trnc:sessions", JSON.stringify(merged));
+      try {
+        localStorage.setItem("trnc:sessions", JSON.stringify(merged));
+      } catch {
+        // QuotaExceededError — non-critical
+      }
 
       // Recompute global stats from merged sessions
       recomputeStats(merged);
@@ -123,7 +127,11 @@ async function syncData() {
       }).catch(() => {}).finally(() => clearTimeout(profileTimeout));
     }
 
-    localStorage.setItem(SYNC_KEY, String(Date.now()));
+    try {
+      localStorage.setItem(SYNC_KEY, String(Date.now()));
+    } catch {
+      // QuotaExceededError — non-critical
+    }
   } catch {
     // Sync failure is non-blocking
   }
@@ -162,7 +170,11 @@ function recomputeStats(sessions: StoredSession[]) {
     if (s.level === 3) stats.auditsN3 += 1;
   }
 
-  localStorage.setItem("trnc:stats", JSON.stringify(stats));
+  try {
+    localStorage.setItem("trnc:stats", JSON.stringify(stats));
+  } catch {
+    // QuotaExceededError — non-critical
+  }
 
   // Update profile level
   const rawProfile = localStorage.getItem("trnc:profile");
@@ -176,8 +188,8 @@ function recomputeStats(sessions: StoredSession[]) {
         profile.archetypeName = last.archetypeName;
       }
       localStorage.setItem("trnc:profile", JSON.stringify(profile));
-    } catch (error) {
-      console.error("[useSync] Failed to recompute profile:", error instanceof Error ? error.message : error);
+    } catch {
+      // QuotaExceededError or parse error — non-critical
     }
   }
 }

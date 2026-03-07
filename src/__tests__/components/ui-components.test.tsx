@@ -12,10 +12,11 @@ vi.mock("next/navigation", () => ({
   useSearchParams: () => new URLSearchParams(),
 }));
 
-// Mock next/image (renders a plain <img>)
+// Mock next/image (renders a plain element)
 vi.mock("next/image", () => ({
   default: ({ src, alt, width, height, className }: {
     src: string; alt: string; width: number; height: number; className?: string;
+    // eslint-disable-next-line @next/next/no-img-element
   }) => <img src={src} alt={alt} width={width} height={height} className={className} />,
 }));
 

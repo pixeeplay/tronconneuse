@@ -8,10 +8,10 @@ import type { Metadata } from "next";
 
 // Validate data at module load (runs once at build/start)
 const validation = validateDecksData(decksData as { decks: Deck[]; cards: Card[] });
-if (!validation.valid) {
+if (!validation.valid && process.env.NODE_ENV !== "production") {
   console.error("[DATA] Validation errors:", validation.errors);
 }
-if (validation.warnings.length > 0) {
+if (validation.warnings.length > 0 && process.env.NODE_ENV !== "production") {
   console.warn("[DATA] Validation warnings:", validation.warnings);
 }
 
@@ -22,10 +22,22 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { deckId } = await params;
   const deck = decksData.decks.find((d) => d.id === deckId);
-  const name = deck?.name ?? "Mode aléatoire";
+
+  if (!deck) {
+    return {
+      title: "Mode aléatoire — La Tronçonneuse de Poche",
+      description:
+        "Swipe des dépenses publiques piochées au hasard : garde ou remet en question chaque poste budgétaire.",
+    };
+  }
+
+  const description = deck.description
+    ? `${deck.description} — Swipe pour garder ou remettre en question chaque poste.`
+    : `Swipe les dépenses ${deck.name.toLowerCase()} : garde ou remet en question chaque poste budgétaire.`;
+
   return {
-    title: `${name} — La Tronçonneuse de Poche`,
-    description: `Swipe les dépenses ${name.toLowerCase()} : garde ou remet en question chaque poste budgétaire.`,
+    title: `${deck.name} — La Tronçonneuse de Poche`,
+    description,
   };
 }
 

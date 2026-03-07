@@ -6,21 +6,21 @@
 
 ## Etat du projet
 
-| Metrique              | Valeur                                                  |
-| --------------------- | ------------------------------------------------------- |
-| Cartes                | 370 (19 fichiers JSON)                                  |
-| Decks                 | 19 (16 categories + 3 thematiques)                      |
-| Archetypes            | 16 (6 L1 + 6 L2 + 4 L3)                                 |
-| Badges categorie      | 19 (1 par deck)                                         |
-| Achievements generaux | 12                                                      |
-| Tests                 | 86 (Vitest + Testing Library)                           |
-| Coverage              | >60% (v8, scope: lib/stores/hooks)                      |
-| Sprints               | 28 (187 items completes)                                |
-| Items audit restants  | 11 (0 critique, 0 haute, 3 moyenne, 4 basse, 4 deferes) |
+| Metrique              | Valeur                                                     |
+| --------------------- | ---------------------------------------------------------- |
+| Cartes                | 370 (19 fichiers JSON)                                     |
+| Decks                 | 19 (16 categories + 3 thematiques)                         |
+| Archetypes            | 16 (6 L1 + 6 L2 + 4 L3)                                    |
+| Badges categorie      | 19 (1 par deck)                                            |
+| Achievements generaux | 12                                                         |
+| Tests                 | 86 (Vitest + Testing Library)                              |
+| Coverage              | 87% lines (v8, scope: archetype/deckUtils/stats/gameStore) |
+| Sprints               | 29 (193 items completes)                                   |
+| Items audit restants  | 5 (0 critique, 0 haute, 1 moyenne, 0 basse, 4 deferes)     |
 
 ---
 
-## Sprints termines (3-28) -- 187 items
+## Sprints termines (3-29) -- 193 items
 
 | Sprint | Objectif                                                          | Items |
 | ------ | ----------------------------------------------------------------- | ----- |
@@ -44,27 +44,17 @@
 | 26     | Polish & Tests (75 tests, cardId validation, OG decks, sources)   | 6     |
 | 27     | Accents & Tooltips (200+ accents, createPortal tooltips, share)   | 5     |
 | 28     | Audit secu/perf/tests + 7 bugfixes                                | 22    |
+| 29     | Refacto archi + perf/secu/seo backlog + fix CI                    | 6     |
 
 ---
 
 ## Backlog -- Reste a faire
 
-### Priorite moyenne (3 items)
+### Priorite moyenne (1 item)
 
-| Ref     | Composant           | Description                                                         | Effort |
-| ------- | ------------------- | ------------------------------------------------------------------- | ------ |
-| A11Y-02 | Global              | Audit contrastes : rehausser muted text, amber/blue sur fond sombre | M      |
-| ARCH-01 | classement/page.tsx | 676 lignes -> extraire LeaderboardTable, SpeedRanking               | M      |
-| ARCH-02 | profil/page.tsx     | 602 lignes -> extraire AchievementsGrid, StatsSection               | M      |
-
-### Priorite basse (4 items)
-
-| Ref     | Composant             | Description                                            | Effort |
-| ------- | --------------------- | ------------------------------------------------------ | ------ |
-| PERF-04 | analytics.ts          | localStorage setItem sans try/catch QuotaExceededError | S      |
-| PERF-05 | jeu/[deckId]/page.tsx | console.error/warn en production -> gater par NODE_ENV | S      |
-| SEC-17  | auth.ts               | Cleanup old sessions (>30j) pour privacy               | S      |
-| SEO-05  | jeu/[deckId]/page.tsx | Metadata specifique par deck (titre deck dans title)   | S      |
+| Ref     | Composant | Description                                                         | Effort |
+| ------- | --------- | ------------------------------------------------------------------- | ------ |
+| A11Y-02 | Global    | Audit contrastes : rehausser muted text, amber/blue sur fond sombre | M      |
 
 ### Deferes (pas necessaires a court terme)
 
@@ -90,9 +80,20 @@
 ## Audit Mars 2026 -- Resume
 
 Audit initial (Sprint 11) : **109 findings** (11 critiques, 27 hautes, 43 moyennes, 28 basses).
-Etat actuel (Sprint 28) : **98 resolus**, 11 restants.
+Etat actuel (Sprint 29) : **104 resolus**, 5 restants (1 moyenne + 4 deferes).
 
 Detail complet dans [AUDIT-REPORT.md](AUDIT-REPORT.md).
+
+### FAIT (Sprint 29)
+
+| Ref/Bug     | Description                                                      |
+| ----------- | ---------------------------------------------------------------- |
+| ~~ARCH-01~~ | classement/page.tsx 676L -> 195L + 8 composants (classement/)    |
+| ~~ARCH-02~~ | profil/page.tsx 603L -> 103L + 6 composants (profile/)           |
+| ~~PERF-04~~ | localStorage setItem try/catch (useSync, Onboarding)             |
+| ~~PERF-05~~ | console.error/warn gate par NODE_ENV (jeu/[deckId])              |
+| ~~SEC-17~~  | cleanupOldSessions(30j) auto dans saveCompletedSession           |
+| ~~SEO-05~~  | generateMetadata avec description deck + fallback mode aleatoire |
 
 ### FAIT (Sprint 28 -- audit + bugfixes)
 
