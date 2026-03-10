@@ -179,7 +179,7 @@ export default function ContribuerPage() {
             Télécharger le guide complet
           </a>
           <a
-            href="https://pixeeplay.fr/?intent=contribuer"
+            href="https://pixeeplay.fr/play/?intent=contribuer"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-full border border-slate-200 text-slate-700 font-semibold text-sm hover:bg-slate-50 transition-colors"

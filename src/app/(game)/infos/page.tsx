@@ -127,7 +127,7 @@ export default function InfosPage() {
               soutenir son développement, contactez-nous !
             </p>
             <a
-              href="https://pixeeplay.fr/?intent=sponsoriser"
+              href="https://pixeeplay.fr/play/?intent=sponsoriser"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-3 bg-muted/30 rounded-xl p-4 border border-border/50 hover:bg-muted/50 transition-colors"

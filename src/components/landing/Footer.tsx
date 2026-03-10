@@ -27,7 +27,7 @@ export function Footer() {
               🤝 Contribuer
             </Link>
             <a
-              href="https://pixeeplay.fr/?intent=sponsoriser"
+              href="https://pixeeplay.fr/play/?intent=sponsoriser"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 px-4 py-2 rounded-lg bg-landing-primary text-white text-sm font-heading font-semibold hover:bg-landing-primary-light transition-colors"
